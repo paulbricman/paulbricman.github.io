@@ -6,8 +6,8 @@
 </description>
     <link>https://paulbricman.com/</link>
     <atom:link href="https://paulbricman.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Sep 2020 11:50:22 +0200</pubDate>
-    <lastBuildDate>Sat, 05 Sep 2020 11:50:22 +0200</lastBuildDate>
+    <pubDate>Sat, 05 Sep 2020 11:56:24 +0200</pubDate>
+    <lastBuildDate>Sat, 05 Sep 2020 11:56:24 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -22,11 +22,15 @@
 
 &lt;p&gt;It worked great. Putting people on the surface on the moon, connecting people on the internet, curing countless diseases. However, we are still clueless about many things, and our models are a long way from being perfect descriptions of reality.&lt;/p&gt;
 
+&lt;h2 id=&quot;a-curious-situation&quot;&gt;A Curious Situation&lt;/h2&gt;
+
 &lt;p&gt;Let me now guide you through a different, but ultimately converging, train of thought. There are many fields in which we managed to build agents which outperform humans at various tasks, albeit in specific conditions. For example: object detection software is better at detecting objects than humans, speech recognition software is better at transcribing speech than humans, and computer vision software is better at diagnosing medical imaging than humans. How do these agents work? We probably used the scientific method to iteratively propose more and more accurate models of, for example, human speech, right? Wrong. We don’t know how these agents work. We didn’t provide them with a unified theory of human speech. We don’t understand the theories they seem use. Many people find that confusing, even unsettling.&lt;/p&gt;
 
 &lt;p&gt;But if we didn’t incorporate our well-earned domain-specific knowledge into these agents, how do they manage to not only rise to human performance, but even often go beyond that? The answer is that we made them able to learn by themselves. We taught them how to fish, instead of giving them the fish. We created models that are able to optimize themselves, without domain-specific human guidelines. They fine-tune themselves based on empirical data, based on the ground truth of reality. It is an ongoing effort based on algebra, statistics, calculus, engineering, and other fields, but we’re getting there, slowly but surely.&lt;/p&gt;
 
 &lt;p&gt;That’s pretty neat, isn’t it? We managed to build models that can eventually incorporate very powerful descriptions of reality. What’s the problem? The problem is that we don’t know how they work. We can apply them in spectacular industrial feats, but we don’t know how they do it. We understand how the optimization process generally works, because we built it, but we can’t grasp the result, the final model. There’s no linguist on the planet that understands the complexity of the speech recognition model after optimization. But, at the same time, we are able to wield its power in practical applications. An interesting situation we find ourselves in.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-bitter-lesson&quot;&gt;The Bitter Lesson&lt;/h2&gt;
 
 &lt;p&gt;An important approach to Artificial Intelligence is based on the creation of models of the human mind. Rich Sutton, a distinguished researcher in AI who’s been active in the field for several decades, expressed an intriguing observation in a short essay called &lt;a href=&quot;http://incompleteideas.net/IncIdeas/BitterLesson.html&quot;&gt;The Bitter Lesson&lt;/a&gt;. In it, he describes the limited success of models whose knowledge was explicitly articulated by humans compared to models which started with zero domain-specific knowledge, only to learn by themselves:&lt;/p&gt;
 
@@ -36,11 +40,15 @@
 
 &lt;p&gt;However, until recently, scientific models where created by scientists themselves, with no intermediate entity. Now, in a growing number of fields, there are general models which outperform any human-made alternative, and we didn’t even have to tell them how to do it. What gives? How can we reconcile the respectable track record of human-made models with the outstanding performance of self-improving models? To answer that question we may have to rethink how we do science.&lt;/p&gt;
 
+&lt;h2 id=&quot;a-new-way&quot;&gt;A New Way?&lt;/h2&gt;
+
 &lt;p&gt;In the traditional research cycle, scientists start by proposing a research question and a hypothesis, a tentative answer to the initial question. Then, they design a method of testing whether the hypothesis really is the answer to the question. They conduct the tests, analyze the results, and finish with a bit of reflection on the study.&lt;/p&gt;
 
 &lt;p&gt;Usually, the hypothesis describes a specific way in which things presumably are, a way in which reality &lt;em&gt;is&lt;/em&gt;. They may sound like: “Students who eat breakfast will perform better on a math exam than students who do not eat breakfast”, “Drinking sugary drinks daily leads to obesity”, or “Roses watered with liquid Vitamin B grow faster than roses watered with liquid Vitamin E”. The problem is that from the very beginning of a study, the proposed models are influenced by the researchers themselves. But they are only human, and therefore the models that later developed are strongly influenced by humans. We have seen that this is not the only way of building powerful models.&lt;/p&gt;
 
 &lt;p&gt;How about instead of the researchers proposing a hypothesis in the very first stage of the study, they limit themselves to just posing the research question? Then, they throw in a general model that is expressive enough to capture the complex dynamics of reality in the context of the problem at hand. Finally, they extract the hypothesis &lt;em&gt;from&lt;/em&gt; the optimized model. The model takes on a big chunk of the responsibilities of the researcher, but the latter doesn’t lose her job, because she can now move her efforts to &lt;em&gt;interpreting&lt;/em&gt; the optimized model, rather than building it from the ground up. The student becomes the master.&lt;/p&gt;
+
+&lt;h2 id=&quot;implications&quot;&gt;Implications&lt;/h2&gt;
 
 &lt;p&gt;It is a humbling idea, moving past the paradigm of humans incrementally improving their models of reality through the scientific method. It means accepting that reality is maybe a bit too complex for our minds to comprehensively grasp. It means recognizing that algorithms can incorporate a better understanding of reality into models than we can. It sure is a bitter lesson, but it may just be a powerful new way of driving human progress. Instead of trying to simplify the complexity of reality, we fight fire with fire: we throw complex general models at it which can get it right, even if we don’t understand them.&lt;/p&gt;
 
@@ -57,7 +65,9 @@
     
       <item>
         <title>Fragrances of Memories Past</title>
-        <description>&lt;p&gt;We’ve all experienced it. A hint of perfume which reminds you of a past lover. The aroma of a dish which takes you back to childhood for a few delightful moments. The scent of a room which calls up rich experiences which unfolded there. Smell has a uniquely powerful connection to memory.&lt;/p&gt;
+        <description>&lt;h2 id=&quot;the-richness-of-smell&quot;&gt;The Richness Of Smell&lt;/h2&gt;
+
+&lt;p&gt;We’ve all experienced it. A hint of perfume which reminds you of a past lover. The aroma of a dish which takes you back to childhood for a few delightful moments. The scent of a room which calls up rich experiences which unfolded there. Smell has a uniquely powerful connection to memory.&lt;/p&gt;
 
 &lt;p&gt;Smell is also a very rich sense. Due to the fact that it was an early innovation from an evolutionary perspective compared to other senses, it is rooted deep into our nervous system. And it shows. Recent studies estimate that humans are capable of distinguishing among more than a trillion scents. If you were to smell one every second, you would still have hundreds of billions left at the end of your lifetime. Compare this to the perception of color, estimated at around a hundred million shades. That’s several orders of magnitude lower. Perception of sound pitch is even less precise, with only several thousands of frequencies.&lt;/p&gt;
 
@@ -68,6 +78,8 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;What if we could leverage these unique properties of smell in order to inform powerful memorization techniques? What if scents could help us organize and manage our memories so that we could tap into them more efficiently?&lt;/p&gt;
+
+&lt;h2 id=&quot;leveraging-smell&quot;&gt;Leveraging Smell&lt;/h2&gt;
 
 &lt;p&gt;It is now trivial to capture the &lt;em&gt;visual&lt;/em&gt; aspect of our experiences. We grab our phone and take a picture.  However, capturing the &lt;em&gt;olfactive&lt;/em&gt; side of experiences turns out to be much more difficult. Camera sensors capture one thing: light. Our noses, on the other hand, have to sense billions of different molecules. That turned out to be quite an engineering feat, as creating machines that sense smell as precisely as we do are still years away.&lt;/p&gt;
 
@@ -98,7 +110,7 @@
 
 &lt;p&gt;Few memorization techniques have attracted as much attention as the Mind Palace. Famously being used by Sherlock Holmes, it is far from being fiction. It is a well-established memorization technique which links one’s knowledge with the tangible structure of a palace. However, there are strong reasons why the palace should go &lt;em&gt;beyond&lt;/em&gt; the mind. This way, it can be a bridge between your knowledge and your material environment, a powerhouse of associations between radically different aspects of your life.&lt;/p&gt;
 
-&lt;h1 id=&quot;the-mind-palace&quot;&gt;The Mind Palace&lt;/h1&gt;
+&lt;h2 id=&quot;the-mind-palace&quot;&gt;The Mind Palace&lt;/h2&gt;
 
 &lt;p&gt;The Mind Palace technique itself has several flavors. The most popular one consists of mentally navigating a space that is familiar to you, say a park, and populating it with knowledge you want to store. This may translate to visualizing related diagrams and scenes at specific spots of that space. By mentally interweaving the familiar place with the new information, you are creating a robust method of accessing knowledge in a systematic manner. The place is your launching pad into knowledge.&lt;/p&gt;
 
@@ -106,7 +118,7 @@
 
 &lt;p&gt;However, these techniques are limiting in one important aspect. Why restrict yourself to imagining these places, when you can directly immerse yourself in them as part of the learning process? Why choose to acquire knowledge by associating it with a visualization, when you can strengthen the association with the real deal, in vivid reality? Of course, the reason may be the ease of accessing the mental representation of the given place, but perception often outmatches visualization in terms of vividness. This advantage may be key to developing a more powerful memorization technique.&lt;/p&gt;
 
-&lt;h1 id=&quot;the-embodied-mind-palace&quot;&gt;The Embodied Mind Palace&lt;/h1&gt;
+&lt;h2 id=&quot;the-embodied-mind-palace&quot;&gt;The Embodied Mind Palace&lt;/h2&gt;
 
 &lt;p&gt;The benefits of a real place are elementary, as Sherlock might put it. It might serve as the very context of acquiring information, a background which would already do the work of creating associations with knowledge for you. If your mind palace is based on a park, you might consider turning learning episodes into walks in the park. Conversely, you might wander around it and retrieve information associated with specific spots. These accessible routines provide effective means to strengthen the foundation of your palace so that it persists over years.&lt;/p&gt;
 
@@ -120,7 +132,7 @@
 
 &lt;p&gt;So far, we have explored a host of new benefits brought about by the Embodied Mind Palace: accessibility, self-reference, and multimodality. Together, they pertain an exciting twist on the original technique. However, the new flavor is not only more brain-friendly, but it even creates new opportunities for technology to lend a helping hand.&lt;/p&gt;
 
-&lt;h1 id=&quot;tools-for-the-architect&quot;&gt;Tools For The Architect&lt;/h1&gt;
+&lt;h2 id=&quot;tools-for-the-architect&quot;&gt;Tools For The Architect&lt;/h2&gt;
 
 &lt;p&gt;Technology can help make the associations between places and information more explicit. You can actively use it as a means of strengthening the foundation of your palace. The most exciting part: this technology is relatively new and still developing.&lt;/p&gt;
 
@@ -132,7 +144,7 @@
 
 &lt;p&gt;As of today, there is no piece of software available which incorporates all the previously mentioned technologies. Therefore, there’s a lot of space for developers to explore.&lt;/p&gt;
 
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;The Embodied Mind Palace is an exciting twist on the original memory technique, providing a host of benefits and opportunities. How will your palace look like?&lt;/p&gt;
 </description>

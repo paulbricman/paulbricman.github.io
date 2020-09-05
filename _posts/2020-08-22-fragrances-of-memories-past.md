@@ -5,6 +5,8 @@ date:   2020-08-22 10:44:13 +0200
 categories: cognitive_science
 excerpt: "How can we leverage the intimate relation between smell and memory?"
 ---
+## The Richness Of Smell
+
 We've all experienced it. A hint of perfume which reminds you of a past lover. The aroma of a dish which takes you back to childhood for a few delightful moments. The scent of a room which calls up rich experiences which unfolded there. Smell has a uniquely powerful connection to memory.
 
 Smell is also a very rich sense. Due to the fact that it was an early innovation from an evolutionary perspective compared to other senses, it is rooted deep into our nervous system. And it shows. Recent studies estimate that humans are capable of distinguishing among more than a trillion scents. If you were to smell one every second, you would still have hundreds of billions left at the end of your lifetime. Compare this to the perception of color, estimated at around a hundred million shades. That's several orders of magnitude lower. Perception of sound pitch is even less precise, with only several thousands of frequencies.
@@ -14,6 +16,8 @@ The iconic neurologist Oliver Sacks described the compelling case of a person ex
 > "I found each one unique, evocative, a whole world." He found he could distinguish all his friends by smell: "I went into the clinic, I sniffed like a dog, and in that sniff recognized, before seeing them, the twenty patients who were there. Each had his own olfactory physiognomy, a smell-face, far more vivid and evocative, more redolent, than any sight-face." He could smell their emotions — fear, contentment, sexuality — like a dog. He could recognize every street, every shop, by smell — he could find his way around New York, infallably, by smell.
 
 What if we could leverage these unique properties of smell in order to inform powerful memorization techniques? What if scents could help us organize and manage our memories so that we could tap into them more efficiently?
+
+## Leveraging Smell
 
 It is now trivial to capture the *visual* aspect of our experiences. We grab our phone and take a picture.  However, capturing the *olfactive* side of experiences turns out to be much more difficult. Camera sensors capture one thing: light. Our noses, on the other hand, have to sense billions of different molecules. That turned out to be quite an engineering feat, as creating machines that sense smell as precisely as we do are still years away.
 

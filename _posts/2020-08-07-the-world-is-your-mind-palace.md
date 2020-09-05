@@ -9,7 +9,7 @@ There's a palace in your mind, and you are its architect. Let's get building.
 
 Few memorization techniques have attracted as much attention as the Mind Palace. Famously being used by Sherlock Holmes, it is far from being fiction. It is a well-established memorization technique which links one's knowledge with the tangible structure of a palace. However, there are strong reasons why the palace should go *beyond* the mind. This way, it can be a bridge between your knowledge and your material environment, a powerhouse of associations between radically different aspects of your life.
 
-# The Mind Palace
+## The Mind Palace
 
 The Mind Palace technique itself has several flavors. The most popular one consists of mentally navigating a space that is familiar to you, say a park, and populating it with knowledge you want to store. This may translate to visualizing related diagrams and scenes at specific spots of that space. By mentally interweaving the familiar place with the new information, you are creating a robust method of accessing knowledge in a systematic manner. The place is your launching pad into knowledge.
 
@@ -17,7 +17,7 @@ Other variants of this method include visualizing a completely new space, rather
 
 However, these techniques are limiting in one important aspect. Why restrict yourself to imagining these places, when you can directly immerse yourself in them as part of the learning process? Why choose to acquire knowledge by associating it with a visualization, when you can strengthen the association with the real deal, in vivid reality? Of course, the reason may be the ease of accessing the mental representation of the given place, but perception often outmatches visualization in terms of vividness. This advantage may be key to developing a more powerful memorization technique.
 
-# The Embodied Mind Palace
+## The Embodied Mind Palace
 
 The benefits of a real place are elementary, as Sherlock might put it. It might serve as the very context of acquiring information, a background which would already do the work of creating associations with knowledge for you. If your mind palace is based on a park, you might consider turning learning episodes into walks in the park. Conversely, you might wander around it and retrieve information associated with specific spots. These accessible routines provide effective means to strengthen the foundation of your palace so that it persists over years.
 
@@ -29,7 +29,7 @@ Another advantage of the Embodied Mind Palace over a vanilla one is the rich exp
 
 So far, we have explored a host of new benefits brought about by the Embodied Mind Palace: accessibility, self-reference, and multimodality. Together, they pertain an exciting twist on the original technique. However, the new flavor is not only more brain-friendly, but it even creates new opportunities for technology to lend a helping hand.
 
-# Tools For The Architect
+## Tools For The Architect
 
 Technology can help make the associations between places and information more explicit. You can actively use it as a means of strengthening the foundation of your palace. The most exciting part: this technology is relatively new and still developing.
 
@@ -41,6 +41,6 @@ One final way in which technology can facilitate the construction and maintainan
 
 As of today, there is no piece of software available which incorporates all the previously mentioned technologies. Therefore, there's a lot of space for developers to explore.
 
-# Conclusion
+## Conclusion
 
 The Embodied Mind Palace is an exciting twist on the original memory technique, providing a host of benefits and opportunities. How will your palace look like?
