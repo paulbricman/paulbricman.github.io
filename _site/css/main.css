@@ -264,7 +264,9 @@ pre {
  * Page content
  */
 .page-content {
-  padding: 30px 0; }
+  padding: 30px 0;
+  text-align: justify;
+  text-justify: inter-word; }
 
 .page-heading {
   font-size: 20px; }
