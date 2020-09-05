@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Paul Bricman</title>
-    <description>A collection of essays on cognitive science, academia, and society.
+    <description>My thoughts on cognitive science, academia, and society.
 </description>
     <link>https://paulbricman.com/</link>
     <atom:link href="https://paulbricman.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Sep 2020 11:24:17 +0200</pubDate>
-    <lastBuildDate>Sat, 05 Sep 2020 11:24:17 +0200</lastBuildDate>
+    <pubDate>Sat, 05 Sep 2020 11:50:22 +0200</pubDate>
+    <lastBuildDate>Sat, 05 Sep 2020 11:50:22 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -52,6 +52,96 @@
         
         
         <category>academia</category>
+        
+      </item>
+    
+      <item>
+        <title>Fragrances of Memories Past</title>
+        <description>&lt;p&gt;We’ve all experienced it. A hint of perfume which reminds you of a past lover. The aroma of a dish which takes you back to childhood for a few delightful moments. The scent of a room which calls up rich experiences which unfolded there. Smell has a uniquely powerful connection to memory.&lt;/p&gt;
+
+&lt;p&gt;Smell is also a very rich sense. Due to the fact that it was an early innovation from an evolutionary perspective compared to other senses, it is rooted deep into our nervous system. And it shows. Recent studies estimate that humans are capable of distinguishing among more than a trillion scents. If you were to smell one every second, you would still have hundreds of billions left at the end of your lifetime. Compare this to the perception of color, estimated at around a hundred million shades. That’s several orders of magnitude lower. Perception of sound pitch is even less precise, with only several thousands of frequencies.&lt;/p&gt;
+
+&lt;p&gt;The iconic neurologist Oliver Sacks described the compelling case of a person experiencing hyperosmia, a heightened sense of smell:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“I found each one unique, evocative, a whole world.” He found he could distinguish all his friends by smell: “I went into the clinic, I sniffed like a dog, and in that sniff recognized, before seeing them, the twenty patients who were there. Each had his own olfactory physiognomy, a smell-face, far more vivid and evocative, more redolent, than any sight-face.” He could smell their emotions — fear, contentment, sexuality — like a dog. He could recognize every street, every shop, by smell — he could find his way around New York, infallably, by smell.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What if we could leverage these unique properties of smell in order to inform powerful memorization techniques? What if scents could help us organize and manage our memories so that we could tap into them more efficiently?&lt;/p&gt;
+
+&lt;p&gt;It is now trivial to capture the &lt;em&gt;visual&lt;/em&gt; aspect of our experiences. We grab our phone and take a picture.  However, capturing the &lt;em&gt;olfactive&lt;/em&gt; side of experiences turns out to be much more difficult. Camera sensors capture one thing: light. Our noses, on the other hand, have to sense billions of different molecules. That turned out to be quite an engineering feat, as creating machines that sense smell as precisely as we do are still years away.&lt;/p&gt;
+
+&lt;p&gt;If that wasn’t enough, smell not only is more difficult to &lt;em&gt;detect&lt;/em&gt; than sight, but it is also harder to reproduce. We often go back and look over pictures in order to remind ourselves of past times. Even apps designed solely for storage of pictures incorporate &lt;em&gt;looking back&lt;/em&gt; features by prompting you with the pictures you took a year ago, for instance. What hardware does this require? Screens. They emit one thing: light. However, if we were to reproduce a specific smell, we would need a tiny biochemical lab. All this, in your pocket.&lt;/p&gt;
+
+&lt;p&gt;Therefore, if it’s difficult to both capture and reproduce smell, how can we still use its powerful connection to memory to our advantage? A promising direction is the idea of intentionally bringing an external scent into an experience in order to create an association with it. This would translate to using a known substance with a specific smell during a moment you want to later recall. That known substance may be anything from a commercial perfume to a scented candle. It could even be a substance specifically created for the purpose of the memory technique we are building. The only requirement is that you know how to procure more of it in the future.&lt;/p&gt;
+
+&lt;p&gt;Why would it be a priority for it to be easy to procure? Because this would easily enable an aided recollection further down the road. If you used a specific scented candle when you read a book, you might want to stock up on it when you want to recall that experience. If you used a specific perfume on a trip, you might want to keep some of it for when you want to look back on it in a vivid way.&lt;/p&gt;
+
+&lt;p&gt;Essentially, you can use scents as &lt;em&gt;tags&lt;/em&gt;. External cues which you add onto a piece of information in order to retrieve it in a more orderly manner. That piece of information may be a fact, an experience, or something else entirely. Just procure more of the scent later and enjoy the throwback.&lt;/p&gt;
+
+&lt;p&gt;If you plan on using many of these tags in your memory technique, you might try to be systematic about maximizing the number of scents you can bring to life based on a limited pool of substances. You might try to collect a few powerful scents which you would then combine with each other in many ways. For example, binary combinations of 20 different scents can be used to create over a million combinations, plenty for safely tagging your favorite experiences.&lt;/p&gt;
+
+&lt;p&gt;A rich world of sensation awaits, its potential untapped. What kind of experiences would afford tagging in your life? What would your olfactive tags be?&lt;/p&gt;
+</description>
+        <pubDate>Sat, 22 Aug 2020 10:44:13 +0200</pubDate>
+        <link>https://paulbricman.com/cognitive_science/2020/08/22/fragrances-of-memories-past.html</link>
+        <guid isPermaLink="true">https://paulbricman.com/cognitive_science/2020/08/22/fragrances-of-memories-past.html</guid>
+        
+        
+        <category>cognitive_science</category>
+        
+      </item>
+    
+      <item>
+        <title>The World Is Your Mind Palace</title>
+        <description>&lt;p&gt;There’s a palace in your mind, and you are its architect. Let’s get building.&lt;/p&gt;
+
+&lt;p&gt;Few memorization techniques have attracted as much attention as the Mind Palace. Famously being used by Sherlock Holmes, it is far from being fiction. It is a well-established memorization technique which links one’s knowledge with the tangible structure of a palace. However, there are strong reasons why the palace should go &lt;em&gt;beyond&lt;/em&gt; the mind. This way, it can be a bridge between your knowledge and your material environment, a powerhouse of associations between radically different aspects of your life.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-mind-palace&quot;&gt;The Mind Palace&lt;/h1&gt;
+
+&lt;p&gt;The Mind Palace technique itself has several flavors. The most popular one consists of mentally navigating a space that is familiar to you, say a park, and populating it with knowledge you want to store. This may translate to visualizing related diagrams and scenes at specific spots of that space. By mentally interweaving the familiar place with the new information, you are creating a robust method of accessing knowledge in a systematic manner. The place is your launching pad into knowledge.&lt;/p&gt;
+
+&lt;p&gt;Other variants of this method include visualizing a completely new space, rather than a familiar one. This may be something traditionally associated with storing knowledge, such as a library. You would define sections, corridors, shelves, and so on, so that the organization of the space would match the taxonomy of the content you are storing. One final twist includes a combination of the first two: an imaginary place, say a palace, which houses several real spaces, such as rooms from your home.&lt;/p&gt;
+
+&lt;p&gt;However, these techniques are limiting in one important aspect. Why restrict yourself to imagining these places, when you can directly immerse yourself in them as part of the learning process? Why choose to acquire knowledge by associating it with a visualization, when you can strengthen the association with the real deal, in vivid reality? Of course, the reason may be the ease of accessing the mental representation of the given place, but perception often outmatches visualization in terms of vividness. This advantage may be key to developing a more powerful memorization technique.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-embodied-mind-palace&quot;&gt;The Embodied Mind Palace&lt;/h1&gt;
+
+&lt;p&gt;The benefits of a real place are elementary, as Sherlock might put it. It might serve as the very context of acquiring information, a background which would already do the work of creating associations with knowledge for you. If your mind palace is based on a park, you might consider turning learning episodes into walks in the park. Conversely, you might wander around it and retrieve information associated with specific spots. These accessible routines provide effective means to strengthen the foundation of your palace so that it persists over years.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Maintaining an Embodied Mind Palace is literally a walk in the park.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Moreover, the familiar environment which is the basis for your palace is more than a blank canvas ready to be cultivated with knowledge, it is a rich library of personal experience. We have a tendency to learn things easier when they tie into our personal lives in a powerful way, and a &lt;em&gt;familiar&lt;/em&gt; place is, by definition, a place that is relevant to us. Interweaving experiences with knowledge is a powerful way in which the Embodied Mind Palace exploits the self-reference effect, further improving its effectiveness.&lt;/p&gt;
+
+&lt;p&gt;Another advantage of the Embodied Mind Palace over a vanilla one is the rich experience of the palace across senses. Taking a walk in the park would most likely engage your visual, auditory, and olfactive senses, as well as your proprioceptive, spatial, and tactile ones. The many modes of perception would serve as diverse links between the palace and the information, providing yet even more powerful associations. In contrast, mental images are less vivid. Some people even experience aphantasia, a condition which completely impairs their ability to form mental images.&lt;/p&gt;
+
+&lt;p&gt;So far, we have explored a host of new benefits brought about by the Embodied Mind Palace: accessibility, self-reference, and multimodality. Together, they pertain an exciting twist on the original technique. However, the new flavor is not only more brain-friendly, but it even creates new opportunities for technology to lend a helping hand.&lt;/p&gt;
+
+&lt;h1 id=&quot;tools-for-the-architect&quot;&gt;Tools For The Architect&lt;/h1&gt;
+
+&lt;p&gt;Technology can help make the associations between places and information more explicit. You can actively use it as a means of strengthening the foundation of your palace. The most exciting part: this technology is relatively new and still developing.&lt;/p&gt;
+
+&lt;p&gt;One way to explicitly superimpose knowledge onto a familiar place is by using AR technology, short for alternate reality. These tools enable you to do things like drawing in mid-air with a wide range of colors and textures by only using your phone. Many AR apps also allow you to place images, text, and various 3D objects in the virtual layer of the space around you. Explicitly seeing content in the very location you choose as the basis for your palace helps solidify associations. This can be a formula, a flowchart, a mind map, a picture, a quote, a chart, or any other form of content.&lt;/p&gt;
+
+&lt;p&gt;Another way to emphasize the connection between a location and a piece of information is to use geofences. These are virtual boundaries around an area which your phone can be configured to detect. By using geofences, you can grant yourself permission to access a piece of content only when you are located in a specific area. By turning these places into exclusive pathways to knowledge, you are further strengthening the mnemonic.&lt;/p&gt;
+
+&lt;p&gt;One final way in which technology can facilitate the construction and maintainance of your mind palace is through map builders. These tools are used by people who are creating worlds from the ground up, like fiction writers and game designers. They provide the means to visually articulate the layout of a fictional world in an epic way. Imagine using your phone to navigate between The Valley of Integrals and The Fields of Derivatives, all while passing through a sacred spot which signifies the relation between the two mathematical concepts, say The Altar of The Fundamental Theorem of Calculus.&lt;/p&gt;
+
+&lt;p&gt;As of today, there is no piece of software available which incorporates all the previously mentioned technologies. Therefore, there’s a lot of space for developers to explore.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;The Embodied Mind Palace is an exciting twist on the original memory technique, providing a host of benefits and opportunities. How will your palace look like?&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Aug 2020 10:44:13 +0200</pubDate>
+        <link>https://paulbricman.com/cognitive_science/2020/08/07/the-world-is-your-mind-palace.html</link>
+        <guid isPermaLink="true">https://paulbricman.com/cognitive_science/2020/08/07/the-world-is-your-mind-palace.html</guid>
+        
+        
+        <category>cognitive_science</category>
         
       </item>
     

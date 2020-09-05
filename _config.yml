@@ -9,7 +9,7 @@
 title: Paul Bricman
 email: p.a.bricman@rug.nl
 description: > # this means to ignore newlines until "baseurl:"
-  A collection of essays on cognitive science, academia, and society.
+  My thoughts on cognitive science, academia, and society.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://paulbricman.com" # the base hostname & protocol for your site
 

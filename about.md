@@ -5,3 +5,7 @@ permalink: /about/
 ---
 
 My goal is to help people think better.
+
+My interests include:
+
+`cognitive science` `maker culture` `artificial intelligence` `privacy` `open source` `digital minimalism` `automation` `lifestyle design` `psychology` `machine learning` `academia` `optimization` `brain-computer interfaces` `non-linear note-taking` `productivity` `personal development` `power user` `well-being`
