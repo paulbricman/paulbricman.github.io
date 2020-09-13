@@ -5,7 +5,7 @@ date:   2020-09-13 14:23:55 +0200
 categories: society
 excerpt: "How can two conflicting ideas explain each other?"
 ---
-# Darwin
+## Darwin
 
 Have you ever wondered why the planets in our solar system are moving in such an orderly manner? Their orbits are so neatly arranged in (roughly) concentric circles, and they are all (generally) moving in one single plane. Why aren't they whirling around chaotically, like some cosmic misbehaved children?
 
@@ -31,7 +31,7 @@ Last but not least, another important one is cross-over. It refers to the way in
 
 It is fascinating to see how the same mechanics that supported the development of complex life on Earth can be applied to the proliferation of ideas in human culture. It's even more fascinating to think about *ideologies.* These are belief systems, or maybe... "societies" of ideas: a whole new level of complexity above ideas, just like human societies emerge from humans. They are collectively subject to the same evolutionary operators, but in a deeper way.
 
-# Moses
+## Moses
 
 An influential species of ideologies are religions. For thousands of years, they have caused both torment and ecstasy in human culture. Many religions are often at odds with evolutionary thinking, and creationism versus evolutionism is still a fierce debate. However, we can think of creationism, and religions as a whole, as a product of ideologic evolution, and in so doing reconcile the two sides of the debate in a mutually-compatible worldview.
 
