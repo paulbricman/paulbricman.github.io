@@ -5,8 +5,6 @@ date:   2020-09-13 14:23:55 +0200
 categories: society
 excerpt: "How can two conflicting ideas explain each other?"
 ---
-# Darwin Meets Moses
-
 # Darwin
 
 Have you ever wondered why the planets in our solar system are moving in such an orderly manner? Their orbits are so neatly arranged in (roughly) concentric circles, and they are all (generally) moving in one single plane. Why aren't they whirling around chaotically, like some cosmic misbehaved children?
