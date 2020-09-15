@@ -5,8 +5,6 @@ date:   2020-09-05 10:44:13 +0200
 categories: academia
 excerpt: "What comes after the scientific method? Machines give us a hint."
 ---
-I've been thinking about this a lot lately.
-
 Reality is complex. We, as humans, seek to better understand it. Why? Because knowing how the world works can inform better standards of living, can satisfy socioeconomic interests, and, last but not least, because it's fun. There's this thrill of the hunt for answers to our most difficult questions. What pulls us towards the ground? What causes a rich harvest? What makes us sick? How come that we are here in the first place?
 
 But reality is chaotic, and we've had quite some trouble grasping its infinite complexity. Therefore, in pursuing a better understanding, we set out to build models. Simplified descriptions of how the world works. Models describing the movements of the stars. Models describing the unfolding of weather. Models describing the underlying components of matter. These models are far from being perfect, but they manage to provide a decently accurate picture of the real thing. We embraced models because they are manageable, they consist of mathematical equations, numerical tables, clear taxonomies, fundamental principles etc. We know how to deal with those.
