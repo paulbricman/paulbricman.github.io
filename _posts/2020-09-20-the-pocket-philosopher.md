@@ -5,17 +5,17 @@ date:   2020-09-20 07:42:23 +0200
 categories: cognitive_science
 excerpt: "Could your phone be a tool for critical thinking?"
 ---
-*Why is the sky blue?*
+**Child:** *Why is the sky blue?*
 
-Because of the way sunlight passes through Earth's atmosphere.
+**Parent:** Because of the way sunlight passes through Earth's atmosphere.
 
-*What's an atmosphere?*
+**Child:** *What's an atmosphere?*
 
-It's like a thin blanket placed around a planet. Ours is made of air.
+**Parent:** It's like a thin blanket placed around a planet. Ours is made of air.
 
-*Why is there an atmosphere?*
+**Child:** *Why is there an atmosphere?*
 
-You know what? I don't know.
+**Parent:** You know what? I don't know.
 
 You may have heard such a dialogue between a parent and a child before. You may have even been lucky enough to experience it first-hand already. Or rather unlucky, depending on who you ask. Most people describe the experience as annoying or unpleasant. That's not surprising. The child, in his or her relentless pursuit towards making sense of the world, comes to you for answers. The child is eager to learn, and therefore starts probing your knowledge for useful insights into how the world works. In the process, he or she might uncover important gaps or inconsistencies in your knowledge, which can range from uncomfortable to embarassing.
 
@@ -51,7 +51,7 @@ The reason why those sequences of questions are annoying is that they uncover ga
 
 Therefore, the Socratic method consists of posing tough questions, but what kind of questions specifically? We could classify those based on their goal. For example, a question might be designed to challenge assumptions, like "*Is this always the case?*" or "*Why do you think that this assumption holds here?*". Other questions might be asked to make you think about alternative ways to approach a problem, like "*Can you look at this in another way?"* or "*What is the counter-argument?*". Yet other questions might help you explore consequences, like "*If this was indeed the case, what would be the implications?*" or "*What would be the result of this?*". All these questions challenge your knowledge in one way or another. And they're quite effective, which is why we still extensively use Socrates' practices across countless fields.
 
-If you think about it, the questions themselves are not that complex. You probably had no trouble understanding what they mean. Therefore, we have in our hands a set of tools which not only are very powerful, but they're also very simple to understand and use. The difficult part in harnessing the Socratic method is not in creating thought-provoking questions, but rather in creating the right context for the dialogue to manifest effectively. You don't need domain-specific knowledge yourself in order to challenge domain-specific knowledge.
+If you think about it, the questions themselves are not that complex. You probably had no trouble understanding what they mean. Therefore, we have in our hands a set of tools which are not only very powerful, but they're also very simple to understand and use. The difficult part in harnessing the Socratic method is not in creating thought-provoking questions, but rather in creating the right context for the dialogue to manifest effectively. You don't need domain-specific knowledge yourself in order to challenge domain-specific knowledge.
 
 This brings up an opportunity: what if we could create a tool for thinking based on the Socratic method? Building it would be rather straight-forward, because posing these questions is simple. What matters is the context that is being created, the conversation. Even better, there's already a mature class of tools designed to hold conversations with people. We call them chatbots.
 
