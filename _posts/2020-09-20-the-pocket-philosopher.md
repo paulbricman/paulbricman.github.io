@@ -59,43 +59,43 @@ A session with a Socratic chatbot would unfold as follows. Whenever you're in fo
 
 **User:** The sky is blue.
 
-**Chatbot:** What makes you think that's the case?
+**Chatbot:** *What makes you think that's the case?*
 
 **User:** Personal observation.
 
-**Chatbot:** Is this always the case?
+**Chatbot:** *Is this always the case?*
 
 **User:** Yes, others report similar observations.
 
-**Chatbot:** What is the underlying cause of this?
+**Chatbot:** *What is the underlying cause of this?*
 
 **User:** Maybe it's the sunlight that's being reflected off the oceans and back into the sky.
 
-**Chatbot:** Is this always the case?
+**Chatbot:** *Is this always the case?*
 
 **User:** Not really, because the sky is blue even in the middle of the countryside, far from the sea.
 
-**Chatbot:** Can you look at this in another way?
+**Chatbot:** *Can you look at this in another way?*
 
 **User:** Maybe it's because of the water in our atmosphere.
 
-**Chatbot:** If this was indeed the case, what would be the implications?
+**Chatbot:** *If this was indeed the case, what would be the implications?*
 
 **User:** The sky wouldn't be blue in places that are extremely dry, like the desert. But the sky is also blue in there, so yeah.
 
-**Chatbot:** Is this always the case?
+**Chatbot:** *Is this always the case?*
 
 **User:** I mean, I've never heard of the sky not being blue in the desert.
 
-**Chatbot:** Can you look at this in another way?
+**Chatbot:** *Can you look at this in another way?*
 
 **User:** Maybe it's because of the way sunlight interacts with our atmosphere.
 
-**Chatbot:** Is there evidence to support this?
+**Chatbot:** *Is there evidence to support this?*
 
 **User:** Well, white light interacts with a prism in funny ways, so maybe that's what's happening here as well.
 
-**Chatbot:** Can you elaborate on that?
+**Chatbot:** *Can you elaborate on that?*
 
 **User:** Maybe the atmosphere is sort of acting like a giant prism, making the sky seem blue. 
 
