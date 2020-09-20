@@ -6,10 +6,15 @@ categories: cognitive_science
 excerpt: "Could your phone be a tool for critical thinking?"
 ---
 *Why is the sky blue?*
+
 Because of the way sunlight passes through Earth's atmosphere.
+
 *What's an atmosphere?*
+
 It's like a thin blanket placed around a planet. Ours is made of air.
+
 *Why is there an atmosphere?*
+
 You know what? I don't know.
 
 You may have heard such a dialogue between a parent and a child before. You may have even been lucky enough to experience it first-hand already. Or rather unlucky, depending on who you ask. Most people describe the experience as annoying or unpleasant. That's not surprising. The child, in his or her relentless pursuit towards making sense of the world, comes to you for answers. The child is eager to learn, and therefore starts probing your knowledge for useful insights into how the world works. In the process, he or she might uncover important gaps or inconsistencies in your knowledge, which can range from uncomfortable to embarassing.
@@ -17,15 +22,25 @@ You may have heard such a dialogue between a parent and a child before. You may 
 A famous person who went around asking such questions (and annoying people in the process) was Socrates. The ancient greek philosopher would walk around and start asking people trivial questions. However, he would systematically follow up with more and more questions, trying to probe the other's reasoning for inconsistencies.
 
 **Socrates:** *With what is rhetoric concerned?*
+
 **Gorgias:** With discourse.
+
 **Socrates:** *What sort of discourse, Gorgias — such discourse as would teach the sick under what treatment they might get well?*
+
 **Gorgias:** No.
+
 **Socrates:** *Then rhetoric does not treat of all kinds of discourse?*
+
 **Gorgias:** Certainly not.
+
 **Socrates:** *And yet rhetoric makes men able to speak?*
+
 **Gorgias:** Yes.
+
 **Socrates:** *And to understand that about which they speak?*
+
 **Gorgias:** Of course.
+
 **Socrates**: *Come, then, and let us see what we really mean about rhetoric...*
 
 Unfortunately, going around and annoying people with a never-ending onslaught of questions got him put on trial and eventually killed. However, the Socratic method eventually became the basis for many techniques of critical thinking. By using a systematic way of posing questions aimed at bringing to light the assumptions and thought process behind a statement, the Socratic method became a timeless tool for helping people think more clearly.
@@ -45,15 +60,25 @@ A session with a Socratic chatbot would unfold as follows. Whenever you're in fo
 Having the chatbot simply spit out random questions from a tiny collection might get repetitive. A more pleasant conversation partner might require adding more powerful natural language processing capabilities. This would make the chatbot able to pose questions which include your messages as context, like in the dialogues at the beginning. Instead of responding with predefined strings, it would use templates which adapt to the topic of discussion. An iconic example of this was 1970's Eliza, a "therapist" chatbot designed to make users reflect on their feelings:
 
 **Eliza:** Hello, I am Eliza. I'll be your therapist today.
+
 **Patient:** *I feel anxious.*
+
 **Eliza:** Do you enjoy feeling anxious?
+
 **Patient:** *No, of course not.*
+
 **Eliza:** Are you sure?
+
 **Patient:** *Yes.*
+
 **Eliza:** I see. Let's explore that a bit more.
+
 **Patient:** *I'm wondering what's the purpose of it all...*
+
 **Eliza:** How long have you been wondering what's the purpose of it all?
+
 **Patient:** *Several years now...*
+
 **Eliza:** I see. Let's try another topic and we will come back to that issue later.
 
 Of course, we wouldn't expect such chatbots to exhibit intelligent behavior. That isn't their purpose, and would be far beyond their capabilities. However, even such an algorithmic agent could still prove useful, because, as we've seen before, one could challenge the subject at hand without having a grasp on it. The real value of such a chatbot would be in probing your own knowledge, the knowledge of the interlocutor, in a more systematic manner. And even if the conversation becomes a bit clumsy at times, this doesn't diminish its value.
