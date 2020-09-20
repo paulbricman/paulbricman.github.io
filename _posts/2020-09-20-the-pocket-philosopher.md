@@ -57,6 +57,48 @@ This brings up an opportunity: what if we could create a tool for thinking based
 
 A session with a Socratic chatbot would unfold as follows. Whenever you're in for a critical thinking exercise, you would open up a chat with it and tell it what you think. This could be a concept you're trying to grasp, a societal problem you're trying to solve, a personal issue you're trying to tackle, or anything you are trying to get a better grasp on. Then, the chatbot would answer with plain questions designed to challenge your thinking, shift your attention to alternative perspectives, and look for evidence. In other words, it would guide you in thinking critically.
 
+**User:** The sky is blue.
+
+**Chatbot:** What makes you think that's the case?
+
+**User:** Personal observation.
+
+**Chatbot:** Is this always the case?
+
+**User:** Yes, others report similar observations.
+
+**Chatbot:** What is the underlying cause of this?
+
+**User:** Maybe it's the sunlight that's being reflected off the oceans and back into the sky.
+
+**Chatbot:** Is this always the case?
+
+**User:** Not really, because the sky is blue even in the middle of the countryside, far from the sea.
+
+**Chatbot:** Can you look at this in another way?
+
+**User:** Maybe it's because of the water in our atmosphere.
+
+**Chatbot:** If this was indeed the case, what would be the implications?
+
+**User:** The sky wouldn't be blue in places that are extremely dry, like the desert. But the sky is also blue in there, so yeah.
+
+**Chatbot:** Is this always the case?
+
+**User:** I mean, I've never heard of the sky not being blue in the desert.
+
+**Chatbot:** Can you look at this in another way?
+
+**User:** Maybe it's because of the way sunlight interacts with our atmosphere.
+
+**Chatbot:** Is there evidence to support this?
+
+**User:** Well, white light interacts with a prism in funny ways, so maybe that's what's happening here as well.
+
+**Chatbot:** Can you elaborate on that?
+
+**User:** Maybe the atmosphere is sort of acting like a giant prism, making the sky seem blue. 
+
 Having the chatbot simply spit out random questions from a tiny collection might get repetitive. A more pleasant conversation partner might require adding more powerful natural language processing capabilities. This would make the chatbot able to pose questions which include your messages as context, like in the dialogues at the beginning. Instead of responding with predefined strings, it would use templates which adapt to the topic of discussion. An iconic example of this was 1970's Eliza, a "therapist" chatbot designed to make users reflect on their feelings:
 
 **Eliza:** *Hello, I am Eliza. I'll be your therapist today.*
@@ -66,10 +108,6 @@ Having the chatbot simply spit out random questions from a tiny collection might
 **Eliza:** *Do you enjoy feeling anxious?*
 
 **Patient:** No, of course not.
-
-**Eliza:** *Are you sure?*
-
-**Patient:** Yes.
 
 **Eliza:** *I see. Let's explore that a bit more.*
 
