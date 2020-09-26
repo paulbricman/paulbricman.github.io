@@ -11,6 +11,8 @@ Have you ever wondered why the planets in our solar system are moving in such an
 
 I was amazed to learn that the answer to this question is the same as the one which explains how complex life managed to appear back here on Earth: evolution. Planets are under the selective pressure of natural selection as well, just as living things. If the planets moving around a star would have disorderly orbits that intersect each other, they would simply smash themselves out of existence. The population of planets in our solar system *evolved* into what we observe today: a tidy formation of polite cosmic adults.
 
+![](/assets/images/planets.png)
+
 I kept on being amazed to learn that a lot of other seemingly unrelated phenomena can be explained by the same reasoning. Companies are under selective pressure to make profit, and therefore markets evolve to contain profitable companies. Online content is under selective pressure to gain your attention, and therefore social media platforms evolve to contain attention-grabbing content. The list goes on and on.
 
 A particularly fascinating domain in which this evolutionary rationale can be applied is in ideas. Any idea, really. Ideas live. We keep them alive by *thinking* them. However, we can't think of that many things at the same time. Ideas die out, because we lose interest in them. There are scarce resources in this cognitive ecosystem in which ideas proliferate. However, ideas also *spread*. I can tell you about an idea in writing, then you can tell someone about it through speech, and so on. In a sense, the idea is creating offspring, it is reproducing itself into other people's minds. Ideas *evolve.*
@@ -28,6 +30,8 @@ Third, is it contagious? There are ideas that we feel like sharing. Of course, t
 Another operator which facilitates evolution in general is mutation. A tiny chance of individuals changing in a subtle way. When you tell me an idea, and I misunderstand it, I obtain an idea that is different than yours. This can be seen as an error in reproduction, which is a common source of mutation in biological evolution as well.
 
 Last but not least, another important one is cross-over. It refers to the way in which parents create an offspring that is a combination of the two. With ideas, you can think of the situation in which you connect multiple ideas and give rise to a new one. A cognitive psychologist might call this process convergent creativity.
+
+![](/assets/images/operators.png)
 
 It is fascinating to see how the same mechanics that supported the development of complex life on Earth can be applied to the proliferation of ideas in human culture. It's even more fascinating to think about *ideologies.* These are belief systems, or maybe... "societies" of ideas: a whole new level of complexity above ideas, just like human societies emerge from humans. They are collectively subject to the same evolutionary operators, but in a deeper way.
 

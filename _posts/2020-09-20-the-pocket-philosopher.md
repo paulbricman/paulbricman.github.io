@@ -55,6 +55,8 @@ If you think about it, the questions themselves are not that complex. You probab
 
 This brings up an opportunity: what if we could create a tool for thinking based on the Socratic method? Building it would be rather straight-forward, because posing these questions is simple. What matters is the context that is being created, the conversation. Even better, there's already a mature class of tools designed to hold conversations with people. We call them chatbots.
 
+![](/assets/images/chat.png)
+
 A session with a Socratic chatbot would unfold as follows. Whenever you're in for a critical thinking exercise, you would open up a chat with it and tell it what you think. This could be a concept you're trying to grasp, a societal problem you're trying to solve, a personal issue you're trying to tackle, or anything you are trying to get a better grasp on. Then, the chatbot would answer with plain questions designed to challenge your thinking, shift your attention to alternative perspectives, and look for evidence. In other words, it would guide you in thinking critically.
 
 **User:** The sky is blue.
