@@ -29,6 +29,8 @@ Why would it be a priority for it to be easy to procure? Because this would easi
 
 Essentially, you can use scents as *tags*. External cues which you add onto a piece of information in order to retrieve it in a more orderly manner. That piece of information may be a fact, an experience, or something else entirely. Just procure more of the scent later and enjoy the throwback.
 
+![](/assets/images/fragrances.png)
+
 If you plan on using many of these tags in your memory technique, you might try to be systematic about maximizing the number of scents you can bring to life based on a limited pool of substances. You might try to collect a few powerful scents which you would then combine with each other in many ways. For example, binary combinations of 20 different scents can be used to create over a million combinations, plenty for safely tagging your favorite experiences.
 
 A rich world of sensation awaits, its potential untapped. What kind of experiences would afford tagging in your life? What would your olfactive tags be?
