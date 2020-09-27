@@ -27,6 +27,8 @@ Moreover, the familiar environment which is the basis for your palace is more th
 
 Another advantage of the Embodied Mind Palace over a vanilla one is the rich experience of the palace across senses. Taking a walk in the park would most likely engage your visual, auditory, and olfactive senses, as well as your proprioceptive, spatial, and tactile ones. The many modes of perception would serve as diverse links between the palace and the information, providing yet even more powerful associations. In contrast, mental images are less vivid. Some people even experience aphantasia, a condition which completely impairs their ability to form mental images.
 
+![](/assets/images/park.png)
+
 So far, we have explored a host of new benefits brought about by the Embodied Mind Palace: accessibility, self-reference, and multimodality. Together, they pertain an exciting twist on the original technique. However, the new flavor is not only more brain-friendly, but it even creates new opportunities for technology to lend a helping hand.
 
 ## Tools For The Architect
