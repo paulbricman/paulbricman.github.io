@@ -2,7 +2,7 @@
 layout: post
 title:  "Darwin Meets Moses"
 date:   2020-09-13 14:23:55 +0200
-categories: society
+categories: ["Philosophy"]
 excerpt: "How can two conflicting ideas explain each other?"
 ---
 ## Darwin

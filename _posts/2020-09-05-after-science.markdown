@@ -2,7 +2,7 @@
 layout: post
 title:  "After Science"
 date:   2020-09-05 10:44:13 +0200
-categories: academia
+categories: ["Philosophy"]
 excerpt: "What comes after the scientific method? Machines give us a hint."
 ---
 Reality is complex. We, as humans, seek to better understand it. Why? Because knowing how the world works can inform better standards of living, can satisfy socioeconomic interests, and, last but not least, because it's fun. There's this thrill of the hunt for answers to our most difficult questions. What pulls us towards the ground? What causes a rich harvest? What makes us sick? How come that we are here in the first place?

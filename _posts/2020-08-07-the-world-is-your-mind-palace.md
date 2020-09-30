@@ -2,7 +2,7 @@
 layout: post
 title:  "The World Is Your Mind Palace"
 date:   2020-08-07 10:44:13 +0200
-categories: cognitive_science
+categories: ['Tools for Thinking']
 excerpt: "A twist on the famous memorization technique."
 ---
 Few memorization techniques have attracted as much attention as the Mind Palace. Famously being used by Sherlock Holmes, it is far from being fiction. It is a well-established memorization technique which links one's knowledge with the tangible structure of a palace. However, there are strong reasons why the palace should go *beyond* the mind. This way, it can be a bridge between your knowledge and your material environment, a powerhouse of associations between radically different aspects of your life.

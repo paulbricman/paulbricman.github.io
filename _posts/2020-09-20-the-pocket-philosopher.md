@@ -2,7 +2,7 @@
 layout: post
 title:  "The Pocket Philosopher"
 date:   2020-09-20 07:42:23 +0200
-categories: cognitive_science
+categories: ["Tools for Thinking"]
 excerpt: "Could your phone be a tool for critical thinking?"
 ---
 **Child:** *Why is the sky blue?*

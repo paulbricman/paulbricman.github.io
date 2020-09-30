@@ -2,7 +2,7 @@
 layout: post
 title:  "Fragrances of Memories Past"
 date:   2020-08-22 10:44:13 +0200
-categories: cognitive_science
+categories: ["Tools for Thinking"]
 excerpt: "How can we leverage the intimate relation between smell and memory?"
 ---
 ## The Richness Of Smell

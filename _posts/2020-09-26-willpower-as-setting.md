@@ -2,7 +2,7 @@
 layout: post
 title:  "Willpower as Setting"
 date:   2020-09-26 08:58:44 +0200
-categories: cognitive_science
+categories: ["Tools for Thinking"]
 excerpt: "Reframing willpower as a choice, rather than a force."
 ---
 ## Willpower as Force
