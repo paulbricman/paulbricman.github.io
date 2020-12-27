@@ -45,13 +45,8 @@ Fortunately, there already are ways of doing that. The field of natural language
 
 An intuitive understanding of how semantic embeddings are obtained is beyond the scope of this article, but what is relevant for our current purposes can be captured in a few neat properties exhibited by the semantic space:
 
-#### Property 1
-Conceptual differences correspond to geometric distances.
-{: .text-left }
-
-#### Property 2
-Conceptual parallelism corresponds to geometric parallelism.
-{: .text-left }
+1. Conceptual differences correspond to geometric distances.
+2. Conceptual parallelism corresponds to geometric parallelism.
 
 But analytic geometry is no reason for despair, because as graphic designers don't need to be knowledgeable about convolutions and tensors when using Photoshop, the tools for thought which we set out to build will be usable regardless of the user's proficiency in maths. We'll use semantic embeddings only as a low-level foundation for higher-level tools which enable anyone to work with concepts in exciting ways.
 

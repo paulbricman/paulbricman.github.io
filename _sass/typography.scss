@@ -43,9 +43,13 @@ $callouts: (
   src: url("../fonts/SpaceGrotesk-Regular.ttf");
 }
 
+ul, ol, li {
+  text-align: left !important;
+}
+
 * {
   font-family: "SpaceGrotesk";
-  text-align: justify !important;
+  text-align: justify;
 }
 
 h1,
