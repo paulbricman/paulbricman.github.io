@@ -4,10 +4,15 @@ title: About
 permalink: /about/
 ---
 
-The disciplines which study the human mind (e.g. psychology, neuroscience etc.) heavily influenced the ones which aim to build artificial minds (e.g. machine learning, computer vision etc.). My goal is to apply insights about the mind gained from the latter back to the former, and help people think better.
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-I study Artificial Intelligence at the University of Groningen, where I also work as a Teaching Assistant. Previously, I had a couple of data science internships in the industry. I decided to start this blog to share ideas and get better at expressing them.
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
 
-I'm interested in:
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
 
-`cognitive science` `maker culture` `artificial intelligence` `privacy` `open source` `digital minimalism` `automation` `lifestyle design` `psychology` `machine learning` `academia` `optimization` `brain-computer interfaces` `non-linear note-taking` `productivity` `personal development` `power user` `well-being`
+
+[jekyll-organization]: https://github.com/jekyll
