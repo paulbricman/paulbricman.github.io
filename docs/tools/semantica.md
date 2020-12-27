@@ -3,6 +3,7 @@ layout: default
 title: Semantica
 nav_order: 1
 parent: Tools
+description: "Extending conceptual thinking through semantic embeddings."
 ---
 
 # Semantica

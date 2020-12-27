@@ -3,6 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 permalink: /
+description: "I'm building tools which augment the mind, enabling people to think in powerful new ways."
 ---
 
 # Rethinking thinking.
