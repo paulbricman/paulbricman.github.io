@@ -2,14 +2,14 @@
 layout: default
 title: Knowledge Probes
 nav_order: 2
-parent: Tools for Thought
+parent: Tools
 ---
 
 # Knowledge Probes
 {: .no_toc }
 
 Promoting critical thinking through open-ended questions.
-{: .fs-6 .fw-300 }
+{: .fs-6 .fw-300 .text-left }
 
 [View Code](https://github.com/paubric/KnowledgeProbe){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
@@ -168,9 +168,9 @@ We have a unique relationship with questions, so why not leverage that to our ad
 
 ## References
 
-[^1]: David Hoffeld, [Want To Know What Your Brain Does When It Hears A Question?](https://www.fastcompany.com/3068341/want-to-know-what-your-brain-does-when-it-hears-a-question)
-[^2]: Richard Nordquist, [The Cooperative Principle in Conversation](https://www.thoughtco.com/cooperative-principle-conversation-1689928)
-[^3]: Buster Benson, [Why Are We Yelling?](https://busterbenson.com/whyareweyelling/)
+[^1]: David Hoffeld,<br/>[Want To Know What Your Brain Does When It Hears A Question?](https://www.fastcompany.com/3068341/want-to-know-what-your-brain-does-when-it-hears-a-question)
+[^2]: Richard Nordquist,<br/>[The Cooperative Principle in Conversation](https://www.thoughtco.com/cooperative-principle-conversation-1689928)
+[^3]: Buster Benson,<br/>[Why Are We Yelling?](https://busterbenson.com/whyareweyelling/)
 [^4]: [Revised Bloom's Taxonomy](https://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy/)
-[^5]: Hugging Face, [Write With Transformer](https://transformer.huggingface.co/)
-[^6]: John Hattie & Helen Timperley, [The Power of Feedback](http://mrbartonmaths.com/resourcesnew/8.%20Research/Marking%20and%20Feedback/The%20Power%20of%20Feedback.pdf)
+[^5]: Hugging Face,<br/>[Write With Transformer](https://transformer.huggingface.co/)
+[^6]: John Hattie & Helen Timperley,<br/>[The Power of Feedback](http://mrbartonmaths.com/resourcesnew/8.%20Research/Marking%20and%20Feedback/The%20Power%20of%20Feedback.pdf)

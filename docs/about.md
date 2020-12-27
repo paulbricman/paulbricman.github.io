@@ -1,15 +1,10 @@
 ---
 layout: default
-title: About
-nav_order: 3
+title: Colophon
+nav_order: 4
 ---
 
-## Contact
-
-Feel free to get in touch with me at [paulbricman@protonmail.com](mailto:paulbricman@protonmail.com).
-
-## Colophon
-{: .no_toc }
+# Colophon
 
 1. This site uses a modified version of [Just the Docs](https://github.com/pmarsceill/just-the-docs), an open source theme served by [Jekyll](https://jekyllrb.com/), an open source static site generator.
 

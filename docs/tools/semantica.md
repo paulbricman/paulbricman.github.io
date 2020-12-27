@@ -2,14 +2,14 @@
 layout: default
 title: Semantica
 nav_order: 1
-parent: Tools for Thought
+parent: Tools
 ---
 
 # Semantica
 {: .no_toc }
 
 Extending conceptual thinking through semantic embeddings.
-{: .fs-6 .fw-300 }
+{: .fs-6 .fw-300 .text-left }
 
 [View Code](https://github.com/paubric/Semantica){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Open Demo](https://colab.research.google.com/drive/1NCPktYHVYvD03DRMevbhb51_yjnO4aTa?usp=sharing){: .btn .fs-5 .mb-4 .mb-md-0 }
 
@@ -300,11 +300,11 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 ---
 
 ## References
-[^1]: Farnam Street, [Mental Models](https://fs.blog/mental-models/)
-[^2]: Marvin Minsky, [The Society of Mind](https://www.goodreads.com/book/show/326790.The_Society_of_Mind)
-[^3]: Shan Carter & Michael Nielsen, [Using Artificial Intelligence to Augment Human Intelligence](https://distill.pub/2017/aia/)
-[^4]: Daniel Jurafsky & James Martin, [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/6.pdf)
-[^5]: Gilles Fauconnier, [The Encyclopedia of the Social and Behavioral Sciences](http://www.cogsci.ucsd.edu/~faucon/BEIJING/blending.pdf)
-[^6]: Cixin Liu, [The Three-Body Problem Trilogy](https://www.goodreads.com/book/show/34569357-remembrance-of-earth-s-past?ac=1&from_search=true&qid=5NN7oSm54Y&rank=2)
-[^7]: NASA, [The Golden Record Cover](https://voyager.jpl.nasa.gov/golden-record/golden-record-cover/)
-[^8]: Mikolov et al., [Distributed Representations of Words [...] and their Compositionality](https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf)
+[^1]: Farnam Street,<br/>[Mental Models](https://fs.blog/mental-models/)
+[^2]: Marvin Minsky,<br/>[The Society of Mind](https://www.goodreads.com/book/show/326790.The_Society_of_Mind)
+[^3]: Shan Carter & Michael Nielsen,<br/>[Using Artificial Intelligence to Augment Human Intelligence](https://distill.pub/2017/aia/)
+[^4]: Daniel Jurafsky & James Martin,<br/>[Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/6.pdf)
+[^5]: Gilles Fauconnier,<br/>[The Encyclopedia of the Social and Behavioral Sciences](http://www.cogsci.ucsd.edu/~faucon/BEIJING/blending.pdf)
+[^6]: Cixin Liu,<br/>[The Three-Body Problem Trilogy](https://www.goodreads.com/book/show/34569357-remembrance-of-earth-s-past?ac=1&from_search=true&qid=5NN7oSm54Y&rank=2)
+[^7]: NASA,<br/>[The Golden Record Cover](https://voyager.jpl.nasa.gov/golden-record/golden-record-cover/)
+[^8]: Mikolov et al.,<br/>[Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf)

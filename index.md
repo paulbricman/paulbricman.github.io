@@ -11,7 +11,7 @@ permalink: /
 I'm building tools which augment the mind, enabling people to think in powerful new ways. 
 {: .fs-6 .fw-300 .text-left }
 
-[View tools](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Browse thoughts](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View tools](/docs/tools/tools/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Support my work](/docs/support/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -63,21 +63,21 @@ To this end, I am:
 ## References
 
 {: .text-right }
-[^1]: Richard Hamming<br/>[The Unreasonable Effectiveness of Mathematics](https://www.dartmouth.edu/~matc/MathDrama/reading/Hamming.html).
-[^2]: Bret Victor<br/>[Media for Thinking the Unthinkable](http://worrydream.com/MediaForThinkingTheUnthinkable/).
-[^3]: Jacob Alonso & Dan Plechaty<br/>[A short visual history of charts and graphs](https://seeingcomplexity.wordpress.com/2011/02/03/a-short-visual-history-of-charts-and-graphs/)
-[^4]: John Vervaeke<br/>[Flow, Metaphor, and the Axial Revolution](https://www.youtube.com/watch?v=aF9HeXg65AE)
-[^5]: Andy Mathushak & Michael Nielsen<br/>[How can we develop transformative tools for thought?](https://numinous.productions/ttft/)
-[^6]: Michael Nielsen<br/>[Reinventing explanation](https://michaelnielsen.org/reinventing_explanation/index.html)
-[^7]:  Mike Bostock<br/>[Data-Driven Documents](https://d3js.org/)
-[^8]: Shan Carter & Michael Nielsen<br/>[Using Artificial Intelligence to Augment Human Intelligence](https://distill.pub/2017/aia/)
-[^9]: Center for Humane Technology<br/>[Ledger of Harms](https://ledger.humanetech.com/)
-[^10]: Stuart Russell<br/>[Long-Term Future of AI](https://lexfridman.com/stuart-russell/)
-[^11]: Herbert Schiller<br/>[Communication and Cultural Domination](https://www.goodreads.com/book/show/2935017-communication-and-cultural-domination)
-[^12]: Center for Humane Technology <br/>[Principles of Humane Technology](https://www.humanetech.com/technologists#principles)
-[^13]: Signal<br/>[Peer-to-peer messaging](https://www.signal.org/)
-[^14]: IPFS<br/>[Distributed file system](https://ipfs.io/)
-[^15]: Ethereum<br/>[Cryptocurrency](https://ethereum.org/en/)
-[^16]: Git<br/>[Open source VCS](https://git-scm.com/)
-[^17]: Ray Kurzweil<br/>[The Age of Spiritual Machines](https://www.goodreads.com/book/show/83533.The_Age_of_Spiritual_Machines)
-[^18]: Anthony Dunne & Fiona Raby<br/>[Speculative Everything](https://www.goodreads.com/book/show/17756296-speculative-everything)
+[^1]: Richard Hamming,<br/>[The Unreasonable Effectiveness of Mathematics](https://www.dartmouth.edu/~matc/MathDrama/reading/Hamming.html).
+[^2]: Bret Victor,<br/>[Media for Thinking the Unthinkable](http://worrydream.com/MediaForThinkingTheUnthinkable/).
+[^3]: Jacob Alonso & Dan Plechaty,<br/>[A short visual history of charts and graphs](https://seeingcomplexity.wordpress.com/2011/02/03/a-short-visual-history-of-charts-and-graphs/)
+[^4]: John Vervaeke,<br/>[Flow, Metaphor, and the Axial Revolution](https://www.youtube.com/watch?v=aF9HeXg65AE)
+[^5]: Andy Mathushak & Michael Nielsen,<br/>[How can we develop transformative tools for thought?](https://numinous.productions/ttft/)
+[^6]: Michael Nielsen,<br/>[Reinventing explanation](https://michaelnielsen.org/reinventing_explanation/index.html)
+[^7]:  Mike Bostock,<br/>[Data-Driven Documents](https://d3js.org/)
+[^8]: Shan Carter & Michael Nielsen,<br/>[Using Artificial Intelligence to Augment Human Intelligence](https://distill.pub/2017/aia/)
+[^9]: Center for Humane Technology,<br/>[Ledger of Harms](https://ledger.humanetech.com/)
+[^10]: Stuart Russell,<br/>[Long-Term Future of AI](https://lexfridman.com/stuart-russell/)
+[^11]: Herbert Schiller,<br/>[Communication and Cultural Domination](https://www.goodreads.com/book/show/2935017-communication-and-cultural-domination)
+[^12]: Center for Humane Technology ,<br/>[Principles of Humane Technology](https://www.humanetech.com/technologists#principles)
+[^13]: Signal,<br/>[Peer-to-peer messaging](https://www.signal.org/)
+[^14]: IPFS,<br/>[Distributed file system](https://ipfs.io/)
+[^15]: Ethereum,<br/>[Cryptocurrency](https://ethereum.org/en/)
+[^16]: Git,<br/>[Open source VCS](https://git-scm.com/)
+[^17]: Ray Kurzweil,<br/>[The Age of Spiritual Machines](https://www.goodreads.com/book/show/83533.The_Age_of_Spiritual_Machines)
+[^18]: Anthony Dunne & Fiona Raby,<br/>[Speculative Everything](https://www.goodreads.com/book/show/17756296-speculative-everything)
