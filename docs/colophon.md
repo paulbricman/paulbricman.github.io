@@ -10,4 +10,4 @@ nav_order: 4
 
 2. It runs on [GitHub Pages](https://pages.github.com/), but I'm planning on migrating it to [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/), an open source distributed file system.
 
-3. It uses [Space Grotesk](https://fonts.floriankarsten.com/space-grotesk), an open licence self-hosted font.
+3. It uses [Space Grotesk](https://fonts.floriankarsten.com/space-grotesk), an open license self-hosted font.

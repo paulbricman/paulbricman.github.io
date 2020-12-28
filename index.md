@@ -24,12 +24,12 @@ Just like there are sound frequencies we cannot hear and wavelengths of light we
 
 As an example, consider the period just before the chart was invented. Data was mostly expressed as tables of numbers. The chart enabled us to repurpose our potent perceptual machinery in order to digest data in a powerful new way.[^3] Today, charts are an integral part of our science and engineering.
 
-There are countless other examples of such transformative tools. Writing enabled us to compactly encode thoughts into sequences of symbols, making them observeable and supporting critical reflection.[^4] Hindu-Arabic numerals enabled us to perform arithmetic quickly and accurately, promoting computational thinking.[^5] Maps enabled us to embed entire continents into handheld objects, supporting spatial reasoning.[^6]
+There are countless other examples of such transformative tools. Writing enabled us to compactly encode thoughts into sequences of symbols, making them observable and supporting critical reflection.[^4] Hindu-Arabic numerals enabled us to perform arithmetic quickly and accurately, promoting computational thinking.[^5] Maps enabled us to embed entire continents into handheld objects, supporting spatial reasoning.[^6]
 
 {: .info }
 Such tools are victims of their own success. Their effectiveness prompted us to internalize them so deeply that most of the time we aren't even aware of them.
 
-Today, charts evolved into interactive animations.[^7] Search engines now enable us to seamlessly navigate humanity's collective knoweldge. We solved arithmetic by outsourcing it to computers. Machines help us manipulate abstract representations.[^8] Digital technology shows great promise in creating our most powerful tools for thought yet.
+Today, charts evolved into interactive animations.[^7] Search engines now enable us to seamlessly navigate humanity's collective knowledge. We solved arithmetic by outsourcing it to computers. Machines help us manipulate abstract representations.[^8] Digital technology shows great promise in creating our most powerful tools for thought yet.
 
 However, it's not all roses. Social media platforms are intellectually debilitating for their users.[^9] Outsourcing decision-making to recommendation systems leads to users being optimized into mindless consumers.[^10] The collective consciousness of entire nations is shaped by a handful of opaque algorithms, resulting in digital colonialism.[^11]
 
@@ -53,7 +53,7 @@ My intended contribution to this space is to lead by example. To this end, I am:
 
 ### 3. The future is malleable.
 
-Technological determinism refers to the seemingly predictible development of technology across measures like compute costs.[^17] Based on such observations, it's tempting to blindly subscribe to the idea that course-correcting our technological trajectory is impossible. Indeed, it's shaped by commercial, ideological, and social imperatives, but these aren't immutable either. They can also be shaped.
+Technological determinism refers to the seemingly predictable development of technology across measures like compute costs.[^17] Based on such observations, it's tempting to blindly subscribe to the idea that course-correcting our technological trajectory is impossible. Indeed, it's shaped by commercial, ideological, and social imperatives, but these aren't immutable either. They can also be shaped.
 
 Not only is challenging our technological trajectory possible, but it's also useful. The practice of design fiction offers us a genuine framework for peeking into possible futures, shedding light on both opportunities and pitfalls.[^18] By shaking off our disbelief about change, speculative practices remind us that the future is malleable, and in doing so empower us.[^19]
 
