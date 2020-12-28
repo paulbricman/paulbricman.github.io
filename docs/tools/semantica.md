@@ -296,7 +296,7 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 
 4. The strengthened link between Photoshop and more radical tools for thought, through Photoshop-like names and descriptions. Photoshop has been extensively used as a prime example of tools for thought before, but the current work explores new ways of reinforcing this connection.
 
-5. The name Semantica for a tool for conceptual thinking has been inspired by the name Mathematica, used by Stephen Wolfram to describe a tool for computational thinking.[^9]
+5. The name Semantica for a tool for conceptual thinking has been inspired by the name Mathematica, used to describe a tool for computational thinking.[^9]
 
 ---
 
