@@ -45,7 +45,7 @@ Aporia is the feeling of realizing that what you thought was a path to truth act
 
 ## Design
 
-After changing our perspective on hard questions, we can finally start building. Being inspired by the unreasonable effectiveness of the curious child, this tool will consist of nothing more than a set of questions and a basic method for sampling them. Difficult questions. Vague, muddy, demanding questions. Questions which genuinely get the person thinking. Revising, reframing, reviewing what they hold to be true. Questions which probe the otherwise obstructed depths of knowledge. Given their current purpose, we'll also refer to these questions as knowledge probes.
+After changing our perspective on hard questions, we can finally start building. Being inspired by the unreasonable effectiveness of the curious child, this tool will consist of nothing more than a set of questions and a basic method for sampling them. Difficult questions. Vague, muddy, demanding questions. Questions which genuinely get the person thinking. Revising, reframing, reviewing what they hold to be true. Questions which probe the otherwise obstructed depths of knowledge. Given their current purpose, we'll also refer to these questions as knowledge probes, or k-probes for short.
 
 To integrate a minimal level of structure into the question set, we'll use Bloom's revised taxonomy as a starting point.[^4] This taxonomy is a widely used system for organizing learning outcomes across all levels of formal education, from kindergarten to university. These outcomes essentially capture the abilities which students are expected to possess by the end of a lesson, course, or programme. Formal education can be seen in part as a process of internalizing these abilities.
 
