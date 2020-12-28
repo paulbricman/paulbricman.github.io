@@ -137,7 +137,7 @@ The following is an excerpt from a dialogue with the piece of software:
 
 - **How can this be a source for inspiration?**
 
-*If words can be represented as points in a space, what else could be represented this way? The effectiveness of semantic embeddings gets you thinking about what other things can be expressed in the same way.*
+*If words can be represented as points in a space, what else could be represented this way? The effectiveness of semantic embeddings gets you thinking about what other things can be expressed like this.*
 
 - **Why is this relevant?**
 
@@ -145,7 +145,7 @@ The following is an excerpt from a dialogue with the piece of software:
 
 - **How do the components of this relate to each other?**
 
-*Each word is associated with a vector. All vectors are part of the same space. There's a relations between any two words, represented through the difference between their vectors.*           
+*Each word is associated with a vector. All vectors inhabit the same space. There's a relations between any two words, represented through the difference between their vectors.*
 
 - **What has to be in place before this can be applied?**
 
