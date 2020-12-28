@@ -288,7 +288,7 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 
 ## Contributions
 
-1. The idea that semantic embeddings -- specifically word embeddings -- can be directly used to build tools for thought, rather than only as raw ingredients in downstream machine learning tasks.
+1. The idea that semantic embeddings -- specifically word embeddings -- can be directly used to build tools for thought, rather than only as raw ingredients in downstream machine learning tasks. Earlier work explored the potential of interacting with abstract representations more generally.[^3]
 
 2. The idea that mental models can be formalized as constellations of semantic embeddings in semantic space.
 
