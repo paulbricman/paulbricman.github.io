@@ -296,7 +296,7 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 
 4. The strengthened link between Photoshop and more radical tools for thought, through Photoshop-like names and descriptions. Photoshop has been extensively used as a prime example of tools for thought before, but the current work explores new ways of reinforcing this connection.
 
-5. The name Semantica for a tool for conceptual thinking has been inspired by the name Mathematica, used by Stephen Wolfram to describe a tool for computational thinking.
+5. The name Semantica for a tool for conceptual thinking has been inspired by the name Mathematica, used by Stephen Wolfram to describe a tool for computational thinking.[^9]
 
 ---
 
@@ -309,3 +309,4 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 [^6]: Cixin Liu,<br/>[The Three-Body Problem Trilogy](https://www.goodreads.com/book/show/34569357-remembrance-of-earth-s-past?ac=1&from_search=true&qid=5NN7oSm54Y&rank=2)
 [^7]: NASA,<br/>[The Golden Record Cover](https://voyager.jpl.nasa.gov/golden-record/golden-record-cover/)
 [^8]: Mikolov et al.,<br/>[Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf)
+[^9]: Stephen Wolfram,<br/>[Computational Universe](https://www.youtube.com/watch?v=P7kX7BuHSFI)
