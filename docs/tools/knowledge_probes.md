@@ -172,6 +172,6 @@ We have a unique relationship with questions, so why not leverage that to our ad
 [^1]: David Hoffeld,<br/>[Want To Know What Your Brain Does When It Hears A Question?](https://www.fastcompany.com/3068341/want-to-know-what-your-brain-does-when-it-hears-a-question)
 [^2]: Richard Nordquist,<br/>[The Cooperative Principle in Conversation](https://www.thoughtco.com/cooperative-principle-conversation-1689928)
 [^3]: Buster Benson,<br/>[Why Are We Yelling?](https://busterbenson.com/whyareweyelling/)
-[^4]: [Revised Bloom's Taxonomy](https://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy/)
+[^4]: CELT,<br/>[Revised Bloom's Taxonomy](https://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy/)
 [^5]: Hugging Face,<br/>[Write With Transformer](https://transformer.huggingface.co/)
 [^6]: John Hattie & Helen Timperley,<br/>[The Power of Feedback](http://mrbartonmaths.com/resourcesnew/8.%20Research/Marking%20and%20Feedback/The%20Power%20of%20Feedback.pdf)
