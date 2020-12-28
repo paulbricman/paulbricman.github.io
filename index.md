@@ -55,7 +55,7 @@ My intended contribution to this space is to lead by example. To this end, I am:
 
 Technological determinism refers to the seemingly predictible development of technology across measures like compute costs.[^17] Based on such observations, it's tempting to blindly subscribe to the idea that course-correcting our technological trajectory is impossible. Indeed, it's shaped by commercial, ideological, and social imperatives, but these aren't immutable either. They can also be shaped.
 
-Not only is challenging our technological trajectory possible, but it's also useful. The practice of design fiction offers us a genuine framework for peeking into possible futures, shedding light on both opportunities and pitfalls.[^18] By shaking off our disbelief about change, speculative practices remind us that the future is malleable, and in doing so empower us.
+Not only is challenging our technological trajectory possible, but it's also useful. The practice of design fiction offers us a genuine framework for peeking into possible futures, shedding light on both opportunities and pitfalls.[^18] By shaking off our disbelief about change, speculative practices remind us that the future is malleable, and in doing so empower us.[^19]
 
 To this end, I am:
 
@@ -81,4 +81,5 @@ To this end, I am:
 [^15]: Ethereum,<br/>[Cryptocurrency](https://ethereum.org/en/)
 [^16]: Git,<br/>[Open source VCS](https://git-scm.com/)
 [^17]: Ray Kurzweil,<br/>[The Age of Spiritual Machines](https://www.goodreads.com/book/show/83533.The_Age_of_Spiritual_Machines)
-[^18]: Anthony Dunne & Fiona Raby,<br/>[Speculative Everything](https://www.goodreads.com/book/show/17756296-speculative-everything)
+[^18]: Julian Bleecker,<br/>[Design Fiction](https://www.youtube.com/watch?v=iH8X6Bcs7w8)
+[^19]: Anthony Dunne & Fiona Raby,<br/>[Speculative Everything](https://www.goodreads.com/book/show/17756296-speculative-everything)
