@@ -288,11 +288,11 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 
 ## Contributions
 
-1. The idea that semantic embeddings can be directly used to build tools for thought, rather than only as raw ingredients in downstream machine learning tasks.
+1. The idea that semantic embeddings -- specifically word embeddings -- can be directly used to build tools for thought, rather than only as raw ingredients in downstream machine learning tasks.
 
 2. The idea that mental models can be formalized as constellations of semantic embeddings in semantic space.
 
-3. The formalization and implementation of Span and Match. The other conceptual operations (i.e. Field, Mix, Shift) were already formalized and implemented in earlier work, one way or another. For example, Mix is based on additive composition of semantic embeddings.[^8] However, these operations were largely used to measure the quality of semantic embeddings for downstream tasks, rather than as first-hand tools.
+3. The formalization and implementation of Span and Match. The other conceptual tools (i.e. Field, Mix, Shift) were already formalized and implemented in earlier work, one way or another. For example, Mix is based on additive composition of semantic embeddings.[^8] However, these operations were largely used to measure the quality of semantic embeddings for downstream tasks, rather than as first-hand tools.
 
 4. The strengthened link between Photoshop and more radical tools for thought, through Photoshop-like names and descriptions. Photoshop has been extensively used as a prime example of tools for thought before, but the current work explores new ways of reinforcing this connection.
 
