@@ -42,7 +42,7 @@ In this it resembles a program such as Photoshop or a spreadsheet or 3D graphics
 
 However, tools like Photoshop don't directly work with colors, gradients, or patterns. At the lowest level, editing photos boils down to manipulating matrices of numbers. In order to build powerful tools for conceptual thinking, we might need an analogous way to fix concepts into firm numerical foundations which we could then easily manipulate.
 
-Fortunately, there already are ways of doing that. The field of natural language processing has long used semantic embeddings as the numerical substrate of discrete concepts. Among others, they're used in search engines to understand queries, in chatbots to understand conversations, and in translation systems to understand foreign languages. Think of semantic embeddings as numeric coordinates. They don't describe locations in a physical space, like geographic coordinates, but locations in a space of meanings, a semantic space.[^4]
+Fortunately, there already are ways of doing that. The field of natural language processing has long used semantic embeddings as the numerical substrate of discrete concepts.[^4] Among others, they're used in search engines to understand queries, in chatbots to understand conversations, and in translation systems to understand foreign languages. Think of semantic embeddings as numeric coordinates. They don't describe locations in a physical space, like geographic coordinates, but locations in a space of meanings, a semantic space.[^5]
 
 An intuitive understanding of how semantic embeddings are obtained is beyond the scope of this article, but what is relevant for our current purposes can be captured in a few neat properties exhibited by the semantic space:
 
@@ -112,7 +112,7 @@ Finds concepts whose embeddings are the most similar to the average embedding of
 ```
 
 {: .info }
-Conceptual blending has been described as the process of partially projecting multiple concepts onto a blended mental space.[^5] If this explanation seems largely circular, that's because it is. Still, this tool can be used to perform this ill-defined but intuitive task.
+Conceptual blending has been described as the process of partially projecting multiple concepts onto a blended mental space.[^6] If this explanation seems largely circular, that's because it is. Still, this tool can be used to perform this ill-defined but intuitive task.
 
 ---
 
@@ -219,7 +219,7 @@ Finds sets of concepts whose internal differences in embeddings are the most sim
 ```
 
 {: .info }
-Inspiration for this tool comes from a science fiction novel[^6] in which the main character needs to broadcast the location of a celestial body to an unknown civilization. However, given the lack of absolute reference frames available, he broadcasts the position of the celestial body relative to several neighboring ones. Here, because the dimensions of the semantic space aren't inherently meaningful, a mental model is expressed as a set of distances from the first concept to each subsequent concept, forming a *constellation* of concepts. The Golden Records use a similar scheme to pinpoint the Earth.[^7]
+Inspiration for this tool comes from a science fiction novel[^7] in which the main character needs to broadcast the location of a celestial body to an unknown civilization. However, given the lack of absolute reference frames available, he broadcasts the position of the celestial body relative to several neighboring ones. Here, because the dimensions of the semantic space aren't inherently meaningful, a mental model is expressed as a set of distances from the first concept to each subsequent concept, forming a *constellation* of concepts. The Golden Records use a similar scheme to pinpoint the Earth.[^8]
 
 ---
 
@@ -282,7 +282,7 @@ The current software implementation has been developed for experimental purposes
 
 ### Better embeddings
 {: .no_toc}
-Not all semantic embeddings are created equal. The ones used in this prototype have been obtained through a relatively rudimentary approach. Newer techniques capture meaning more effectively and with less bias.[^4]
+Not all semantic embeddings are created equal. The ones used in this prototype have been obtained through a relatively rudimentary approach. Newer techniques capture meaning more effectively and with less bias.[^5]
 
 ---
 
@@ -292,11 +292,11 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 
 2. The idea that mental models can be formalized as constellations of semantic embeddings in semantic space.
 
-3. The formalization and implementation of Span and Match. The other conceptual tools (i.e. Field, Mix, Shift) were already formalized and implemented in earlier work, one way or another. For example, Mix is based on additive composition of semantic embeddings.[^8] However, these operations were largely used to measure the quality of semantic embeddings for downstream tasks, rather than as first-hand tools.
+3. The formalization and implementation of Span and Match. The other conceptual tools (i.e. Field, Mix, Shift) were already formalized and implemented in earlier work, one way or another. For example, Mix is based on additive composition of semantic embeddings.[^9] However, these operations were largely used to measure the quality of semantic embeddings for downstream tasks, rather than as first-hand tools.
 
 4. The strengthened link between Photoshop and more radical tools for thought, through Photoshop-like names and descriptions. Photoshop has been extensively used as a prime example of tools for thought before, but the current work explores new ways of reinforcing this connection.
 
-5. The name Semantica for a tool for conceptual thinking has been inspired by the name Mathematica, used to describe a tool for computational thinking.[^9]
+5. The name Semantica for a tool for conceptual thinking has been inspired by the name Mathematica, used to describe a tool for computational thinking.[^10]
 
 ---
 
@@ -304,9 +304,10 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 [^1]: Farnam Street,<br/>[Mental Models](https://fs.blog/mental-models/)
 [^2]: Marvin Minsky,<br/>[The Society of Mind](https://www.goodreads.com/book/show/326790.The_Society_of_Mind)
 [^3]: Shan Carter & Michael Nielsen,<br/>[Using Artificial Intelligence to Augment Human Intelligence](https://distill.pub/2017/aia/)
-[^4]: Daniel Jurafsky & James Martin,<br/>[Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/6.pdf)
-[^5]: Gilles Fauconnier,<br/>[The Encyclopedia of the Social and Behavioral Sciences](http://www.cogsci.ucsd.edu/~faucon/BEIJING/blending.pdf)
-[^6]: Cixin Liu,<br/>[The Three-Body Problem Trilogy](https://www.goodreads.com/book/show/34569357-remembrance-of-earth-s-past?ac=1&from_search=true&qid=5NN7oSm54Y&rank=2)
-[^7]: NASA,<br/>[The Golden Record Cover](https://voyager.jpl.nasa.gov/golden-record/golden-record-cover/)
-[^8]: Mikolov et al.,<br/>[Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf)
-[^9]: Stephen Wolfram,<br/>[Computational Universe](https://www.youtube.com/watch?v=P7kX7BuHSFI)
+[^4]: Christopher Olah,<br/>[Deep Learning, NLP, and Representations](https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/)
+[^5]: Daniel Jurafsky & James Martin,<br/>[Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/6.pdf)
+[^6]: Gilles Fauconnier,<br/>[The Encyclopedia of the Social and Behavioral Sciences](http://www.cogsci.ucsd.edu/~faucon/BEIJING/blending.pdf)
+[^7]: Cixin Liu,<br/>[The Three-Body Problem Trilogy](https://www.goodreads.com/book/show/34569357-remembrance-of-earth-s-past?ac=1&from_search=true&qid=5NN7oSm54Y&rank=2)
+[^8]: NASA,<br/>[The Golden Record Cover](https://voyager.jpl.nasa.gov/golden-record/golden-record-cover/)
+[^9]: Mikolov et al.,<br/>[Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf)
+[^10]: Stephen Wolfram,<br/>[Computational Universe](https://www.youtube.com/watch?v=P7kX7BuHSFI)
