@@ -53,7 +53,7 @@ My intended contribution to this space is to lead by example. To this end, I am:
 
 ### 3. The future is malleable.
 
-Technological determinism refers to the seemingly predictable development of technology across measures like compute costs.[^17] Based on such observations, it's tempting to blindly subscribe to the idea that course-correcting our technological trajectory is impossible. Indeed, it's shaped by commercial, ideological, and social imperatives, but these aren't immutable either. They can also be shaped.
+Technological determinism refers to the seemingly predictable development of technology across measures like compute costs.[^17] Based on such observations, it's tempting to blindly subscribe to the idea that course-correcting our technological trajectory is impossible. Indeed, this trajectory is shaped by commercial, ideological, and social imperatives, but these aren't immutable either. They can also be shaped.
 
 Not only is challenging our technological trajectory possible, but it's also useful. The practice of design fiction offers us a genuine framework for peeking into possible futures, shedding light on both opportunities and pitfalls.[^18] By shaking off our disbelief about change, speculative practices remind us that the future is malleable, and in doing so empower us.[^19]
 
