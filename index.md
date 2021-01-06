@@ -66,7 +66,7 @@ To this end, I am:
 {: .text-right }
 [^1]: Richard Hamming,<br/>[The Unreasonable Effectiveness of Mathematics](https://www.dartmouth.edu/~matc/MathDrama/reading/Hamming.html).
 [^2]: Bret Victor,<br/>[Media for Thinking the Unthinkable](http://worrydream.com/MediaForThinkingTheUnthinkable/).
-[^3]: Jacob Alonso & Dan Plechaty,<br/>[A short visual history of charts and graphs](https://seeingcomplexity.wordpress.com/2011/02/03/a-short-visual-history-of-charts-and-graphs/)
+[^3]: Bret Victor,<br/>[The Humane Representation of Thought](http://worrydream.com/#!/TheHumaneRepresentationOfThoughtTalk)
 [^4]: John Vervaeke,<br/>[Flow, Metaphor, and the Axial Revolution](https://www.youtube.com/watch?v=aF9HeXg65AE)
 [^5]: Andy Mathushak & Michael Nielsen,<br/>[How can we develop transformative tools for thought?](https://numinous.productions/ttft/)
 [^6]: Michael Nielsen,<br/>[Reinventing explanation](https://michaelnielsen.org/reinventing_explanation/index.html)
