@@ -1,7 +1,7 @@
 ---
 layout: default
 title: K-Probes
-nav_order: 2
+nav_order: 3
 parent: Tools
 description: "Promoting critical thinking through open-ended questions."
 ---
