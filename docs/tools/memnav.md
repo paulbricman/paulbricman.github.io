@@ -26,7 +26,7 @@ Expanding propositional memory through knowledge mining.
 
 ## Knowledge Mining
 
-Most of us routinely use search engines to navigate the internet.
+Most of us routinely use search engines to navigate the internet. They help us find information so quickly and accurately that it's hard to imagine browsing the internet without them. This convenience even makes searchable information appear less worthy of being committed to memory.[^1]
 
 ## Machine-Readable Thought
 
@@ -38,7 +38,7 @@ Now that the memories are in a machine-readable format, we can start navigating 
 
 ### Semantic Search
 
-Internet search engines aren't constrained to the *exact* words in your query.
+Internet search engines aren't constrained to the *exact* words in your query. If a page refers to the same thing as your query, but with a slightly different wording, it's still likely to show up in the search results.
 
 ### Question Answering
 
@@ -56,11 +56,11 @@ It might be useful to go beyond the technicalities and reflect on the very ident
 
 ### Search Engines
 
-This is the view behind the opening paragraph. MemNav can intuitively be likened to a search engine.
+This is the view behind the opening paragraph. MemNav can intuitively be likened to a search engine. However, instead of searching the internet, it searches your memories.
 
 ### Expert Systems
 
-Expert systems had been a success story of early AI research. Take the expertise of a doctor, embed it into propositional statements and inference rules, and you get a system which can give diagnostics with decent accuracy. Do the same with the expertise of a judge, and you get a system capable of giving rudimentary verdicts in court. 
+Expert systems had been a success story of early AI research. Take the expertise of a doctor, embed it into propositional statements and inference rules, and you get a system which can give diagnostics with decent accuracy. Do the same with the expertise of a judge, and you get a system capable of giving rudimentary verdicts in court. MemNav can also be seen as an expert system. It's not an expert in medicine or law, but an expert in *you*. An expert in your thought process. You first embed your expertise into it, and then work with the it.
 
 ### Exosomatic Memory
 
@@ -71,3 +71,5 @@ When your computer runs low on storage, you might move a few files to an externa
 When a piece of software exposes an API, it offers an interface to third-party software as a means of programmatically interacting with it.
 
 ## Further Steps
+
+[^1]: Sparrow et al.,<br/>[Cognitive Consequences on Having Information at Our Fingertips](https://scholar.harvard.edu/files/dwegner/files/sparrow_et_al._2011.pdf)
