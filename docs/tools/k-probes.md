@@ -157,6 +157,16 @@ The following is a short excerpt discussing the technology behind [this other to
 
 ---
 
+## Random Sample
+
+Use the following button to randomly sample one probe from the collection.
+
+<button class="btn btn-primary" onclick="newProbe()">New Probe</button>
+<div id="probeDisplay"></div>
+<script src="../../../assets/js/k-probes.js"></script>
+
+---
+
 ## Final Thoughts
 
 The simple nature of this tool might be deceiving. Its beauty lies not in its codebase, but in the way it builds on quirks of the human mind. Pragmatics helps with coherence. Instinctive elaboration triggers an automatic drive for engaging with the knowledge probes. The conversational medium even makes the experience feel social.
