@@ -11,7 +11,7 @@ WORK IN PROGRESS
 # Memory Navigator
 {: .no_toc }
 
-Expanding propositional memory through knowledge mining.
+Expanding propositional memory through text mining.
 {: .fs-6 .fw-300 .text-left }
 
 [View Code](https://github.com/paubric/MemNav){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -24,9 +24,11 @@ Expanding propositional memory through knowledge mining.
 
 ---
 
-## Knowledge Mining
+## Text Mining
 
-Most of us routinely use search engines to navigate the internet. They help us find information so quickly and accurately that it's hard to imagine browsing the internet without them. This convenience even makes searchable information appear less worthy of being committed to memory.[^1]
+Many of us routinely use search engines to navigate the internet. They help us find information so quickly and accurately that it's hard to imagine browsing the internet without them. This convenience even makes us perceive searchable information as less worthy of committing to memory.[^1]
+
+Text mining is one of the core technologies behind search engines. By extracting meaning from text, queries can easily be matched to appropriate pages. To get a sense of why language understanding is so important, imagine trying to figure out the details of preparing a meal using a cookbook written in a foreign language. Without text mining, search engines would similarly be limited to only finding exact string matches, with no other means of navigating the rich body of knowledge they have at their disposal.
 
 ## Machine-Readable Thought
 
@@ -68,7 +70,7 @@ When your computer runs low on storage, you might move a few files to an externa
 
 ### The Mind's API
 
-When a piece of software exposes an API, it offers an interface to third-party software as a means of programmatically interacting with it.
+When a piece of software exposes an API, it offers an interface to third-party software as a means of programmatically interacting with it. MemNav can also be seen as an API. It offers programmatic access to your thoughts, enabling an entire suite of tools to integrate with it. Of course, this API is currently read-only, as it only offers indirect access to your thought process, through the text artifacts. Your actual memory is separated from MemNav as a result of the one-directional process of creating the artifacts. However, the processed artifacts may get closer to their authors over time, eventually leading to authors identifying with them.  
 
 ## Further Steps
 
