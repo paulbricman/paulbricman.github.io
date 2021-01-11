@@ -4,7 +4,7 @@ title: MemNav
 nav_order: 2
 parent: Tools
 description: "Expanding propositional memory through knowledge mining."
-published: True
+published: False
 ---
 
 WORK IN PROGRESS
