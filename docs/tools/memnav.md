@@ -4,7 +4,7 @@ title: MemNav
 nav_order: 2
 parent: Tools
 description: "Expanding propositional memory through knowledge mining."
-published: False
+published: True
 ---
 
 WORK IN PROGRESS
@@ -30,13 +30,13 @@ Many of us routinely use search engines to navigate the internet. They help us f
 
 Text mining is one of the core technologies behind search engines. By extracting meaning from text, they can easily match queries to appropriate pages. To get a sense of why language understanding is so important, imagine trying to find the details of preparing a meal in a cookbook written in a foreign language. Without text mining, search engines would similarly be limited to only finding exact string matches, with no other means of navigating the rich body of knowledge they have at their disposal.
 
-Due in large part to its extensive business value, text mining is a relatively mature technology. From question answering to summarization, state-of-the-art solutions are proposed every few months.[^2] Fortunately, this technology can be exapted in order to support powerful tools for thought.
+Due in large part to its extensive business value, text mining is a relatively mature technology. From question answering to summarization, state-of-the-art solutions are proposed every few months.[^2] Fortunately, this technology can be exapted in order to support powerful tools for thought. What if we could repurpose text mining techniques in order to effectively navigate our memories, rather than meal recipes?
 
-## Machine-Readable Thought
+## Machine-Readable Memories
 
-However, in order to create tools capable of navigating our memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and activities, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a rich body of knowledge which spans months, years, or even decades.
+In order to create tools capable of navigating our memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a rich body of knowledge which spans months, years, or even decades.
 
-Usually, a dairy mainly consists of text.
+Diaries mainly consist of text. Luckily, machines are already fluent in text, as proven by the search engines praised above. This means that journalling is a very good candidate for supplying memories in a machine-readable format. In order to perform text mining, simply substitute web pages with diary entries, and let the algorithms do their job.
 
 ## Design
 
@@ -44,7 +44,7 @@ Now that the memories are in a machine-readable format, we can start navigating 
 
 ### Semantic Search
 
-Internet search engines aren't constrained to the *exact* words in your query. If a page refers to the same thing as your query, but with a slightly different wording, it's still likely to show up in the search results.
+Internet search engines aren't constrained to the *exact* words in your query. If a page refers to the same thing as your query, but with a slightly different wording, then the page is still likely to show up in the search results.
 
 ### Question Answering
 
@@ -52,7 +52,7 @@ When navigating the internet, you might often want a quick answer to a question,
 
 ### Summarization
 
-Maybe you're not looking for an explicit detail, but you're trying to get the general gist of a subject.
+Maybe you're not looking for an explicit detail, but you're trying to get the general *gist* of a subject.
 
 ## Samples
 
@@ -62,15 +62,15 @@ It might be useful to go beyond the technicalities and reflect on the very ident
 
 ### Search Engines
 
-This is the view behind the opening paragraph. MemNav can intuitively be likened to a search engine. However, instead of searching the internet, it searches your memories.
+This is the view behind the opening paragraph. MemNav can intuitively be likened to a search engine. However, instead of searching the internet, it searches your memories, by using diary entries as a proxy.
 
 ### Expert Systems
 
-Expert systems had been a success story of early AI research. Take the expertise of a doctor, embed it into propositional statements and inference rules, and you get a system which can give diagnostics with decent accuracy. Do the same with the expertise of a judge, and you get a system capable of giving rudimentary verdicts in court. MemNav can also be seen as an expert system. It's not an expert in medicine or law, but an expert in *you*. An expert in your thought process. You first embed your expertise into it, and then work with the it.
+Expert systems had been a success story of early AI research. Take the expertise of a doctor, embed it into propositional statements and inference rules, and you get a system which can give diagnostics with decent accuracy. Do the same with the expertise of a judge, and you get a system capable of giving rudimentary verdicts in court. MemNav can also be seen as an expert system. It's not an expert in medicine or law, but an expert in *you*. An expert in your thought process. You first embed your expertise in it, and then work with the it.
 
 ### Exosomatic Memory
 
-When your computer runs low on storage, you might move a few files to an external drive or to the cloud. 
+When your computer runs low on storage, you might move a few files to an external drive or to the cloud. What happens when your memory is overloaded with tasks, events, plans, ideas, and so on? You might offload that burden onto convenient task managers, calendars, planners, notebooks, and so on. Those can be collectively refered to as exosomatic memory systems (i.e. memory systems located outside the body). MemNav can also be considered an instance of such a system.
 
 ### The Mind's API
 
