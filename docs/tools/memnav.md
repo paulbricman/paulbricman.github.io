@@ -26,13 +26,17 @@ Expanding propositional memory through text mining.
 
 ## Text Mining
 
-Many of us routinely use search engines to navigate the internet. They help us find information so quickly and accurately that it's hard to imagine browsing the internet without them. This convenience even makes us perceive searchable information as less worthy of committing to memory.[^1]
+Many of us routinely use search engines to navigate the internet. They help us find information so quickly and accurately that it's hard to imagine browsing the internet without them. Their convenience even makes us perceive searchable information as less worthy of committing to memory.[^1]
 
-Text mining is one of the core technologies behind search engines. By extracting meaning from text, queries can easily be matched to appropriate pages. To get a sense of why language understanding is so important, imagine trying to figure out the details of preparing a meal using a cookbook written in a foreign language. Without text mining, search engines would similarly be limited to only finding exact string matches, with no other means of navigating the rich body of knowledge they have at their disposal.
+Text mining is one of the core technologies behind search engines. By extracting meaning from text, they can easily match queries to appropriate pages. To get a sense of why language understanding is so important, imagine trying to find the details of preparing a meal in a cookbook written in a foreign language. Without text mining, search engines would similarly be limited to only finding exact string matches, with no other means of navigating the rich body of knowledge they have at their disposal.
+
+Due in large part to its extensive business value, text mining is a relatively mature technology. From question answering to summarization, state-of-the-art solutions are proposed every few months.[^2] Fortunately, this technology can be exapted in order to support powerful tools for thought.
 
 ## Machine-Readable Thought
 
-However, in order to create tools capable of navigating our memories, we first need to convert them into a machine-readable format.
+However, in order to create tools capable of navigating our memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and activities, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a rich body of knowledge which spans months, years, or even decades.
+
+Usually, a dairy mainly consists of text.
 
 ## Design
 
@@ -75,3 +79,4 @@ When a piece of software exposes an API, it offers an interface to third-party s
 ## Further Steps
 
 [^1]: Sparrow et al.,<br/>[Cognitive Consequences on Having Information at Our Fingertips](https://scholar.harvard.edu/files/dwegner/files/sparrow_et_al._2011.pdf)
+[^2]: Papers with Code,<br/>[Language Modelling Performance over Time](https://paperswithcode.com/sota/language-modelling-on-penn-treebank-word)
