@@ -54,8 +54,6 @@ When navigating the internet, you might often want a quick answer to a question,
 
 Maybe you're not looking for an explicit detail, but you're trying to get the general *gist* of a subject.
 
-## Samples
-
 ## Paradigms
 
 It might be useful to go beyond the technicalities and reflect on the very identity of this project. By taking various perspectives on it, we can get a better sense of the interplay between tools for thought and existing technical frameworks.
@@ -64,7 +62,7 @@ It might be useful to go beyond the technicalities and reflect on the very ident
 
 This is the view behind the opening paragraph. MemNav can intuitively be likened to a search engine. However, instead of searching the internet, it searches memories. It achieves this by using diary entries as a proxy.
 
-If internet search engines already nudge us into neglecting searchable information, it might be important to investigate the psycholigcal effects of using such mnemonic engines, bringing up debate on the line between voluntary usage and dependence. The fragility of human memory is actually useful in many ways. It supports all sorts of efficient mental shortcuts. For example, the availability heuristic piggybacks on our forgetfulness and helps us gauge the frequency of an event effectively. By simply using the *ease* of remembering a few occurences as a proxy, it side-steps the need of actually considering *all* event instances. It turns out that many of our mental quirks are better described as double-edged swords, rather than down-right flaws. Simply making away with them might lead to unintended consequences.
+If internet search engines already nudge us into neglecting searchable information, it might be important to investigate the psychological effects of using such mnemonic engines, bringing up debate on the line between voluntary usage and dependence. The fragility of human memory is actually useful in many ways. It supports all sorts of efficient mental shortcuts. For example, the availability heuristic piggybacks on our forgetfulness and helps us gauge the frequency of an event effectively. By simply using the *ease* of remembering a few occurences as a proxy, it side-steps the need of actually considering *all* event instances. It turns out that many of our mental quirks are better described as double-edged swords, rather than down-right flaws. Simply making away with them might lead to unintended consequences.
 
 Additionally, if internet search engines already grant varying degrees of exposure to items based in part on financial contributions, then what would happen if third-party memory systems would also follow financial incentives? Which memories would be profitable, and therefore more likely to be remembered? Such daunting prospects further support the need for humane values being embedded in technology.
 
