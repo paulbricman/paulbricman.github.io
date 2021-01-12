@@ -4,7 +4,7 @@ title: MemNav
 nav_order: 2
 parent: Tools
 description: "Expanding propositional memory through knowledge mining."
-published: False
+published: True
 ---
 
 WORK IN PROGRESS
@@ -68,11 +68,17 @@ Additionally, if internet search engines already grant varying degrees of exposu
 
 ### Expert Systems
 
-Expert systems had been a success story of early AI research. Take the expertise of a doctor, embed it into propositional statements and inference rules, and you get a system which can give diagnostics with decent accuracy. Do the same with the expertise of a judge, and you get a system capable of giving rudimentary verdicts in court. MemNav can also be seen as an expert system. It's not an expert in medicine or law, but an expert in *you*. An expert in your thought process. You first embed your expertise in it, and then work with the it.
+Early AI research had a strong focus on expert systems. Take the expertise of a doctor, embed it into propositional statements and inference rules, and you get a system which can give diagnostics with decent accuracy. Do the same with the expertise of a judge, and you get a system capable of giving rudimentary verdicts in court. MemNav can also be seen as an expert system. It's not an expert in medicine or law, but an expert in *you*. An expert in your thought process. You first embed your expertise in it, and then work with the it.
+
+How does it feel to outsource such highly personal expertise to a machine? How does it feel to interact with an expert in your thought process other than yourself? Would you allow it to freely interact with others on your behalf, as a matter of convenience? Granting my significant other experimental access to my MemNav already feels peculiar. Outsourcing more mental faculties to machines and integrating more third-party components into our thinking will force us to ask such questions increasingly often.
 
 ### Exosomatic Memory
 
 When your computer runs low on storage, you might move a few files to an external drive or to the cloud. What happens when your memory is overloaded with tasks, events, plans, ideas, and so on? You might offload that burden onto convenient task managers, calendars, planners, notebooks, and so on. Those can be collectively refered to as exosomatic memory systems (i.e. memory systems located outside the body). MemNav can also be considered an instance of such a system.
+
+However, when you happen to expand the storage capacity of your device, say by upgrading your hard-drive or by purchasing cloud storage, more often than not you often stop being particularly cautious about your memory usage. An imperfect memory system might force you to focus on the right things, in a way a set of storage buckets replicated across multiple server farms might not.
+
+Another thing to consider is the changing relation between memory acquisition and retrieval. The way we learn things strongly influences the way we remember them. Knitting together a tight network of associations has been shown to foster retrieval. However, if memories are stored in a machine-readable format, then they may be subjected to a wide range of programmatic transformations. Attach definitions to terms. Break blocks of text into atomic interconnected items. Form new links in the semantic network. Those possibilities might pave the way for new educational practices.
 
 ### The Mind's API
 
