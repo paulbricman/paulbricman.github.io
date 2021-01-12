@@ -28,19 +28,19 @@ Expanding propositional memory through text mining.
 
 Many of us routinely use search engines to navigate the internet. They help us find information so quickly and accurately that it's hard to imagine browsing the internet without them. Their convenience even makes us perceive searchable information as less worthy of committing to memory.[^1]
 
-Text mining is one of the core technologies behind search engines. By extracting meaning from text, they can easily match queries to appropriate pages. To get a sense of why language understanding is so important, imagine trying to find the details of preparing a meal in a cookbook written in a foreign language. Without text mining, search engines would similarly be limited to only finding exact string matches, with no other means of navigating the rich body of knowledge they have at their disposal.
+Text mining is one of the core technologies behind search engines. By extracting meaning from text, search engines can easily match queries to appropriate pages. To get a sense of why language understanding is so important, imagine trying to find the details of preparing a meal in a cookbook written in a foreign language. Without text mining, search engines would similarly be limited to only finding exact string matches, with no other means of navigating the rich body of knowledge they have at their disposal.
 
-Due in large part to its extensive business value, text mining is a relatively mature technology. From question answering to summarization, state-of-the-art solutions are proposed every few months.[^2] Fortunately, this technology can be exapted in order to support powerful tools for thought. What if we could repurpose text mining techniques in order to effectively navigate our memories, rather than meal recipes?
+Due in large part to its extensive business value, text mining is a relatively mature technology. From question answering to summarization, state-of-the-art solutions are proposed every few months.[^2] Fortunately, this technology can be exapted in order to support powerful tools for thought. What if we could use text mining techniques to navigate memories, rather than meal recipes?
 
 ## Machine-Readable Memories
 
-In order to create tools capable of navigating our memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a rich body of knowledge which spans months, years, or even decades.
+In order to create tools capable of navigating memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a rich body of knowledge which spans months, years, or even decades.
 
 Diaries mainly consist of text. Luckily, machines are already fluent in text, as proven by the search engines praised above. This means that journalling is a very good candidate for supplying memories in a machine-readable format. In order to perform text mining, simply substitute web pages with diary entries, and let the algorithms do their job.
 
 ## Design
 
-Now that the memories are in a machine-readable format, we can start navigating them through conventional knowledge mining techniques.
+Now that the memories are in a machine-readable format, we can start navigating them through conventional text mining techniques.
 
 ### Semantic Search
 
@@ -62,7 +62,11 @@ It might be useful to go beyond the technicalities and reflect on the very ident
 
 ### Search Engines
 
-This is the view behind the opening paragraph. MemNav can intuitively be likened to a search engine. However, instead of searching the internet, it searches your memories, by using diary entries as a proxy.
+This is the view behind the opening paragraph. MemNav can intuitively be likened to a search engine. However, instead of searching the internet, it searches memories. It achieves this by using diary entries as a proxy.
+
+If internet search engines already nudge us into neglecting searchable information, it might be important to investigate the psycholigcal effects of using such mnemonic engines, bringing up debate on the line between voluntary usage and dependence. The fragility of human memory is actually useful in many ways. It supports all sorts of efficient mental shortcuts. For example, the availability heuristic piggybacks on our forgetfulness and helps us gauge the frequency of an event effectively. By simply using the *ease* of remembering a few occurences as a proxy, it side-steps the need of actually considering *all* event instances. It turns out that many of our mental quirks are better described as double-edged swords, rather than down-right flaws. Simply making away with them might lead to unintended consequences.
+
+Additionally, if internet search engines already grant varying degrees of exposure to items based in part on financial contributions, then what would happen if third-party memory systems would also follow financial incentives? Which memories would be profitable, and therefore more likely to be remembered? Such daunting prospects further support the need for humane values being embedded in technology.
 
 ### Expert Systems
 
