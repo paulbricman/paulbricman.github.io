@@ -29,17 +29,21 @@ Many of us routinely use search engines to navigate the internet. They help us f
 
 Text mining is one of the core technologies behind search engines. By extracting meaning from text, search engines can easily match queries to appropriate pages. To get a sense of why language understanding is so important, imagine trying to find the details of preparing a meal in a cookbook written in a foreign language. Without text mining, search engines would similarly be limited to exact string matches, with no other means of navigating the rich body of knowledge they have at their disposal.
 
-Due in large part to its extensive business value, text mining is a relatively mature technology. From question answering to summarization, state-of-the-art solutions are proposed every few months.[^2] What if we could leverage this traction, and repurpose this technology in order to support powerful tools for thought? In the following sections, we'll specifically explore the potential of text mining in navigating, and ultimately augmenting, human memory.
+Due in large part to its extensive business value, text mining is a relatively mature technology. From question answering to summarization, state-of-the-art solutions are proposed every few months.[^2] What if we could leverage this traction, and repurpose text mining in order to support powerful tools for thought? In the following sections, we'll specifically explore the potential of this technology in navigating, and ultimately augmenting, human memory.
 
 ## Machine-Readable Memories
 
 In order to create tools capable of navigating memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a comprehensive body of knowledge which spans months, years, or even decades.
 
-Diaries mainly consist of text. As we've previously seen, machines are already fluent in text. This means that journalling is a very good candidate for supplying our future system with memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
+Diaries mainly consist of text. As we've seen previously, machines are already fluent in text. This means that journalling is a very good candidate for supplying our future system with memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
 
 ## Design
 
-Now that we have a way of converting memories into a machine-readable format, we can start implementing the actual features of the memory navigator, or MemNav for short.
+Now that we have a way of converting memories into a machine-readable format, we can start implementing the actual features of the memory navigator, or MemNav for short. Illustrative samples from my own MemNav instance accompany each command. 
+
+{: .code-block }
+    >>> from memnav import MemNav
+    >>> mn = MemNav('../MorningPages')
 
 ### Semantic Search
 
@@ -56,7 +60,7 @@ Internet search engines aren't constrained to the exact words in your query. If 
     He suggested that we perform a deconvolution on the fMRI data in order to provide a better target for the model. But, what if we include the BOLD response convolution as the final step of the model and make it so that it has no learnable parameters. That's interesting because the deconvolution operation per se doesn't have a clear solution.
 
 {: .info }
-Notice how the output of the second command contains none of the exact words present in the query. Finding all slight variations by hand would have otherwise been tedious.
+Notice how the output of the second command contains none of the exact words present in the query. Finding all slight variations by hand would have been tedious.
 
 {: .info }
 The summarization and semantic search samples might look similar. In reality, semantic search returns multiple results, one of which is included here as an illustration.
