@@ -46,13 +46,40 @@ Now that we have a way of converting memories into a machine-readable format, we
 
 Internet search engines aren't constrained to the exact words in your query. If a page refers to the same thing as your query, but with a slightly different wording, then the page is still likely to show up in the search results. MemNav uses similar techniques to help users retrieve information beyond a simple *Find in text* look-up.
 
+mn.search('embodied tools for thought')
+There was this announcement about a course on embodied critical thinking, which was at an intersection of philosophy, cognitive science, AI, and seems to be quite relevant for the tools for thought direction I chose recently. Yeah, actually I think I might apply. There's also a summer school in Iceland or something.
+
+mn.search('text mining memories')
+However, the propositional memory miner may change that, repurposing this whole thing, making it more valuable. Really curious to see whether that will result in anything useful or whether it will be just a witty hack of repurposing SOTA NLP models.
+
+mn.search('fMRI data processing')
+He suggested that we perform a deconvolution on the fMRI data in order to provide a better target for the model. But, what if we include the BOLD response convolution as the final step of the model and make it so that it has no learnable parameters. That's interesting because the deconvolution operation per se doesn't have a clear solution.
+
 ### Question Answering
 
 When navigating the internet, you might often want a quick answer to a question, rather than a full-blown article on the subject. By systematically identifying relevant phrases in diary entries, MemNav can reliably answer questions about one's previous thoughts, ideas, and experiences.
 
+mn.ask('Who did I spend the last day of 2020 with?')
+Bea
+
+mn.ask('Why would k-probes be useful?')
+To reflect on things I learned that day
+
+mn.ask('What does exosomatic mean?')
+Outside the body
+
 ### Summarization
 
 Maybe you're not looking for an explicit detail, but you're trying to get the general *gist* of a subject. By choosing a few sentences which together convey the most information, MemNav provides users with a condensed overview of what they're interested in.
+
+mn.summarize('attention in humans and machines')
+What if the query, key, value metaphor used in transformers to attend to things and places was used in a cognitive architecture, building a cognitive model for attention. The transformer is based on a couple forms of attention, but how does that relate to attention in humans and animals?
+
+mn.summarize('dust theory')
+Egan is simply mindblowing. This idea of Dust Theory is deep, it's powerful. And the point is that this ever expanding computer being run in a cellular automaton would run based on dust. Based on patterns spread out across time and space. But this is not all! In the book they talk about such a representation.
+
+mn.summarize('grading assignments')
+It's mostly the gruntwork of grading and watching and attendance and so on. Not fulfilling at all. It's still only a part time job. But the part about grading homework isn't my favorite thing ever, it is the whole idea of selling time for money again. And I'm pretty sure homework can be redesigned so that it can be more efficiently graded, even automatically.
 
 ## Paradigms
 
