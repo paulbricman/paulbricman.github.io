@@ -4,7 +4,7 @@ title: MemNav
 nav_order: 2
 parent: Tools
 description: "Expanding propositional memory through knowledge mining."
-published: False
+published: True
 ---
 
 WORK IN PROGRESS
@@ -28,19 +28,19 @@ Expanding propositional memory through text mining.
 
 Many of us routinely use search engines to navigate the internet. They help us find information so quickly and accurately that it's hard to imagine browsing the internet without them. Their convenience even makes us perceive searchable information as less worthy of committing to memory.[^1]
 
-Text mining is one of the core technologies behind search engines. By extracting meaning from text, search engines can easily match queries to appropriate pages. To get a sense of why language understanding is so important, imagine trying to find the details of preparing a meal in a cookbook written in a foreign language. Without text mining, search engines would similarly be limited to only finding exact string matches, with no other means of navigating the rich body of knowledge they have at their disposal.
+Text mining is one of the core technologies behind search engines. By extracting meaning from text, search engines can easily match queries to appropriate pages. To get a sense of why language understanding is so important, imagine trying to find the details of preparing a meal in a cookbook written in a foreign language. Without text mining, search engines would similarly be limited to exact string matches, with no other means of navigating the rich body of knowledge they have at their disposal.
 
-Due in large part to its extensive business value, text mining is a relatively mature technology. From question answering to summarization, state-of-the-art solutions are proposed every few months.[^2] Fortunately, this technology can be exapted in order to support powerful tools for thought. What if we could use text mining techniques to navigate human memory by making the stream of consciousness searchable?
+Due in large part to its extensive business value, text mining is a relatively mature technology. From question answering to summarization, state-of-the-art solutions are proposed every few months.[^2] What if we could exapt this technology in order to support powerful tools for thought? In the following sections, we'll explore the potential of text mining in navigating, and ultimately augmenting, human memory.
 
 ## Machine-Readable Memories
 
-In order to create tools capable of navigating memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a rich body of knowledge which spans months, years, or even decades.
+In order to create tools capable of navigating memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a comprehensive body of knowledge which spans months, years, or even decades.
 
-Diaries mainly consist of text. Luckily, as we've previously seen, machines are already fluent in text. This means that journalling is a very good candidate for supplying memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
+Diaries mainly consist of text, and as we've previously seen, machines already are fluent in text. This means that journalling is a very good candidate for supplying memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
 
 ## Design
 
-Now that the memories are in a machine-readable format, we can start implementing the actual features of the memory navigator.
+Now that we have a way of converting memories into a machine-readable format, we can start implementing the actual features of MemNav, the memory navigator.
 
 ### Semantic Search
 
@@ -48,7 +48,7 @@ Internet search engines aren't constrained to the exact words in your query. If 
 
 ### Question Answering
 
-When navigating the internet, you might often want a quick answer to a question, rather than a full-blown article on the subject. By systematically identifying relevant phrases in diary entries, MemNav can reliably answer questions about one's previous thoughts, ideas, and stories.
+When navigating the internet, you might often want a quick answer to a question, rather than a full-blown article on the subject. By systematically identifying relevant phrases in diary entries, MemNav can reliably answer questions about one's previous thoughts, ideas, and experiences.
 
 ### Summarization
 
@@ -60,7 +60,7 @@ It might be useful to go beyond the technicalities and reflect on the very ident
 
 ### Search Engines
 
-This is the view behind the opening paragraph. MemNav can intuitively be likened to a search engine. However, instead of searching the internet, it searches memories. It achieves this by using diary entries as a proxy.
+This is the view behind the opening paragraph. MemNav can intuitively be likened to a search engine. Instead of searching the internet, it searches memories. It achieves this by using diary entries as a proxy.
 
 If internet search engines already nudge us into neglecting searchable information, it might be important to investigate the psychological effects of using such mnemonic engines, bringing up debate on the line between voluntary usage and dependence. The fragility of human memory is actually useful in many ways. It supports all sorts of clever mental shortcuts. For example, the availability heuristic piggybacks on our forgetfulness and helps us quickly gauge the frequency of an event. By simply using the *ease* of remembering a few occurences as a proxy, it side-steps the need of actually considering *all* event instances. It turns out that many of our mental quirks are better described as double-edged swords, rather than down-right flaws. Simply making away with them might lead to unintended consequences.
 
@@ -78,7 +78,7 @@ When your computer runs low on storage, you might move a few files to an externa
 
 However, when you happen to expand the storage capacity of your device, say by upgrading your local storage or by purchasing cloud storage, more often than not you stop being cautious about your memory usage. A constrained memory system might force you to focus on the right things, in a way a set of storage buckets replicated across multiple server farms might not. 
 
-Another thing to consider is the changing relation between memory acquisition and retrieval. The way we learn things strongly influences the way we remember them. For instance, knitting together a tight network of associations has been shown to foster subsequent retrieval. However, if memories are stored in a machine-readable format, then they may be subjected to a wide range of programmatic transformations. Attach definitions to terms. Break blocks of text into atomic interconnected items. Form new links in the semantic network. Those possibilities might pave the way for new educational practices.
+Another thing to consider is the changing relation between memory acquisition and retrieval. The way we learn things strongly influences the way we remember them. For instance, knitting together a tight network of associations has been shown to foster subsequent retrieval. However, if memories are stored in a machine-readable format, then they may be subjected to a wide range of programmatic transformations. Attach definitions to terms. Break text blocks into atomic interconnected items. Form new links in the semantic network. Those possibilities might pave the way for new educational practices.
 
 ### The Mind's API
 
@@ -91,11 +91,11 @@ Despite its promising performance, MemNav has several shortcomings which current
 {: .quote }
 In order to function as exosomatic memory, information retrieval systems must be so good so that retrieving information is like remembering.[^3]
 
-Second, creating the knowledge base which underlies MemNav takes time. It requires a sustained regular commitment, and may become tedious. However, future methods will likely enable more efficient ways of recording memories. Using a speech-to-text service would easily triple the rate of transcribed words per minute. Wearable and handheld devices already bring in a multimedia dimension to the endeavor. Neural interfaces might work even better.
+Second, creating the knowledge base which underlies MemNav takes time. It requires a sustained regular commitment, and may become tedious. However, future methods will likely enable more efficient ways of recording memories. Using a speech-to-text service would easily triple the rate of transcribed words per minute. Wearable and handheld devices already bring in a multimedia dimension to the endeavor. Neural interfaces might obviate the need for words entirely.
 
-Finally, there's a more nuanced issue. The linear structure of a diary might be a very poor representation of the non-linear structure of thought. The programmatic transformations mentioned previously may be crucial in better aligning the cognitive space with the information space. High-dimensional representations similar to the ones used by Semantica might be a much better fit for the task.[^4]
+Finally, there's a more nuanced issue. The linear structure of a diary might be a very poor representation of the non-linear structure of thought. The programmatic transformations mentioned previously may be crucial in better aligning the cognitive space with the information space.[^4] High-dimensional representations similar to the ones used by Semantica might be a much better fit for the task.
 
-Despite its current flaws, MemNav manages to provide an insightful vantage point on the nature and impact of future tools for thought. The reflections it supports are as valuable as the functions it enables, as it offers a platform for speculating on our desired technological trajectory.
+Despite its current flaws, MemNav manages to provide an insightful vantage point on the nature and impact of future tools for thought. The reflections it supports are as valuable as the functions it enables, as it helps us paint a picture our desired technological path.
 
 [^1]: Sparrow et al.,<br/>[Cognitive Consequences on Having Information at Our Fingertips](https://scholar.harvard.edu/files/dwegner/files/sparrow_et_al._2011.pdf)
 [^2]: Papers with Code,<br/>[Language Modelling Performance over Time](https://paperswithcode.com/sota/language-modelling-on-penn-treebank-word)
