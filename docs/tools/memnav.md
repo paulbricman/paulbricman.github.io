@@ -3,7 +3,7 @@ layout: default
 title: MemNav
 nav_order: 2
 parent: Tools
-description: "Expanding propositional memory through knowledge mining."
+description: "Expanding propositional memory through text mining."
 published: False
 ---
 
