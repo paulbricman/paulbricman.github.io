@@ -3,13 +3,13 @@ layout: default
 title: K-Probes
 nav_order: 3
 parent: Tools
-description: "Promoting critical thinking through open-ended questions."
+description: "Promoting critical thinking through machine-generated prompts."
 ---
 
 # Knowledge Probes
 {: .no_toc }
 
-Promoting critical thinking through open-ended questions.
+Promoting critical thinking through machine-generated prompts.
 {: .fs-6 .fw-300 .text-left }
 
 [View Code](https://github.com/paubric/KnowledgeProbe){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

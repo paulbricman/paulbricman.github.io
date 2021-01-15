@@ -33,13 +33,15 @@ Due in large part to its extensive business value, text mining is a relatively m
 
 ## Machine-Readable Memories
 
-In order to create tools capable of navigating memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a comprehensive body of knowledge which spans months, years, or even decades.
+In order to create tools capable of navigating memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a comprehensive body of knowledge which spans months, years, or even decades.[^7]
 
 Diaries mainly consist of text. As we've seen previously, machines are already fluent in text. This means that journalling is a very good candidate for supplying our future system with memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
 
 ## Design
 
-Now that we have a way of converting memories into a machine-readable format, we can start implementing the actual features of the memory navigator, or MemNav for short. Illustrative samples from my own MemNav instance accompany each command. 
+Now that we have a way of converting memories into a machine-readable format, we can start implementing the actual features of the memory navigator, or MemNav for short. Illustrative samples from my own MemNav instance are provided for each command.
+
+The functionality of the system is encapsulated in a Python class which requires a root directory containing entries as text files. The source code builds on several open source modules, and is heavily inspired by examples provided by their authors.[^8] [^9]
 
 {: .code-block }
     >>> from memnav import MemNav
@@ -136,9 +138,14 @@ Finally, there's a more nuanced issue. The linear structure of a diary might be 
 
 Despite its current flaws, MemNav manages to provide an insightful vantage point on the nature and impact of future tools for thought. The reflections it supports are as valuable as the functions it enables, as it helps us paint a picture of our desired technological path.
 
+## References
+
 [^1]: Sparrow et al.,<br/>[Cognitive Consequences on Having Information at Our Fingertips](https://scholar.harvard.edu/files/dwegner/files/sparrow_et_al._2011.pdf)
 [^2]: Papers with Code,<br/>[Language Modelling Performance over Time](https://paperswithcode.com/sota/language-modelling-on-penn-treebank-word)
 [^3]: Gregory Newby,<br/>[Newby on Cognitive Space](https://www.petascale.org/presentations/302-Feb02.html)
 [^4]: Gregory Newby,<br/>[Cognitive space and information space](https://onlinelibrary.wiley.com/doi/abs/10.1002/asi.1172)
 [^5]: Daniel Reisberg,<br/>[Cognition: Exploring the Science of the Mind](https://openlibrary.org/books/OL16768407M/Cognition)
 [^6]: Buster Benson,<br/>[Cognitive Biases](https://busterbenson.com/piles/cognitive-biases/)
+[^7]: Buster Benson,<br/>[Better Than Meditation](https://medium.com/better-humans/better-than-meditation-12532d29f6cd)
+[^8]: HuggingFace,<br/>[Transformers Documentation](https://huggingface.co/transformers/)
+[^9]: Nils Reimers & Iryna Gurevych,<br/>[Sentence-Transformers Documentation](https://www.sbert.net/index.html)
