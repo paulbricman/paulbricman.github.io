@@ -127,7 +127,7 @@ When a piece of software exposes an API, it offers an interface to third-party s
 
 ## Further Steps
 
-Despite its promising performance, MemNav has several shortcomings which currently limit its potential in augmenting memory. First, it runs slow enough to feel unnatural as an extension of your memory. With a large corpus, it usually takes around 5 seconds for results to be provided, depending on the task. However, clear trends in decreasing compute costs might solve this problem in the long run.
+Despite its promising performance, MemNav has several shortcomings which currently limit its potential in augmenting memory. First, it runs slow enough to feel unnatural as an extension of your memory. With a large corpus, it usually takes several solid seconds for results to be provided, depending on the task. However, clear trends in decreasing compute costs might solve this problem in the long run.
 
 {: .quote }
 In order to function as exosomatic memory, information retrieval systems must be so good so that retrieving information is like remembering.[^3]
