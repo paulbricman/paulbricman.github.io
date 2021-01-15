@@ -111,7 +111,7 @@ As a final layer of complexity, we'll also use Bloom's revised taxonomy as a bas
 
 ## Dialogue Sample
 
-The following is a short excerpt discussing the technology behind [this other tool](https://paulbricman.com/docs/tools/semantica/#semantic-embeddings):
+The following is a short excerpt discussing the technology behind [Semantica](https://paulbricman.com/docs/tools/semantica/#semantic-embeddings):
 
 *Let's talk about semantic embeddings.*
 
