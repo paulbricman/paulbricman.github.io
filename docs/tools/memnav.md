@@ -41,7 +41,7 @@ Diaries mainly consist of text. As we've seen previously, machines are already f
 
 Now that we have a way of converting memories into a machine-readable format, we can start implementing the actual features of the memory navigator, or MemNav for short. Illustrative samples from my own MemNav instance are provided for each command.
 
-The functionality of the system is encapsulated in a Python class which requires a root directory containing entries as text files. The source code builds on several open source modules, and is heavily inspired by examples provided by their authors.[^8] [^9]
+The functionality of the system is encapsulated in a Python class which requires a root directory containing entries as text files. The source code builds on several open source modules, and is heavily inspired by the examples provided by their authors.[^8] [^9]
 
 {: .code-block }
     >>> from memnav import MemNav
