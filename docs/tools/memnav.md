@@ -13,7 +13,7 @@ published: True
 Expanding propositional memory through text mining.
 {: .fs-6 .fw-300 .text-left }
 
-[View Code](https://github.com/paubric/MemNav){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View Code](https://github.com/paulbricman/MemNav){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ## Table of contents
 {: .no_toc .text-delta }
