@@ -161,7 +161,7 @@ The following is a short excerpt discussing the technology behind [Semantica](ht
 
 Use the following button to randomly sample one probe from the collection.
 
-<button class="btn btn-primary" onclick="newProbe()">New Probe</button>
+<button class="btn btn-primary fs-6" onclick="newProbe()">New Probe</button>
 <div id="probeDisplay"></div>
 <script src="../../../assets/js/k-probes.js"></script>
 
