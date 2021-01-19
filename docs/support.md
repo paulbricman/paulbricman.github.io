@@ -7,8 +7,8 @@ nav_order: 3
 # Support
 {: .no_toc }
 
-If you appreciate my work, consider supporting a healthy ecosystem of independent creators. In line with [my guiding principles](/#2-knowledge-must-be-distributed), I'm kindly asking you to use the Ethereum address listed below. If that doesn't work for you, feel free to access my [GitHub Sponsors](https://github.com/sponsors/paulbricman) page.
+The generous support of readers like you helps me take on ever more challenging projects while still fulfilling my commitment to openness and transparency. If you find my work worthwhile, please consider supporting it by becoming a sponsor or through the Ethereum address listed below.
+
+[Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View ETH QR](../../assets/images/qr-eth-small.png){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 0xA99b498040E0f79a60434bBaDaD0Bc11adC24E3C **ETH**
-
-![ETH QR](../../assets/images/qr-eth-small.png)

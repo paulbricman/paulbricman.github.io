@@ -37,6 +37,8 @@ In order to create tools capable of navigating memories, we first need to record
 
 Diaries mainly consist of text. As we've seen previously, machines are already fluent in text. This means that journalling is a very good candidate for supplying our future system with memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
 
+---
+
 ## Design
 
 Now that we have a way of converting memories into a machine-readable format, we can start implementing the actual features of the memory navigator, or MemNav for short. Illustrative samples from my own MemNav instance are provided for each command.
@@ -95,6 +97,8 @@ Maybe you're not looking for an explicit detail, but you're trying to get the ge
     >>> mn.summarize('grading assignments')
     It's mostly the gruntwork of grading and watching and attendance and so on. Not fulfilling at all. It's still only a part time job. But the part about grading homework isn't my favorite thing ever, it is the whole idea of selling time for money again. And I'm pretty sure homework can be redesigned so that it can be more efficiently graded, even automatically.
 
+---
+
 ## Paradigms
 
 It might be useful to go beyond the technicalities and reflect on the very identity of this project. By taking various perspectives on it, we can get a better sense of the interplay between tools for thought and existing technical frameworks.
@@ -125,6 +129,8 @@ Another thing to consider is the changing relation between memory acquisition an
 
 When a piece of software exposes an API, it offers an interface to third-party software as a means of programmatically interacting with it. MemNav can also be seen as an API. It offers programmatic access to your memories, enabling an entire suite of tools to integrate with it. This API is currently read-only, as it only offers indirect access to your thought process through the text artifacts. Your actual memory is separated from MemNav as a result of the one-way process of creating the artifacts. However, the artifacts being processed may get closer to their authors over time, eventually leading to authors identifying with them.
 
+---
+
 ## Further Steps
 
 Despite its promising performance, MemNav has several shortcomings which currently limit its potential in augmenting memory. First, it runs slow enough to feel unnatural as an extension of your memory. With a large corpus, it usually takes several solid seconds for results to be provided, depending on the task. However, clear trends in decreasing compute costs might solve this problem in the long run.
@@ -137,6 +143,16 @@ Second, creating the knowledge base which underlies MemNav takes time. It requir
 Finally, there's a more nuanced issue. The linear structure of a diary might be a very poor representation of the non-linear structure of thought. The programmatic transformations mentioned previously may be crucial in better aligning the cognitive space with the information space.[^4] High-dimensional representations similar to the ones used by [Semantica](/docs/tools/semantica/) might be a much better fit for the task.
 
 Despite its current flaws, MemNav manages to provide an insightful vantage point on the nature and impact of future tools for thought. The reflections it supports are as valuable as the functions it enables, as it helps us paint a picture of our desired technological path.
+
+---
+
+## Support
+
+The development of this project is supported by readers like you. If you find this project exciting, please consider supporting my work by becoming a sponsor. For updates on this and other experimental projects, feel free to follow me on GitHub.
+
+[Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Follow Updates](https://github.com/paulbricman){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
+---
 
 ## References
 

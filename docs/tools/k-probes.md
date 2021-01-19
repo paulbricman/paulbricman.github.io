@@ -161,7 +161,7 @@ The following is a short excerpt discussing the technology behind [Semantica](ht
 
 Use the following button to randomly sample one probe from the collection.
 
-<button class="btn btn-primary fs-6" onclick="newProbe()">New Probe</button>
+<button class="btn btn-primary" onclick="newProbe()">New Probe</button>
 <div id="probeDisplay"></div>
 <script src="../../../assets/js/k-probes.js"></script>
 
@@ -174,6 +174,14 @@ The simple nature of this tool might be deceiving. Its beauty lies not in its co
 Despite the potential benefits of this approach, it's also worth considering its downsides. The main disadvantage is the lack of rich feedback, which has otherwise been shown to be very effective in learning.[^6] However, one could argue that the increased ease of adapting the tool to new fields outweighs this shortcoming. Moreover, the self-supervised nature of this approach might still provide a feedback signal which is strong enough to be useful.
 
 We have a unique relationship with questions, so why not leverage that to our advantage? Knowledge probes are an early attempt of explicitly doing just that. I'll predictably end with an open-ended question: "How can knowledge probes be helpful for you?"
+
+---
+
+## Support
+
+The development of this project is supported by readers like you. If you find this project exciting, please consider supporting my work by becoming a sponsor. For updates on this and other experimental projects, feel free to follow me on GitHub.
+
+[Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Follow Updates](https://github.com/paulbricman){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ---
 

@@ -300,6 +300,14 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 
 ---
 
+## Support
+
+The development of this project is supported by readers like you. If you find this project exciting, please consider supporting my work by becoming a sponsor. For updates on this and other experimental projects, feel free to follow me on GitHub.
+
+[Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Follow Updates](https://github.com/paulbricman){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
+---
+
 ## References
 [^1]: Farnam Street,<br/>[Mental Models](https://fs.blog/mental-models/)
 [^2]: Marvin Minsky,<br/>[The Society of Mind](https://www.goodreads.com/book/show/326790.The_Society_of_Mind)
