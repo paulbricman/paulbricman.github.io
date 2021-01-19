@@ -7,7 +7,7 @@ nav_order: 3
 # Support
 {: .no_toc }
 
-The generous support of readers like you helps me take on ever more challenging projects while also fulfilling my commitment to openness and transparency. If you find my work worthwhile, please consider supporting it by becoming a sponsor or through the Ethereum address listed below. Thank you in advance for enabling the sustainable development of transformative tools for thought.
+The generous support of readers like you helps me take on ever more challenging projects while also fulfilling my commitment to openness and transparency. If you find my work worthwhile, please consider supporting it by becoming a sponsor or through the Ethereum address listed below. Thank you for enabling the sustainable development of transformative tools for thought.
 
 [Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View ETH QR](../../assets/images/qr-eth-small.png){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
