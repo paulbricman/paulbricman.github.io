@@ -12,7 +12,7 @@ description: "I'm building tools which augment the mind, enabling people to thin
 I'm building tools which augment the mind, enabling people to think in powerful new ways. 
 {: .fs-6 .fw-300 .text-left }
 
-[View tools](/docs/tools/tools/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Support my work](/docs/support/){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View Tools](/docs/tools/tools/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Support My Work](/docs/support/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
