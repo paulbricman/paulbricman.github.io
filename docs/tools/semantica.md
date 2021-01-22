@@ -29,6 +29,9 @@ Mental models are simplified descriptions of the world around us. For instance, 
 {: .quote }
 Our systematic cross-realm translations are the roots of fruitful metaphors; they enable us to understand things we've never seen before. When something seems entirely new in one of our description-worlds, it may turn out that when translated to some other world it resembles something we already know.[^2]
 
+{: .quote }
+Metaphors allow us to understand one domain of experience in terms of another. This suggests that understanding takes place in terms of entire domains of experience and not in terms of isolated concepts.[^11]
+
 ## Conceptual Thinking
 
 However, mental models are only one side of what can be more broadly described as conceptual thinking. In this view, mental models are just sets of systematic relations between concepts. The previous network model merely captures the relation between a forest and a tree, between a society and a person, and between a brain and a neuron. Having said that, there is so much more to concepts than mental models. You can connect them to similar ones. You can mix them together into new ones. You can transform them in meaningful ways. You can explore the nuances between them.
@@ -319,3 +322,4 @@ The development of this project is supported by readers like you. If you find th
 [^8]: NASA,<br/>[The Golden Record Cover](https://voyager.jpl.nasa.gov/golden-record/golden-record-cover/)
 [^9]: Mikolov et al.,<br/>[Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf)
 [^10]: Stephen Wolfram,<br/>[Computational Universe](https://www.youtube.com/watch?v=P7kX7BuHSFI)
+[^11]: George Lakoff & Mark Johnson,<br/>[Metaphors We Live By](https://www.goodreads.com/book/show/34459.Metaphors_We_Live_By)

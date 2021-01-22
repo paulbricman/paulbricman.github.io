@@ -33,9 +33,9 @@ Due in large part to its extensive business value, text mining is a relatively m
 
 ## Machine-Readable Memories
 
-In order to create tools capable of navigating memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journalling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a comprehensive body of knowledge which spans months, years, or even decades.[^7]
+In order to create tools capable of navigating memories, we first need to record them in a machine-readable format. One popular way of transcribing memories is journaling. By creating regular entries describing their daily thoughts, ambitions, and stories, people unknowingly build a genuine knowledge base of their lives. Slowly but surely, this accumulates into a comprehensive body of knowledge which spans months, years, or even decades.[^7]
 
-Diaries mainly consist of text. As we've seen previously, machines are already fluent in text. This means that journalling is a very good candidate for supplying our future system with memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
+Diaries mainly consist of text. As we've seen previously, machines are already fluent in text. This means that journaling is a very good candidate for supplying our future system with memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
 
 ---
 
