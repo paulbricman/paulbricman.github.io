@@ -41,6 +41,9 @@ What if we could build tools which enabled us to work with concepts in a similar
 {: .quote }
 In this it resembles a program such as Photoshop or a spreadsheet or 3D graphics programs. Each provides a novel set of interface primitives, primitives which can be internalized by the user as fundamental new elements in their thinking.[^3]
 
+{: .quote }
+Human intellectual effectiveness can be affected by the particular means used by individuals for their external symbol manipulation. It seems reasonable to consider the development of automated external symbol manipulation means as a next stage in the evolution of our intellectual power.[^12]
+
 ## Semantic Embeddings
 
 However, tools like Photoshop don't directly work with colors, gradients, or patterns. At the lowest level, editing photos boils down to manipulating matrices of numbers. In order to build powerful tools for conceptual thinking, we might need an analogous way to fix concepts into firm numerical foundations which we could then easily manipulate.
@@ -323,3 +326,4 @@ The development of this project is supported by readers like you. If you find th
 [^9]: Mikolov et al.,<br/>[Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf)
 [^10]: Stephen Wolfram,<br/>[Computational Universe](https://www.youtube.com/watch?v=P7kX7BuHSFI)
 [^11]: George Lakoff & Mark Johnson,<br/>[Metaphors We Live By](https://www.goodreads.com/book/show/34459.Metaphors_We_Live_By)
+[^12]: Douglas Engelbart,<br/>[Augmenting Human Intellect](https://www.goodreads.com/book/show/13365811-augmenting-human-intellect)
