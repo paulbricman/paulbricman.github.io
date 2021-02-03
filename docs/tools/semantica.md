@@ -60,7 +60,7 @@ But analytic geometry is no reason for despair, because as graphic designers don
 That's where we'll go next. In the following sections, we'll define and use new tools for thought built on top of semantic embeddings, and in doing so incrementally grow Semantica, a veritable computational toolkit for conceptual thinking.
 
 {: .quote }
-But let the human specify to the instrument his particular conceptual need of the moment, relative to this internal image. Without disrupting its own internal reference structure in the slightest, the computer will effectively stretch, bend, fold, extract, and cut as it may need in order to assemble an internal substructure [...] designed for [the human's] quick and accurate perception and comprehension of the conceptual matter [...] [^12]
+But let the human specify to the instrument his particular conceptual need of the moment, relative to this internal image. Without disrupting its own internal reference structure in the slightest, the computer will effectively stretch, bend, fold, extract, and cut as it may need in order to assemble an internal substructure [...] it portrays to the human via its display a symbol structure designed for his quick and accurate perception and comprehension of the conceptual matter [...] [^12]
 
 ---
 
