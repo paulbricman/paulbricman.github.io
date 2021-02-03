@@ -37,6 +37,9 @@ In order to create tools capable of navigating memories, we first need to record
 
 Diaries mainly consist of text. As we've seen previously, machines are already fluent in text. This means that journaling is a very good candidate for supplying our future system with memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
 
+{: .quote }
+A memex is a device in which an individual stores all his books, records, and communications, and which is mechanized so that it may be consulted with exceeding speed and flexibility. It is an enlarged intimate supplement to his memory. The lawyer has at his touch the associated opinions and decisions of his whole experience [...] The physician, puzzled by a patient's reactions, strikes the trail established in studying an earlier similar case [...] The historian, with a vast chronological account of a people [...] [^10]
+
 ---
 
 ## Design
@@ -165,3 +168,4 @@ The development of this project is supported by readers like you. If you find th
 [^7]: Buster Benson,<br/>[Better Than Meditation](https://medium.com/better-humans/better-than-meditation-12532d29f6cd)
 [^8]: HuggingFace,<br/>[Transformers Documentation](https://huggingface.co/transformers/)
 [^9]: Nils Reimers & Iryna Gurevych,<br/>[Sentence-Transformers Documentation](https://www.sbert.net/index.html)
+[^10]: Vannevar Bush,<br/>[As We May Think](https://www.w3.org/History/1945/vbush/vbush6.shtml)
