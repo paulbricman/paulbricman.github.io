@@ -16,6 +16,21 @@ I'm building tools which augment the mind, enabling people to think in powerful 
 
 ---
 
+## About
+
+Notions like learning, attention, and memory are now central to AI research. However, AI research is far from being central to human learning, attention, or memory. I was intrigued by this largely one-way flow of insight from cognitive science to machine learning, and spent quite some time thinking about means of going the other way. How could breakthroughs in artificial intelligence be used to understand and amplify human intelligence? This curiosity materialized into a growing collection of tools for thought, some more radical than others, designed to augment the human intellect in ever more exciting ways.
+
+## Current Focus
+{: .d-inline-block .mt-1 }
+
+Live
+{: .label }
+
+- Empowering individuals to learn more effectively by automatically turning monolithic texts into brain-friendly flashcards using natural language processing.
+- Developing high-resolution brain imaging methods which integrate accessible hardware with powerful machine learning primitives.
+
+---
+
 ## Guiding Principles
 
 ### 1. Tools must augment the mind.
