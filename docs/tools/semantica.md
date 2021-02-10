@@ -228,7 +228,10 @@ Finds sets of concepts whose internal differences in embeddings are the most sim
 ```
 
 {: .info }
-Inspiration for this tool comes from a science fiction novel[^7] in which the main character needs to broadcast the location of a celestial body to an unknown civilization. However, given the lack of absolute reference frames available, he broadcasts the position of the celestial body relative to several neighboring ones. Here, because the dimensions of the semantic space aren't inherently meaningful, a mental model is expressed as a set of distances from the first concept to each subsequent concept, forming a *constellation* of concepts. The Golden Records use a similar scheme to pinpoint the Earth.[^8]
+Inspiration for this tool comes from a science fiction novel in which the main character needs to broadcast the location of a celestial body to an unknown civilization.[^7] However, given the lack of absolute reference frames available, he broadcasts the position of the celestial body relative to several neighboring ones. Here, because the dimensions of the semantic space aren't inherently meaningful, a mental model is expressed as a set of distances from the first concept to each subsequent concept, forming a *constellation* of concepts. The Golden Records use a similar scheme to pinpoint the Earth.[^8] After finishing this write-up, I also came across this eerily related passage:
+
+{: .quote }
+The night sky is a partial representation of Prime Intellect's mind. It's called the Global Association Table. The points or stars represent concepts, and the lines are the links between them.[^13]
 
 ---
 
@@ -330,3 +333,4 @@ The development of this project is supported by readers like you. If you find th
 [^10]: Stephen Wolfram,<br/>[Computational Universe](https://www.youtube.com/watch?v=P7kX7BuHSFI)
 [^11]: George Lakoff & Mark Johnson,<br/>[Metaphors We Live By](https://www.goodreads.com/book/show/34459.Metaphors_We_Live_By)
 [^12]: Douglas Engelbart,<br/>[Augmenting Human Intellect](https://www.goodreads.com/book/show/13365811-augmenting-human-intellect)
+[^13]: Roger Williams,<br/>[The Metamorphosis of Prime Intellect](https://www.goodreads.com/book/show/64341.The_Metamorphosis_of_Prime_Intellect)
