@@ -151,7 +151,7 @@ Despite its current flaws, MemNav manages to provide an insightful vantage point
 
 ## Support
 
-The development of this project is supported by readers like you. If you find this project exciting, please consider supporting my work by becoming a sponsor. For updates on this and other experimental projects, feel free to follow me on GitHub.
+The development of projects like this is supported by readers like you. If you find this project exciting, please consider supporting my work by becoming a sponsor. For updates on this and other experimental projects, feel free to follow me on GitHub.
 
 [Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Follow Updates](https://github.com/paulbricman){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
 

@@ -117,4 +117,8 @@ Individual samples are exciting, but it might be equally valuable to think throu
 
 ## Support
 
+The development of projects like this is supported by readers like you. If you find this project exciting, please consider supporting my work by becoming a sponsor. For updates on this and other experimental projects, feel free to follow me on GitHub.
+
+[Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Follow Updates](https://github.com/paulbricman){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
 ## References
