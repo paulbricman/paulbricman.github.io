@@ -23,19 +23,23 @@ Accelerating learning through machine-generated flashcards.
 
 ---
 
-## Empowering The Creator
+## Empowering Creators
 
-Not all educational resources are created equal.
+Not all educational resources are created equal. Imagine you're trying to grasp the essence of quaternions, a somewhat esoteric piece of maths. One way to go about it might be to painstakingly read through an old textbook chapter on the topic, full of intimidating terminology and verbose notation. You might end up giving it a few solid reads, as building mental models from scratch is difficult. Now, picture yourself experimenting with an interactive animation on the same topic. You can now manipulate quaternions from the comfort of your desk while getting instant feedback across several parallel representations. Meanwhile, you're being guided through the material in an accessible way, while systematically internalizing core concepts. At the end, you can automatically add some flashcards created by the author to your spaced repetition system for later use.
 
-One approach to improving the quality of educational resources has been to empower creators with tools to produce ever more brain-friendly content.
+A broad range of methods have been developed through the years to guide the creation of engaging, insightful, and memorable educational resources. 
 
-## Empowering The Audience
+One approach to improving the quality of educational resources has been to empower creators with tools to produce ever more brain-friendly content. For instance, one project aims to help authors make their online articles more memorable by easily embedding a custom spaced repetition system in the same web page. Flashcards are knitted together with text and figures, making them an integral part of the article. This tool essentially turns the otherwise static online essay into engaging and memorable artifacts.
 
-However, few creators possess the skill, interest, and know-how required to create such cognitively ergonomic content.
+## Empowering Audiences
+
+However, few creators possess the skill, interest, and know-how required to create such cognitively ergonomic content. There is indeed a growing collection of pixel-perfect explorables and engaging learning experiences, but they pale in comparison to the rate at which mediocre static content is being published.
 
 What if we could automatically turn the mountains of resources available in unfriendly formats into something more memorable, humane, and ergonomic?
 
 ## Design
+
+
 
 ## Samples
 
@@ -109,7 +113,11 @@ Individual samples are exciting, but it might be equally valuable to think throu
 
 ### The Scholar
 
+Alice is a researcher in machine learning. The rate of new breakthroughs in the field these days is astonishing, and makes it difficult for even the most committed scholars to keep up with the pace of progress. This is not the case for Alice, though. As part of her morning routine, she launches Zotero, her open source reference manager, in order to have a look at a research paper she saved last week. While trying to get a high-level view of the paper, she starts highlighting relevant text directly in the PDF file using Okular, her open source document viewer. After a couple of passes through the paper, she triggers the automatic extraction of highlighted text from the PDF using Zotfile, her open source PDF management tool. Several days later, she copies all her annotations from that week and pastes them in a console running Autocards. After using it to generate batched flashcards, she polishes the CSV file and imports it in Anki, her open source spaced repetition system.
+
 ### The Bookworm
+
+Bob is an avid reader. He's aiming for reaching the 50 books per year mark, while still remembering the important bits later on. As part of his evening routine, he turns on his reMarkable tablet, a maker-friendly e-reader, and opens a non-fiction book he got from a community-run platform. As he gets immersed in the book, he highlights all sorts of insights, nuggets, and claims which resonate with him. After finishing the book several days later, he runs it through Biff, an open source utility for extracting highlights made on the reMarkable tablet. He then pipes the annotations through Autocards, polishes some of the flashcards in the CSV, and imports the file in Anki.
 
 ### The Self-Taught
 
