@@ -25,17 +25,15 @@ Accelerating learning through machine-generated flashcards.
 
 ## Empowering Creators
 
-Not all educational resources are created equal. Imagine you're trying to grasp the essence of quaternions, a somewhat esoteric piece of maths. One way to go about it might be to painstakingly read through an old textbook chapter on the topic, full of intimidating terminology and verbose notation. You might end up giving it a few solid reads, as building mental models from scratch is difficult. Now, picture yourself experimenting with an interactive animation on the same topic. You can now manipulate quaternions from the comfort of your desk while getting instant feedback across several parallel representations. Meanwhile, you're being guided through the material in an accessible way, while systematically internalizing core concepts. At the end, you can automatically add some flashcards created by the author to your spaced repetition system for later use.
+Not all educational resources are created equal. Imagine you're trying to grasp the essence of quaternions, a somewhat esoteric piece of maths. One way to go about it might be to painstakingly read through an old textbook chapter on the topic, full of intimidating terminology and verbose notation. You might end up giving it a few solid reads, as building mental models from scratch is quite tedious. Now, picture yourself experimenting with an interactive animation on the same topic. You can freely manipulate quaternions from the comfort of your desk while getting instant feedback across several parallel representations. Meanwhile, you're being guided through the material in an accessible way, while systematically internalizing core concepts. At the end, you can automatically add some flashcards created by the author to your spaced repetition system for later use.
 
-A broad range of methods have been developed through the years to guide the creation of engaging, insightful, and memorable educational resources. 
-
-One approach to improving the quality of educational resources has been to empower creators with tools to produce ever more brain-friendly content. For instance, one project aims to help authors make their online articles more memorable by easily embedding a custom spaced repetition system in the same web page. Flashcards are knitted together with text and figures, making them an integral part of the article. This tool essentially turns the otherwise static online essay into engaging and memorable artifacts.
+A broad range of methods have been developed through the years to guide the creation of engaging, insightful, and memorable educational resources. However, guidelines only go so far, and developers started building concrete tools to help creators in their process. For instance, one project aims to help authors make their online articles more memorable by easily embedding a custom spaced repetition system in the same web page. Flashcards are knitted together with text and figures, making them an integral part of the article. This tool essentially turns the otherwise static online essay into engaging and memorable artifacts. Yet other tools help creators bring abstract concepts to life through programmatically-generated videos and interactive animations. 
 
 ## Empowering Audiences
 
-However, few creators possess the skill, interest, and know-how required to create such cognitively ergonomic content. There is indeed a growing collection of pixel-perfect explorables and engaging learning experiences, but they pale in comparison to the rate at which mediocre static content is being published.
+However, few creators possess the skill, interest, and know-how required to create such cognitively ergonomic content. There is indeed a growing collection of pixel-perfect explorable explanations and engaging learning experiences, but they pale in comparison to the rate at which mediocre static content is being published. It's difficult enough for creators of educational resources to convey knowledge accurately and accessibly in the first place, and even more so with additional complexity introduced by such intricate creator-side tools.
 
-What if we could automatically turn the mountains of resources available in unfriendly formats into something more memorable, humane, and ergonomic?
+What if instead of focusing on building tools for creators, we focused on building tools for *audiences* to systemmatically get the best out of existing content? Building the shovels and pickaxes required to mine for educational gems, rather than investing in the alchemy of crafting the gems themselves. Think about how a committed student can easily turn a static lecture into flashcards, mind-maps, or summaries in order to get the best out of the material. Could learner-side tools and practices extend beyond that with the help of technologies like AI? What if we could automatically turn the mountains of resources available in unfriendly formats into something more memorable, humane, and ergonomic?
 
 ## Design
 
@@ -43,7 +41,7 @@ What if we could automatically turn the mountains of resources available in unfr
 
 ## Samples
 
-To get a sense of the pipeline's performance, several samples from various disciplines are listed below. Each excerpt is followed by a set of automatically generated flashcards.
+To get a sense of the pipeline's performance, several samples from various disciplines are listed below. Each excerpt is followed by a set of automatically generated flashcards, which haven't suffered the slightest human tweak.
 
 ### Physics
 
@@ -117,7 +115,7 @@ Alice is a researcher in machine learning. The rate of new breakthroughs in the 
 
 ### The Bookworm
 
-Bob is an avid reader. He's aiming for reaching the 50 books per year mark, while still remembering the important bits later on. As part of his evening routine, he turns on his reMarkable tablet, a maker-friendly e-reader, and opens a non-fiction book he got from a community-run platform. As he gets immersed in the book, he highlights all sorts of insights, nuggets, and claims which resonate with him. After finishing the book several days later, he runs it through Biff, an open source utility for extracting highlights made on the reMarkable tablet. He then pipes the annotations through Autocards, polishes some of the flashcards in the CSV, and imports the file in Anki.
+Bob is an avid reader. He's aiming for reaching the 50 books per year mark, while still remembering the important bits later on. As part of his evening routine, he turns on his reMarkable tablet, a maker-friendly e-reader, and opens a non-fiction book he got from a community-run platform. As he gets immersed in the book, he highlights all sorts of insights, nuggets, and gems which resonate with him. After finishing the book several days later, he runs it through Biff, an open source utility for extracting highlights made on the reMarkable tablet. He then pipes the annotations through Autocards, polishes some of the flashcards in the CSV, and imports the file in Anki. He's pretty sure he might have managed to implement the same workflow using the more popular Kindle e-reader, but he happens to be a big fan of open source.
 
 ### The Self-Taught
 
