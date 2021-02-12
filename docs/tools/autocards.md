@@ -33,7 +33,7 @@ A broad range of methods have been developed through the years to guide the crea
 
 However, few creators possess the skill, interest, and know-how required to create such cognitively ergonomic content. There is indeed a growing collection of pixel-perfect explorable explanations and engaging learning experiences, but they pale in comparison to the rate at which mediocre static content is being published. It's difficult enough for creators of educational resources to convey knowledge accurately and accessibly in the first place, and even more so with additional complexity introduced by such intricate creator-side tools.
 
-What if instead of focusing on building tools for creators, we focused on building tools for *audiences* to systemmatically get the best out of existing content? Building the shovels and pickaxes required to mine for educational gems, rather than investing in the alchemy of crafting the gems themselves. Think about how a committed student can easily turn a static lecture into flashcards, mind-maps, or summaries in order to get the best out of the material. Could learner-side tools and practices extend beyond that with the help of technologies like AI? What if we could automatically turn the mountains of resources available in unfriendly formats into something more memorable, humane, and ergonomic?
+What if instead of focusing on building tools for creators, we focused on building tools for *audiences* to systemmatically get the best out of existing content? Building the shovels and pickaxes required to mine for educational gems, rather than investing in the alchemy of crafting the gems themselves. Think about how a committed student can easily turn a static lecture into flashcards, mind-maps, or sketchnotes in order to get the best out of the material. Could learner-side tools and practices extend beyond that with the help of technologies like AI? What if we could automatically turn the mountains of resources available in unfriendly formats into something more memorable, humane, and ergonomic?
 
 ## Design
 
@@ -41,7 +41,7 @@ What if instead of focusing on building tools for creators, we focused on buildi
 
 ## Samples
 
-To get a sense of the pipeline's performance, several samples from various disciplines are listed below. Each excerpt is followed by a set of automatically generated flashcards, which haven't suffered the slightest human tweak.
+To get a sense of the pipeline's performance, several samples from various disciplines are listed below. Each excerpt is followed by a set of automatically generated flashcards, pairs of questions and answers, which haven't suffered the slightest human modification.
 
 ### Physics
 
@@ -115,9 +115,11 @@ Alice is a researcher in machine learning. The rate of new breakthroughs in the 
 
 ### The Bookworm
 
-Bob is an avid reader. He's aiming for reaching the 50 books per year mark, while still remembering the important bits later on. As part of his evening routine, he turns on his reMarkable tablet, a maker-friendly e-reader, and opens a non-fiction book he got from a community-run platform. As he gets immersed in the book, he highlights all sorts of insights, nuggets, and gems which resonate with him. After finishing the book several days later, he runs it through Biff, an open source utility for extracting highlights made on the reMarkable tablet. He then pipes the annotations through Autocards, polishes some of the flashcards in the CSV, and imports the file in Anki. He's pretty sure he might have managed to implement the same workflow using the more popular Kindle e-reader, but he happens to be a big fan of open source.
+Bob is an avid reader. He's aiming for reaching the 50 books per year mark, while still remembering the important bits later on. As part of his evening routine, he turns on his reMarkable tablet, a maker-friendly e-reader, and opens a non-fiction book he got from a community-run platform. As he gets immersed in the book, he highlights all sorts of insights, nuggets, and gems which resonate with him. After finishing the book several days later, he runs it through Biff, an open source utility for extracting highlights made on the reMarkable tablet. He then pipes the extracted annotations through Autocards, polishes some of the flashcards in the CSV, and imports the file in Anki. He's pretty sure he might have managed to implement the same workflow using the more popular Kindle e-reader, but he happens to be a big fan of open source.
 
-### The Self-Taught
+### The Student
+
+Charlie is a motivated student. He almost likes experimenting with study techniques more than actual learning, but he tries to strike a healthy balance regarding that. Throughout the day, he takes part in several lectures, some of which are online. During those, he tries to take concise notes which clearly capture important aspects of the material, while retaining the big-picture view. In order not to get caught up in making his notes look exceedingly aesthetic, he resorts to simply typing them out in Markdown, a light-weight markup language, using VS Code, an open source text editor. After the lecture, he goes through a k-probing session in order to better weave together what he just learned with his previous knowledge. While he's busy reflecting on the material, Autocards is starting up and working through the notes, ultimately generating several dozen flashcards listed in a CSV, which Charlie polishes and imports in Anki.  
 
 ## Future Steps
 
