@@ -72,3 +72,12 @@ SOON
 
 Extending episodic memory through linear combinations of olfactive tags.
 {: .fs-4 .fw-300 .text-left .mt-0 }
+
+## Exocortex
+{: .d-inline-block .mt-4 }
+
+SOON
+{: .label }
+
+Democratizing cognitive augmentation through a self-hosted suite of tools for thought.
+{: .fs-4 .fw-300 .text-left .mt-0 }
