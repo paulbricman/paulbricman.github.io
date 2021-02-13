@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Semantica
-nav_order: 1
+nav_order: 2
 parent: Tools
 description: "Extending conceptual thinking through semantic embeddings."
 ---
@@ -314,7 +314,7 @@ Not all semantic embeddings are created equal. The ones used in this prototype h
 
 ## Support
 
-The development of projects like this is supported by readers like you. If you find this project exciting, please consider supporting my work by becoming a sponsor. For updates on this and other experimental projects, feel free to follow me on GitHub.
+Did you find this project exciting? If so, please consider supporting my work by becoming a sponsor. In doing so, you're making it possible for me to take on ever more challenging projects in cognitive augmentation while also fulfilling my commitment to openness and transparency.
 
 [Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Follow Updates](https://github.com/paulbricman){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
 

@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Autocards
-nav_order: 3
+nav_order: 1
 parent: Tools
 description: "Accelerating learning through machine-generated flashcards."
-published: False
+published: True
 ---
 
-# Autocards
+# Autocards [Work In Progress]
 {: .no_toc }
 
 Accelerating learning through machine-generated flashcards.
@@ -45,7 +45,21 @@ One especially popular way to make static text more cognitively ergonomic is to 
 2. Based on the previously-extracted answers and the original text, try to generate related questions as if playing Jeopardy (e.g. "What is another name for Kirchhoff’s current law?").
 3. Test whether the previously-generated questions actually correspond the the previously-extracted answers by performing question answering and checking whether the results match.
 
-Just as my other projects, this one also builds on existing open source tools. This time, we're forking an excelent pipeline designed specifically for question generation. By encapsulating its functionality in a Python class capable of consuming various types of text (i.e. plain text, text files, PDF's) we're laying the groundwork for a large number of possible workflows. The resulting Python object can then be used to export flashcards derived from text as a CSV file which can later be imported in a wide range of spaced repetition apps. It provides a few handy options, such as prepending a prefix to the front side of the flashcard (e.g. "ELECTRICITY:") and switching the questions up with the answers for a Jeopardy-style experience.
+Just as my other projects, this one also builds on existing open source tools. This time, we're forking an excelent pipeline designed specifically for question generation. By encapsulating its functionality in a Python class capable of consuming various types of text (i.e. plain text, text files, PDF's) we're laying the groundwork for a large number of possible workflows.
+
+{: .code-block }
+```
+>>> from autocards import Autocards
+>>> a = Autocards()
+>>> a.consume_text('King Philip’s ultimate goal was to conquer Persia.')
+```
+
+The resulting Python object can then be used to export flashcards derived from text as a CSV file which can later be imported in a wide range of spaced repetition apps. It provides a few handy options, such as prepending a prefix to the front side of the flashcard and switching the questions up with the answers for a Jeopardy-style experience.
+
+{: .code-block }
+```
+>>> a.export('history.csv', prefix='HELLENISTIC AGE:', jeopardy=False)
+```
 
 ## Samples
 
@@ -56,6 +70,7 @@ To get a sense of the pipeline's performance, several samples from various disci
 {: .quote .mt-4 }
 Kirchhoff’s junction rule says that the total current into a junction equals the total current out of the junction. This is a statement of conservation of charge. It is also sometimes called Kirchhoff’s first law, Kirchhoff’s current law, the junction rule, or the node rule. Junctions can’t store current, and current can’t just disappear into thin air because charge is conserved. Therefore, the total amount of current flowing through the circuit must be constant.
 
+{: .text-left }
 | Question | Answer |
 |-|-|
 | What does Kirchhoff's junction rule say? | the total current into a junction equals the total current out of the junction |
@@ -69,6 +84,7 @@ Kirchhoff’s junction rule says that the total current into a junction equals t
 {: .quote .mt-4 }
 King Philip’s ultimate goal was to conquer Persia and help himself to the empire’s land and riches. This was not to be; King Philip was assassinated by his bodyguard Pausanias in 336 B.C. at his daughter’s wedding, before he could enjoy the spoils of his victories. His son Alexander, known to history as "Alexander The Great," jumped at the chance to take over his father’s imperial project. The new Macedonian king led his troops across the Hellespont into Asia. (When he got there, he plunged an enormous sarissa into the ground and declared the land “spear won.”) From there, Alexander and his armies kept moving.
 
+{: .text-left }
 | Question | Answer |
 |-|-|
 | What was King Philip's ultimate goal? | conquer Persia |
@@ -83,6 +99,7 @@ King Philip’s ultimate goal was to conquer Persia and help himself to the empi
 {: .quote .mt-4 }
 DNA sequencing is a collection of scientific methods for determining the sequence of the nucleotide bases in a molecule of DNA. All living organisms have DNA (deoxyribonucleic acid) in each of their cells. Each cell in an organism contains the genetic code for the entire organism. The process of DNA sequencing transforms the DNA from a given organism into a format that can be used by researchers for the basic study of biologic processes, medical research, and in forensics.
 
+{: .text-left }
 | Question | Answer |
 |-|-|
 | What is a collection of scientific methods for determining the sequence of the nucleotide bases in a molecule of DNA? | DNA sequencing |
@@ -95,6 +112,7 @@ DNA sequencing is a collection of scientific methods for determining the sequenc
 {: .quote .mt-4 }
 The Villa Savoye at Poissy, designed by Le Corbusier in 1929, represents the culmination of a decade during which the architect worked to articulate the essence of modern architecture. Throughout the 1920s, via his writings and designs, Le Corbusier (formerly Charles-Edouard Jeanneret) considered the nature of modern life and architecture’s role in the new machine age. His famous dictum, that “The house should be a machine for living in,” is perfectly realized within the forms, layout, materials, and siting of the Villa Savoye.
 
+{: .text-left }
 | Question | Answer |
 |-|-|
 | In what year was the Villa Savoye at Poissy designed? | 1929 |
@@ -106,6 +124,7 @@ The Villa Savoye at Poissy, designed by Le Corbusier in 1929, represents the cul
 {: .quote .mt-4 }
 Generative adversarial networks consist of two networks, the generator and the discriminator, which compete against each other. The generator is trained to produce fake data, and the discriminator is trained to distinguish the generator’s fake data from real examples. If the generator produces fake data that the discriminator can easily recognize as implausible, such as an image that is clearly not a face, the generator is penalized. Over time, the generator learns to generate more plausible examples.
 
+{: .text-left }
 | Question | Answer |
 |-|-|
 | Who is trained to distinguish the generator's fake data from real examples? | the discriminator |
@@ -127,13 +146,22 @@ Bob is an avid reader. He's aiming for reaching the 50 books per year mark, whil
 
 ### The Student
 
-Charlie is a motivated student. He almost likes experimenting with study techniques more than actual learning, but he tries to strike a healthy balance regarding that. Throughout the day, he takes part in several lectures, some of which are online. During those, he tries to take concise notes which clearly capture important aspects of the material, while retaining the big-picture view. In order not to get caught up in making his notes look exceedingly aesthetic, he resorts to simply typing them out in Markdown, a light-weight markup language, using VS Code, an open source text editor. After the lecture, he goes through a k-probing session in order to better weave together what he just learned with his previous knowledge. While he's busy reflecting on the material, Autocards is starting up and working through the notes, ultimately generating several dozen flashcards listed in a CSV, which Charlie polishes and imports in Anki.  
+Charlie is a motivated student. He almost likes experimenting with study techniques more than actual learning, but he tries to strike a healthy balance regarding that. Throughout the day, he takes part in several lectures, some of which are online. During those, he tries to take concise notes which clearly capture important aspects of the material, while retaining the big-picture view. In order not to get caught up in making his notes look exceedingly aesthetic, he resorts to simply typing them out in Markdown, a light-weight markup language, using VS Code, an open source text editor. After the lecture, he goes through a k-probing session in order to better weave together what he just learned with his previous knowledge. While he's busy reflecting on the material, Autocards is starting up and working through the notes, ultimately generating several dozen flashcards listed in a CSV, which Charlie polishes and imports in Anki.
+
+{: .warn }
+It's tempting to quickly jump to rote memorization before actually understanding the material, and even more so with automated flashcard generation. Autocards is best used in tandem with techniques which foster understanding, such as the Feynman Technique or Knowledge Probes, as exemplified by Charlie.
 
 ## Future Steps
 
+One of the main areas of improvement going forward is the quality of the questions generated by the system. They often come across as clunky and overly verbose, which might prove inconvenient for many. Fortunately, recent years have seen a steady rise in the performance of language models, which might soon become able to generate more natural questions. In the meantime, fine-tuning larger models on the task might help, as the current implementation is limited to the T5-small and T5-base models.
+
+Another clear area of improvement is a more user-friendly interface which would wrap around the core functionality. Unfortunately, the natural language processing component would translate to higher requirements for a client-side device, especially in terms of RAM and GPU. It might seem anticlimactic to heat up a GPU only to get a dozen lines of text in return, yet this is the price you currently have to pay for this sort of processing. Paid access to a hosted server might do, but it would be great to somehow make this powerful tool accessible.
+
+Additionally, the range of possible inputs which could be fed into Autocards might be extended. Various operating modes might instruct the system to, say, automatically extract the abstract, introduction, and discussion sections from a research paper for later use in flashcard generation. It could be adapted to consume a web article based on its URL by scraping the content and using it as input, perhaps after first piping it through an extractive summarization model. Autocards might even prove useful for generating flashcards for educational videos, by stripping the captions and using those as a starting point, or after crudely applying a speech-to-text pass.
+
 ## Support
 
-The development of projects like this is supported by readers like you. If you find this project exciting, please consider supporting my work by becoming a sponsor. For updates on this and other experimental projects, feel free to follow me on GitHub.
+Did you find this project exciting? If so, please consider supporting my work by becoming a sponsor. In doing so, you're making it possible for me to take on ever more challenging projects in cognitive augmentation while also fulfilling my commitment to openness and transparency.
 
 [Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Follow Updates](https://github.com/paulbricman){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
