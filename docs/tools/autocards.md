@@ -37,7 +37,15 @@ What if instead of focusing on building tools for creators, we focused on buildi
 
 ## Design
 
+The most prevalent format employed by educational resources today is written text. Articles, essays, books, textbooks, and papers are all variations on the same tried and trusted way of conveying knowledge -- writing. It only makes sense to focus our efforts on this particularly pervasive medium. Fortunately, text is also quite a machine-friendly format, as we've seen before with MemNav. To explore the potential of AI in learner-side tools, we'll attempt to use natural language processing to make text-based resources more brain-friendly.
 
+One especially popular way to make static text more cognitively ergonomic is to turn it into flashcards. Using flashcards for spaced repetition is standard practice for committed students across a wide range of disciplines. It turns out that machines are surprisingly good at automatically creating flashcards from content rich in information. By combining methods of question generation with methods of question answering, several language models can be combined into a system capable of generating flashcards based on arbitrary text. The task of answer-aware question generation, or what we'll now call flashcard generation, is based on the following automated steps:
+
+1. Extract tentative answers for subsequently-generated questions. Those can be specific terms, entities, or short phrases which are likely to make good answers (e.g. "the junction rule").
+2. Based on the previously-extracted answers and the original text, try to generate related questions as if playing Jeopardy (e.g. "What is another name for Kirchhoff’s current law?").
+3. Test whether the previously-generated questions actually correspond the the previously-extracted answers by performing question answering and checking whether the results match.
+
+Just as my other projects, this one also builds on existing open source tools. This time, we're using an excelent pipeline designed specifically for question generation. By encapsulating its functionality in a Python class capable of consuming various types of text (i.e. plain text, text files, PDF's) we're laying the groundwork for a large number of possible workflows. The resulting Python object can then be used to export the flashcards derived from text as a CSV file which can later be imported in a wide range of spaced repetition apps. It provides a few handy options, such as prepending a prefix to the front side of the flashcard (e.g. "ELECTRICITY: ") and switching the questions up with the answers for a Jeopardy-style experience.
 
 ## Samples
 
