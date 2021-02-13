@@ -66,6 +66,7 @@ The resulting Python object can then be used to export flashcards derived from t
 To get a sense of the pipeline's performance, several samples from various disciplines are listed below. Each excerpt is followed by a set of automatically generated flashcards, pairs of questions and answers which haven't suffered the slightest human modification.
 
 ### Physics
+{: .no_toc }
 
 {: .quote .mt-4 }
 Kirchhoff’s junction rule says that the total current into a junction equals the total current out of the junction. This is a statement of conservation of charge. It is also sometimes called Kirchhoff’s first law, Kirchhoff’s current law, the junction rule, or the node rule. Junctions can’t store current, and current can’t just disappear into thin air because charge is conserved. Therefore, the total amount of current flowing through the circuit must be constant.
@@ -80,6 +81,7 @@ Kirchhoff’s junction rule says that the total current into a junction equals t
 | The total amount of current flowing through a circuit must be what? | constant |
 
 ### History
+{: .no_toc }
 
 {: .quote .mt-4 }
 King Philip’s ultimate goal was to conquer Persia and help himself to the empire’s land and riches. This was not to be; King Philip was assassinated by his bodyguard Pausanias in 336 B.C. at his daughter’s wedding, before he could enjoy the spoils of his victories. His son Alexander, known to history as "Alexander The Great," jumped at the chance to take over his father’s imperial project. The new Macedonian king led his troops across the Hellespont into Asia. (When he got there, he plunged an enormous sarissa into the ground and declared the land “spear won.”) From there, Alexander and his armies kept moving.
@@ -95,6 +97,7 @@ King Philip’s ultimate goal was to conquer Persia and help himself to the empi
 | What did Alexander plunge into the ground when he got to Asia? | sarissa |
 
 ### Biology
+{: .no_toc }
 
 {: .quote .mt-4 }
 DNA sequencing is a collection of scientific methods for determining the sequence of the nucleotide bases in a molecule of DNA. All living organisms have DNA (deoxyribonucleic acid) in each of their cells. Each cell in an organism contains the genetic code for the entire organism. The process of DNA sequencing transforms the DNA from a given organism into a format that can be used by researchers for the basic study of biologic processes, medical research, and in forensics.
@@ -108,6 +111,7 @@ DNA sequencing is a collection of scientific methods for determining the sequenc
 | What is the use of DNA sequencing? | basic study of biologic processes, medical research, and in forensics |
 
 ### Architecture
+{: .no_toc }
 
 {: .quote .mt-4 }
 The Villa Savoye at Poissy, designed by Le Corbusier in 1929, represents the culmination of a decade during which the architect worked to articulate the essence of modern architecture. Throughout the 1920s, via his writings and designs, Le Corbusier (formerly Charles-Edouard Jeanneret) considered the nature of modern life and architecture’s role in the new machine age. His famous dictum, that “The house should be a machine for living in,” is perfectly realized within the forms, layout, materials, and siting of the Villa Savoye.
@@ -120,6 +124,7 @@ The Villa Savoye at Poissy, designed by Le Corbusier in 1929, represents the cul
 | What was Le Corbusier's famous dictum? | The house should be a machine for living in |
 
 ### AI
+{: .no_toc }
 
 {: .quote .mt-4 }
 Generative adversarial networks consist of two networks, the generator and the discriminator, which compete against each other. The generator is trained to produce fake data, and the discriminator is trained to distinguish the generator’s fake data from real examples. If the generator produces fake data that the discriminator can easily recognize as implausible, such as an image that is clearly not a face, the generator is penalized. Over time, the generator learns to generate more plausible examples.
