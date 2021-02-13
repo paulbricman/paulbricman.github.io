@@ -7,7 +7,7 @@ description: "Accelerating learning through machine-generated flashcards."
 published: True
 ---
 
-# Autocards [Work In Progress]
+# Autocards [WIP]
 {: .no_toc }
 
 Accelerating learning through machine-generated flashcards.
