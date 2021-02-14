@@ -33,19 +33,19 @@ A broad range of methods have been developed through the years to guide the crea
 
 However, few creators possess the skill, interest, and know-how required to create such cognitively ergonomic content. There is indeed a growing collection of pixel-perfect explorable explanations and engaging learning experiences, but they pale in comparison to the rate at which mediocre static content is being published.[^6] It's difficult enough for creators of educational resources to convey knowledge accurately and accessibly in the first place, and even more so with additional hurdle introduced by complex creator-side tools.
 
-What if instead of focusing on building tools for creators, we focused on building tools for *audiences* to systematically get the best out of existing content? Building the shovels and pickaxes required to mine for educational gems, rather than investing in the alchemy of crafting the gems themselves. Think about how a committed student can easily turn a static lecture into flashcards, mind-maps, or sketchnotes in order to get the best out of the material. Could learner-side tools and practices extend radically beyond that with the help of technologies like AI? What if we could automatically turn the mountains of resources available in unfriendly formats into something more memorable, humane, and ergonomic?
+What if instead of focusing on building tools for creators, we focused on building tools for *audiences* to systematically get the best out of existing content? Building the shovels and pickaxes required to mine for educational gems, rather than investing in the alchemy of crafting the gems themselves. Think about how a committed student can easily turn a static lecture into flashcards, mind-maps, or sketchnotes in order to get the best out of the material. Could learner-side tools and practices radically extend beyond that with the help of technologies like AI? What if we could automatically turn the mountains of resources available in unfriendly formats into something more memorable, humane, and ergonomic?
 
 ## Design
 
 The most prevalent format employed by educational resources today is written text. Articles, essays, books, textbooks, and papers are all variations on the same tried and trusted way of conveying knowledge -- writing. It only makes sense to focus our efforts on this particularly pervasive medium. Fortunately, text is also quite a machine-friendly format, as we've seen with [MemNav](/docs/tools/memnav). To explore the potential of AI in learner-side tools, we'll attempt to use natural language processing to make text-based resources more brain-friendly.
 
-One especially popular way of making static text more cognitively ergonomic is to turn it into flashcards. Using flashcards for spaced repetition is standard practice for committed students across a wide range of disciplines, as it results in long-term information retention. It turns out that machines are surprisingly good at automatically creating flashcards from text-based content which is rich in information. By combining methods of question generation with methods of question answering, several language models can work in parallel, forming a system capable of generating flashcards based on arbitrary text. The task of answer-aware question generation, or what we'll call flashcard generation, is based on the following steps being performed automatically by the system:
+One especially popular way of making static text more cognitively ergonomic is to turn it into flashcards. Using flashcards for spaced repetition is standard practice for committed students across a wide range of disciplines, as it results in long-term information retention. It turns out that machines are surprisingly good at automatically creating flashcards from text-based content which is rich in information. By combining methods of question generation with methods of question answering, several language models can be configured to work in parallel, forming a system capable of generating flashcards based on arbitrary text. The task of answer-aware question generation, or what we'll call flashcard generation, is based on the following steps being performed automatically by the system:
 
 1. Extract tentative answers for subsequently-generated questions. Those can be specific terms, entities, or short phrases which are likely to make good answers (e.g. "the junction rule").
 2. Based on the previously-extracted answers and the original text, try to generate related questions, as if playing Jeopardy (e.g. "What is another name for Kirchhoff’s current law?").
 3. Close the loop by checking whether the previously-generated questions actually match the previously-extracted answers using question answering.
 
-Equipped with this approach, we can start building Autocards, a flashcard generator which builds on existing open source tools. This time, we're forking an excellent pipeline designed specifically for question generation.[^7] By encapsulating its functionality in a Python class capable of consuming various types of text (i.e. plain text, text files, PDF's) we're laying the groundwork for a large number of possible workflows.
+Equipped with this approach, we can start building Autocards, a flashcard generator based on existing open source tools. This time, we're forking an excellent pipeline designed specifically for question generation.[^7] By encapsulating its functionality in a Python class capable of consuming various types of text (i.e. plain text, text files, PDF's) we're laying the groundwork for a large number of possible workflows.
 
 {: .code-block }
 ```
@@ -54,7 +54,7 @@ Equipped with this approach, we can start building Autocards, a flashcard genera
 >>> a.consume_text('King Philip’s ultimate goal was to conquer Persia.')
 ```
 
-The resulting Python object can then be used to export flashcards derived from text as a CSV file which can later be imported in a wide range of spaced repetition apps. It provides a few handy options, such as prepending a prefix to the front side of the flashcard and switching the questions up with the answers for a Jeopardy-style experience.
+The resulting Python object can then be used to export flashcards derived from text as a CSV file which can later be imported in a wide range of spaced repetition apps. It provides a few handy options, such as adding a prefix to the front side of the flashcard and switching the questions up with the answers for a Jeopardy-style experience.[^22]
 
 {: .code-block }
 ```
@@ -149,7 +149,7 @@ Alice is a researcher in machine learning. The rate of new breakthroughs in the 
 One of the few estimates I found on how much time an experienced researcher spends on creating flashcards based on a paper is listed below. From early hands-on experience with Autocards, this can reliably be brought down to around 5 minutes, *after* first reading it.
 
 {: .quote }
-I typically spend 10 to 60 minutes Ankifying a paper, with the duration depending on my judgment of the value I'm getting from the paper. However, if I'm learning a great deal, and finding it interesting, I keep reading and Ankifying.[^21]
+I typically spend 10 to 60 minutes Ankifying a paper, with the duration depending on my judgment of the value I'm getting from the paper.[^21]
 
 ### The Bookworm
 
@@ -157,7 +157,7 @@ Bob is an avid reader. He's aiming for reaching the 50 books per year mark, whil
 
 ### The Student
 
-Charlie is a motivated student. He almost likes experimenting with study techniques more than actual learning, but he tries to strike a healthy balance regarding that. Throughout the day, he takes part in several lectures, some of which are online. During those, he tries to take concise notes which clearly capture important aspects of the material, while retaining the big-picture view. In order not to get caught up in making his notes look exceedingly aesthetic, he resorts to simply typing them out in Markdown, a light-weight markup language, using VS Code, an open source text editor.[^18] [^19] After the lecture, he goes through a [k-probing](/docs/tools/k-probes) session in order to better weave together what he just learned with his previous knowledge. While he's busy reflecting on the material, Autocards is starting up and working through the notes, ultimately generating several dozen flashcards listed in a CSV, which Charlie polishes and imports in Anki.
+Charlie is a motivated student. He almost likes experimenting with study techniques more than actual studying, but he tries to strike a healthy balance regarding that. Throughout the day, he takes part in several lectures, some of which are online. During those, he tries to take concise notes which clearly capture important aspects of the material, while retaining the big-picture view. In order not to get caught up in making his notes look exceedingly aesthetic, he resorts to simply typing them out in Markdown, a light-weight markup language, using VS Code, an open source text editor.[^18] [^19] After the lecture, he goes through a [k-probing](/docs/tools/k-probes) session in order to better weave together what he just learned with his previous knowledge. While he's busy reflecting on the material, Autocards is starting up and working through the notes, ultimately generating several dozen flashcards listed in a CSV, which Charlie polishes and imports in Anki.
 
 {: .warn }
 It's tempting to quickly jump to rote memorization before actually understanding the material, and even more so with automated flashcard generation. Autocards is best used in tandem with techniques which foster understanding, such as the Feynman Technique or Knowledge Probes, as exemplified by Charlie.
@@ -199,3 +199,4 @@ Did you find this project exciting? If so, please consider supporting my work by
 [^19]: Microsoft,<br>[Visual Studio Code](https://github.com/Microsoft/vscode)
 [^20]: Papers with Code,<br>[Language Modelling Performance over Time](https://paperswithcode.com/sota/language-modelling-on-penn-treebank-word)
 [^21]: Michael Nielsen,<br>[Augmenting Long-Term Memory](http://augmentingcognition.com/ltm.html)
+[^22]: Merv Griffin,<br>[Jeopardy!](https://en.wikipedia.org/wiki/Jeopardy!)
