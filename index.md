@@ -26,8 +26,9 @@ Notions like learning, attention, and memory are now central to AI research. How
 Live
 {: .label }
 
-- Empowering individuals to learn more effectively by automatically turning monolithic texts into brain-friendly flashcards using natural language processing.
-- Developing high-resolution brain imaging methods which integrate accessible hardware with powerful machine learning primitives.
+- Exploring approaches to AI-informed cognitive augmentation through a series of experimental prototypes.
+- Enabling individuals to perceive high-dimensional data more effectively through photorealistic facial representations.
+- Developing AI-informed brain imaging methods which support high-resolution non-invasive brain-computer interfaces.
 
 ---
 
