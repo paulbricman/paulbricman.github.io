@@ -38,7 +38,7 @@ In order to create tools capable of navigating memories, we first need to record
 Diaries mainly consist of text. As we've seen previously, machines are already fluent in text. This means that journaling is a very good candidate for supplying our future system with memories in a machine-readable format. In order to perform text mining, simply substitute web pages for diary entries, and let the algorithms do their job.
 
 {: .quote }
-A memex is a device in which an individual stores all his books, records, and communications, and which is mechanized so that it may be consulted with exceeding speed and flexibility. It is an enlarged intimate supplement to his memory. The lawyer has at his touch the associated opinions and decisions of his whole experience [...] The physician, puzzled by a patient's reactions, strikes the trail established in studying an earlier similar case [...] The historian, with a vast chronological account of a people [...] [^10]
+"A memex is a device in which an individual stores all his books, records, and communications, and which is mechanized so that it may be consulted with exceeding speed and flexibility. It is an enlarged intimate supplement to his memory. The lawyer has at his touch the associated opinions and decisions of his whole experience [...] The physician, puzzled by a patient's reactions, strikes the trail established in studying an earlier similar case [...] The historian, with a vast chronological account of a people [...]" -- Vannevar Bush[^10]
 
 ---
 
@@ -139,7 +139,7 @@ When a piece of software exposes an API, it offers an interface to third-party s
 Despite its promising performance, MemNav has several shortcomings which currently limit its potential in augmenting memory. First, it runs slow enough to feel unnatural as an extension of your memory. With a large corpus, it usually takes several solid seconds for results to be provided, depending on the task. However, clear trends in decreasing compute costs might solve this problem in the long run.
 
 {: .quote }
-In order to function as exosomatic memory, information retrieval systems must be so good so that retrieving information is like remembering.[^3]
+"In order to function as exosomatic memory, information retrieval systems must be so good so that retrieving information is like remembering." -- Gregory Newby[^3]
 
 Second, creating the knowledge base which underlies MemNav takes time. It requires a sustained regular commitment, and may become tedious. However, future methods will likely enable more efficient ways of recording memories. Using a speech-to-text service would easily triple the rate of transcribed words per minute. Wearable and handheld devices already bring in a multimedia dimension to the endeavor. Neural interfaces might obviate the need for words entirely.
 

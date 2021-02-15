@@ -39,7 +39,7 @@ Given how effective the child is in challenging the parent's knowledge, could we
 Those objectives are key to changing our relationship with hard questions into a healthier one. Annoying inquiries turn into opportunities for growth. This paradigm shift is fittingly captured by the concept of aporia.
 
 {: .quote }
-Aporia is the feeling of realizing that what you thought was a path to truth actually doesn't lead there at all. A shortcut to certainty has revealed itself to be an illusion. The first reaction to aporia might be frustration and even anger, but if you consider that it's providing new information and could be saving you from wasting additional effort maintaining false certainty about an existing belief, it can flip into an Aha! moment that is even enjoyable.[^3]
+"Aporia is the feeling of realizing that what you thought was a path to truth actually doesn't lead there at all. A shortcut to certainty has revealed itself to be an illusion. The first reaction to aporia might be frustration and even anger, but if you consider that it's providing new information and could be saving you from wasting additional effort maintaining false certainty about an existing belief, it can flip into an Aha! moment that is even enjoyable." -- Buster Benson[^3]
 
 ---
 

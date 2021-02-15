@@ -31,9 +31,11 @@ A broad range of methods have been developed through the years to guide the crea
 
 ## Empowering Audiences
 
-However, few creators possess the skill, interest, and know-how required to create such cognitively ergonomic content. There is indeed a growing collection of pixel-perfect explorable explanations and engaging learning experiences, but they pale in comparison to the rate at which mediocre static content is being published.[^6] It's difficult enough for creators of educational resources to convey knowledge accurately and accessibly in the first place, and even more so with additional hurdle introduced by complex creator-side tools.
+However, few creators possess the skill, interest, and know-how required to create such cognitively ergonomic content. There is indeed a growing collection of pixel-perfect explorable explanations and engaging learning experiences, but they pale in comparison to the rate at which mediocre static content is being published.[^6] It's difficult enough for creators of educational resources to convey knowledge accurately and accessibly in the first place, and even more so with the additional hurdle introduced by complex creator-side tools.
 
-What if instead of focusing on building tools for creators, we focused on building tools for *audiences* to systematically get the best out of existing content? Building the shovels and pickaxes required to mine for educational gems, rather than investing in the alchemy of crafting the gems themselves. Think about how a committed student can easily turn a static lecture into flashcards, mind-maps, or sketchnotes in order to get the best out of the material. Could learner-side tools and practices radically extend beyond that with the help of technologies like AI? What if we could automatically turn the mountains of resources available in unfriendly formats into something more memorable, humane, and ergonomic?
+What if instead of focusing on building tools for creators, we focused on building tools for *audiences* to systematically get the best out of existing content? Building the shovels and pickaxes required to mine for educational gems, rather than investing in the alchemy of crafting the gems themselves. Think about how a committed student can easily turn a static lecture into flashcards, mind-maps, or sketchnotes in order to get the best out of the material. Could learner-side tools and practices radically extend beyond that with the help of technologies like AI? What if we could automatically turn the mountains of resources available in unfriendly formats into something more memorable, humane, and ergonomic? We'll attempt to answer this exact question with a working prototype.
+
+---
 
 ## Design
 
@@ -61,6 +63,8 @@ The resulting Python object can then be used to export flashcards derived from t
 >>> a.export('history.csv', prefix='HELLENISTIC AGE:', jeopardy=False)
 ```
 
+---
+
 ## Samples
 
 To get a sense of the pipeline's performance, several samples from various disciplines are listed below. Each excerpt is followed by a set of automatically generated flashcards, pairs of questions and answers which have suffered no human modification whatsoever.
@@ -69,7 +73,7 @@ To get a sense of the pipeline's performance, several samples from various disci
 {: .no_toc }
 
 {: .quote .mt-4 }
-Kirchhoff’s junction rule says that the total current into a junction equals the total current out of the junction. This is a statement of conservation of charge. It is also sometimes called Kirchhoff’s first law, Kirchhoff’s current law, the junction rule, or the node rule. Junctions can’t store current, and current can’t just disappear into thin air because charge is conserved. Therefore, the total amount of current flowing through the circuit must be constant.
+"Kirchhoff’s junction rule says that the total current into a junction equals the total current out of the junction. This is a statement of conservation of charge. It is also sometimes called Kirchhoff’s first law, Kirchhoff’s current law, the junction rule, or the node rule. Junctions can’t store current, and current can’t just disappear into thin air because charge is conserved. Therefore, the total amount of current flowing through the circuit must be constant."
 
 {: .text-left }
 | Question | Answer |
@@ -84,7 +88,7 @@ Kirchhoff’s junction rule says that the total current into a junction equals t
 {: .no_toc }
 
 {: .quote .mt-4 }
-King Philip’s ultimate goal was to conquer Persia and help himself to the empire’s land and riches. This was not to be; King Philip was assassinated by his bodyguard Pausanias in 336 B.C. at his daughter’s wedding, before he could enjoy the spoils of his victories. His son Alexander, known to history as "Alexander The Great," jumped at the chance to take over his father’s imperial project. The new Macedonian king led his troops across the Hellespont into Asia. (When he got there, he plunged an enormous sarissa into the ground and declared the land “spear won.”) From there, Alexander and his armies kept moving.
+"King Philip’s ultimate goal was to conquer Persia and help himself to the empire’s land and riches. This was not to be; King Philip was assassinated by his bodyguard Pausanias in 336 B.C. at his daughter’s wedding, before he could enjoy the spoils of his victories. His son Alexander, known to history as "Alexander The Great," jumped at the chance to take over his father’s imperial project. The new Macedonian king led his troops across the Hellespont into Asia. (When he got there, he plunged an enormous sarissa into the ground and declared the land “spear won.”) From there, Alexander and his armies kept moving."
 
 {: .text-left }
 | Question | Answer |
@@ -100,7 +104,7 @@ King Philip’s ultimate goal was to conquer Persia and help himself to the empi
 {: .no_toc }
 
 {: .quote .mt-4 }
-DNA sequencing is a collection of scientific methods for determining the sequence of the nucleotide bases in a molecule of DNA. All living organisms have DNA (deoxyribonucleic acid) in each of their cells. Each cell in an organism contains the genetic code for the entire organism. The process of DNA sequencing transforms the DNA from a given organism into a format that can be used by researchers for the basic study of biologic processes, medical research, and in forensics.
+"DNA sequencing is a collection of scientific methods for determining the sequence of the nucleotide bases in a molecule of DNA. All living organisms have DNA (deoxyribonucleic acid) in each of their cells. Each cell in an organism contains the genetic code for the entire organism. The process of DNA sequencing transforms the DNA from a given organism into a format that can be used by researchers for the basic study of biologic processes, medical research, and in forensics."
 
 {: .text-left }
 | Question | Answer |
@@ -114,7 +118,7 @@ DNA sequencing is a collection of scientific methods for determining the sequenc
 {: .no_toc }
 
 {: .quote .mt-4 }
-The Villa Savoye at Poissy, designed by Le Corbusier in 1929, represents the culmination of a decade during which the architect worked to articulate the essence of modern architecture. Throughout the 1920s, via his writings and designs, Le Corbusier (formerly Charles-Edouard Jeanneret) considered the nature of modern life and architecture’s role in the new machine age. His famous dictum, that “The house should be a machine for living in,” is perfectly realized within the forms, layout, materials, and siting of the Villa Savoye.
+"The Villa Savoye at Poissy, designed by Le Corbusier in 1929, represents the culmination of a decade during which the architect worked to articulate the essence of modern architecture. Throughout the 1920s, via his writings and designs, Le Corbusier (formerly Charles-Edouard Jeanneret) considered the nature of modern life and architecture’s role in the new machine age. His famous dictum, that “The house should be a machine for living in,” is perfectly realized within the forms, layout, materials, and siting of the Villa Savoye."
 
 {: .text-left }
 | Question | Answer |
@@ -127,7 +131,7 @@ The Villa Savoye at Poissy, designed by Le Corbusier in 1929, represents the cul
 {: .no_toc }
 
 {: .quote .mt-4 }
-Generative adversarial networks consist of two networks, the generator and the discriminator, which compete against each other. The generator is trained to produce fake data, and the discriminator is trained to distinguish the generator’s fake data from real examples. If the generator produces fake data that the discriminator can easily recognize as implausible, such as an image that is clearly not a face, the generator is penalized. Over time, the generator learns to generate more plausible examples.
+"Generative adversarial networks consist of two networks, the generator and the discriminator, which compete against each other. The generator is trained to produce fake data, and the discriminator is trained to distinguish the generator’s fake data from real examples. If the generator produces fake data that the discriminator can easily recognize as implausible, such as an image that is clearly not a face, the generator is penalized. Over time, the generator learns to generate more plausible examples."
 
 {: .text-left }
 | Question | Answer |
@@ -136,6 +140,8 @@ Generative adversarial networks consist of two networks, the generator and the d
 | What is the generator trained to produce? | fake data |
 | What is an example of a implausible data that a discriminator can easily recognize? | an image that is clearly not a face |
 | What does the generator learn to generate over time? | more plausible examples |
+
+---
 
 ## Workflows
 
@@ -149,7 +155,7 @@ Alice is a researcher in machine learning. The rate of new breakthroughs in the 
 One of the few estimates I found on how much time an experienced researcher spends on creating flashcards based on a paper is listed below. From early hands-on experience with Autocards, this can reliably be brought down to around 5 minutes, *after* first reading it.
 
 {: .quote }
-I typically spend 10 to 60 minutes Ankifying a paper, with the duration depending on my judgment of the value I'm getting from the paper.[^21]
+"I typically spend 10 to 60 minutes Ankifying a paper, with the duration depending on my judgment of the value I'm getting from the paper." -- Michael Nielsen[^21]
 
 ### The Bookworm
 
@@ -162,6 +168,8 @@ Charlie is a motivated student. He almost likes experimenting with study techniq
 {: .warn }
 It's tempting to quickly jump to rote memorization before actually understanding the material, and even more so with automated flashcard generation. Autocards is best used in tandem with techniques which foster understanding, such as the Feynman Technique or Knowledge Probes, as exemplified by Charlie.
 
+---
+
 ## Future Steps
 
 One of the main areas of improvement going forward is the quality of the questions generated by the system. They often come across as clunky and overly verbose, which might prove inconvenient for many. Fortunately, recent years have seen a steady rise in the performance of language models, which might soon become able to generate more natural questions.[^20] In the meantime, fine-tuning larger models on the task might help, as the current implementation is limited to the T5-small and T5-base models.
@@ -170,11 +178,15 @@ Another clear area of improvement is a more user-friendly interface which would 
 
 Additionally, the range of possible inputs which could be fed into Autocards might be extended. Various operating modes might instruct the system to, say, automatically extract the abstract, introduction, and discussion sections from a research paper for later use in flashcard generation. It could be adapted to consume a web article based on its URL by scraping the content and using it as input, perhaps after first piping it through an extractive summarization model. Autocards might even prove useful for generating flashcards for educational videos, by stripping the captions and using those as a starting point, or after crudely applying a speech-to-text pass.
 
+---
+
 ## Support
 
 Did you find this project exciting? If so, please consider supporting my work by becoming a sponsor. In doing so, you're making it possible for me to take on ever more challenging projects in cognitive augmentation while also fulfilling my commitment to openness and transparency.
 
 [Become a Sponsor](https://github.com/sponsors/paulbricman){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Follow Updates](https://github.com/paulbricman){: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
+---
 
 ## References
 
