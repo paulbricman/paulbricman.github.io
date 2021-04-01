@@ -26,9 +26,9 @@ Notions like learning, attention, and memory are now central to AI research. How
 Live
 {: .label }
 
-- Exploring approaches to AI-informed cognitive augmentation through a series of experimental prototypes.
-- Enabling individuals to perceive high-dimensional data more effectively through photorealistic facial representations.
-- Developing AI-informed brain imaging methods which support high-resolution non-invasive brain-computer interfaces.
+- Growing [**Psionica**](https://psionica.org/), an open collective on a mission to augment thought for all.
+- Working on [**Dual**](https://github.com/Psionica/Dual), your second brain come to life.
+- [Learning in public](https://paulbricman.com/secondbrain/).
 
 ---
 
