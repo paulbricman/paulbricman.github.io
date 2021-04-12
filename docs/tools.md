@@ -12,14 +12,19 @@ Experimental prototypes designed to augment the mind.
 
 ---
 
-## [Autocards](https://psionica.org/docs/lab/autocards/)
+## [Dual](https://psionica.org/docs/workshop/dual/)
 {: .d-inline-block .mt-0 }
 
 NEW
 {: .label }
 
-Accelerating learning through machine-generated flashcards.
+Your second brain come to life.
 {: .fs-4 .fw-300 .text-left .mt-0 }
+
+## [Autocards](https://psionica.org/docs/lab/autocards/)
+
+Accelerating learning through machine-generated flashcards.
+{: .fs-4 .fw-300 .text-left }
 
 ## [Semantica](https://psionica.org/docs/lab/semantica/)
 
