@@ -18,7 +18,7 @@ Experimental prototypes designed to augment the mind.
 NEW
 {: .label }
 
-Your second brain come to life.
+Amplifying knowledge work with fine-tuned language models.
 {: .fs-4 .fw-300 .text-left .mt-0 }
 
 ## [Autocards](https://psionica.org/docs/lab/autocards/)
