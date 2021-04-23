@@ -80,7 +80,7 @@ To this end, I am:
 ## References
 
 {: .text-right }
-[^1]: Richard Hamming,<br/>[The Unreasonable Effectiveness of Mathematics](https://www.dartmouth.edu/~matc/MathDrama/reading/Hamming.html).
+[^1]: Richard Hamming,<br/>[The Unreasonable Effectiveness of Mathematics](https://web.njit.edu/~akansu/PAPERS/The%20Unreasonable%20Effectiveness%20of%20Mathematics%20(RW%20Hamming).pdf).
 [^2]: Bret Victor,<br/>[Media for Thinking the Unthinkable](http://worrydream.com/MediaForThinkingTheUnthinkable/).
 [^3]: Bret Victor,<br/>[The Humane Representation of Thought](http://worrydream.com/#!/TheHumaneRepresentationOfThoughtTalk)
 [^4]: John Vervaeke,<br/>[Flow, Metaphor, and the Axial Revolution](https://www.youtube.com/watch?v=aF9HeXg65AE)
