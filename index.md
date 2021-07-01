@@ -3,7 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 permalink: /
-description: "I seek to build tools which expand how people can think."
+description: "I'm building tools which expand how people can think."
 ---
 
 # Home
