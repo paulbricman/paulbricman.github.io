@@ -18,7 +18,7 @@ I'm building tools which expand how people can think.
 
 ## About
 
-I'm a Romanian-born Netherlands-based student currently exploring the role of machine learning in cognitive enhancement. After a few years of building machines which think humanly, I'm now trying to go the other way. How can technology expand the range of how people can think? Both theory and practice are needed to address this challenge, which is why I'm both building practical tools for thought and pursuing more esoteric research. As those approaches continue to inform each other increasingly more, I'll eventually transition into computational cognitive science, a field in which computational methods are first-class citizens in understanding and expanding the mind.
+I'm a Romanian-born Netherlands-based student currently exploring the role of machine learning in cognitive enhancement. After a few years of building machines which think humanly, I'm now trying to go the other way. How can technology expand the range of ways in which people can think? Both theory and practice are needed to address this challenge, which is why I'm both building practical tools for thought and pursuing more esoteric research. As those approaches continue to inform each other increasingly more, I'll eventually transition into computational cognitive science, a field in which computational methods are first-class citizens in understanding and expanding the mind.
 
 [Browse Notes](https://paulbricman.com/secondbrain/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
