@@ -3,13 +3,13 @@ layout: default
 title: Home
 nav_order: 1
 permalink: /
-description: "I'm building tools which expand how people can think."
+description: "I'm building tools which expand how people think."
 ---
 
 # Home
 {: .fs-9 }
 
-I'm building tools which expand how people can think.
+I'm building tools which expand how people think.
 {: .fs-6 .fw-300 .text-left }
 
 [View Tools](/docs/tools/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Support Tools](https://opencollective.com/psionica){: .btn .fs-5 .mb-4 .mb-md-0 }
