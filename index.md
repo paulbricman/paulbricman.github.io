@@ -33,6 +33,7 @@ Live
 - Working on [**Dual**](https://psionica.org/docs/workshop/dual/), a skilled virtual assistant for knowledge work.
 - Growing [**Psionica**](https://psionica.org/), an open collective on a mission to augment thought for all.
 - Organizing [**Augment Minds 2021**](https://opencollective.com/psionica/events/augment-minds-7d13842a), an unconference on tools for thought. Register now!
+- Learning Rust, Mandarin, and UI/UX design.
 
 ---
 
