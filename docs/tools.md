@@ -7,7 +7,7 @@ nav_order: 2
 # Tools
 {: .no_toc .fs-9 }
 
-Experimental prototypes designed to augment the mind.
+Steps in developing transformative tools for thought.
 {: .fs-6 .fw-300 }
 
 ---
