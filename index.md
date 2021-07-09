@@ -28,7 +28,7 @@ I'm a Romanian-born Netherlands-based student currently exploring the role of ma
 {: .d-inline-block .mt-1 }
 
 Live
-{: .label }
+{: .label .label-purple }
 
 - Working on [**Dual**](https://psionica.org/docs/workshop/dual/), a skilled virtual assistant for knowledge work.
 - Growing [**Psionica**](https://psionica.org/), an open collective on a mission to augment thought for all.
