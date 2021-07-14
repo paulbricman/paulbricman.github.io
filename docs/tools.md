@@ -12,7 +12,7 @@ Steps in developing transformative tools for thought.
 
 ---
 
-## [Dual](https://psionica.org/docs/workshop/dual/)
+## [Dual](https://psionica.org/tools/dual/)
 {: .d-inline-block .mt-0 }
 
 NEW
@@ -21,22 +21,22 @@ NEW
 Amplifying knowledge work with fine-tuned language models.
 {: .fs-4 .fw-300 .text-left .mt-0 }
 
-## [Autocards](https://psionica.org/docs/lab/autocards/)
+## [Autocards](https://psionica.org/tools/autocards/)
 
 Accelerating learning through machine-generated flashcards.
 {: .fs-4 .fw-300 .text-left }
 
-## [Semantica](https://psionica.org/docs/lab/semantica/)
+## [Semantica](https://psionica.org/tools/semantica/)
 
 Extending conceptual thinking through semantic embeddings.
 {: .fs-4 .fw-300 .text-left }
 
-## [Memory Navigator](https://psionica.org/docs/lab/memnav/)
+## [Memory Navigator](https://psionica.org/tools/memnav/)
 
 Expanding propositional memory through text mining.
 {: .fs-4 .fw-300 .text-left }
 
-## [Knowledge Probes](https://psionica.org/docs/lab/k-probes/)
+## [Knowledge Probes](https://psionica.org/tools/k-probes/)
 
 Promoting critical thinking through machine-generated prompts.
 {: .fs-4 .fw-300 .text-left }
