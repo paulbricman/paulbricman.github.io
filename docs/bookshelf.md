@@ -33,7 +33,7 @@ The emoji stamps signal books which I've found particularly inspiring, mindblowi
 - **Metaphors We Live By**, George Lakoff & Mark Johnson ✨💡
 - Out of Your Mind, Alan Watts ✨
 - Permutation City, Greg Egan 💡🍿
-- **Project Hail Mary** 🍿🍿🍿
+- **Project Hail Mary**, Andy Weir 🍿🍿🍿
 - Second Foudnation, Isaac Asimov (Reread)
 - Speculative Everything, Anthony Dunne & Fiona Raby
 - Solaris, Stanisław Lem
