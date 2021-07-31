@@ -11,7 +11,7 @@ Those are the books I've read at least in part since the somewhat arbitrary mome
 - 💡 **to be mindblown**
 - 🍿 **to be entertained**
 
-The emoji stamps signal books which I found particularly inspiring, mindblowing, or entertaining. Bold entries are all-time favorites.
+The emoji stamps signal books which I've found particularly inspiring, mindblowing, or entertaining. Bold entries are all-time favorites.
 
 - A Fire Upon The Deep, Vernor Vinge ✨
 - Augmenting Human Intellect, Douglas Engelbart
