@@ -6,12 +6,12 @@ nav_order: 3
 
 # Bookshelf
 
-Those are the books I've read at least in part since the somewhat arbitrary moment of getting a [reMarkable](https://remarkable.com/), as it marked a big change in [my reading setup](https://notebook.wesleyac.com/how-to-pirate-ebooks/). I'm reading books for three main reasons: 
+Those are the books I've read at least in part since the somewhat arbitrary moment of getting a [reMarkable](https://remarkable.com/), as it marked a big change in my reading setup (which is very similar to [this one](https://notebook.wesleyac.com/how-to-pirate-ebooks/)). I'm reading books for three main reasons: 
 - ✨ **to be inspired**
 - 💡 **to be mindblown**
 - 🍿 **to be entertained**
 
-The emoji stamps signal books which I've found particularly inspiring, mindblowing, or entertaining. Bold entries are all-time favorites.
+The emojis indicate books which I've found particularly inspiring, mindblowing, or entertaining. Bold entries are all-time favorites.
 
 - A Fire Upon The Deep, Vernor Vinge ✨
 - Augmenting Human Intellect, Douglas Engelbart
