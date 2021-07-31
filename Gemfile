@@ -1,3 +1,5 @@
 source "https://rubygems.org"
-gem "github-pages"
-gem "just-the-docs"
+gem 'jekyll'
+gem 'jekyll-paginate'
+gem 'jekyll-sitemap'
+gem 'jekyll-relative-links'
