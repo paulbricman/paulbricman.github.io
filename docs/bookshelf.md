@@ -34,7 +34,7 @@ The emojis indicate books which I've found particularly inspiring, mindblowing, 
 - Out of Your Mind, Alan Watts ✨
 - Permutation City, Greg Egan 💡🍿
 - **Project Hail Mary**, Andy Weir 🍿🍿🍿
-- Second Foudnation, Isaac Asimov (Reread)
+- Second Foundation, Isaac Asimov (Reread)
 - Speculative Everything, Anthony Dunne & Fiona Raby
 - Solaris, Stanisław Lem
 - Superintelligence, Nick Bostrom 💡
