@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section id="intro">
+  <div>
+    <a href="/"><b>home. </b></a
+    ><a href="mailto:paulbricman@protonmail.com">email. </a
+    ><a href="https://calendly.com/paulbricman/chat">calendly. </a
+    ><a href="javascript:alert('Discord handle: paulbricman#2527')">discord.</a>
+    <br /><br />
+  </div>
+
+  <div class="flex-row-between">
+    <h2>materials</h2>
+  </div>
+  <div style="text-align: justify">
+    I'm learning how to work with different analog materials by creating 100
+    artifacts using one of them, then moving on to the next. The goal is to go
+    from absolute beginner to modest amateur, with every creation being a
+    bite-sized lesson in tactility, patience, and fault tolerance. Currently
+    exploring paper.
+    <br /><br />
+  </div>
+
+  <div>
+    {% for image in site.static_files reversed %} {% if image.path contains
+    'materials' %}
+    <img
+      src="{{ site.baseurl }}{{ image.path }}"
+      width="49%"
+      style="border-style: solid"
+    />
+    {% endif %} {% endfor %}
+  </div>
+</section>
