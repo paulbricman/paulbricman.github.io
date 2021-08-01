@@ -21,21 +21,14 @@ layout: compress
   </script>
 
   <body>
-    <main>{% include anchor_headings.html html=content anchorBody="#" %}</main>
+    <main>{% include anchor_headings.html html=content %}</main>
 
     <script>
       function setTheme(theme) {
-        if (theme === "dark") {
-          document.documentElement.setAttribute("data-theme", "dark");
-          window.localStorage.setItem("theme", "dark");
-          document.getElementById("theme-toggle").classList.add("sun");
-          document.getElementById("theme-toggle").classList.remove("moon");
-        } else {
-          document.documentElement.setAttribute("data-theme", "light");
-          window.localStorage.setItem("theme", "light");
-          document.getElementById("theme-toggle").classList.add("moon");
-          document.getElementById("theme-toggle").classList.remove("sun");
-        }
+        document.documentElement.setAttribute("data-theme", "dark");
+        window.localStorage.setItem("theme", "dark");
+        document.getElementById("theme-toggle").classList.add("sun");
+        document.getElementById("theme-toggle").classList.remove("moon");
       }
 
       let theme = localStorage.getItem("theme");
