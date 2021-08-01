@@ -17,8 +17,8 @@ exploring paper.
     'materials' %}
     <img
       src="{{ site.baseurl }}{{ image.path }}"
-      width="49.2%"
+      width="49.1%"
       style="border-style: solid"
-    />
+    />&nbsp;
     {% endif %} {% endfor %}
   </div>
