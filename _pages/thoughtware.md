@@ -10,12 +10,11 @@ _thoughtware engineering_) is the process of creating and recursively
 making use of such tools. There are countless approaches to this, but I'm
 focusing on creating composable building blocks which amplify basic
 cognitive functions. In this, I'm trying to lay the groundwork for
-tomorrow's cognitive infrastructure. And yes, I made up half the terms on
-this page.
+tomorrow's cognitive infrastructure. And yes, I made half of those terms up.
 
 <br/>
 
-Past projects:
+## past
 
 - **[dual](https://psionica.org/tools/dual/)**: amplifying knowledge work through user-defined assistants.
 - **[autocards](https://psionica.org/tools/autocards/)**: accelerating learning through machine-generated flashcards.
@@ -26,7 +25,7 @@ Past projects:
 
 <br/>
 
-Some future projects:
+## present & future
 
 - a fluid medium for storing, relating, and surfacing thoughts.
 - a lifelong compass for optimally navigating worldviews.

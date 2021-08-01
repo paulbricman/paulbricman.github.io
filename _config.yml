@@ -1,7 +1,7 @@
 site: Paul Bricman
 title: Paul Bricman
 description: A common thread which weaves together various fragments of my identity into a unified whole.
-googlewebfonts: Fira+Code:wght@400;500;700
+googlewebfonts: Space+Grotesk:wght@400;500;700
 lang: en-US
 data-theme: dark # default theme "dark" | "light"
 
