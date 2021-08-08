@@ -21,7 +21,7 @@ I learned a lot about both thoughtware and myself through those projects, and I 
 
 <br/>
 
-The conceptual framework I'm currently using as a backdrop for my thoughtware development is centered around terms like: thought, concept, idea, belief, model, representation, worldview, paradigm, or perspective. I multiplex those with technical terms like: sensor, filter, editor, bot, storage, mapping, search, or sampling. In the upcoming months, I plan to bring to life the following ideas, roughly in order:
+The conceptual framework I'm currently using as a backdrop for my thoughtware development is centered around terms like: thought, concept, idea, belief, model, representation, worldview, paradigm, or perspective. I multiplex those with technical terms like: sensor, filter, editor, bot, storage, mapping, search, or sampling. In the upcoming months, I plan to bring the following ideas to life, roughly in order:
 
 <br/>
 
@@ -31,3 +31,7 @@ The conceptual framework I'm currently using as a backdrop for my thoughtware de
 - an IDE for synthesizing belief systems.
 - a window into units of mutual interest.
 - a memory palace which projects meaning onto physical space.
+
+<br/>
+
+If you want to help me fully focus on bringing those ideas to life in an open way, please consider [supporting me](https://github.com/sponsors/paulbricman).
