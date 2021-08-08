@@ -6,7 +6,7 @@ layout: page
 
 Those are the books I've read at least in part since the somewhat
 arbitrary moment of getting a reMarkable tablet, as it marked a big change
-in my reading setup. Even if I'm reading on e-ink, I love to wander
+in my reading habits. Even if I'm reading on e-ink, I love to wander
 around physical libraries in search for titles. I'm reading for three
 main reasons: to be inspired, to be mindblown, and to be entertained. Bold
 entries are all-time favorites.
@@ -31,6 +31,7 @@ entries are all-time favorites.
 - I, Robot, Isaac Asimov
 - Man's Search For Meaning, Viktor Frankl
 - **Metaphors We Live By**, George Lakoff & Mark Johnson
+- Nostalgia, Mircea Cărtărescu
 - Out of Your Mind, Alan Watts
 - Permutation City, Greg Egan
 - **Project Hail Mary**, Andy Weir

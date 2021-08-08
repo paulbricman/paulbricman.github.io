@@ -4,17 +4,9 @@ layout: page
 
 ## thoughtware
 
-Tools for thought (or _thoughtware_) are tools which expand the range
-of what and how people can think. Building tools for thought (or engaging in
-_thoughtware engineering_) is the process of creating and recursively
-making use of such tools. There are countless approaches to this, but I'm
-focusing on creating composable building blocks which amplify basic
-cognitive functions. In this, I'm trying to lay the groundwork for
-tomorrow's cognitive infrastructure. And yes, I made half of those terms up.
+In the past half a year, I explored the space of thoughtware by creating rather isolated tools for thought which I was individually excited about:
 
 <br/>
-
-## past
 
 - **[dual](https://psionica.org/tools/dual/)**: amplifying knowledge work through user-defined assistants.
 - **[autocards](https://psionica.org/tools/autocards/)**: accelerating learning through machine-generated flashcards.
@@ -25,11 +17,17 @@ tomorrow's cognitive infrastructure. And yes, I made half of those terms up.
 
 <br/>
 
-## present & future
+I learned a lot about both thoughtware and myself through those projects, and I now have a more refined vision of how thoughtware should be like. It should be open source and self-hosted, in order to ensure better goal alignment between users and tools. It should be modular and composable, in order to support a combinatorial explosion of workflows. It should amplify and extend existing human brilliance rather than dehumanize through atrophy. It should non-judgementally extend the range of thinkable thoughts, rather than limit minds to rationalist conceptions of truth and knowledge. It should be informed by specific strengths and weaknesses of the human psyche as understood in cognitive psychology. It should be defined by its underlying culture and embodied principles, rather than opaque creators.
+
+<br/>
+
+The conceptual framework I'm currently using as a backdrop for my thoughtware development is centered around terms like: thought, concept, idea, belief, model, representation, worldview, paradigm, or perspective. I multiplex those with technical terms like: sensor, filter, editor, bot, storage, mapping, search, or sampling. In the upcoming months, I plan to bring to life the following ideas, roughly in order:
+
+<br/>
 
 - a fluid medium for storing, relating, and surfacing thoughts.
 - a lifelong compass for optimally navigating worldviews.
+- an RSS aggregator which optimizes for surprisal.
 - an IDE for synthesizing belief systems.
-- a recommendation system for antifragile learning.
-- an evolutionary pressure cooker for mental models.
-- a growth agent for shared understanding.
+- a window into units of mutual interest.
+- a memory palace which projects meaning onto physical space.

@@ -4,17 +4,15 @@ layout: page
 
 ## Paul Bricman (disambiguation)
 
-This is a [disambiguation page](<https://en.m.wikipedia.org/wiki/Minimalism_(disambiguation)>) for my online presence. I'm using it as a
-common thread which weaves together various fragments of my identity into a
-unified whole. A digital mozaic of my ambitions and obsessions, interests
-and hobbies. That said, it's a mozaic that's slowly shifting over time,
-defined by emergent patterns, not individual fragments.
-Essentially the result of a 20-year-old trying to orient himself and enjoy
-the process.
+I'm a Romanian-born Netherlands-based student on a quest to extend the range of ways in which people can think. On the surface, this happens by designing new primitives, mechanics, and affordances which bring together the computational grandeur of machines and the fragile brilliance of minds in a momentary symbiosis of carbon and silicone. On a deeper level, this happens by deliberately laying the foundation of our cognitive infrastructure: a patchwork of composable building blocks which bring firm principles of engineering to the brittle land of human thought.
 
 <br/>
 
-- **[thoughtware](/thoughtware)**: creating building blocks of cognitive infrastructure.
-- **[materials](/materials)**: creating with analog materials (e.g. paper, graphite).
-- **[bookshelf](/bookshelf)**: what I'm reading these days.
-- **[contact](/contact)**: let's get in touch!
+Outside thoughtware engineering, I'm learning how to create things using analog materials (e.g. paper, graphite) and subjecting myself to a prolonged culture shock by learning Mandarin Chinese. I love the sublime feeling of peeking into awe-inspiring worlds devised by authors with strong worldbuilding skills, and I'm trying my best to marry the effectiveness of routines, habits, and protocols, with the humane qualities of intention and presence. If you resonate with my values and ambitions, we'd probably both enjoy getting in touch. I'd really appreciate if you'd reach out first via the contact page listed below.
+
+<br/>
+
+- **[thoughtware](/thoughtware)** -- "laying the foundation of our cognitive infrastructure"
+- **[materials](/materials)** -- "learning how to create things using analog materials"
+- **[bookshelf](/bookshelf)** -- "peeking into awe-inspiring worlds"
+- **[contact](/contact)** -- "reach out"
