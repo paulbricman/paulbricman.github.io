@@ -25,7 +25,7 @@ The conceptual framework I'm currently using as a backdrop for my thoughtware de
 
 <br/>
 
-- a fluid medium for storing, relating, and surfacing thoughts.
+- **[conceptarium](https://psionica.org/tools/conceptarium/)**: a fluid medium for storing, relating, and surfacing thoughts.
 - a lifelong compass for optimally navigating worldviews.
 - an RSS aggregator which optimizes for surprisal.
 - an IDE for synthesizing belief systems.
