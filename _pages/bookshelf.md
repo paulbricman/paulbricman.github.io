@@ -11,8 +11,6 @@ around physical libraries in search for titles. I'm reading for three
 main reasons: to be inspired, to be mindblown, and to be entertained. Bold
 entries are all-time favorites.
 
-<br/>
-
 - A Fire Upon The Deep, Vernor Vinge
 - Augmenting Human Intellect, Douglas Engelbart
 - **Axiomatic**, Greg Egan

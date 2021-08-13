@@ -10,8 +10,6 @@ from absolute beginner to modest amateur, with every creation being a
 bite-sized lesson in tactility, patience, and fault tolerance. Currently
 exploring paper.
 
-<br/>
-
 <div>
     {% for image in site.static_files reversed %} {% if image.path contains
     'materials' %}

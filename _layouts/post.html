@@ -2,13 +2,12 @@
 layout: default
 ---
 
-  <section class="post">
-    <div>
-      <a href="/">« back</a>
-    </div>
-    {{ content }}
-  </section>
-
+<section>
+  <div>
+    <a href="/"><b>home. </b></a> <br /><br />
+  </div>
+  {{ content }}
+</section>
   <section>
     <nav class="post-nav">
       {% if page.previous %}
@@ -16,7 +15,7 @@ layout: default
         class="post-nav-item post-nav-prev"
         href="{{ page.previous | relative_url }}"
       >
-        <div class="nav-arrow">Previous</div>
+        <div class="nav-arrow">past</div>
         <span class="post-title">{{ page.previous.title }}</span>
       </a>
       {% endif %} {% if page.next %}
@@ -24,7 +23,7 @@ layout: default
         class="post-nav-item post-nav-next"
         href="{{ page.next | relative_url }}"
       >
-        <div class="nav-arrow">Next</div>
+        <div class="nav-arrow">future</div>
         <span class="post-title">{{ page.next.title }}</span>
       </a>
       {% endif %}

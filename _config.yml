@@ -43,9 +43,9 @@ collections:
   pages:
     output: true
     permalink: /:name
-  posts:
+  reflections:
     output: true
-    permalink: /:year/:month/:day/:slug
+    permalink: /reflections/:slug
   
 defaults:
   -
