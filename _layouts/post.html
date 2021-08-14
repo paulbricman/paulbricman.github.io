@@ -4,29 +4,8 @@ layout: default
 
 <section>
   <div>
-    <a href="/"><b>home. </b></a> <br /><br />
+    <a href="/reflections"><b>back.</b></a> <br /><br />
   </div>
+  {{ page.age }} YRS
   {{ content }}
-</section>
-  <section>
-    <nav class="post-nav">
-      {% if page.previous %}
-      <a
-        class="post-nav-item post-nav-prev"
-        href="{{ page.previous | relative_url }}"
-      >
-        <div class="nav-arrow">past</div>
-        <span class="post-title">{{ page.previous.title }}</span>
-      </a>
-      {% endif %} {% if page.next %}
-      <a
-        class="post-nav-item post-nav-next"
-        href="{{ page.next | relative_url }}"
-      >
-        <div class="nav-arrow">future</div>
-        <span class="post-title">{{ page.next.title }}</span>
-      </a>
-      {% endif %}
-    </nav>
-  </section>
 </section>
