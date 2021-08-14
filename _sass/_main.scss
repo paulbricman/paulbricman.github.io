@@ -178,6 +178,15 @@ ol {
   margin: 1rem 0;
 }
 
+th,
+td {
+  padding: 0.5rem;
+  line-height: 1.2rem;
+  border-style: ridge;
+  border-width: 0.1px;
+  text-align: left;
+}
+
 .meta {
   margin: 1.4rem 0;
 }
