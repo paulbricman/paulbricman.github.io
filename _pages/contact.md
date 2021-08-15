@@ -8,4 +8,4 @@ layout: page
 
 - I'm currently **not** looking for job opportunities.
 - I usually respond to emails on weekends.
-- I have no Twitter, Facebook, Instagram accounts. Reddit is on its way, too.
+- I have no Twitter, Facebook, Instagram, Reddit, Linkedin accounts.
