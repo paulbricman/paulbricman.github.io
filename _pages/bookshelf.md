@@ -24,6 +24,7 @@ entries are all-time favorites.
 - Descartes' Error, Antonio Damasio
 - **Deschooling Society**, Ivan Illich
 - **Diaspora**, Greg Egan
+- Emotional First Aid, Guy Winch
 - **Exhalation**, Ted Chiang
 - Fahrenheit 451, Ray Bradbury
 - I, Robot, Isaac Asimov
