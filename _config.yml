@@ -6,8 +6,8 @@ lang: en-US
 data-theme: dark # default theme "dark" | "light"
 
 # URL settings
-url: "paulbricman.github.io"
-permalink: "paulbricman.github.io"
+url: "paulbricman.com"
+permalink: "paulbricman.com"
 permalink: pretty 
 
 
@@ -38,6 +38,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-feed
 
 collections:
   pages:
@@ -70,4 +71,7 @@ relative_links:
   enabled:     true
   collections: false
 
-
+feed:
+  collections:
+    reflections:
+      path: "/reflections/feed.xml"
