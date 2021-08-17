@@ -23,5 +23,3 @@ The conceptual framework I'm currently using as a backdrop for my thoughtware de
 - an IDE for synthesizing belief systems.
 - a window into units of mutual interest.
 - a memory palace which projects meaning onto physical space.
-
-If you want to help me fully focus on bringing those ideas to life in an open way, please consider [supporting me](https://github.com/sponsors/paulbricman).
