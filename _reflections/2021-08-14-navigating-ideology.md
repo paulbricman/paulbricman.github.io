@@ -6,6 +6,8 @@ title: navigating ideology
 
 ## navigating ideology
 
+> "Be a Columbus to whole new continents and worlds within you, opening new channels, not of trade, but of thought." -- Henry David Thoreau
+
 Like most people, my personal goals change from time to time. I'm interested in something for a while, until I'm not. I regularly go through paradigm shifts which radically change my worldview. I internalize new beliefs and let go of old ones. There are very few ideas which I feel deserve to be rendered invariant, to be defined as constants, rather than variables, of my identity.
 
 The main reason for this reluctance is ideological debt. When we internalize a new idea, we nudge our future selves into being more accepting of ideas which are compatible with it, and less accepting of ideas which are not. Innate drives for coherence make it much easier to extend an existing belief system, rather than discard it and start from scratch. It's satisfying, reassuring, comforting to hold a self-compatible worldview, yet it increases the friction of obtaining a new one. Therefore, with each new idea we internalize, we incur some ideological debt, we buy into a belief system a bit more, and implicitly make it harder for ourselves to change our mind later on.
