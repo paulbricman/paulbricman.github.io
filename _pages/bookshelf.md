@@ -48,12 +48,14 @@ entries are all-time favorites.
 - The Man Who Mistook His Wife For a Hat, Oliver Sacks
 - The Metamorphosis, Franz Kafka
 - **The Metamorphosis of Prime Intellect**, Roger Williams
+- The Nation of Plants, Stefano Mancuso
 - The Outsider, Albert Camus
 - **The Paper Menagerie**, Ken Liu
 - The Society of Mind, Marvin Minsky
 - **The Three Body Problem**, Cixin Liu
 - There Is No Antimemetics Division, @qntm
 - Ubik, Philip K. Dick
+- Vagabonding, Rolf Potts
 - We, Yevgeny Zamyatin
 - Weapons of Math Destruction, Cathy O'Neil
 - Why Are We Yelling, Buster Benson
