@@ -219,6 +219,9 @@ pre {
 
 img {
   max-width: 100%;
+  border: var(--link-color);
+  border-width: 3px;
+  border-style: solid;
 }
 
 hr {
