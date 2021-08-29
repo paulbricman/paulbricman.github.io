@@ -29,7 +29,7 @@ After picking up Chinese a couple months ago, it didn't take long to recognize t
 >
 > 家 (home) + 人 (person) = 家人 (family)
 >
-> 公 (public) + 园 (garden) = 公园 (park)
+> 电 (electricity) + 影 (shadow) = 电影 (movie)
 >
 > 女 (woman) + 子 (child) = 好 (good)
 
