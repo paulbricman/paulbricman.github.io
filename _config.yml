@@ -6,8 +6,8 @@ lang: en-US
 data-theme: dark # default theme "dark" | "light"
 
 # URL settings
-url: "paulbricman.com"
-permalink: "paulbricman.com"
+url: "https://paulbricman.com"
+permalink: "https://paulbricman.com"
 permalink: pretty 
 
 
