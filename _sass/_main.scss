@@ -97,11 +97,11 @@ html[data-theme="dark"] {
   --very-light-text-color: #eee;
   --light-text-color: #c4bbf0;
   --medium-text-color: #52057b;
-  --main-text-color: #eaeaea;
-  --dark-text-color: rgb(36, 38, 42);
-  --link-color: rgb(241, 163, 75);
-  --code-bg-color: rgb(36, 38, 42);
-  background-color: rgb(19, 20, 24);
+  --main-text-color: #474539;
+  --dark-text-color: #228b22;
+  --link-color: #228b22;
+  --code-bg-color: rgb(0, 182, 152);
+  background-color: #fffffd;
 
   #theme-toggle div {
     position: relative;
@@ -167,6 +167,9 @@ li {
 a {
   color: var(--link-color);
   text-decoration: none;
+  border-style: dotted;
+  border-width: 0;
+  border-bottom-width: 1px;
 }
 
 p {
@@ -219,9 +222,6 @@ pre {
 
 img {
   max-width: 100%;
-  border: var(--link-color);
-  border-width: 3px;
-  border-style: solid;
 }
 
 hr {
@@ -261,7 +261,7 @@ section {
 
 blockquote {
   font-style: italic;
-  border-left: 5px solid var(--dark-text-color);
+  border-left: 3px solid var(--dark-text-color);
   padding-left: 1rem;
 }
 

@@ -27,6 +27,7 @@ entries are all-time favorites.
 - Emotional First Aid, Guy Winch
 - **Exhalation**, Ted Chiang
 - Fahrenheit 451, Ray Bradbury
+- Glass and Gardens: Solarpunk Summers (Anthology)
 - I, Robot, Isaac Asimov
 - Man's Search For Meaning, Viktor Frankl
 - **Metaphors We Live By**, George Lakoff & Mark Johnson
