@@ -471,8 +471,8 @@ figcaption {
 .post-nav {
   display: flex;
   position: relative;
-  margin-top: 0;
-  border-top: 2px solid var(--main-text-color);
+  margin-top: -90px;
+  border-top: 2px solid var(--link-color);
   line-height: 1.4;
 
   .post-nav-item {
