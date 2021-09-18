@@ -47,6 +47,9 @@ collections:
   reflections:
     output: true
     permalink: /reflections/:slug
+  thoughtware:
+    output: true
+    permalink: /thoughtware/:name
   
 defaults:
   -
