@@ -27,79 +27,79 @@ To integrate a minimal level of structure into the question set, we'll use Bloom
 
 The taxonomy consists of six broad categories, exemplified below with intended learning outcomes from the degree I'm currently pursuing.
 
-1. **remember** -- Retrieve relevant knowledge.
+- **remember** -- Retrieve relevant knowledge.
 
-- Recall the high-level anatomy of the brain.
-- Recognize questionable research practices.
-- Know how to create reproducible workflows.
+  - Recall the high-level anatomy of the brain.
+  - Recognize questionable research practices.
+  - Know how to create reproducible workflows.
 
-2. **understand** -- Construct meaning.
+- **understand** -- Construct meaning.
 
-- Explain the principles behind the general linear model.
-- Describe algorithms used for adversarial search.
-- Summarize the main approaches to speech synthesis.
+  - Explain the principles behind the general linear model.
+  - Describe algorithms used for adversarial search.
+  - Summarize the main approaches to speech synthesis.
 
-3. **apply** -- Use knowledge in new situations.
+- **apply** -- Use knowledge in new situations.
 
-- Carry out a multivariate statistical analysis.
-- Implement a genetic algorithm.
-- Solve homogeneous differential equations.
+  - Carry out a multivariate statistical analysis.
+  - Implement a genetic algorithm.
+  - Solve homogeneous differential equations.
 
-4. **analyze** -- Determine how parts relate to a structure.
+- **analyze** -- Determine how parts relate to a structure.
 
-- Investigate the relationship between syntax and semantics.
-- Analyze the interaction between various forms of memory.
-- Determine the relationship between subfields of cognitive science.
+  - Investigate the relationship between syntax and semantics.
+  - Analyze the interaction between various forms of memory.
+  - Determine the relationship between subfields of cognitive science.
 
-5. **evaluate** -- Make informed judgements.
+- **evaluate** -- Make informed judgements.
 
-- Interpret the results of brain data analyses.
-- Determine the complexity of simple algorithms.
-- Evaluate set-theoretic statements.
+  - Interpret the results of brain data analyses.
+  - Determine the complexity of simple algorithms.
+  - Evaluate set-theoretic statements.
 
-6. **create** -- Reorganize elements into a structure.
+- **create** -- Reorganize elements into a structure.
 
-- Construct formal proofs for first-order logic.
-- Design a user interface based on cognitive ergonomics.
-- Develop models in a cognitive architecture.
+  - Construct formal proofs for first-order logic.
+  - Design a user interface based on cognitive ergonomics.
+  - Develop models in a cognitive architecture.
 
 Due to the popularity of Bloom's revised taxonomy, there are a lot of online resources containing examples of learning outcomes, complete with suggestions for classroom activities. After compiling examples from several such resources and rephrasing them as questions, I used a text generation service to extend the question set even further.[^5] Following several hours of co-creating questions with the machine, the total number of knowledge probes surpassed two hundred, a sample of which can be found below.
 
-1. **remember** -- Retrieve relevant knowledge.
+- **remember** -- Retrieve relevant knowledge.
 
-- What are the basic facts of this?
-- What puzzle is this part of?
-- How would you characterize this?
+  - What are the basic facts of this?
+  - What puzzle is this part of?
+  - How would you characterize this?
 
-2. **understand** -- Construct meaning.
+- **understand** -- Construct meaning.
 
-- How would you explain this to a peer?
-- What would be an analogy for this?
-- How would you represent this visually?
+  - How would you explain this to a peer?
+  - What would be an analogy for this?
+  - How would you represent this visually?
 
-3. **apply** -- Use knowledge in new situations.
+- **apply** -- Use knowledge in new situations.
 
-- How can this be helpful?
-- Who can benefit from this?
-- How could this be applied to other domains?
+  - How can this be helpful?
+  - Who can benefit from this?
+  - How could this be applied to other domains?
 
-4. **analyze** -- Determine how parts relate to a structure.
+- **analyze** -- Determine how parts relate to a structure.
 
-- What's the structure of this?
-- How do the components of this relate to each other?
-- How can this be viewed as a system?
+  - What's the structure of this?
+  - How do the components of this relate to each other?
+  - How can this be viewed as a system?
 
-5. **evaluate** -- Make informed judgements.
+- **evaluate** -- Make informed judgements.
 
-- What assumptions underlie this?
-- What evidence supports this?
-- How would different people view this?
+  - What assumptions underlie this?
+  - What evidence supports this?
+  - How would different people view this?
 
-6. **create** -- Reorganize elements into a structure.
+- **create** -- Reorganize elements into a structure.
 
-- How can this be expanded?
-- How does this fit into a narrative?
-- How would you design something based on this?
+  - How can this be expanded?
+  - How does this fit into a narrative?
+  - How would you design something based on this?
 
 As in the case of the curious child, the value lies in the dialogue itself, rather than in the questions. Therefore, we need a method of stitching together questions with user replies, fostering an ongoing discussion. Fortunately, this method can be as simple as a chat-like textual interface which alternates between printing output questions and reading input replies. The unwritten rules of pragmatics will do the rest, helping the user instinctively turn the sequence of questions and replies into a meaningful dialogue by filling in the gaps.
 
@@ -157,7 +157,7 @@ Use the following button to randomly sample one probe from the collection.
 
 <button class="btn btn-primary" onclick="newProbe()">New Probe</button>
 
-<p id="probeDisplay"></p>
+<p id="probeDisplay"><i>The probe will show up here...</i></p>
 <script src="/assets/js/k-probes.js"></script>
 
 ## final thoughts
