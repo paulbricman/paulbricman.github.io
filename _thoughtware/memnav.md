@@ -1,5 +1,5 @@
 ---
-layout: thoughtware
+layout: tool
 title: Memory Navigator
 description: "Expanding propositional memory through text mining."
 published: True

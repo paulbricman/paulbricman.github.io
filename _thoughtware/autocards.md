@@ -1,5 +1,5 @@
 ---
-layout: thoughtware
+layout: tool
 title: Autocards
 description: "Accelerating learning through machine-generated flashcards."
 published: True

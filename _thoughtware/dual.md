@@ -1,5 +1,5 @@
 ---
-layout: thoughtware
+layout: tool
 title: Dual
 description: "Amplifying knowledge work through user-defined assistants."
 published: True

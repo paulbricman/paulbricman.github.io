@@ -1,5 +1,5 @@
 ---
-layout: thoughtware
+layout: tool
 title: Conceptarium
 description: "A fluid medium for storing, relating, and surfacing thoughts."
 published: True

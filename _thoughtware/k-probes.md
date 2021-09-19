@@ -1,5 +1,5 @@
 ---
-layout: thoughtware
+layout: tool
 title: Knowledge Probes
 description: "Promoting critical thinking through prompt generation."
 published: True

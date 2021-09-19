@@ -1,5 +1,5 @@
 ---
-layout: thoughtware
+layout: tool
 title: Semantica
 description: "Accelerating learning through machine-generated flashcards."
 published: True

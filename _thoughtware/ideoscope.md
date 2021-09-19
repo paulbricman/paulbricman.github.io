@@ -1,5 +1,5 @@
 ---
-layout: thoughtware
+layout: tool
 title: Ideoscope
 description: "An instrument for quantifying, understanding, and optimizing your thinking."
 published: True
