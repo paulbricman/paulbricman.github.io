@@ -107,7 +107,7 @@ As a final layer of complexity, we'll also use Bloom's revised taxonomy as a bas
 
 ## dialogue sample
 
-The following is a short excerpt discussing the technology behind [Semantica](https://psionica.org/tools/semantica/):
+The following is a short excerpt discussing the technology behind [Semantica](/thoughtware/semantica/):
 
 > _Let's talk about semantic embeddings._
 >
