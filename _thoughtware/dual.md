@@ -1,7 +1,7 @@
 ---
 layout: thoughtware
 title: Dual
-description: "A fluid medium for storing, relating, and surfacing thoughts."
+description: "Amplifying knowledge work through user-defined assistants."
 published: True
 ---
 

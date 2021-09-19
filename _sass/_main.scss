@@ -101,6 +101,7 @@ html[data-theme="dark"] {
   --dark-text-color: #228b22;
   --link-color: #228b22;
   --code-bg-color: rgb(0, 182, 152);
+  --link-shade-color: #ebfaeb;
   background-color: #fffffd;
 
   #theme-toggle div {
@@ -185,9 +186,20 @@ th,
 td {
   padding: 0.5rem;
   line-height: 1.2rem;
-  border-style: ridge;
+  border-style: dotted;
   border-width: 0.1px;
+  border-bottom: 0;
+  border-right: 0;
   text-align: left;
+}
+
+table {
+  border-style: dotted;
+  border-width: 0.1px;
+  border-top: 0;
+  border-left: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .meta {
@@ -196,8 +208,7 @@ td {
 
 code,
 pre {
-  background: var(--code-bg-color);
-  margin: 0 -27px;
+  background: var(--link-shade-color);
   border-width: 1px;
 }
 
@@ -217,7 +228,9 @@ pre {
   padding: 0.8rem;
   white-space: pre-wrap;
   border-style: none none none solid;
-  border-color: var(--light-text-color);
+  border-color: var(--link-color);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 img {
@@ -263,8 +276,10 @@ blockquote {
   font-style: italic;
   border-left: 3px solid var(--dark-text-color);
   padding-left: 1rem;
+  padding-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  background-color: var(--link-shade-color);
 }
 
 h1 {
