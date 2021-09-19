@@ -1,7 +1,7 @@
 ---
 layout: thoughtware
 title: Knowledge Probes
-description: "Accelerating learning through machine-generated flashcards."
+description: "Promoting critical thinking through prompt generation."
 published: True
 ---
 

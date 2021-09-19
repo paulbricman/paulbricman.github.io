@@ -1,7 +1,7 @@
 ---
 layout: thoughtware
 title: Memory Navigator
-description: "Accelerating learning through machine-generated flashcards."
+description: "Expanding propositional memory through text mining."
 published: True
 ---
 
