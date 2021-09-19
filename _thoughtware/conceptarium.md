@@ -5,6 +5,8 @@ description: "A fluid medium for storing, relating, and surfacing thoughts."
 published: True
 ---
 
+![](/assets/img/cfl.png)
+
 ## conceptarium ([code](https://github.com/Psionica/conceptarium))
 
 A conceptarium (noun. /knsɛptɛriəm/, plural: conceptaria) is a fluid medium for storing, relating, and surfacing thoughts based on a new representation of knowledge. It's meant to provide a foundation for new tools for thought to build onto, a means to nurture a new tooling ecosystem for knowledge work -- a cognitive infrastructure. It embodies a philosophy of knowledge which differs in important ways from the one held by the knowledge graph poster children (e.g. Roam Research, Obsidian, Logseq), and can be deployed today in a self-hosted regime, even on a modest Raspberry Pi.
@@ -41,6 +43,8 @@ The conceptarium embodies some specific principles about how knowledge is like a
 
 In a knowledge graph, each node is connected to a subset of the other notes through explicit links created by the knowledge worker. They are finite, can't overlap, and require valuable time to create. In contrast, in a conceptarium, all documents are related to each other. They live in the same space, and are just closer or farther away from each other. Additionally, the orientation of the straight line which connects any two dots is deeply informative and codes the semantic relation between the two documents. This principle is explored in much more depth in [Semantica](/tools/semantica/#match). For instance, the document pairs "man" & "woman," "king" & "queen," and "actor" & "actress" have roughly the same relative placements. However, even if we haven't developed a way to visualize, let alone understand, the semantics of high-dimensional spatial layouts, they are still present in the representation as a testament for every thought having _some_ unique relation to every other one. [^1]
 
+![](/assets/img/conceptarium_results.png)
+
 - thoughts are not atomic.
 
 In a knowledge graph, each note should be atomic, meaning that it should express one indivisible thing. Those "atoms" are then linked together to form the knowledge graph. The conceptarium, even though its documents are discrete, invites the user to narrow in on arbitrary fragments of a document, to select part of a text or part of an image as the next stop of their train of thought. After the selection is made, the conceptarium can then surface documents related to that specific aspect of the initial one, somewhat like the _Select > Right click > Search DuckDuckGo for "..."_ option in browsers, but as the core linking mechanic. In this, each document can be broken down into a virtually infinite collection of fragments, which via the previous principle, can each lead down their own rabbit holes.
@@ -49,21 +53,19 @@ In a knowledge graph, each note should be atomic, meaning that it should express
 
 The term conceptarium is not just an expansive sound bite. Similar to how a herbarium is used to collect plant samples or how a terrarium is used to collect fragments of living habitat, the conceptarium is used to collect thoughts. It is nothing more than a high-tech Mason jar for those elusive pieces of language and imagery entertained by our minds moment by moment. In this, it helps the user detach themselves from their thoughts, acknowledging that individual insights are more a result of happenstance and memetic dynamics than a reflection of personal worth. Not even the most dedicated knowledge worker can control the momentary weather of their minds, but only the general climate, and the explicit decoupling of the conceptarium helps internalize this belief.
 
-![](/assets/img/conceptarium_results.png)
-
 - building blocks are common nouns.
 
 As opposed to isolated tools, composable building blocks which have interoperability as a core principle enable a combinatorial explosion of workflows. Not only does the user have the freedom to mix and match them until obtaining the desired solution, but tool-makers can focus on designing new useful affordances to fit their workflows, rather than reinventing the knowledge graph. The conceptarium provides a self-contained knowledge store for other tools for thought to build on top of. It manages the nuts and bolts of the unique underlying representation, so that third-party apps don't have to worry about its implementation.
 
 > "For example, I can program with Sublime Text, while my teammate uses vim, and we don’t need to fight to the death to pick one editor between us. There are dozens of text editors to choose from, and no lock-in from proprietary file formats. Contrast this with Google Docs: in order to live collaborate with each other, we all need to use the same editor. For someone who spends their whole working day in Google Docs, this can be a serious limitation. I personally hate doing substantial writing in Google Docs." -- Geoffrey Litt [^4]
 
+![](/assets/img/buildingblocks.png)
+
 Another way to signal the general scope of such a building block in the making, while also taking advantage of non-commercial goals, is to name it using a common noun. In contrast to a proper noun (e.g. Roam Research), a common noun (e.g. conceptarium) does not signal a branded product or service, but rather a type of _thing_ which someone can make use of. Additionally, phrasing the name using common Greek and Latin morphemes enables natural adaptations to a host of European languages. For instance, in Romanian, I would call it "conceptar" (analogous to how "ierbar" means "herbarium"). In Italian, it might be called "concettario," while it Finnish, it might be called "konseptario."
 
 ## architecture
 
 The conceptarium is a minimal server app. A lightweight standardized API only exposes a handful of endpoints, mostly for saving and finding documents. The storage of document metadata, the management of document activation, and the ranking of candidate documents based on custom criteria is all managed by the server app behind-the-scenes. It makes use of Python modules like FastAPI and sentence-transformers, and can run on hardware as modest as a Raspberry Pi. The lightweight API makes it trivial to integrate with services like IFTTT/Zapier (as a webhook), AutoHotKey-like utilities (via requests), browsers (as a search engine), and full-blown third-party tools (as a knowledge store). For more information on API docs and setup, visit the [GitHub repo](github.com/psionica/conceptarium).
-
-![](/assets/img/cfl.png)
 
 ## future visions
 
