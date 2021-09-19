@@ -7,7 +7,7 @@ published: True
 
 ![](/assets/img/cfl.png)
 
-## conceptarium ([code](https://github.com/Psionica/conceptarium))
+## conceptarium ([stable release](https://github.com/Psionica/conceptarium))
 
 A conceptarium (noun. /knsɛptɛriəm/, plural: conceptaria) is a fluid medium for storing, relating, and surfacing thoughts based on a new representation of knowledge. It's meant to provide a foundation for new tools for thought to build onto, a means to nurture a new tooling ecosystem for knowledge work -- a cognitive infrastructure. It embodies a philosophy of knowledge which differs in important ways from the one held by the knowledge graph poster children (e.g. Roam Research, Obsidian, Logseq), and can be deployed today in a self-hosted regime, even on a modest Raspberry Pi.
 
