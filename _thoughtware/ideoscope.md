@@ -7,29 +7,29 @@ published: True
 
 ## ideoscope (design fiction)
 
-An ideoscope (noun. /aɪdɪɒskoʊp/, plural: ideoscopes) is an instrument for measuring your thought process through a host of novel metrics. It builds on top of the [conceptarium](/tools/conceptarium) and provides a window into your thinking in the form of an analytics dashboard full of stats and visualizations. Quantifying your thought process paves the way for a more intimate understanding of your thought patterns as a knowledge worker. The process of measurement, in turn, enables a host of strategies for nurturing your mind, such as A/B testing your routine for maximum generation of novel ideas (i.e. ideogenesis) or setting monthly goals for the breadth of your perspective (i.e. memetic variability).
+An ideoscope (noun. /aɪdɪɒskoʊp/, plural: ideoscopes) is an instrument for measuring your thought process through a host of novel metrics. It builds on top of the [conceptarium](/thoughtware/conceptarium) and provides a window into your thinking in the form of an analytics dashboard full of stats and visualizations. Quantifying your thought process paves the way for a more intimate understanding of your thought patterns as a knowledge worker. The process of measurement, in turn, enables a host of strategies for nurturing your mind, such as A/B testing your routine for maximum generation of novel ideas (i.e. ideogenesis) or setting monthly goals for the breadth of your perspective (i.e. memetic variability).
 
 The ideoscope is realized in a specific cultural landscape, with influences from a number of movements. Firstly, the quantified self community advocates for the intentional measurement of various facets of your life (e.g. sleep, productivity, well-being) as a necessary precursor for the effective optimization of those areas.[^2] Particularly relevant here is the quantified mind project, which has been around since almost a decade ago, yet it focuses more on evaluating general cognitive performance through brain puzzles and abstract minigames.[^3] In contrast, the ideoscope addresses a higher level of abstraction by focusing on the set of specific thoughts which inhabit your mind. This perspective comes from the highly controversial field of memetics, which frames the mind as a habitat where ideas live, reproduce, and mutate -- an ecology of thought.
 
 ## architecture
 
-As already mentioned, the ideoscope is designed as a building block which easily integrates with the [conceptarium](/tools/conceptarium). It makes direct use of the novel representation introduced by the other tool, although most of the analytics involved can in theory be used with third-party data sources. The reliance on an exotic format is justified by the richness through which it provides a mirror of the mind's ecology, unparalleled by other available alternatives (e.g. plain Markdown notes), even if still extremely far from how the mind works.
+As already mentioned, the ideoscope is designed as a building block which easily integrates with the [conceptarium](/thoughtware/conceptarium). It makes direct use of the novel representation introduced by the other tool, although most of the analytics involved can in theory be used with third-party data sources. The reliance on an exotic format is justified by the richness through which it provides a mirror of the mind's ecology, unparalleled by other available alternatives (e.g. plain Markdown notes), even if still extremely far from how the mind works.
 
-Concretely, the ideoscope is a web app written in Python using Streamlit.[^6] For starters, it needs the URL of your [conceptarium](/tools/conceptarium) in order to extract its contents in the background. After fetching your thoughts as JSON, the ideoscope derives a sequence of stats and visualization designed to give you insights into your own thought process.
+Concretely, the ideoscope is a web app written in Python using Streamlit.[^6] For starters, it needs the URL of your [conceptarium](/thoughtware/conceptarium) in order to extract its contents in the background. After fetching your thoughts as JSON, the ideoscope derives a sequence of stats and visualization designed to give you insights into your own thought process.
 
 ## metrics
 
-The metrics incorporated in the ideoscope are grouped into three broad categories: memetics, semantics, and linguistics. Each of these provides a different angle for analyzing your thinking, similar to how a blood panel involves different families of tests (e.g. hematology, biochemistry). Note that understanding the potential of the novel metrics introduced below requires a decent understanding of the [three-part representation](http://localhost:4000/tools/conceptarium/#representation) used by the conceptarium.
+The metrics incorporated in the ideoscope are grouped into three broad categories: memetics, semantics, and linguistics. Each of these provides a different angle for analyzing your thinking, similar to how a blood panel involves different families of tests (e.g. hematology, biochemistry). Note that understanding the potential of the novel metrics introduced below requires a decent understanding of the [three-part representation](http://localhost:4000/thoughtware/conceptarium/#representation) used by the conceptarium.
 
 As hinted at before, the memetic perspective consists in looking at your mind as a population of memes (i.e. ideas, thoughts, concepts) which evolves over time, facing various obstacles and opportunities along the way.[^7]
 
 - ideogenesis
 
-This metric simply refers to the rate of new thoughts being saved in the [conceptarium](/tools/conceptarium). It supports a number of different related stats and visualizations (e.g. calendar views, histograms): past month, past week, past day, per month, per week, per day, by day of the week, by hour. If you're using the [conceptarium](/tools/conceptarium) as a storage medium for new ideas, then ideogenesis can indicate when (i.e. in what recent period, in what part of the day) you generate most new ideas. Correlating this with activities you've engaged in during those times (e.g. via your calendar or time tracker) might help identify the most _thoughtful_ practices. Chatting with interesting people and enjoying solo walks in nature appear to be major such candidates for me.
+This metric simply refers to the rate of new thoughts being saved in the [conceptarium](/thoughtware/conceptarium). It supports a number of different related stats and visualizations (e.g. calendar views, histograms): past month, past week, past day, per month, per week, per day, by day of the week, by hour. If you're using the [conceptarium](/thoughtware/conceptarium) as a storage medium for new ideas, then ideogenesis can indicate when (i.e. in what recent period, in what part of the day) you generate most new ideas. Correlating this with activities you've engaged in during those times (e.g. via your calendar or time tracker) might help identify the most _thoughtful_ practices. Chatting with interesting people and enjoying solo walks in nature appear to be major such candidates for me.
 
 - memetic variability
 
-Each thought saved in the [conceptarium](/tools/conceptarium) has a semantic embedding which indicates what it is about by placing it at certain coordinates in semantic space. Memetic variability, in an analogy to genetic variability, is then a measure of how _diverse_ your thoughts are, how much variation there is in the ecology of your thought during a certain period of time.[^1] It's computed through the standard deviation (i.e. spread) of your thoughts across semantic space. If you've been constantly thinking about the same things in the same way through the past month, the memetic variability would be quite low. In contrast, if you've been thinking about more diverse things, the memetic variability would be higher. In population genetics, variability is argued to be a hard requirement for natural selection, which helps increase fitness over time. Similarly, a healthy dose of memetic variability might be helpful in generating powerful ideas, while a memetic monoculture might get stuck in a local optimum of fitness. Think of memetic variability as biodiversity for ideas.
+Each thought saved in the [conceptarium](/thoughtware/conceptarium) has a semantic embedding which indicates what it is about by placing it at certain coordinates in semantic space. Memetic variability, in an analogy to genetic variability, is then a measure of how _diverse_ your thoughts are, how much variation there is in the ecology of your thought during a certain period of time.[^1] It's computed through the standard deviation (i.e. spread) of your thoughts across semantic space. If you've been constantly thinking about the same things in the same way through the past month, the memetic variability would be quite low. In contrast, if you've been thinking about more diverse things, the memetic variability would be higher. In population genetics, variability is argued to be a hard requirement for natural selection, which helps increase fitness over time. Similarly, a healthy dose of memetic variability might be helpful in generating powerful ideas, while a memetic monoculture might get stuck in a local optimum of fitness. Think of memetic variability as biodiversity for ideas.
 
 - memetic drift
 
@@ -42,7 +42,7 @@ Interestingly enough, population genetics notes that the effect of genetic drift
 
 - memetic fitness
 
-If the previous metrics aimed to characterize the entire population of your memetic ecology, memetic fitness is a characteristic of an individual -- one idea. We're identifying the fitness of an idea here with its activation in the [conceptarium](/tools/conceptarium). The more captivating, consequential, and generally interesting ideas are the most active ones, the ones you've kept thinking about most. Besides getting some summary stats like min, max, mean, median, or mode, it's possible to peek into the aggregate fitness landscape of the population through visualizations like histograms and boxplots. These metrics might be able to diagnose segregation, inbreeding, elitism, and other pitfalls faced by evolving populations.
+If the previous metrics aimed to characterize the entire population of your memetic ecology, memetic fitness is a characteristic of an individual -- one idea. We're identifying the fitness of an idea here with its activation in the [conceptarium](/thoughtware/conceptarium). The more captivating, consequential, and generally interesting ideas are the most active ones, the ones you've kept thinking about most. Besides getting some summary stats like min, max, mean, median, or mode, it's possible to peek into the aggregate fitness landscape of the population through visualizations like histograms and boxplots. These metrics might be able to diagnose segregation, inbreeding, elitism, and other pitfalls faced by evolving populations.
 
 - memetic load
 
@@ -50,7 +50,7 @@ Memetic load, in an analogy to genetic load, is a measure of the presence of unf
 
 - effective population size
 
-Just like in population genetics, the population size of your memetic ecology is simply the number of individuals (i.e. ideas) which inhabit it. However, some further criteria might turn it into a more useful metric than simply an indicator of how many thoughts you ever saved to the [conceptarium](/tools/conceptarium). For instance, thoughts might be considered active members of the ecology only if their activation is above a certain threshold.
+Just like in population genetics, the population size of your memetic ecology is simply the number of individuals (i.e. ideas) which inhabit it. However, some further criteria might turn it into a more useful metric than simply an indicator of how many thoughts you ever saved to the [conceptarium](/thoughtware/conceptarium). For instance, thoughts might be considered active members of the ecology only if their activation is above a certain threshold.
 
 - memetic carrying capacity
 
@@ -73,7 +73,7 @@ All previous metrics, even if quite informative, are simply stats or, at best, t
 {: .border }
 ![](/assets/img/ideoscope2.png)
 
-If all previous metrics applied to thoughts expressed both through written language and visual imagery as stored in the [conceptarium](/tools/conceptarium), the following explore opportunities for gaining insights from langauge in particular.
+If all previous metrics applied to thoughts expressed both through written language and visual imagery as stored in the [conceptarium](/thoughtware/conceptarium), the following explore opportunities for gaining insights from langauge in particular.
 
 - conciseness
 
@@ -89,11 +89,11 @@ By using rather traditional text mining techniques, objectivity can be roughly g
 
 - sentiment
 
-Using very similar techniques to the previous metric, the sentiment of your written thoughts can tracked on a simplistic one-dimensional scale from 0 (i.e. negative sentiment) to 1 (i.e. positive sentiment). Think of it as an estimate of how many stars an online review has based on its text contents, but normalized between 0 and 1. In explorations of the [conceptarium](/tools/conceptarium) as a therapeutic tool, a safe space for honest thoughts, the average sentiment over various periods of time might provide useful insights and even a tangible target for well-being interventions.
+Using very similar techniques to the previous metric, the sentiment of your written thoughts can tracked on a simplistic one-dimensional scale from 0 (i.e. negative sentiment) to 1 (i.e. positive sentiment). Think of it as an estimate of how many stars an online review has based on its text contents, but normalized between 0 and 1. In explorations of the [conceptarium](/thoughtware/conceptarium) as a therapeutic tool, a safe space for honest thoughts, the average sentiment over various periods of time might provide useful insights and even a tangible target for well-being interventions.
 
 - interests
 
-Being the only window into your [conceptarium](/tools/conceptarium) which shows you the actual contents of your thoughts, this is a visualization of how your interests evolved based on the frequency of certain keywords over time. Thoughts are bucketed by certain time intervals (e.g. by week) on a timeline, and the most frequent noun phrases you used in each period are reported. This can be an effective way of getting a sense of how your interests (i.e. the things you've been thinking about) changed through the years.
+Being the only window into your [conceptarium](/thoughtware/conceptarium) which shows you the actual contents of your thoughts, this is a visualization of how your interests evolved based on the frequency of certain keywords over time. Thoughts are bucketed by certain time intervals (e.g. by week) on a timeline, and the most frequent noun phrases you used in each period are reported. This can be an effective way of getting a sense of how your interests (i.e. the things you've been thinking about) changed through the years.
 
 ## strategies
 
@@ -113,7 +113,7 @@ In optimization theory, search algorithms like simulated annealing and genetic a
 
 ## conclusion
 
-The ideoscope is a digital instrument which enables a new dimension of understanding your thought process. Through novel metrics which take advantage of the [conceptarium's](/tools/conceptarium) architecture, knowledge workers can get a numerical grip on the ecology of their mind, and start cultivating it rationally.
+The ideoscope is a digital instrument which enables a new dimension of understanding your thought process. Through novel metrics which take advantage of the [conceptarium's](/thoughtware/conceptarium) architecture, knowledge workers can get a numerical grip on the ecology of their mind, and start cultivating it rationally.
 
 ## references
 
