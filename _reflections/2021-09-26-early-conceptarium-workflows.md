@@ -39,7 +39,7 @@ But this new thought isn't the end of the story. Rather, this unanswered open qu
 
 > "Morphing conceptors derived from neural states of different concepts would represent the neural states of another middle concept, a bit like mix or span in Semantica. Couple that with neurofeedback and you nudge a BCI user to think about that artificial concept."
 
-I know it's virtually impossible to understand what I'm talking about here without more context on conceptors and neurofeedback, but that's not the point. The point is simply that the semantic priming workflow enabled by the conceptarium helped me integrate new information about computational learning theory and conceptors into my prior thinking about tools for thought, and resulted in new ideas to be explored in the future: using conceptors as a framework for enabling new affordances for brain-computer interfaces.
+I know it's virtually impossible to understand what I'm talking about here without more context on conceptors and neurofeedback, but that's not the point. The point is simply that the semantic priming workflow enabled by the conceptarium helped me integrate new information about computational learning theory and conceptors into my prior thinking about tools for thought, and resulted in new ideas to be explored in the future: enabling new affordances in brain-computer interfaces using conceptors.
 
 - diagram store
 
