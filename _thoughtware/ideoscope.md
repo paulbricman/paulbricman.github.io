@@ -33,7 +33,7 @@ Each thought saved in the [conceptarium](/thoughtware/conceptarium) has a semant
 
 - memetic drift
 
-Memetic drift, in an analogy to genetic drift, is a measure of how fast the aggregate state of your memetic ecology (i.e. ideology) is changing over time. It's computed through the distance between the centroid (i.e. the center point located at the average coordinates) of the semantic embeddings of your thoughts from a recent period of time (e.g. past month) and the centroid of the semantic embeddings of your thoughts from a previous period (e.g. the previous month). If you've been completely changing your general focus from one month to the next, your memetic drift would be high. Conversely, if you've been rather constant in your general focus through the whole past year, your memetic drift would be quite low.
+Memetic drift, in an analogy to genetic drift, is a measure of how fast the aggregate state of your memetic ecology (i.e. worldview) is changing over time. It's computed through the distance between the centroid (i.e. the center point located at the average coordinates) of the semantic embeddings of your thoughts from a recent period of time (e.g. past month) and the centroid of the semantic embeddings of your thoughts from a previous period (e.g. the previous month). If you've been completely changing your general focus from one month to the next, your memetic drift would be high. Conversely, if you've been rather constant in your general focus through the whole past year, your memetic drift would be quite low.
 
 {: .border }
 ![](/assets/img/ideoscope1.png)
