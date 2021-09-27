@@ -1,10 +1,10 @@
 ---
 layout: post
 age: 20.77
-title: navigating ideology
+title: navigating worldviews
 ---
 
-## navigating ideology
+## navigating worldviews
 
 > "Be a Columbus to whole new continents and worlds within you, opening new channels, not of trade, but of thought." -- Henry David Thoreau
 
@@ -17,10 +17,10 @@ I don't (currently) think there's anything inherently wrong with having a partic
 We're faced with a local search problem which can be formalized as follows:
 
 - The **state space** is the space of all possible ideologies.
-- The **current state** is our current ideology.
+- The **current state** is our current worldviews.
 - The **value** of each state is determined subjectively when being _in_ that state.
 - The **objective** is to reach the highest-valued state, or die optimizing.
 - The **actions** are slight incremental steps towards nearby states.
 - We have a lifetime to conduct the foraging process (according to most ideologies).
 
-This minimal meta-ideology is one of those ideas which I chose to commit to indefinitely. I aim to keep this line of reasoning in the back of my mind throughout my lifetime, while evolving most of my belief system beyond it. It's the exception which proves the rule, it's change as the only constant, the stable orbit in the space of lies. That said, I recognize that there are worldviews out there which I might find inaccessible due to those meta-principles of mine being in contradiction with them. I accept this amount of ideological debt as integral to the best strategy I can come up with for finding good solutions to the search problem, and I'm (unsurprisingly) content with it.
+This minimal meta-worldview is one of those ideas which I chose to commit to indefinitely. I aim to keep this line of reasoning in the back of my mind throughout my lifetime, while evolving most of my belief system beyond it. It's the exception which proves the rule, it's change as the only constant, the stable orbit in the space of lies. That said, I recognize that there are worldviews out there which I might find inaccessible due to those meta-principles of mine being in contradiction with them. I accept this amount of ideological debt as integral to the best strategy I can come up with for finding good solutions to the search problem, and I'm (unsurprisingly) content with it.
