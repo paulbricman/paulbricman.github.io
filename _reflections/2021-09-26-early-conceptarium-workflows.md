@@ -13,7 +13,8 @@ In this piece, I aim to catalogue some of the ways in which I'm using the [conce
 
 From my experience, this usage pattern isn't common at all among today's knowledge workers. In fact, it's virutally non-existent, which is intriguing given its potential utility. Semantic priming here refers to briefly exposing yourself to past ideas of yours which are related to a given piece of content (e.g. research paper, educational video, blog post) _before_ you actually consume it. This workflow is all about elevating into your awareness the previous thoughts you've had which are most related to the topic at hand. This way, you make it more likely for you to establish new connections, to weave the new piece of information into your knowledge.
 
-<div class="iframe-holder">
+<div style="margin-bottom: 0"><i>click to play screencast:</i></div>
+<div class="iframe-holder" style="margin-top: 0">
 <iframe
     src="/assets/vid/conceptarium_semantic_priming.mp4" 
     frameborder="0"
@@ -31,7 +32,7 @@ This strategically resurfaced idea, together with the contents of the lecture, m
 
 > "Huh, are traditional machine learning models (e.g. decision trees, Bayesian learning) used as partial models of the mind? How useful could those be? What opportunities could those bring about?"
 
-But this new thought isn't the end of the story. Rather, this unanswered open question kept bugging me (in a good way) for the rest of the day. The real insights came when I was later reading a research paper as background literature for my bachelor's project. This upcoming project is focused on something called [conceptors](https://arxiv.org/pdf/1406.2671.pdf) (funnily enough, I currently work both with conceptors and the conceptarium, but they're entirely different things). A conceptor is most easily understood as a round object (hyperellipsoid to be specific) which exists in semantic space and approximates the "cloud" of embeddings of a given concept (e.g. a set of BERT embeddings of a word in different contexts). If you've done statistics or bioinformatics, conceptors look really similar to the prototypical PCA ellipsoids used in dimensionality reduction. Anyway, the previous unanswered questioned together with this reading lead to the following conceptual offspring, which I then added to my conceptarium and retrieved just now to list them here.
+But this new thought isn't the end of the story. Rather, this unanswered open question kept bugging me (in a good way) for the rest of the day. The real insights came when I was later reading a research paper as background literature for my bachelor's project. This upcoming project is focused on something called [conceptors](https://arxiv.org/pdf/1406.2671.pdf) (funnily enough, I currently work both with conceptors and the conceptarium, but they're entirely different things). A conceptor is most easily understood as a round object (hyperellipsoid to be specific) which exists in semantic space and approximates the "cloud" of embeddings of a given concept (e.g. a set of BERT embeddings of a word in different contexts). If you've done statistics or bioinformatics, conceptors look really similar to the prototypical PCA ellipsoids used in dimensionality reduction. Anyway, the previous unanswered questions, together with this reading, led to the following conceptual offspring, which I then added to my conceptarium and retrieved just now to list them here.
 
 > "What if conceptors were run not on recurrent neural networks, but on the brain through neurofeedback. They would encourage a replay of a previous dynamic."
 
@@ -45,7 +46,8 @@ I know it's virtually impossible to understand what I'm talking about here witho
 
 If the semantic priming usage pattern required a new take on content consumption, this workflow is really easy to understand. The diagram store usage pattern is all about being able to easily find diagrams (e.g. graphs, flowcharts, tables) after you first encounter them. With other tools, this often requires filling in manual annotations and moving over images and texts to the app of choice. However, the conceptarium makes it as easy as it gets: just save the diagram from anywhere and later simply describe it to find it. To reduce cognitive load, the screencast listed below is based on a visual depiction of the conceptors described before. Naturally, I changed the URL address of my conceptarium after recording the screencasts on this page.
 
-<div class="iframe-holder">
+<div style="margin-bottom: 0"><i>click to play screencast:</i></div>
+<div class="iframe-holder" style="margin-top: 0">
 <iframe
     src="/assets/vid/conceptarium_diagram_store.mp4" 
     frameborder="0"
@@ -57,7 +59,8 @@ If the semantic priming usage pattern required a new take on content consumption
 
 This usage pattern is just as straight-forward as the previous one. Many tools for thought implement various "capture" mechanics, ways in which the tool can ingest your thoughts to help you work with them. However, the conceptarium takes it a step further through dedicated pages and third-party integrations which enable you to save ideas via writing, speech, pictures, and others. This versatility empowers users to remove their own pain points by finding the best way to integrate the conceptarium in their workflow.
 
-<div class="iframe-holder">
+<div style="margin-bottom: 0"><i>click to play screencast:</i></div>
+<div class="iframe-holder" style="margin-top: 0">
 <iframe
     src="/assets/vid/conceptarium_multimodal_capture.mp4" 
     frameborder="0"
@@ -73,7 +76,8 @@ Moreover, as UI/UX designers are getting tired of the desktop metaphor, a big in
 
 While being able to capture ideas in different formats is a big plus for many, I also find it useful to store the _same_ idea in multiple formats. From the mainstream [learning styles discussion](https://www.youtube.com/watch?v=rhgwIhB58PA), to [classic Bret Victor talks](https://vimeo.com/115154289), to more obscure research like [dual coding theory](https://www.instructionaldesign.org/theories/dual-coding/), it has been argued that making use of multiple parallel representations fosters a deeper understanding of the topic at hand. Similar to the diagram store usage pattern, this workflow also cuts down on the manual book-keeping necessary to connect various takes on the same topic expressed through different modalities.
 
-<div class="iframe-holder">
+<div style="margin-bottom: 0"><i>click to play screencast:</i></div>
+<div class="iframe-holder" style="margin-top: 0">
 <iframe
     src="/assets/vid/conceptarium_multimodal_representations.mp4" 
     frameborder="0"
@@ -85,11 +89,12 @@ However, while in practice the conceptarium itself isn't able to generate new re
 
 You'll notice that this way of using the conceptarium goes hand in hand with multi-modal capture, as can be seen in the embodied metaphor of 3D clusters included in the screencast above. That specific bush of flower buds prompted me to think about this data metaphor, and the conceptarium acts as a record of those embodied sources of inspiration, weaving together abstract ideas with actual pictures -- another step towards knowledge work amplified by enactive interfaces and environments.
 
-- **bonus**: UI inspiration
+- bonus: UI inspiration
 
 This one I haven't explored that much, but during [a course on cognitive ergonomics](https://www.rug.nl/ocasys/fwn/vak/show?code=WBAI025-05) and when prototyping the conceptarium and [ideoscope](/thoughtware/ideoscope), I happened to work a lot with wireframes and mockups. Similar to the diagram store, wireframes and mockups can also be retrieved when relevant.
 
-<div class="iframe-holder">
+<div style="margin-bottom: 0"><i>click to play screencast:</i></div>
+<div class="iframe-holder" style="margin-top: 0">
 <iframe
     src="/assets/vid/conceptarium_ui_inspiration.mp4" 
     frameborder="0"
@@ -100,3 +105,5 @@ This one I haven't explored that much, but during [a course on cognitive ergonom
 ## conclusion
 
 It hasn't been long since I started using the conceptarium, maybe several weeks tops, yet I find it quite obvious that it can support a broad range of new useful workflows. Looking back on this initial test drive, the conceptarium has proven most valuable by far when used not to retrieve particular entries (e.g. specific diagrams), but when used in a more open-ended way (e.g. semantic priming). Therefore, I plan to explore more usage patterns which focus on inducing serendipity. What parts of my global workflow can I inject with unexpected connections? What thinking practices would make the best out of the serendipity dormant in one's ever growing conceptarium? I'll report back on my findings in a follow-up piece to this article.
+
+Background music for screencasts: [Silent Strike, QB Sessions vol. 2](https://silentstrike.bandcamp.com/album/qb-sessions-vol-2)
