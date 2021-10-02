@@ -7,7 +7,7 @@ published: True
 
 ![](/assets/img/cfl.png)
 
-## conceptarium ([stable release](https://github.com/Psionica/conceptarium), [demo screencasts](https://github.com/paulbricman/conceptarium#screencasts))
+## conceptarium ([stable release](https://github.com/paulbricman/conceptarium), [demo screencasts](https://github.com/paulbricman/conceptarium#screencasts))
 
 A conceptarium (noun. /knsɛptɛriəm/, plural: conceptaria) is a fluid medium for storing, relating, and surfacing thoughts based on a new representation of knowledge. It's meant to provide a foundation for new tools for thought to build onto, a means to nurture a new tooling ecosystem for knowledge work -- a cognitive infrastructure. It embodies a philosophy of knowledge which differs in important ways from the one held by the knowledge graph poster children (e.g. Roam Research, Obsidian, Logseq), and can be deployed today in a self-hosted regime, even on a modest Raspberry Pi.
 
@@ -65,7 +65,7 @@ Another way to signal the general scope of such a building block in the making, 
 
 ## architecture
 
-The conceptarium is a minimal server app. A lightweight standardized API only exposes a handful of endpoints, mostly for saving and finding documents. The storage of document metadata, the management of document activation, and the ranking of candidate documents based on custom criteria is all managed by the server app behind-the-scenes. It makes use of Python modules like FastAPI and sentence-transformers, and can run on hardware as modest as a Raspberry Pi. The lightweight API makes it trivial to integrate with services like IFTTT/Zapier (as a webhook), AutoHotKey-like utilities (via requests), browsers (as a search engine), and full-blown third-party tools (as a knowledge store). For more information on API docs and setup, visit the [GitHub repo](github.com/psionica/conceptarium).
+The conceptarium is a minimal server app. A lightweight standardized API only exposes a handful of endpoints, mostly for saving and finding documents. The storage of document metadata, the management of document activation, and the ranking of candidate documents based on custom criteria is all managed by the server app behind-the-scenes. It makes use of Python modules like FastAPI and sentence-transformers, and can run on hardware as modest as a Raspberry Pi. The lightweight API makes it trivial to integrate with services like IFTTT/Zapier (as a webhook), AutoHotKey-like utilities (via requests), browsers (as a search engine), and full-blown third-party tools (as a knowledge store). For more information on API docs and setup, visit the [GitHub repo](github.com/paulbricman/conceptarium).
 
 ## future visions
 

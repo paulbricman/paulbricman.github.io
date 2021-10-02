@@ -5,7 +5,7 @@ description: "Amplifying knowledge work through user-defined assistants."
 published: True
 ---
 
-## dual ([prototype code](https://github.com/Psionica/dual-obsidian-client))
+## dual ([prototype code](https://github.com/paulbricman/dual-obsidian-client))
 
 In his visionary short story titled "Learning to Be Me," Greg Egan describes the Ndoli Dual, a fictional brain implant which constantly monitors the host's neural activity in an attempt to learn how it unfolds.[^1] After several years of collecting data, the Ndoli Dual becomes powerful enough to accurately forecast the neural activity of its host, prompting many to _switch_ to it completely, outsourcing their entire thought process and achieving immortality. Besides describing a thought experiment which puts the Chinese room to shame in terms of vividness, Egan hints at an intriguing possibility -- using a proxy for human thought as an optimization target for creating human-like artificial intelligence. An elegant formalism for _thinking humanly_, as per Russell and Norvig's taxonomy.[^2]
 

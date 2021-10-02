@@ -5,7 +5,7 @@ description: "Expanding propositional memory through text mining."
 published: True
 ---
 
-## memory navigator ([prototype code](https://github.com/Psionica/memnav))
+## memory navigator ([prototype code](https://github.com/paulbricman/memnav))
 
 Many of us routinely use search engines to navigate the internet. They help us find information so quickly and accurately that it's hard to imagine browsing the internet without them. Their convenience even makes us perceive searchable information as less worthy of committing to memory.[^1]
 

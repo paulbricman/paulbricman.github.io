@@ -5,7 +5,7 @@ description: "Accelerating learning through machine-generated flashcards."
 published: True
 ---
 
-## autocards ([prototype code](https://github.com/Psionica/autocards))
+## autocards ([prototype code](https://github.com/paulbricman/autocards))
 
 Not all educational resources are created equal. Imagine you're trying to grasp the essence of quaternions, a somewhat esoteric mathematical construct. One way to go about it might be to painstakingly read through an old textbook chapter on the topic, full of intimidating terminology and verbose notation.[^1] You might end up giving it a few solid reads, as building mental models from scratch is quite tedious. Now, picture yourself experimenting with an interactive animation on the same topic. You can now freely manipulate quaternions from the comfort of your desk while getting instant feedback across several parallel representations. Meanwhile, you're being guided through the material in an accessible way, while systematically internalizing core concepts.[^2]
 

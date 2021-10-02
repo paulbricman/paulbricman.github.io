@@ -5,7 +5,7 @@ description: "Promoting critical thinking through prompt generation."
 published: True
 ---
 
-## knowledge probes ([prototype code](https://github.com/Psionica/k-probes))
+## knowledge probes ([prototype code](https://github.com/paulbricman/k-probes))
 
 Take a moment to picture the following prototypical narrative. "Why is the sky blue?" the curious child asks. "Well, sunlight passes through the atmosphere before it gets here, which makes the sky appear blue," answers the parent. At this point, both parties seem content with the exchange. Several moments later, the inevitable happens. "But why?" the child asks. Somewhat frustrated, the parent conveniently wraps up the conversation: "Because I said so."
 
