@@ -5,7 +5,7 @@ description: "Accelerating learning through machine-generated flashcards."
 published: True
 ---
 
-## semantica ([prototype code](https://github.com/Psionica/semantica))
+## semantica ([prototype code](https://github.com/paulbricman/semantica))
 
 Mental models are simplified descriptions of the world around us. For instance, one of them might describe networks. A forest is a network of trees. A society is a network of people. A brain is a network of neurons. Mental models help us make sense of the world by allowing us to apply previous knowledge to new situations. They are widely seen as powerful tools for thought, especially when they come in large numbers. If one's repository of mental models is vast, then they'll be able to approach new situations from many different perspectives. This is the motivation behind many recent efforts of compiling extensive lists of them.[^1]
 
