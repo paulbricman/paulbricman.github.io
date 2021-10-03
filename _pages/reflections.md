@@ -10,8 +10,13 @@ For a long while now, my main channels for sharing ideas publicly were thoughtwa
     <ul>
         {% assign reflections = site.reflections | sort: 'age' %}
         {% for reflection in reflections reversed %}
+
+        {% assign age_split = reflection.age | round: 2 | split: "." %}
+        {% assign integral = age_split[0] %}
+        {% assign fractional = age_split[1] | append: "00" | truncate: 2, "" %}
+
         <li>
-            <a href="{{ site.baseurl }}{{ reflection.url }}">{{ reflection.title }}</a>{{ reflection.age }} YRS
+            <a href="{{ site.baseurl }}{{ reflection.url }}">{{ reflection.title }}</a>{{integral}}.{{fractional}} YRS
         </li>
         {% endfor %}
     </ul>

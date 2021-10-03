@@ -6,7 +6,10 @@ layout: default
   <div>
     <p>🌿&nbsp&nbsp<a href="/reflections">back</a></p>
   </div>
-  <p>{{ page.age }} YRS</p>
+  {% assign age_split = page.age | round: 2 | split: "." %}
+  {% assign integral = age_split[0] %}
+  {% assign fractional = age_split[1] | append: "00" | truncate: 2, "" %}
+  <p>{{integral}}.{{fractional}} YRS</p>
   {{ content }}
 </section>
 <section>
