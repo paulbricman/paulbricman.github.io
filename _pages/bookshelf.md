@@ -24,10 +24,11 @@ entries are all-time favorites.
 - Descartes' Error, Antonio Damasio
 - **Deschooling Society**, Ivan Illich
 - **Diaspora**, Greg Egan
-- Dune, Frank Herbert
+- **Dune**, Frank Herbert
 - Emotional First Aid, Guy Winch
 - **Exhalation**, Ted Chiang
 - Fahrenheit 451, Ray Bradbury
+- Future of Text (Essay Collection)
 - Glass and Gardens: Solarpunk Summers (Anthology)
 - I, Robot, Isaac Asimov
 - Man's Search For Meaning, Viktor Frankl
