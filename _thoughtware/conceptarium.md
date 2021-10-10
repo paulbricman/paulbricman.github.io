@@ -75,6 +75,8 @@ The conceptarium serves as the foundation for other tools to build on and enable
 
 Alice is an architect. Before jumping into 3D modeling and technical drawing, she wants to refine her building concept in a visual canvas similar to [Muse](https://museapp.com/) or [Kosmik](https://kosmik.app/). After creating some initial sketches and adding a few pictures for atmosphere, she feels it's time to bring in concrete ideas. By selecting a sketch she has just drawn and pressing a hotkey, an assortment of related perspectives from her previous projects instantly gets pasted onto the canvas in place of the selection, straight from her conceptarium. She then wonders whether the materials used before would work in the current setting, so she screengrabs the technical annotation, presses a hotkey, and then pastes her written notes on structural properties in a nearby region of the canvas. The hotkey triggered a script which mutated the clipboard contents based on an HTTP request to her conceptarium.
 
+> "In the early to mid-1990's, [...] I devised what I called "The Invisible Interface". The idea was to use the computer's clipboard as an interpretable information bus for retrieving information I wanted without ever having to leave the application, or even the very text line, I was working on. As an example, I would type something like, "Please send the package to my sister's address". I would then select and copy to the clipboard the phrase "my sister's address", hit a function key to request processing [...] I would hit the paste command in my editor, and it would replace the selected text "my sister's address" with "Sara Cheyer, 123 Main St. Town, State, 91101." -- Adam Cheyer [^9]
+
 ![](/assets/img/inplacerecall.png)
 
 - ideoscope
@@ -112,3 +114,4 @@ The conceptarium is a versatile medium for storing, relating, and surfacing thou
 [^6]: Greg Egan,<br/>[Diaspora](https://www.gregegan.net/DIASPORA/DIASPORA.html)
 [^7]: Greg Egan,<br/>[Stable Orbits In The Space Of Lies](https://www.gregegan.net)
 [^8]: Greg Egan,<br/>[Axiomatic](https://www.gregegan.net)
+[^9]: Multiple authors,<br/>[Future Of Text, Vol. I](https://futuretextpublishing.com/future-of-text-2020-download/)
