@@ -34,6 +34,7 @@ entries are all-time favorites.
 - Man's Search For Meaning, Viktor Frankl
 - **Metaphors We Live By**, George Lakoff & Mark Johnson
 - Nostalgia, Mircea Cărtărescu
+- Old Man's War, John Scalzi
 - Out of Your Mind, Alan Watts
 - Permutation City, Greg Egan
 - **Project Hail Mary**, Andy Weir
