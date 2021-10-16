@@ -21,4 +21,6 @@ Interestingly enough, there's a continuum between people and thoughtware as sour
 
 > "It is the very unnaturalness and artificiality of "civilisation" -- compared to the closer to our genetics oral cultures -- that is its strength. One way to think of modern education is that its main goal should be to help children take on and become fluent with these "unnaturals" that allow us to cooperate and grow in so many more ways." -- Alan Kay
 
+> "A new way of thinking could be invented/co-evolved, [...] and when learned fluently would be almost like adding a new piece of brain -- a "brainlet" -- that could take us far beyond biology." -- Alan Kay
+
 There are even more exotic ways of breaking frames out there. You might expose yourself to transformative experiences in an effort to expand your perception of what's possible. You might meddle with your brain's underlying metabolism by [inducing hypnagogia](https://www.healthline.com/health/hypnagogia#inducing-hypnagogia), experimenting with psychedelics, or practicing lucid dreaming. That said, I find thoughtware to be the single most exciting source of unconventional thought out there. It enables us to explore a vast space of non-human thinking in a scalable, formalizable, and elegant way, and I can't wait to see what's out there.
