@@ -62,7 +62,7 @@ In contrast to the memetic lens which frames all of thought as evolution, the se
 
 The semantic embeddings of thoughts are expressed as points in semantic space. Therefore, the finite set of one's thoughts occupies exactly zero percent of the entire volume of the semantic space. However, if one promoted those zero-dimensional points to tiny three-dimensional spheres indicating rough semantic neighborhoods, then it becomes possible to talk about the total volume of the semantic space which has been "touched" by your thoughts, the size of the semantic territory which you've explored via your ideas. Conversely, this enables a measure of your ideological terra incognita, how much thought there is which you haven't personally experienced. All this seems highly esoteric, but the ideoscope shows you a concrete number, an actual percentage indicating how far you've thought, and how much there's left.
 
-This change in perspective from points to tiny spheres popping up all around semantic space enables yet another new metric. The discovery rate is a measure of how much new semantic territory you've discovered in a set period of time (e.g. last month), the rate of change of the explored volume. This might make for an interesting target indicator based on values of exploration and conquest.
+This change in perspective from points to tiny spheres popping up all around semantic space enables yet another new metric. The discovery rate is a measure of how much new semantic territory you've discovered in a set period of time, the rate of change of the explored volume. This might make for an interesting target indicator based on values of exploration and conquest.
 
 - 🖼️ semantics / 🌌 projection
 
@@ -83,7 +83,7 @@ Just a bit less trivial than the previous metric, readability is a measure of ho
 
 - 📗 linguistics / 📏 objectivity
 
-By using rather traditional text mining techniques, objectivity can be roughly gauged based on the nature of words used.[^5] Words typically associated with expressing personal takes drive objectivity down, while dry impersonal phrases nudge it upwards. A rationalist might aim for achieving high objectivity, while someone interested in getting in touch with their subjective intuition might aim for achieving low objectivity. Additionally, thoughts can be tested against a set of predefined fallacies via language models, and the results reported.
+By using rather traditional text mining techniques, objectivity can be roughly gauged based on the nature of words used.[^5] Words typically associated with expressing personal takes drive objectivity down, while dry impersonal phrases nudge it upwards. A rationalist might aim for achieving high objectivity, while someone interested in getting in touch with their subjective intuition might aim for achieving low objectivity. 
 
 - 📗 linguistics / 💚 sentiment
 
