@@ -17,7 +17,7 @@ The ideoscope is influenced by a number of movements. For staters, the quantifie
 
 ## architecture
 
-As already mentioned, the ideoscope is designed as a building block which easily integrates with the [conceptarium](/thoughtware/conceptarium). It makes direct use of the novel representation introduced by the other tool, although most of the analytics involved can in theory be used with third-party data sources. The reliance on an exotic format is justified by the richness through which it provides a mirror of the mind's ecology, unparalleled by other available alternatives (e.g. plain Markdown notes), even if still extremely far from how the mind works.
+As already mentioned, the ideoscope is designed as a building block which easily integrates with the [conceptarium](/thoughtware/conceptarium). It makes direct use of the novel representation introduced by the other tool, although most of the cognitive analytics involved can in theory be used with third-party data sources. The reliance on an exotic format is justified by the richness through which it provides a mirror of the mind's ecology, unparalleled by other available alternatives (e.g. plain Markdown notes), even if still extremely far from how the mind works.
 
 Concretely, the ideoscope is a web app written in Python using Streamlit.[^6] For starters, it needs the URL of your conceptarium in order to extract its contents in the background. After fetching your thoughts as JSON, the ideoscope derives a sequence of stats and visualization designed to give you insights into your own thought process.
 
