@@ -2,7 +2,7 @@
 layout: page
 ---
 
-## materials
+## artisanry
 
 I'm learning how to work with different analog materials by creating 100
 artifacts using one of them, then moving on to the next. The goal is to go
