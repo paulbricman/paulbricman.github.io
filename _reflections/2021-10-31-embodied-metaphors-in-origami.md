@@ -64,6 +64,8 @@ Illustration of the manifold of fonts ([source](https://distill.pub/2017/aia/))
 
 To complete the metaphor, it's as if the machine learning model somehow gets hold of an origami model. Even if the paper is folded and creased in intricate ways across high-dimensional space, if you live right on it as an ant and move around in your neighborhood, you're in a space of much lower dimensionality. In machine learning parlor, your coordinates on the manifold form a semantic embedding. [Semantica](/thoughtware/semantica), my first thoughtware project, was an exploration of ways of meaningfully moving around this semantic material folded in intricate ways.
 
+> "To deal with hyper-planes in a 14-dimensional space, visualize a 3-D space and say 'fourteen' to yourself very loudly. Everyone does it." – Geoffrey Hinton
+
 ![](/assets/materials/f6.jpg)
 Basic corrugation, ([source](https://paulbricman.com/artisanry))
 
