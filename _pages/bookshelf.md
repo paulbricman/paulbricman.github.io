@@ -31,7 +31,7 @@ entries are all-time favorites.
 - Future of Text (Essay Collection)
 - Glass and Gardens: Solarpunk Summers (Anthology)
 - I, Robot, Isaac Asimov
-- Leviathan Wakes, James Corey
+- **Leviathan Wakes**, James Corey
 - Man's Search For Meaning, Viktor Frankl
 - **Metaphors We Live By**, George Lakoff & Mark Johnson
 - Nostalgia, Mircea Cărtărescu
