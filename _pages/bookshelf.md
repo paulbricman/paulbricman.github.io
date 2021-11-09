@@ -14,8 +14,8 @@ entries are all-time favorites.
 - A Fire Upon The Deep, Vernor Vinge
 - Augmenting Human Intellect, Douglas Engelbart
 - **Axiomatic**, Greg Egan
-- Behave, Robert Sapolsky
-- Being No One, Thomas Metzinger
+- Behave, Robert Sapolsky (DNF)
+- Being No One, Thomas Metzinger (DNF)
 - **Blindsight**, Peter Watts
 - Childhood's End, Arthur C. Clarke
 - Communication and Cultural Domination, Herbert Schiller
@@ -34,7 +34,7 @@ entries are all-time favorites.
 - **Leviathan Wakes**, James Corey
 - Man's Search For Meaning, Viktor Frankl
 - **Metaphors We Live By**, George Lakoff & Mark Johnson
-- Nostalgia, Mircea Cărtărescu
+- Nostalgia, Mircea Cărtărescu (DNF)
 - Old Man's War, John Scalzi
 - Out of Your Mind, Alan Watts
 - Pandora's Star, Peter Hamilton
@@ -43,7 +43,7 @@ entries are all-time favorites.
 - Second Foundation, Isaac Asimov (Reread)
 - Speculative Everything, Anthony Dunne & Fiona Raby
 - Solaris, Stanisław Lem
-- Starship Troopers, Robert Heinlein
+- Starship Troopers, Robert Heinlein (DNF)
 - Superintelligence, Nick Bostrom
 - The Age of Spiritual Machines, Ray Kurzweil
 - The Call of Cthulhu, H. P. Lovecraft
@@ -61,7 +61,7 @@ entries are all-time favorites.
 - The Society of Mind, Marvin Minsky
 - **The Three Body Problem**, Cixin Liu
 - There Is No Antimemetics Division, @qntm
-- Ubik, Philip K. Dick
+- Ubik, Philip K. Dick (DNF)
 - Vagabonding, Rolf Potts
 - We, Yevgeny Zamyatin
 - Weapons of Math Destruction, Cathy O'Neil
