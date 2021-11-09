@@ -37,6 +37,7 @@ entries are all-time favorites.
 - Nostalgia, Mircea Cărtărescu
 - Old Man's War, John Scalzi
 - Out of Your Mind, Alan Watts
+- Pandora's Star, Peter Hamilton
 - Permutation City, Greg Egan
 - **Project Hail Mary**, Andy Weir
 - Second Foundation, Isaac Asimov (Reread)
