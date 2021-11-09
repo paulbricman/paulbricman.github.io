@@ -42,6 +42,7 @@ entries are all-time favorites.
 - Second Foundation, Isaac Asimov (Reread)
 - Speculative Everything, Anthony Dunne & Fiona Raby
 - Solaris, Stanisław Lem
+- Starship Troopers, Robert Heinlein
 - Superintelligence, Nick Bostrom
 - The Age of Spiritual Machines, Ray Kurzweil
 - The Call of Cthulhu, H. P. Lovecraft
