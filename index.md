@@ -3,6 +3,7 @@ layout: page
 ---
 
 <center>
+<br/>
 <img width="30%" src="/assets/img/profile.jpeg" style="border-radius: 50%;">
 <h2>Paul Bricman</h2>
 </center>
