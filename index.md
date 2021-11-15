@@ -2,7 +2,12 @@
 layout: page
 ---
 
-## Paul Bricman (disambiguation)
+<center>
+<img width="30%" src="/assets/img/profile.jpeg" style="border-radius: 50%;">
+<h2>Paul Bricman</h2>
+</center>
+
+<!-- ## Paul Bricman (disambiguation) -->
 
 I'm a Romanian-born Netherlands-based student on a quest to extend the range of ways in which people can think. On the surface, this happens by designing new primitives, mechanics, and affordances which bring together the computational grandeur of machines and the fragile brilliance of minds in a momentary symbiosis of carbon and silicone. On a deeper level, this happens by deliberately laying the foundation of our cognitive infrastructure: a patchwork of composable building blocks which bring firm principles of engineering to the brittle land of human thought. My work on the thoughtware stack is made possible by a handful of generous [sponsors](https://github.com/sponsors/paulbricman).
 
