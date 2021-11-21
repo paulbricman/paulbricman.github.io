@@ -25,12 +25,15 @@ The conceptual framework I'm currently using as a backdrop for my thoughtware de
 In the upcoming years, I plan to bring the following ideas to life, roughly in order:
 
 - a nutritional label for food for thought
+- an artificial sense organ for insight
 - a graph-based belief system editor
+- a sandbox for training collaborative virtual assistants 
 - a data-driven memory palace
-- a human language created by machines
+- a version control system for ideas
+- a human language forged by machines
+- a tool for mining interdisciplinary metaphors
+- a design language which adapts to written meaning 
 - a growth agent for shared understanding
-- a visualization of an idea's genealogical tree
-- a tool for forging interdisciplinary metaphors
 - a biometric regulator of autonomic arousal
 - a groovebox for remixing cognitive processing modes
 
