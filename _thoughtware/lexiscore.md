@@ -9,7 +9,7 @@ published: True
 
 ## lexiscore ([stable release](https://github.com/paulbricman/lexiscore))
 
-As a first effort in tackling the [theme of information overload](/reflections/twenty-one) in content consumption, I've been developing the lexiscore: a nutritional label for food for thought designed to help you narrow in on resources which personally bring you the most value. In the scope of this project, I'm considering valuable resources to be those from which you learn a lot, those which are packed with ideas you find surprising. Even if this framing is way closer to educational than entertaining, it's been argued that in the proper context and at a proper level, [learning can also be inherently enjoyable](https://supermemo.guru/wiki/Pleasure_of_learning).
+As a first effort in tackling the [theme of information overload](/reflections/twenty-one) in content consumption, I've been working on the lexiscore: a nutritional label for food for thought designed to help you narrow in on resources which personally bring you the most value. In the scope of this project, I'm considering valuable resources to be those from which you learn a lot, those which are packed with ideas you find surprising. Even if this framing is way closer to educational than entertaining, it's been argued that in the proper context and at a proper level, [learning can also be inherently enjoyable](https://supermemo.guru/wiki/Pleasure_of_learning).
 
 Before moving on to the inner workings of the lexiscore, I'd like to briefly go through a list of mainstream ways of finding valuable content online. This tour of prior art is particularly relevant because many design choices I made for the lexiscore are directly informed by shortcomings of those more traditional approaches.
 
