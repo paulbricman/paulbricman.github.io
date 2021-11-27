@@ -2,6 +2,7 @@
 layout: tool
 title: Conceptarium
 description: "A fluid medium for storing, relating, and surfacing thoughts."
+image: /assets/img/cfl.png
 published: True
 ---
 

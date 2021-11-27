@@ -2,6 +2,7 @@
 layout: tool
 title: Ideoscope
 description: "An instrument for quantifying, understanding, and optimizing your thinking."
+image: /assets/img/ideoscope_mockup1.png
 published: True
 ---
 
