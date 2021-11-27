@@ -13,7 +13,7 @@ First, during my experimental reflection sessions, I'd keep going back and forth
 
 {: .image }
 ![](/assets/img/mindmap.png)
-Screenshot of XMind coupled with the conceptarium integration
+_Screenshot of XMind coupled with the conceptarium integration_
 
 Second, I've been thinking a bit about what I heard [David Dohan](https://twitter.com/dmdohan) and Benjamin Leveritt describe independently in the same exact day. Rather than through a chat UI, a more intuitive way of interacting with autoregressive language models (e.g. GPT-3) might be to frame it as a deck of Tarot-like cards. For instance, a card titled "The Skeptical" might be associated with a prompt which nudges the language model into looking for loopholes in your argument. Alternatively, playing "The Entrepreneur" might nudge the model into coming up with ideas on how to apply your ideas. A few of my thoughts on this were the following. What if you had physical cards detected via webcam which rendered this whole interaction physical? What if you stamped random objects around the house with NFC tags to trigger certain behaviors (e.g. an angry-looking plushie could be "The Skeptical," its synthesized voice matching the character). This idea-ingredient somehow brought games and language models in the same sentence.
 
@@ -30,7 +30,7 @@ Third, we've talked a bit about handling large game trees in reinforcement learn
 Fourth, and thankfully finally, there's Moire's awesome [Loom](https://generative.ink/posts/loom-interface-to-the-multiverse/) project which explores possible fictional universes dreamed up by GPT-3. You can branch out into other versions of the artificial narrative as its unfolds. This last one connected language models with trees in my mind, and brought in this framing of the multiverse.
 
 ![](/assets/img/multiverses.png)
-Screenshot of Moire's Loom interface to the multiverse ([Source](https://generative.ink/posts/loom-interface-to-the-multiverse/))
+_Screenshot of Moire's Loom interface to the multiverse ([Source](https://generative.ink/posts/loom-interface-to-the-multiverse/))_
 
 You've made it halfway through, so lets now digest what this constellation of trees, games, language models, and human-machine interaction means.
 
