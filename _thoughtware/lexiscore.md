@@ -6,8 +6,6 @@ image: /assets/img/lexiscore_cover.png
 published: True
 ---
 
-<meta property="og:image" content="/assets/img/lexiscore_cover.png"/>
-
 ![](/assets/img/lexiscore_cover.png)
 
 ## lexiscore ([stable release](https://github.com/paulbricman/lexiscore))
