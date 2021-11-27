@@ -6,6 +6,7 @@ layout: page
 
 My research is focused on extending human thinking with artificial ways of thinking. An important part of this venture is bringing to life actual tools which incorporate the artificial affordances I'm designing, and then taking them for a spin. I call this family of tools *thoughtware*, as a more compact version of [tools for thought](https://numinous.productions/ttft/), but with an extra hint of high-tech. Here they are, in reverse chronological order:
 
+- [**lexiscore**](/thoughtware/lexiscore): a nutritional value for food for thought
 - [**ideoscope**](/thoughtware/ideoscope): an instrument for quantifying, understanding, and optimizing your thinking
 - [**conceptarium**](/thoughtware/conceptarium): a fluid medium for storing, relating, and surfacing thoughts
 - [**dual**](/thoughtware/dual): amplifying knowledge work through user-defined assistants
@@ -24,7 +25,6 @@ The conceptual framework I'm currently using as a backdrop for my thoughtware de
 
 In the upcoming years, I plan to bring the following ideas to life, roughly in order:
 
-- a nutritional label for food for thought
 - an artificial sense organ for insight
 - a graph-based belief system editor
 - a sandbox for training collaborative virtual assistants 

@@ -2,6 +2,7 @@
 layout: tool
 title: Lexiscore
 description: "A nutritional label for food for thought."
+image: /assets/img/lexiscore_cover.png
 published: True
 ---
 
