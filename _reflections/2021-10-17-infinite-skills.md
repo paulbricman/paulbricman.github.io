@@ -45,10 +45,10 @@ But how's it possible to work with infinite lists? After all, the computer I'm r
 
 The way this relates to cultivating a balanced skillset is the following. For each of Gardner's macro categories, you'd have at least an infinite skill. An infinite skill is nothing more than an infinite list of specific skills, following a clear pattern, but only scheduled if necessary. Here are some concrete examples to help illustrate the concept:
 
-- an infinite visual-spatial skill could consist in picking a new material each time (e.g. paper, graphite) and [creating 100 artifacts](/materials) with each one before moving on;
+- an infinite visual-spatial skill could consist in picking a new material each time (e.g. paper, yarn) and [creating 100 artifacts](/materials) with each one before moving on;
 
 ```haskell
->>> vs = [s | s <- map createUsing [Paper, Graphite..]]
+>>> vs = [s | s <- map createUsing [Paper, Yarn..]]
 ```
 
 - an infinite verbal-linguistic skill could consist in picking up a new language each time (e.g. Mandarin, Hebrew) and studying it for two years before moving on;
