@@ -49,7 +49,7 @@ collections:
     permalink: /reflections/:slug
   thoughtware:
     output: true
-    permalink: /thoughtware/:name
+    permalink: /thoughtware/:slug
   
 defaults:
   -
@@ -78,3 +78,5 @@ feed:
   collections:
     reflections:
       path: "/reflections/feed.xml"
+    thoughtware:
+      path: "/thoughtware/feed.xml"

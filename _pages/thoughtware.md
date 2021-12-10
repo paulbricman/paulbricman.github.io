@@ -2,7 +2,7 @@
 layout: page
 ---
 
-## thoughtware
+## thoughtware [(rss)](/thoughtware/feed.xml)
 
 My research is focused on extending human thinking with artificial ways of thinking. An important part of this venture is bringing to life actual tools which incorporate the artificial affordances I'm designing, and then taking them for a spin. I call this family of tools *thoughtware*, as a more compact version of [tools for thought](https://numinous.productions/ttft/), but with an extra hint of high-tech. Here they are, in reverse chronological order:
 
