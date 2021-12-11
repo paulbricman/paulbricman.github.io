@@ -8,7 +8,7 @@ published: True
 
 ![](/assets/img/decontextualizer_featured.png)
 
-## decontextualizer ([stable release](https://github.com/paulbricman/decontextualizer))
+## decontextualizer ([stable release](https://github.com/paulbricman/decontextualizer), [online demo](https://huggingface.co/spaces/paulbricman/decontextualizer))
 
 As a second step in improving our content consumption workflows, I investigated a new approach to extracting fragments from a content item before saving them for subsequent surfacing. While the [lexiscore](/thoughtware/lexiscore) deals with content items on a holistic level -- evaluating entire books, articles, and papers -- I speculated then that going granular is a natural next step in building tools which help us locate *specific* valuable ideas in long-form content. The decontextualizer is a stepping stone in that direction, consisting of a pipeline for making text excerpts compact and semantically self-contained. Concretely, the decontextualizer is a web app able to take in an annotated PDF and automatically tweak the highlighted excerpts so that they make more sense on their own, even out of context.
 
