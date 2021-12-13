@@ -8,7 +8,7 @@ published: True
 
 ![](/assets/img/lexiscore_cover.png)
 
-## lexiscore ([stable release](https://github.com/paulbricman/lexiscore))
+## lexiscore ([stable release](https://github.com/paulbricman/lexiscore), [online demo](https://huggingface.co/spaces/paulbricman/lexiscore))
 
 As a first effort in tackling the [theme of information overload](/reflections/twenty-one) in content consumption, I've been working on the lexiscore: a nutritional label for food for thought designed to help you narrow in on resources which personally bring you the most value. The open source companion software can automatically label raw text originating from RSS feeds, bookmarked pages, PDFs, EPUBs, and more. In the scope of this project, I'm considering valuable resources to be those from which you learn a lot, those which are packed with ideas you find surprising. Even if this framing is way closer to educational than entertaining, it's been argued that in the proper context and at a proper level, [learning can also be inherently enjoyable](https://supermemo.guru/wiki/Pleasure_of_learning).
 
