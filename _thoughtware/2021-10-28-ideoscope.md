@@ -14,7 +14,10 @@ An ideoscope (noun. /aɪdɪɒskoʊp/, plural: ideoscopes) is an instrument for m
 
 The ideoscope is influenced by a number of movements. For staters, the quantified self community advocates for the intentional measurement of various facets of your life (e.g. sleep, productivity, well-being) as a necessary precursor for the effective optimization of those areas.[^2] Particularly relevant here is the quantified mind project, which has been around since almost a decade ago, yet it focuses more on evaluating general cognitive performance through brain puzzles and abstract minigames.[^3] In contrast, the ideoscope addresses a higher level of abstraction by focusing on the set of specific thoughts which inhabit your mind. This perspective comes from the highly controversial field of memetics, which frames the mind as a habitat where ideas live, reproduce, and mutate -- an ecology of thought.
 
-> "It came to him that he was surrounded by a way of life that could only be understood by postulating an ecology of ideas and values. He felt that this Fremen world was fishing for him, trying to snare him in its ways." -- Frank Herbert [^8]
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="Dune" data-author="Frank Herbert" cite="https://dune.fandom.com/wiki/Dune_Wiki">
+<div><div><span>It came to him that he was surrounded by a way of life that could only be understood by postulating an ecology of ideas and values. He felt that this Fremen world was fishing for him, trying to snare him in its ways.</span></div></div>
+<footer>Frank Herbert<cite> <a href="https://dune.fandom.com/wiki/Dune_Wiki">https://dune.fandom.com/wiki/Dune_Wiki</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 ## architecture
 
