@@ -22,7 +22,20 @@ Two mainstream counters to the above ideas follow. It can be argued that spaced 
 
 Another argument against lowering the bar for saving ideas in content consumption through friction reduction is a [frustrating](https://notes.linkingyourthinking.com/Umami/Mental+Squeeze+Point) decrease in signal-to-noise ratio in the knowledge base. In my view, this is yet another unfortunate symptom of our nascent understanding of the latent representations and abilities internalized by artificial systems. When you discard the assumption that keyword search coupled with handwritten tags and links is the only viable way of navigating information, you open up a largely untapped universe of ways to deploy [experts with thousands of years of experience](https://studio.ribbonfarm.com/p/superhistory-not-superintelligence) at will. The ability to narrow in on the signal becomes a technical challenge tackled by engineers over time and gradually distributed to users, rather than an innate challenge of cognitive load faced directly by individuals. This paradigm shift unlocks ambitions of, for instance, perceiving large bodies of scientific literature through a mix of personalized digests and new senses tailored for the infosphere.
 
-> "Augmenting humans with machine learning in the right way raises their effective experiential age. They possess greater 'lived experience' than their biological age would suggest because they've acquired prosthetic experience, in digested, summary form. Each such digested bit attached to your brain could be measured in terms of the experienced time it represents. Here is where the training/inference cost asymmetry kicks in. You need vast pools of powerful computers to train the best, biggest models, but you mostly only need much cheaper personal-scale computers to do inference with those models. So the hundreds or thousands of years worth of experience are logged in expensive infrastructure living in superhistorical time, but are usable at human scale in historical time. " -- Venkatesh Rao
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="Superhistory, Not Superintelligence" data-author="Venkatesh Rao" cite="https://studio.ribbonfarm.com/p/superhistory-not-superintelligence">
+Augmenting humans with machine learning in the right way raises their 
+effective experiential age. They possess greater "lived experience" than
+ their biological age would suggest because they’ve acquired prosthetic 
+experience, in digested, summary form. Each such digested bit attached 
+to your brain could be measured in terms of the experienced time it 
+represents. Here is where the training/inference cost asymmetry kicks 
+in. You need vast pools of powerful computers to train the best, biggest
+ models, but you mostly only need much cheaper personal-scale computers 
+to do inference with those models. So the hundreds or thousands of years
+ worth of experience are logged in expensive infrastructure living in 
+superhistorical time, but are usable at human scale in historical time.
+<footer>Venkatesh Rao<cite> <a href="https://studio.ribbonfarm.com/p/superhistory-not-superintelligence">https://studio.ribbonfarm.com/p/superhistory-not-superintelligence</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 Those two valid concerns aside, what does the decontextualizer do more precisely? The tool is heavily based on a [recent paper](https://arxiv.org/pdf/2102.05169.pdf) by the folks over at Google Research. They first created a new dataset through crowdsourced annotation on top of a Wikipedia dump. Each data point, each sample from the dataset, contained the following elements:
 

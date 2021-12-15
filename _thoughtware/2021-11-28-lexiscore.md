@@ -26,7 +26,10 @@ If we shift from the voice of the individual to the voice of the masses, we get 
 
 If the previous two heuristics for finding valuable content were based on outsourcing choice to other users, this and the following one are approaches of outsourcing it to artificial systems. Content-based recommendation systems work by suggesting you content which is itself similar to content you've already consumed in the past. If you read a lot about AI safety, you'd get more content about AI safety this way. This also translates to "related articles" at the bottom of a blog post as a special case of content history being reduced to size one -- only the current piece of content. The shortcoming of this approach is naturally that it's easy to get stuck in echo chambers and filter bubbles due to those systems offering precisely what you want now, as opposed to what you might want in the future. In my view, Ken Liu seems to argue below that this type of recommendation system reduces [memetic drift](/thoughtware/ideoscope), slowing down the user's velocity across the space of possible selves, and reinforcing immediate short-term relevance through high exploitation and low exploration.
 
-> "Centillion is an algorithm that's gotten out of hand. It just gives you more of what it thinks you want. And we -- people like me -- think that's the root of the problem. Centillion has put us in little bubbles, where all we see and hear are echoes of ourselves, and we become ever more stuck in our existing beliefs and exaggerated in our inclinations. We stop asking questions and accept Tilly's judgement on everything." -- Jenny (The Perfect Match, Ken Liu)
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="The Perfect Match" data-author="Ken Liu" cite="https://kenliu.name/blog/book/the-paper-menagerie-and-other-stories/">
+<div><div><span>Centillion is an algorithm that's gotten out of hand. It just gives you more of what it thinks you want. And we – people like me – think that's the root of the problem. Centillion has put us in little bubbles, where all we see and hear are echoes of ourselves, and we become ever more stuck in our existing beliefs and exaggerated in our inclinations. We stop asking questions and accept Tilly's judgement on everything.</span></div></div>
+<footer>Ken Liu<cite> <a href="https://kenliu.name/blog/book/the-paper-menagerie-and-other-stories/">https://kenliu.name/blog/book/the-paper-menagerie-and-other-stories/</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 - user-based recommendation systems
 
@@ -46,7 +49,10 @@ The lexiscore piggybacks on the pervasive metaphor of ideas and content as food 
 
 Just as the Nutri-Score can be applied to virtually any edible product, from water to cake, so should the lexiscore be able to be applied to a wide range of content. It should continue to make sense for a full-length textbook as it does for a short blog post (length-invariant). It should work for fiction just as well as on non-fiction (veracity-invariant), because ideas found in novels can be just as useful, if only as visionary stepping stones to real-world impact. Heck, half of my projects have been inspired by technology I read about in science fiction, and I firmly believe that limiting ourselves to a rationalist conception of knowledge is harmful. When a robot has to find its way out of a maze, it often has to temporarily get further away from the exit in order to then make it there, avoiding the [tyranny of the objective](https://youtu.be/lhYGXYeMq_E?t=386), pun not intended.
 
-> "An animal caught in a trap will gnaw off its own leg to escape, what will you do?" -- Reverend Mother Gaius Helen Mohiam (Dune, Frank Herbert)
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="Dune" data-author="Frank Herbert" cite="https://youtu.be/n9xhJrPXop4?t=95">
+<div><div><span>An animal caught in a trap would gnaw off its own leg to escape, what will you do?</span></div></div>
+<footer>Frank Herbert<cite> <a href="https://youtu.be/n9xhJrPXop4?t=95">https://youtu.be/n9xhJrPXop4?t=95</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 What's more, just as the Nutri-Score describes the nutritional value of a certain food product, rather than of a brand, so should the lexiscore be able to describe the value of an individual piece of content, regardless of the aggregate past value of its author or curator. This would enable consumers to go beyond the rudimentary heuristic of subscription and increase the signal-to-noise ratio in the process (granularity).
 

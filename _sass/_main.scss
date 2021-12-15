@@ -200,7 +200,8 @@ th,
 td {
   padding: 0.5rem;
   line-height: 1.2rem;
-  border-style: dotted;
+  border-style: solid;
+  border-color: #C2DFE3;
   border-width: 0.1px;
   border-bottom: 0;
   border-right: 0;
@@ -208,10 +209,11 @@ td {
 }
 
 table {
-  border-style: dotted;
+  border-style: solid;
+  border-color: #C2DFE3;
+  border-collapse: collapse;
   border-width: 0.1px;
-  border-top: 0;
-  border-left: 0;
+  border-radius: 10px;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -284,6 +286,11 @@ section {
 
 section {
   margin-top: 5.5rem;
+}
+
+.top-pad {
+  margin-top: 1.5rem !important;
+  margin-bottom: 0rem !important;
 }
 
 blockquote {
