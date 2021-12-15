@@ -6,7 +6,10 @@ title: navigating worldviews
 
 ## navigating worldviews
 
-> "Be a Columbus to whole new continents and worlds within you, opening new channels, not of trade, but of thought." -- Henry David Thoreau
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="Walden" data-author="Henry David Thoreau" cite="https://library.princeton.edu/visual_materials/maps/websites/northwest-passage/thoreau.htm">
+Be a Columbus to whole new continents and worlds within you, opening new channels, not of trade, but of thought.
+<footer>Henry David Thoreau<cite> <a href="https://library.princeton.edu/visual_materials/maps/websites/northwest-passage/thoreau.htm">https://library.princeton.edu/visual_materials/maps/websites/northwest-passage/thoreau.htm</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 Like most people, my personal goals change from time to time. I'm interested in something for a while, until I'm not. I regularly go through paradigm shifts which radically change my worldview. I internalize new beliefs and let go of old ones. There are very few ideas which I feel deserve to be rendered invariant, to be defined as constants, rather than variables, of my identity.
 

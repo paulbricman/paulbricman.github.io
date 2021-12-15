@@ -34,7 +34,7 @@ To get a better sense of how unfair this feels for embodied knowledge, just rere
 
 I'll make a detour here to describe an unlikely experiential domain which I've been exploring lately -- Origami, the Japanese art of folding paper. For some, Origami means folding paper models of plants and animals. For others, it means building large abstract volumes from simpler modules. For yet others, it means creasing repetitive geometrical patterns called tessellations. There's some serious diversity in what you can bring to life using basic sheets of paper you have lying around, and I'm grateful to have had a chance to enjoy this niche.
 
-![](/assets/materials/b2.jpeg)
+![](/assets/artisanry/paper/b2.jpeg)
 _Origami peacock, ([source](https://paulbricman.com/artisanry))_
 
 That said, when considering our collective consciousness, Origami is way closer to the informal and somewhat childish realm of arts and crafts, while being mostly incompatible with solving tough conceptual problems in science and engineering. I'm saying *mostly* here because there are some direct physical applications of tesselations in astronomy and medicine (e.g. folding solar panels effectively, folding implants effectively). Beyond the low-hanging fruit analogy of swapping paper for photovoltaics or what not, I'm not aware of deeper Origami-STEM connections.
@@ -45,7 +45,7 @@ This is the challenge I'll embrace in the second half of this article. I want to
 
 I won't lie, folding a modular Origami model can be quite tedious, because all the individual modules take time to fold on their own, and they're usually very repetitive. This lead me to come up with ways of parallelizing some folds across multiple modules in the making. For instance, I would stack tiny papers on top of each other and fold them all at once, in unison. Alternatively, I would fold a larger paper first with broader creases before splitting it up into tinier squares, each square inheriting a part of the broader crease.
 
-![](/assets/materials/a4.jpeg)
+![](/assets/artisanry/paper/a4.jpeg)
 _Modular Origami cube, ([source](https://paulbricman.com/artisanry))_
 
 Parallelization is a key challenge in designing effective algorithms at scale. Working with stacked papers at once felt a bit like batching matrices in a tensor and running efficient CUDA routines on it, rather than going through each item iteratively. Folding across a lattice of modules in the making gave me some serious hardware manufacturing vibes. I'm not sure how this would translate to data processing, but it might help me think about cutting down on PCB prices for the analog synth I'm planning to build from scratch in the future.
@@ -64,16 +64,21 @@ _Illustration of the manifold of fonts ([source](https://distill.pub/2017/aia/))
 
 To complete the metaphor, it's as if the machine learning model somehow gets hold of an origami model. Even if the paper is folded and creased in intricate ways across high-dimensional space, if you live right on it as an ant and move around in your neighborhood, you're in a space of much lower dimensionality. In machine learning parlor, your coordinates on the manifold form a semantic embedding. [Semantica](/thoughtware/semantica), my first thoughtware project, was an exploration of ways of meaningfully moving around this semantic material folded in intricate ways.
 
-> "To deal with hyper-planes in a 14-dimensional space, visualize a 3-D space and say 'fourteen' to yourself very loudly. Everyone does it." – Geoffrey Hinton
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="A geometrical view of perceptrons" data-author="Geoffrey Hinton" cite="A geometrical view of perceptrons">
+<span class="commtext c00">To deal with hyper-planes in a 14-dimensional
+ space, visualize a 3-D space and say 'fourteen' to yourself very 
+loudly. Everyone does it.</span>
+<footer>Geoffrey Hinton<cite> <a href="A geometrical view of perceptrons">A geometrical view of perceptrons</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
-![](/assets/materials/f6.jpg)
+![](/assets/artisanry/paper/f6.jpg)
 _Basic corrugation, ([source](https://paulbricman.com/artisanry))_
 
 - error propagation
 
 Folds are never perfect. If you're careful, you might get pretty close to actually folding a paper in half. However, if you're tired, you'll be way off. In both cases, you accumulate some error -- the thing in your hands diverges from its idealized geometry. This becomes more and more apparent as you continue folding as you go through the steps. Each time, the error you accumulate is amplified by your baggage up to that point. If all your folds are slightly off, you can't help but diverge even more from the ideal, because you're using imperfect creases as references, as landmarks in making new ones. This implies that if you're tackling a long and complex model, you'd better pay careful attention so you don't make it harder for you later down the line.
 
-![](/assets/materials/e6.jpg)
+![](/assets/artisanry/paper/e6.jpg)
 _Quite some error propagated *here*, that's for sure... ([source](https://paulbricman.com/artisanry))_
 
 This made me think about how error accumulates in time series forecasting and when working with machine precision. Trying to predict the weather in two weeks is way trickier than trying to predict the weather in one week, because by the time you're thinking about that second half of the time window, things already get fuzzy due to the inherent uncertainty in the first half. Similarly, if you're working with really small numbers on a regular computer, you'll inevitably run into machine precision issues. This is especially true when working with long chains of operations, deep computational graphs, across which error inevitably builds up.

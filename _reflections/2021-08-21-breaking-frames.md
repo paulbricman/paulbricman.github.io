@@ -19,8 +19,18 @@ If even a mechanic as simple as randomness feels so effective in breaking frames
 
 Interestingly enough, there's a continuum between people and thoughtware as sources of thought. Many tools simply navigate human thought in non-human ways. Randomness and antimemory are both examples of this. However, more sophisticated thoughtware, like modern virtual assistants, are able to actually _emulate_ human thought. The recent wave of language models trained on large text corpora distill human ideas into abstract representations which can be subjected to radically non-human manipulations.
 
-> "It is the very unnaturalness and artificiality of "civilisation" -- compared to the closer to our genetics oral cultures -- that is its strength. One way to think of modern education is that its main goal should be to help children take on and become fluent with these "unnaturals" that allow us to cooperate and grow in so many more ways." -- Alan Kay
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="The Future Of Text" data-author="Alan Kay" cite="http://futuretextpublishing.com/download/2nd%20pr%20FOT%201%20April%2019%202021%20PDF.pdf#page=44">
+It is the very unnaturalness and artificiality of “civilisation” – 
+compared to the closer to our genetics oral cultures – that is its 
+strength. One way to think of modern education is that its main goal 
+should be to help children take on and become fluent with these 
+“unnaturals” that allow us to cooperate and grow in so many more ways.
+<footer>Alan Kay<cite> <a href="http://futuretextpublishing.com/download/2nd%20pr%20FOT%201%20April%2019%202021%20PDF.pdf#page=44">http://futuretextpublishing.com/download/2nd%20pr%20FOT%201%20April%2019%202021%20PDF.pdf#page=44</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
-> "A new way of thinking could be invented/co-evolved, [...] and when learned fluently would be almost like adding a new piece of brain -- a "brainlet" -- that could take us far beyond biology." -- Alan Kay
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="The Future Of Text" data-author="Alan Kay" cite="http://futuretextpublishing.com/download/2nd%20pr%20FOT%201%20April%2019%202021%20PDF.pdf#page=44">
+<div><div><span>A new way of thinking could be invented/co-evolved, </span><span>[</span><span>...</span><span>]</span><span> and when learned fluently would be almost like adding a new piece of brain </span><span>– a "brainlet" </span><span>– that could take us far beyond biology.</span></div></div>
+<footer>Alan Kay<cite> <a href="http://futuretextpublishing.com/download/2nd%20pr%20FOT%201%20April%2019%202021%20PDF.pdf#page=44">http://futuretextpublishing.com/download/2nd%20pr%20FOT%201%20April%2019%202021%20PDF.pdf#page=44</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 There are even more exotic ways of breaking frames out there. You might expose yourself to transformative experiences in an effort to expand your perception of what's possible. You might meddle with your brain's underlying metabolism by [inducing hypnagogia](https://www.healthline.com/health/hypnagogia#inducing-hypnagogia), experimenting with psychedelics, or practicing lucid dreaming. That said, I find thoughtware to be the single most exciting source of unconventional thought out there. It enables us to explore a vast space of non-human thinking in a scalable, formalizable, and elegant way, and I can't wait to see what's out there.

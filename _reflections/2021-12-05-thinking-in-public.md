@@ -11,7 +11,20 @@ A couple people suggested I looked into social features for the [conceptarium](/
 
 First, let's get the dark side out of the way. Besides the obvious issue of accidentally publishing sensitive information online, there are much subtler pitfalls to avoid. For instance, just as social media platforms and advertising companies constantly refine models of online users (e.g. their background, interests, views, peers...), an online model of one's personal knowledge opens up the possibility of adversarial attacks driven by a broad range of goals which are potentially misaligned with the user's, including but not limited to commercial ones. As a relatively low-hanging fruit, consider the memetic injection and excision patterns briefly hinted at [here](/reflections/twenty-one). While such ways of weaponizing language models and knowledge bases are a long way off, NATO's [related position](https://www.innovationhub-act.org/sites/default/files/2021-01/20210122_CW%20Final.pdf) on cognitive warfare prompts research in defense against related attack vectors, an obvious countermeasure being strong privacy on a societal level.
 
-> "Everything made sense now. Far too much sense. Loraine had no scan file -- but they'd broken into mine. [...] They must have run my Copy through a few hundred virtual scenarios, and selected the one most likely to [succeed in obtaining a ransom].  A few hundred resurrections, a few hundred different delusions of extortion, a few hundred deaths. I didn't care -- the notion was far too bizarre, far too alien to move me -- which was probably why there hadn't been a very different ransom demand: 'We have your copy...' And the fake Loraine -- not even a Copy of the real woman, but a construct based entirely on my knowledge of her, my memories, my mental images -- what empathy, what loyalty, what love did I owe *her*?" -- David (A Kidnapping, Greg Egan)
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="A Kidnapping" data-author="Greg Egan" cite="https://www.gregegan.net/">
+Everything made sense now. Far too much sense. Loraine had no scan file –
+ but they’d broken into mine. […] They must have run my Copy through a 
+few hundred virtual scenarios, and selected the one most likely to 
+[succeed in obtaining a ransom]. A few hundred resurrections, a few 
+hundred different delusions of extortion, a few hundred deaths. I didn’t
+ care – the notion was far too bizarre, far too alien to move me – which
+ was probably why there hadn’t been a very different ransom demand: ‘We 
+have your copy…’ And the fake Loraine – not even a Copy of the real 
+woman, but a construct based entirely on my knowledge of her, my 
+memories, my mental images – what empathy, what loyalty, what love did I
+ owe <em>her</em>?
+<footer>Greg Egan<cite> <a href="https://www.gregegan.net/">https://www.gregegan.net/</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 Using a similar thoughtware stack, it appears possible to also attempt to simulate users in a conversational medium based on the thoughts they saved. While projects like [dual](/thoughtware/dual) specifically address beneficial use cases of this approach, many thoughtware primitives might be used maliciously. It would be irresponsible on my side to conveniently ignore those shortcomings, so here we are addressing them explicitly. In this case, user models based on PKMs which are capable of convincing natural conversation might plausibly be used for identity theft. Given incidents like the iconic [bank heist enabled by an employee's deepfaked voice](https://www.unite.ai/deepfaked-voice-enabled-35-million-bank-heist-in-2020/), it's not unreasonable to believe that information on personal views, interests, and mannerisms would enable even more advanced acts.
 

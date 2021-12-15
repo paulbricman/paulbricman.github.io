@@ -73,6 +73,25 @@ The overarching structure of infinite skills nudges you into continuously invest
 
 The reason this is valuable is because we're not used to conceiving of such long periods of time as our lifetimes. For all practical purposes, a lifetime appears infinite when we're deeply engaged in day-to-day tasks. I'm reminded here of a scene from Greg Egan's Permutation City. In the novel, people transcend their bodies by uploading their mind to the cloud. A conundrum inevitably arises: how will they chose to spend their infinite lives? In the fragment below, people resort to having an external system (i.e. their exoself) schedule their vocations.
 
-> "The workshop abutted a warehouse full of table legs—one hundred and sixty-two thousand, three hundred and twenty-nine, so far.  Peer could imagine nothing more satisfying than reaching the two hundred thousand mark—although he knew it was likely that he'd change his mind and abandon the workshop before that happened; new vocations were imposed by his exoself at random intervals, but statistically, the next one was overdue.  Immediately before taking up woodwork, he'd passionately devoured all the higher mathematics texts in the central library, run all the tutorial software, and then personally contributed several important new results to group theory—untroubled by the fact that none of the Elysian mathematicians would ever be aware of his work.  Before that, he'd written over three hundred comic operas, with librettos in Italian, French and English—and staged most of them, with puppet performers and audience.  Before that, he'd patiently studied the structure and biochemistry of the human brain for sixty-seven years; towards the end he had fully grasped, to his own satisfaction, the nature of the process of consciousness." -- Greg Egan
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="Permutation City" data-author="Greg Egan" cite="https://www.gregegan.net/">
+The workshop abutted a warehouse full of table legs—one hundred and 
+sixty-two thousand, three hundred and twenty-nine, so far. Peer could 
+imagine nothing more satisfying than reaching the two hundred thousand 
+mark—although he knew it was likely that he’d change his mind and 
+abandon the workshop before that happened; new vocations were imposed by
+ his exoself at random intervals, but statistically, the next one was 
+overdue. Immediately before taking up woodwork, he’d passionately 
+devoured all the higher mathematics texts in the central library, run 
+all the tutorial software, and then personally contributed several 
+important new results to group theory—untroubled by the fact that none 
+of the Elysian mathematicians would ever be aware of his work. Before 
+that, he’d written over three hundred comic operas, with librettos in 
+Italian, French and English—and staged most of them, with puppet 
+performers and audience. Before that, he’d patiently studied the 
+structure and biochemistry of the human brain for sixty-seven years; 
+towards the end he had fully grasped, to his own satisfaction, the 
+nature of the process of consciousness.
+<footer>Greg Egan<cite> <a href="https://www.gregegan.net/">https://www.gregegan.net/</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 This scene is as disturbing as it is intriguing. Our intuitions pale in comparison to the long spans of time, and we often resort to artificial systems to put them in perspective. Infinite skills are a modest attempt at designing such a system, a behavioral foothold in a virtually boundless unknown. 
