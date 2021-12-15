@@ -8,7 +8,7 @@ published: True
 
 ![](/assets/img/ideoscope_mockup1.png)
 
-## ideoscope ([stable release](https://github.com/paulbricman/ideoscope))
+## ideoscope ([stable release](https://github.com/paulbricman/ideoscope), [online demo](https://huggingface.co/spaces/paulbricman/ideoscope))
 
 An ideoscope (noun. /aɪdɪɒskoʊp/, plural: ideoscopes) is an instrument for measuring your thought process through a host of novel metrics. It builds on top of the [conceptarium](/thoughtware/conceptarium) and provides a window into your thinking in the form of an analytics dashboard full of stats and visualizations. Quantifying your thought process paves the way for a more intimate understanding of your thought patterns as a knowledge worker. The process of measurement, in turn, enables a host of strategies for nurturing your mind, such as A/B testing your routine for maximum generation of novel ideas (i.e. memetic birth rate) or setting monthly goals for the breadth of your perspective (i.e. memetic variability).
 
