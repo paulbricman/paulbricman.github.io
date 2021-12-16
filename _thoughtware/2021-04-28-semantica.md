@@ -11,7 +11,7 @@ published: True
 |-|
 | A toolbox for computer-aided conceptual thinking based on semantic embeddings. It contains a set of five operators which help you find related concepts, mix them, and mine for analogies. |
 
-Mental models are simplified descriptions of the world around us. For instance, one of them might describe networks. A forest is a network of trees. A society is a network of people. A brain is a network of neurons. Mental models help us make sense of the world by allowing us to apply previous knowledge to new situations. They are widely seen as powerful tools for thought, especially when they come in large numbers. If one's repository of mental models is vast, then they'll be able to approach new situations from many different perspectives. This is the motivation behind many recent efforts of compiling extensive lists of them.[^1]
+Mental models are simplified descriptions of the world around us. For instance, one of them might describe networks. A forest is a network of trees. A society is a network of people. A brain is a network of neurons. Mental models help us make sense of the world by allowing us to apply previous knowledge to new situations. They are widely seen as powerful tools for thought, especially when they come in large numbers. If one's repository of mental models is vast, then they'll be able to approach new situations from many different perspectives. This is the motivation behind many [recent efforts](https://fs.blog/mental-models/) of compiling extensive lists of them.
 
 <div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="The Society of Mind" data-author="Marvin Minsky" cite="https://web.media.mit.edu/~minsky/">
 Our systematic cross-realm translations are the roots of fruitful 
@@ -45,7 +45,7 @@ What if we could build tools which enabled us to work with concepts in a similar
 
 However, tools like Photoshop don't directly work with colors, gradients, or patterns. At the lowest level, editing photos boils down to manipulating matrices of numbers. In order to build powerful tools for conceptual thinking, we might need an analogous way to fix concepts into firm numerical foundations which we could then easily manipulate.
 
-Fortunately, there already are ways of doing that. The field of natural language processing has long used semantic embeddings as the numerical substrate of discrete concepts.[^4] Among others, they're used in search engines to understand queries, in chatbots to understand conversations, and in translation systems to understand foreign languages. Think of semantic embeddings as numeric coordinates. They don't describe locations in a physical space, like geographic coordinates, but locations in a space of meanings, a semantic space.[^5]
+Fortunately, there already are ways of doing that. The field of natural language processing has long used [semantic embeddings](https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/) as the numerical substrate of discrete concepts. Among others, they're used in search engines to understand queries, in chatbots to understand conversations, and in translation systems to understand foreign languages. Think of semantic embeddings as numeric coordinates. They don't describe locations in a physical space, like geographic coordinates, but locations in a space of meanings, a [semantic space](https://web.stanford.edu/~jurafsky/slp3/6.pdf).
 
 An intuitive understanding of how semantic embeddings are obtained is beyond the scope of this article, but what is relevant for our current purposes can be captured in a few neat properties exhibited by the semantic space:
 
@@ -101,7 +101,7 @@ A semantic field is a set of words related in meaning. This tool can be used to 
 ['neuroscience', 'brains', 'biology', 'physiology', 'cognition', 'mathematics', 'neural', 'cognitive']
 ```
 
-Conceptual blending has been described as the process of partially projecting multiple concepts onto a blended mental space.[^6] If this explanation seems largely circular, that's because it is. Still, this tool can be used to perform this ill-defined but intuitive task.
+Conceptual blending has been described as the process of partially projecting multiple concepts onto a [blended mental space](http://www.cogsci.ucsd.edu/~faucon/BEIJING/blending.pdf). If this explanation seems largely circular, that's because it is. Still, this tool can be used to perform this ill-defined but intuitive task.
 
 - span
 
@@ -178,7 +178,7 @@ _Metaphor_ comes from the Latin _metaphora_, meaning _to carry over_. This tool 
 ...
 ```
 
-Inspiration for this tool comes from a science fiction novel in which the main character needs to broadcast the location of a celestial body to an unknown civilization.[^7] However, given the lack of absolute reference frames available, he broadcasts the position of the celestial body relative to several neighboring ones. Here, because the dimensions of the semantic space aren't inherently meaningful, a mental model is expressed as a set of distances from the first concept to each subsequent concept, forming a _constellation_ of concepts. The Golden Records use a similar scheme to pinpoint the Earth.[^8] After finishing this write-up, I also came across this eerily related passage:
+Inspiration for this tool comes from a [science fiction novel](https://www.goodreads.com/book/show/34569357-remembrance-of-earth-s-past?ac=1&from_search=true&qid=5NN7oSm54Y&rank=2) in which the main character needs to broadcast the location of a celestial body to an unknown civilization. However, given the lack of absolute reference frames available, he broadcasts the position of the celestial body relative to several neighboring ones. Here, because the dimensions of the semantic space aren't inherently meaningful, a mental model is expressed as a set of distances from the first concept to each subsequent concept, forming a _constellation_ of concepts. The [Golden Records](https://voyager.jpl.nasa.gov/golden-record/golden-record-cover/) use a similar scheme to pinpoint the Earth. After finishing this write-up, I also came across this eerily related passage:
 
 <div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="The Metamorphosis of Prime Intellect" data-author="Roger Williams" cite="http://www.localroger.com/prime-intellect/">
 <div><div><span>The night sky is a partial representation of Prime Intellect's mind. It's called the Global Association Table. The points or stars represent concepts, and the lines are the links between them.</span></div></div>
@@ -220,19 +220,3 @@ humanities or museology. We can meet each other halfway through."
 ```
 
 ...classroom, composed of many independent students who all have their own individual beliefs, desires, and intentions."
-
-## references
-
-[^1]: Farnam Street,<br/>[Mental Models](https://fs.blog/mental-models/)
-[^2]: Marvin Minsky,<br/>[The Society of Mind](https://www.goodreads.com/book/show/326790.The_Society_of_Mind)
-[^3]: Shan Carter & Michael Nielsen,<br/>[Using Artificial Intelligence to Augment Human Intelligence](https://distill.pub/2017/aia/)
-[^4]: Christopher Olah,<br/>[Deep Learning, NLP, and Representations](https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/)
-[^5]: Daniel Jurafsky & James Martin,<br/>[Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/6.pdf)
-[^6]: Gilles Fauconnier,<br/>[The Encyclopedia of the Social and Behavioral Sciences](http://www.cogsci.ucsd.edu/~faucon/BEIJING/blending.pdf)
-[^7]: Cixin Liu,<br/>[The Three-Body Problem Trilogy](https://www.goodreads.com/book/show/34569357-remembrance-of-earth-s-past?ac=1&from_search=true&qid=5NN7oSm54Y&rank=2)
-[^8]: NASA,<br/>[The Golden Record Cover](https://voyager.jpl.nasa.gov/golden-record/golden-record-cover/)
-[^9]: Mikolov et al.,<br/>[Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf)
-[^10]: Stephen Wolfram,<br/>[Computational Universe](https://www.youtube.com/watch?v=P7kX7BuHSFI)
-[^11]: George Lakoff & Mark Johnson,<br/>[Metaphors We Live By](https://www.goodreads.com/book/show/34459.Metaphors_We_Live_By)
-[^12]: Douglas Engelbart,<br/>[Augmenting Human Intellect](https://www.goodreads.com/book/show/13365811-augmenting-human-intellect)
-[^13]: Roger Williams,<br/>[The Metamorphosis of Prime Intellect](https://www.goodreads.com/book/show/64341.The_Metamorphosis_of_Prime_Intellect)
