@@ -7,6 +7,10 @@ published: True
 
 ## semantica ([prototype code](https://github.com/paulbricman/semantica))
 
+| tl;dr |
+|-|
+| A toolbox for computer-aided conceptual thinking based on semantic embeddings. It contains a set of five operators which help you find related concepts, mix them, and mine for analogies. |
+
 Mental models are simplified descriptions of the world around us. For instance, one of them might describe networks. A forest is a network of trees. A society is a network of people. A brain is a network of neurons. Mental models help us make sense of the world by allowing us to apply previous knowledge to new situations. They are widely seen as powerful tools for thought, especially when they come in large numbers. If one's repository of mental models is vast, then they'll be able to approach new situations from many different perspectives. This is the motivation behind many recent efforts of compiling extensive lists of them.[^1]
 
 <div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="The Society of Mind" data-author="Marvin Minsky" cite="https://web.media.mit.edu/~minsky/">

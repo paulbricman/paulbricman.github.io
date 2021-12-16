@@ -7,6 +7,10 @@ published: True
 
 ## autocards ([prototype code](https://github.com/paulbricman/autocards))
 
+| tl;dr |
+|-|
+| Automatically generate flashcards from raw text. The answer (i.e. back side) is explicitly mentioned in the input text, while the question (i.e. front side) is generated from scratch based on context. |
+
 Not all educational resources are created equal. Imagine you're trying to grasp the essence of quaternions, a somewhat esoteric mathematical construct. One way to go about it might be to painstakingly read through an old textbook chapter on the topic, full of intimidating terminology and verbose notation.[^1] You might end up giving it a few solid reads, as building mental models from scratch is quite tedious. Now, picture yourself experimenting with an interactive animation on the same topic. You can now freely manipulate quaternions from the comfort of your desk while getting instant feedback across several parallel representations. Meanwhile, you're being guided through the material in an accessible way, while systematically internalizing core concepts.[^2]
 
 A broad range of methods have been developed through the years to guide the creation of engaging, insightful, and memorable educational resources. However, guidelines only go so far, and developers started building concrete tools to help creators in their process. For instance, one project aims to help authors make their online articles more memorable by easily embedding a custom spaced repetition system into the actual web page.[^3] Flashcards are knitted together with text and figures, making them an integral part of the article. This tool essentially turns otherwise static online essays into engaging and memorable artifacts. Yet other tools help creators bring abstract concepts to life through programmatically-generated videos and interactive animations. [^4] [^5]

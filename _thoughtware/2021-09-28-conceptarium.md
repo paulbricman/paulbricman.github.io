@@ -10,6 +10,10 @@ published: True
 
 ## conceptarium ([stable release](https://github.com/paulbricman/conceptarium), [demo screencasts](https://github.com/paulbricman/conceptarium#screencasts))
 
+| tl;dr |
+|-|
+| A personal knoweldge base which requires minimal book-keeping while offering powerful search capabilities out-of-the-box. It can store both written notes and images, can keep track of what's on top of mind, and exposes all of its functionality through an API. |
+
 A conceptarium (noun. /knsɛptɛriəm/, plural: conceptaria) is a fluid medium for storing, relating, and surfacing thoughts based on a new representation of knowledge. It's meant to provide a foundation for new tools for thought to build onto, a means to nurture a new tooling ecosystem for knowledge work -- a cognitive infrastructure. It embodies a philosophy of knowledge which differs in important ways from the one held by the knowledge graph poster children (e.g. Roam Research, Obsidian, Logseq), and can be deployed today in a self-hosted regime, even on a modest Raspberry Pi.
 
 ## representation

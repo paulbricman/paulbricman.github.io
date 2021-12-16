@@ -10,6 +10,10 @@ published: True
 
 ## ideoscope ([stable release](https://github.com/paulbricman/ideoscope), [online demo](https://huggingface.co/spaces/paulbricman/ideoscope))
 
+| tl;dr |
+|-|
+| A web dashboard which measures and visualizes your knowledge base through novel metrics. For instance, variability indicates the diversity of your ideas, while discovery rate indicates how fast you're navigating the space of possible ideas. |
+
 An ideoscope (noun. /aɪdɪɒskoʊp/, plural: ideoscopes) is an instrument for measuring your thought process through a host of novel metrics. It builds on top of the [conceptarium](/thoughtware/conceptarium) and provides a window into your thinking in the form of an analytics dashboard full of stats and visualizations. Quantifying your thought process paves the way for a more intimate understanding of your thought patterns as a knowledge worker. The process of measurement, in turn, enables a host of strategies for nurturing your mind, such as A/B testing your routine for maximum generation of novel ideas (i.e. memetic birth rate) or setting monthly goals for the breadth of your perspective (i.e. memetic variability).
 
 The ideoscope is influenced by a number of movements. For staters, the quantified self community advocates for the intentional measurement of various facets of your life (e.g. sleep, productivity, well-being) as a necessary precursor for the effective optimization of those areas.[^2] Particularly relevant here is the quantified mind project, which has been around since almost a decade ago, yet it focuses more on evaluating general cognitive performance through brain puzzles and abstract minigames.[^3] In contrast, the ideoscope addresses a higher level of abstraction by focusing on the set of specific thoughts which inhabit your mind. This perspective comes from the highly controversial field of memetics, which frames the mind as a habitat where ideas live, reproduce, and mutate -- an ecology of thought.
