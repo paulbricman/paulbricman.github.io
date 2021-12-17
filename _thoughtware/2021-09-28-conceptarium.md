@@ -22,7 +22,7 @@ In one's conceptarium, individual thoughts, ideas, and concepts are discrete doc
 
 - semantic embedding
 
-The semantic embedding of a document is a set of spatial coordinates, a finite list of numbers which indicate its location in space. Notably, this is not a physical space, and the document coordinates are not related to latitude and longitude. Rather, documents live in a _semantic space_, a space of possible meanings, with way more than three dimensions. Clever statistical models take on the task of _projecting_ individual documents onto semantic space automatically, providing the actual coordinates. The semantic embedding of a document is strictly a function of its contents, with nothing else influencing its location. As dimensions of meaning are expressed as dimensions of space, documents which mean similar things are to be found close to each other in semantic space. [^2]
+The semantic embedding of a document is a set of spatial coordinates, a finite list of numbers which indicate its location in space. Notably, this is not a physical space, and the document coordinates are not related to latitude and longitude. Rather, documents live in a [semantic space](https://web.stanford.edu/~jurafsky/slp3/6.pdf), a space of possible meanings, with way more than three dimensions. Clever statistical models take on the task of _projecting_ individual documents onto semantic space automatically, providing the actual coordinates. The semantic embedding of a document is strictly a function of its contents, with nothing else influencing its location. As dimensions of meaning are expressed as dimensions of space, documents which mean similar things are to be found close to each other in semantic space.
 
 ![](/assets/img/semanticspacetime.png)
 
@@ -34,7 +34,7 @@ This bit of metadata is rather trivial compared to the previous one, but still i
 
 - activation
 
-If the concept of semantic embedding is mostly familiar to the machine learning crowd, the concept of activation as used here is mostly familiar to the cognitive psychology crowd. In many cognitive architectures of human memory, _activation_ is a pervasive way of thinking about how memories are retrieved. In the iconic ACT-R, each memory (or chunk) has an activation, a numerical value which indicates, well, how "active" that memory is in one's mind. Memories with higher activations are more likely to be remembered. The activation of a memory is a function of several factors, mainly including: recency, frequency, and contextual relevance. Similar models of memory also form the backbone of spaced repetition algorithms in Anki and SuperMemo, where the goal is to essentially maintain memories above an activation threshold. [^3]
+If the concept of semantic embedding is mostly familiar to the machine learning crowd, the concept of activation as used here is mostly familiar to the cognitive psychology crowd. In many cognitive architectures of human memory, _activation_ is a pervasive way of thinking about how memories are retrieved. In the iconic [ACT-R](https://arxiv.org/pdf/1306.0125.pdf), each memory (or chunk) has an activation, a numerical value which indicates, well, how "active" that memory is in one's mind. Memories with higher activations are more likely to be remembered. The activation of a memory is a function of several factors, mainly including: recency, frequency, and contextual relevance. Similar models of memory also form the backbone of spaced repetition algorithms in Anki and SuperMemo, where the goal is to essentially maintain memories above an activation threshold.
 
 In one's conceptarium, each document has an activation which changes over time. Documents which have been created recently or have been retrieved frequently (as measured by the user's sustained interest in probing their region of the semantic space) have a higher activation. Just like the creation timestamp, a document's activation is mostly useful when used in tandem with other bits of metadata. For instance, I might want to retrieve documents related to the current context which I'm _specifically unlikely to remember myself_, a complementary "antimemory" system which avoids the redundancy of surfacing thoughts which I already remember myself. Alternatively, I might use the most active documents as a proxy for my current interests in downstream tools for networking.
 
@@ -46,7 +46,7 @@ The conceptarium embodies some specific principles about how knowledge is like a
 
 - everything is interconnected.
 
-In a knowledge graph, each node is connected to a subset of the other notes through explicit links created by the knowledge worker. They are finite, can't overlap, and require valuable time to create. In contrast, in a conceptarium, all documents are related to each other. They live in the same space, and are just closer or farther away from each other. Additionally, the orientation of the straight line which connects any two dots is deeply informative and codes the semantic relation between the two documents. This principle is explored in much more depth in [Semantica](/thoughtware/semantica). For instance, the document pairs "man" & "woman," "king" & "queen," and "actor" & "actress" have roughly the same relative placements. However, even if we haven't developed a way to visualize, let alone understand, the semantics of high-dimensional spatial layouts, they are still present in the representation as a testament for every thought having _some_ unique relation to every other one. [^1]
+In a knowledge graph, each node is connected to a subset of the other notes through explicit links created by the knowledge worker. They are finite, can't overlap, and require valuable time to create. In contrast, in a conceptarium, all documents are related to each other. They live in the same space, and are just closer or farther away from each other. Additionally, the orientation of the straight line which connects any two dots is deeply informative and codes the semantic relation between the two documents. This principle is explored in much more depth in [Semantica](/thoughtware/semantica). For instance, the document pairs "man" & "woman," "king" & "queen," and "actor" & "actress" have roughly the same relative placements. However, even if we haven't developed a way to visualize, let alone understand, the semantics of [high-dimensional spatial layouts](https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/), they are still present in the representation as a testament for every thought having _some_ unique relation to every other one.
 
 ![](/assets/img/conceptarium_results.png)
 
@@ -124,14 +124,3 @@ Frank and Grace are both entrepreneurs. While connecting via a video call in an 
 ## conclusion
 
 The conceptarium is a versatile medium for storing, relating, and surfacing thoughts. Its unique underlying representation opens the possibility of supporting an entirely new tooling ecosystem for knowledge work, briefly hinted at above. The resulting cognitive infrastructure will likely be more than the sum of its building blocks.
-
-## references
-
-[^1]: Christopher Olah,<br/>[Deep Learning, NLP, and Representations](https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/)
-[^2]: Daniel Jurafsky & James Martin,<br/>[Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/6.pdf)
-[^3]: Jacob Whitehill,<br/>[Understanding ACT-R – an Outsider’s Perspective](https://arxiv.org/pdf/1306.0125.pdf)
-[^4]: Geoffrey Litt,<br/>[Bring Your Own Client](https://www.geoffreylitt.com/2021/03/05/bring-your-own-client.html)
-[^6]: Greg Egan,<br/>[Diaspora](https://www.gregegan.net/DIASPORA/DIASPORA.html)
-[^7]: Greg Egan,<br/>[Unstable Orbits In The Space Of Lies](https://www.gregegan.net)
-[^8]: Greg Egan,<br/>[Axiomatic](https://www.gregegan.net)
-[^9]: Multiple authors,<br/>[Future Of Text, Vol. I](https://futuretextpublishing.com/future-of-text-2020-download/)
