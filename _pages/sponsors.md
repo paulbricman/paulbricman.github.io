@@ -8,6 +8,7 @@ Thanks a lot to the people and orgs who believe in the transformative potential 
 
 - [Andreas Stuhlmüller](https://stuhlmueller.org/)
 - [Carson Kahn](https://github.com/carsonkahn-external)
+- [David Dohan](https://twitter.com/Dmdohan)
 - [Matthew Perry](https://github.com/gabbyzhat)
 - [Spindle](https://spindle.app/)
 - [Todd Schiller](https://toddschiller.com/)
