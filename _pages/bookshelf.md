@@ -18,6 +18,7 @@ entries are all-time favorites.
 - Being No One, Thomas Metzinger (DNF)
 - **Blindsight**, Peter Watts
 - Childhood's End, Arthur C. Clarke
+- Cloud Cuckoo Land, Anthony Doerr
 - Communication and Cultural Domination, Herbert Schiller
 - Cosmos, Carl Sagan
 - Death's End, Cixin Liu
