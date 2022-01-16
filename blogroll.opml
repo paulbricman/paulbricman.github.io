@@ -13,6 +13,7 @@
             <outline type="rss" text="Andy Matuschak" title="Andy Matuschak" xmlUrl="https://blog.andymatuschak.org/rss#_=_" htmlUrl="https://blog.andymatuschak.org/"/>
             <outline type="rss" text="Anne-Laure Le Cunf" title="Anne-Laure Le Cunf" xmlUrl="https://nesslabs.com/feed" htmlUrl="https://nesslabs.com"/>
             <outline type="rss" text="Barry Bainton" title="Barry Bainton" xmlUrl="http://thesuperorganic.blogspot.com/feeds/posts/default" htmlUrl="https://thesuperorganic.blogspot.com/"/>
+            <outline type="rss" text="Boris Smus" title="Boris Smus" xmlUrl="https://feeds.feedburner.com/smuscom" htmlUrl="https://smus.com/blog/"/>
             <outline type="rss" text="Brendan Schlagel" title="Brendan Schlagel" xmlUrl="https://www.brendanschlagel.com/feed" htmlUrl="https://www.brendanschlagel.com"/>
             <outline type="rss" text="Cal Newport" title="Cal Newport" xmlUrl="http://feeds.feedburner.com/StudyHacks" htmlUrl="https://www.calnewport.com"/>
             <outline type="rss" text="cdixon" title="cdixon" xmlUrl="https://cdixon.substack.com/feed" htmlUrl="https://cdixon.org/"/>
@@ -45,12 +46,14 @@
             <outline type="rss" text="Mandy Brown" title="Mandy Brown" xmlUrl="https://buttondown.email/aworkinglibrary/rss" htmlUrl="https://aworkinglibrary.com/writing/"/>
             <outline type="rss" text="Manuel Moreal" title="Manuel Moreal" xmlUrl="https://manuelmoreale.com/feed" htmlUrl="https://manuelmoreale.com/"/>
             <outline type="rss" text="Mark Manson" title="Mark Manson" xmlUrl="http://markmanson.net/feed" htmlUrl="https://markmanson.net"/>
+            <outline type="rss" text="Mark Xu" title="Mark Xu" xmlUrl="https://markxu.com/atom.xml" htmlUrl="https://markxu.com/"/>
             <outline type="rss" text="Matilde Park" title="Matilde Park" xmlUrl="https://matildepark.ca/feed.xml" htmlUrl="https://matildepark.ca/"/>
             <outline type="rss" text="Matt Webb" title="Matt Webb" xmlUrl="https://interconnected.org/home/feed" htmlUrl="https://interconnected.org"/>
             <outline type="rss" text="Michael Ashcroft" title="Michael Ashcroft" xmlUrl="https://thinkingoutloud.substack.com/feed/" htmlUrl="https://thinkingoutloud.substack.com"/>
             <outline type="rss" text="Michael Lopp" title="Michael Lopp" xmlUrl="http://www.randsinrepose.com/index.xml" htmlUrl="https://randsinrepose.com"/>
             <outline type="rss" text="Michael Wolf" title="Michael Wolf" xmlUrl="https://wolfmd.me/feed.xml" htmlUrl="https://wolfmd.me/"/>
             <outline type="rss" text="Milo Fultz" title="Milo Fultz" xmlUrl="https://milofultz.com/atom.xml" htmlUrl="https://milofultz.com/"/>
+            <outline type="rss" text="Miscellaneous Stuff" title="Miscellaneous Stuff" xmlUrl="http://misc-stuff.terraaeon.com/misc-stuff-rss-feed.xml" htmlUrl="http://misc-stuff.terraaeon.com/"/>
             <outline type="rss" text="Morgan Housel" title="Morgan Housel" xmlUrl="http://feeds.feedburner.com/collabfund" htmlUrl="http://www.collaborativefund.com"/>
             <outline type="rss" text="Otto Scharmer" title="Otto Scharmer" xmlUrl="https://medium.com/feed/presencing-institute-blog" htmlUrl="https://medium.com/presencing-institute-blog"/>
             <outline type="rss" text="Packy McCormick" title="Packy McCormick" xmlUrl="https://notboring.substack.com/feed/" htmlUrl="https://www.notboring.co"/>
@@ -65,6 +68,7 @@
             <outline type="rss" text="Ryan J. A. Murphy" title="Ryan J. A. Murphy" xmlUrl="https://axle.design/feed.rss" htmlUrl="https://axle.design"/>
             <outline type="rss" text="Sam Altman" title="Sam Altman" xmlUrl="http://blog.samaltman.com/posts.atom" htmlUrl="https://blog.samaltman.com"/>
             <outline type="rss" text="Scott Alexander" title="Scott Alexander" xmlUrl="https://astralcodexten.substack.com/feed/" htmlUrl="https://astralcodexten.substack.com"/>
+            <outline type="rss" text="Scott Jenson" title="Scott Jenson" xmlUrl="https://jenson.org/feed/" htmlUrl="https://jenson.org/"/>
             <outline type="rss" text="Seth Godin" title="Seth Godin" xmlUrl="http://sethgodin.typepad.com/seths_blog/atom.xml" htmlUrl="https://seths.blog"/>
             <outline type="rss" text="Tales From The Dork Web" title="Tales From The Dork Web" xmlUrl="https://thedorkweb.substack.com/feed" htmlUrl="https://thedorkweb.substack.com"/>
             <outline type="rss" text="Taylor Pearson" title="Taylor Pearson" xmlUrl="http://feeds.feedburner.com/TaylorPearson" htmlUrl="https://taylorpearson.me"/>
@@ -72,6 +76,7 @@
             <outline type="rss" text="Tilde Town / Dustin" title="Tilde Town / Dustin" xmlUrl="https://tilde.town/~dustin/index.xml" htmlUrl="https://tilde.town/~dustin/"/>
             <outline type="rss" text="Tim Harford" title="Tim Harford" xmlUrl="http://timharford.com/feed/" htmlUrl="https://timharford.com"/>
             <outline type="rss" text="Tim Urban" title="Tim Urban" xmlUrl="http://waitbutwhy.com/feed" htmlUrl="https://waitbutwhy.com"/>
+            <outline type="rss" text="Tom MacWright" title="Tom MacWright" xmlUrl="https://macwright.com/rss.xml" htmlUrl="https://macwright.com/"/>
             <outline type="rss" text="Ugo Bardi" title="Ugo Bardi" xmlUrl="http://thesenecaeffect.blogspot.com/feeds/posts/default" htmlUrl="https://thesenecaeffect.blogspot.com/"/>
             <outline type="rss" text="Venkatesh Rao" title="Venkatesh Rao" xmlUrl="http://www.ribbonfarm.com/feed/" htmlUrl="https://www.ribbonfarm.com"/>
             <outline type="rss" text="Vi Hart" title="Vi Hart" xmlUrl="http://vihart.com/feed/" htmlUrl="http://vihart.com"/>
