@@ -11,6 +11,11 @@ around physical libraries in search for titles. I'm reading for three
 main reasons: to be inspired, to be mindblown, and to be entertained. Bold
 entries are all-time favorites.
 
+<div class="top-pad"><blockquote class="quoteback" darkmode="" data-title="Cloud Cuckoo Land" data-author=" Anthony Doerr" cite="https://www.anthonydoerr.com/books/cloud-cuckoo-land">
+Each of these books, child, is a door, a gateway to another place and time. You have your whole life in front of you, and for all of it, you'll have this. It will be enough, don't you think?<br>
+<footer> Anthony Doerr<cite> <a href="https://www.anthonydoerr.com/books/cloud-cuckoo-land">https://www.anthonydoerr.com/books/cloud-cuckoo-land</a></cite></footer>
+</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
+
 - A Fire Upon The Deep, Vernor Vinge
 - Augmenting Human Intellect, Douglas Engelbart
 - **Axiomatic**, Greg Egan
