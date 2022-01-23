@@ -1,11 +1,11 @@
 ---
 layout: post
 age: 21.21
-title: romantic transhumanist ramblings
+title: humane transhumanism
 published: True
 ---
 
-## romantic transhumanist ramblings
+## humane transhumanism
 
 _A couple things first. I gave [a presentation on the ideas behind the lexiscore](https://youtu.be/AT7sSTRRN7o?t=723) during the [ML Collective Open Research Jam #6](https://mlcollective.org/events/). Also, I realized thanks to a sponsor that receiving email updates via GitHub Sponsors is disabled by default. Consider checking the box under [step 5 here](https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/managing-your-sponsorship#managing-email-updates-for-your-sponsorship) if you want to receive the monthly email updates on what's new and what's next. Right, so anyway..._
 
