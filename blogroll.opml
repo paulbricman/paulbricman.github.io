@@ -20,12 +20,15 @@
             <outline type="rss" text="Cedric Chin" title="Cedric Chin" xmlUrl="https://commoncog.com/blog/rss/" htmlUrl="https://commoncog.com/blog/"/>
             <outline type="rss" text="Chad Mazzola" title="Chad Mazzola" xmlUrl="https://chad.is/rss.xml" htmlUrl="https://chad.is"/>
             <outline type="rss" text="Computing Education" title="Computing Education" xmlUrl="https://computinged.wordpress.com/feed/" htmlUrl="https://computinged.wordpress.com/"/>
+            <outline type="rss" text="Dror Poleg" title="Dror Poleg" xmlUrl="https://www.drorpoleg.com/blog/rss/" htmlUrl="https://www.drorpoleg.com/"/>
             <outline type="rss" text="Edward Snowden" title="Edward Snowden" xmlUrl="https://edwardsnowden.substack.com/feed/" htmlUrl="https://edwardsnowden.substack.com"/>
             <outline type="rss" text="Edwin Wenink" title="Edwin Wenink" xmlUrl="https://www.edwinwenink.xyz/index.xml" htmlUrl="https://www.edwinwenink.xyz/"/>
             <outline type="rss" text="Eric Jang" title="Eric Jang" xmlUrl="https://blog.evjang.com/feeds/posts/default" htmlUrl="https://blog.evjang.com/?m=0"/>
             <outline type="rss" text="flower.codes" title="flower.codes" xmlUrl="http://flower.codes/feed.xml" htmlUrl="http://flower.codes/"/>
             <outline type="rss" text="Gordon Brander" title="Gordon Brander" xmlUrl="https://subconscious.substack.com/feed/" htmlUrl="https://subconscious.substack.com"/>
             <outline type="rss" text="Geoffrey Litt" title="Geoffrey Litt" xmlUrl="https://www.geoffreylitt.com/feed.xml" htmlUrl="https://www.geoffreylitt.com/"/>	
+            <outline type="rss" text="hut.pm" title="hut.pm" xmlUrl="https://hut.pm/index.xml" htmlUrl="https://hut.pm/blog.html"/>	
+            <outline type="rss" text="Ian Vanagas" title="Ian Vanagas" xmlUrl="https://ianvanagas.com/feed/" htmlUrl="https://ianvanagas.com/"/>
             <outline type="rss" text="icyphox" title="icyphox" xmlUrl="https://icyphox.sh/blog/feed.xml" htmlUrl="https://icyphox.sh/"/>
             <outline type="rss" text="Itamar Shatz" title="Itamar Shatz" xmlUrl="https://effectiviology.com/feed/" htmlUrl="https://effectiviology.com"/>
             <outline type="rss" text="Jack Clark" title="Jack Clark" xmlUrl="https://mappingbabel.wordpress.com/feed/" htmlUrl="https://jack-clark.net"/>
@@ -62,6 +65,7 @@
             <outline type="rss" text="Pieter Levels" title="Pieter Levels" xmlUrl="http://levels.io/feed/" htmlUrl="https://levels.io/"/>
             <outline type="rss" text="Pirijan Keth" title="Pirijan Keth" xmlUrl="http://pketh.org/feed.xml" htmlUrl="http://pketh.org/"/>
             <outline type="rss" text="Porchlight" title="Porchlight" xmlUrl="https://www.porchlightbooks.com/blog/changethis/rss" htmlUrl="https://www.porchlightbooks.com/blog/changethis/rss"/>
+            <outline type="rss" text="Raymond Hines" title="Raymond Hines" xmlUrl="https://alongtheray.com/feed/" htmlUrl="https://alongtheray.com/"/>
             <outline type="rss" text="Ritual Dust" title="Ritual Dust" xmlUrl="https://ritualdust.com/index.xml" htmlUrl="https://ritualdust.com"/>
             <outline type="rss" text="Robin Hanson" title="Robin Hanson" xmlUrl="http://www.overcomingbias.com/feed" htmlUrl="http://www.overcomingbias.com"/>
             <outline type="rss" text="Romain Aubert" title="Romain Aubert" xmlUrl="https://rpsa.substack.com/feed/" htmlUrl="https://rpsa.substack.com/"/>
