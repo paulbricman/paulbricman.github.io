@@ -17,13 +17,14 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 - A Fire Upon The Deep, Vernor Vinge
+- All the Light We Cannot See, Anthony Doerr (Current)
 - Augmenting Human Intellect, Douglas Engelbart
 - **Axiomatic**, Greg Egan
 - Behave, Robert Sapolsky (DNF)
 - Being No One, Thomas Metzinger (DNF)
 - **Blindsight**, Peter Watts
 - Childhood's End, Arthur C. Clarke
-- Cloud Cuckoo Land, Anthony Doerr
+- **Cloud Cuckoo Land**, Anthony Doerr
 - Communication and Cultural Domination, Herbert Schiller
 - Cosmos, Carl Sagan
 - Death's End, Cixin Liu

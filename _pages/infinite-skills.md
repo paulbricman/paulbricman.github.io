@@ -17,9 +17,3 @@ x = [d | d <- map (create100ArtifactsUsing) [Paper, Yarn..]]
 ```haskell
 x = [d | d <- map (getB2In) [Mandarin, Hebrew..]]
 ```
-
-- **athleticism**: gaining better control and awareness of my body via [short programs](https://www.darebee.com/programs.html)
-
-```haskell
-x = [d | d <- map (followProgram) [AgeOfPandora, Pathfinder..]]
-```

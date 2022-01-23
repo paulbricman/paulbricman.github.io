@@ -12,7 +12,41 @@ I'm a Romanian-born Netherlands-based student on a quest to extend the range of 
 
 Outside thoughtware engineering, I'm learning how to create things using analog materials (e.g. paper, yarn) and subjecting myself to a prolonged culture shock by learning Mandarin. I love the sublime feeling of peeking into awe-inspiring worlds devised by authors with strong worldbuilding skills, and I'm trying my best to marry the effectiveness of routines, habits, and protocols, with the humane qualities of intention and presence. To share my reflections in a more structured format, I'm writing one short article per week.
 
-- [**thoughtware**](/thoughtware) -- "laying the foundation of our cognitive infrastructure"
-- [**infinite skills**](/infinite-skills) -- "learning how to create things", "learning Mandarin"
-- [**bookshelf**](/bookshelf) -- "peeking into awe-inspiring worlds"
-- [**reflections**](/reflections) -- "reflections in a more structured format"
+### recent reflections [(see all)](/reflections)
+
+<div class="posts" id="Blog">
+    <ul>
+        {% assign reflections = site.reflections | sort: 'age' | reverse %}
+        {% for reflection in reflections limit:10 %}
+
+        {% assign age_split = reflection.age | round: 2 | split: "." %}
+        {% assign integral = age_split[0] %}
+        {% assign fractional = age_split[1] | append: "00" | truncate: 2, "" %}
+
+        <li>
+            <a href="{{ site.baseurl }}{{ reflection.url }}">{{ reflection.title }}</a>{{integral}}.{{fractional}} YRS
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+### recent thoughtware [(see all)](/thoughtware)
+
+<div class="posts" id="Blog">
+    <ul>
+        {% assign tools = site.thoughtware | sort | reverse %}
+        {% for tool in tools limit:10 %}
+
+        <li>
+            <div style="font-weight: normal"><a href="{{ site.baseurl }}{{ tool.url }}">{{ tool.title | downcase }}</a>: {{ tool.description | downcase }}</div>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+### miscellaneous
+
+- [**bookshelf**](/bookshelf): "peeking into awe-inspiring worlds"
+- [**infinite skills**](/infinite-skills): "learning how to create things", "learning Mandarin"
