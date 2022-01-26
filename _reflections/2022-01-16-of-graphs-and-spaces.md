@@ -61,6 +61,8 @@ Optimize then for the number of changes in total, or for the number of inter-net
 
 Similarly, I could simply select someone else's model of how things relate to each other as a means of navigating and searching around my knowledge base. "Ah, so those are the items they might have thought of as related in my place." Remember when I argued that [the effectiveness of non-linear note-taking is due to the user being able to remix their past thought patterns](/reflections/expecting-unexpected-ideas)? Swapping the "transport networks" for someone else's would allow you to plug-and-play _other_ conceptual maps on top of your documents, by simply including their routes during path finding.
 
+Edit: A related thread from the undergrounds of the [Napkin](https://www.napkin.one/) Slack lead to the following idea. What if you treated travel times computed between docs as pure distances again before generating embeddings which then match those? While this might preserve the computational benefits of embeddings (i.e. no pathfinding required), it's again tricky to place new docs in the new space, just like in the case of GNNs. However, depending on the algorithm used, the transform could be saved and simply applied on the new docs.
+
 Make no mistake, this cluster of ideas is really vague and fluid for me at the moment, so take it with a grain of salt before it cools down into a more coherent view.
 
 You arrived at your destination.
