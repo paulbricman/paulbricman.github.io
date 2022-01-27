@@ -4,17 +4,20 @@ layout: page
 
 ## thoughtware [(rss)](/thoughtware/feed.xml)
 
-My research is focused on extending human thinking with artificial ways of thinking. An important part of this venture is bringing to life actual tools which incorporate the artificial affordances I'm designing, and then taking them for a spin. I call this family of tools *thoughtware*, as a more compact version of [tools for thought](https://numinous.productions/ttft/), but with an extra hint of high-tech. Here they are, in reverse chronological order:
+My research is focused on extending human thinking with artificial ways of thinking. An important part of this venture is bringing to life actual tools which incorporate the artificial affordances I'm designing, and then taking them for a spin. I call this family of tools _thoughtware_, as a more compact version of [tools for thought](https://numinous.productions/ttft/), but with an extra hint of high-tech. Here they are, in reverse chronological order:
 
-- [**decontextualizer**](/thoughtware/decontextualizer): a pipeline for making highlighted text stand-alone
-- [**lexiscore**](/thoughtware/lexiscore): a nutritional label for food for thought
-- [**ideoscope**](/thoughtware/ideoscope): an instrument for quantifying, understanding, and optimizing your thinking
-- [**conceptarium**](/thoughtware/conceptarium): a fluid medium for storing, relating, and surfacing thoughts
-- [**dual**](/thoughtware/dual): amplifying knowledge work through user-defined assistants
-- [**autocards**](/thoughtware/autocards): accelerating learning through machine-generated flashcards
-- [**k-probes**](/thoughtware/k-probes): promoting critical thinking through prompt generation
-- [**memnav**](/thoughtware/memnav): expanding propositional memory through text mining
-- [**semantica**](/thoughtware/semantica): extending conceptual thinking through semantic embeddings
+<div class="posts" id="Blog">
+    <ul>
+        {% assign tools = site.thoughtware | sort | reverse %}
+        {% for tool in tools %}
+
+        <li>
+            <div style="font-weight: normal"><a href="{{ site.baseurl }}{{ tool.url }}">{{ tool.title | downcase }}</a>: {{ tool.description | downcase }}</div>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
 
 ## principles
 
@@ -28,12 +31,12 @@ In the upcoming years, I plan to bring the following ideas to life, roughly in o
 
 - an artificial sense organ for insight
 - a graph-based belief system editor
-- a sandbox for training collaborative virtual assistants 
+- a sandbox for training collaborative virtual assistants
 - a data-driven memory palace
 - a version control system for ideas
 - a human language forged by machines
 - a tool for mining interdisciplinary metaphors
-- a design language which adapts to written meaning 
+- a design language which adapts to written meaning
 - a growth agent for shared understanding
 - a biometric regulator of autonomic arousal
 - a groovebox for remixing cognitive processing modes
