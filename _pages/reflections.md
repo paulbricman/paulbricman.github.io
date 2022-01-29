@@ -16,8 +16,9 @@ For a long while now, my main channels for sharing ideas publicly were thoughtwa
         {% assign fractional = age_split[1] | append: "00" | truncate: 2, "" %}
 
         <li>
-            <a href="{{ site.baseurl }}{{ reflection.url }}">{{ reflection.title }}</a>{{integral}}.{{fractional}} YRS
+            <a href="{{ site.baseurl }}{{ reflection.url }}">{{ reflection.title }}</a>{{integral}}.{{fractional}}&#160;YRS
         </li>
         {% endfor %}
     </ul>
+
 </div>
