@@ -10,9 +10,13 @@ Here's a sample of 10 Romanian songs I enjoy, feel free to ping me if you want m
 
 Pure instrumental, beautifully blends traditional motifs with electronic. Means tiny leaf.
 
-- [Deliric X Silent Strike - Cine](https://www.youtube.com/watch?v=09Cl3R9QaFY)
+- [Alternosfera - Nepoata lui Gagarin](https://www.youtube.com/watch?v=EqoiEXn8dkY)
 
-Epic rap. Good to power your workouts together with the rest of the album. Means who.
+Awesome Romanian/Moldavian rock band. Means Gagarin's granddaughter.
+
+- [Deliric & Silent Strike - Ambrozie](https://www.youtube.com/watch?v=SIREXhylSVY)
+
+Silent again, this time with one of the best rappers around. Means ambrosia.
 
 - [Subcarpați - Oamenii sunt încă frumoși](https://www.youtube.com/watch?v=E3nGRyn1-vg)
 
@@ -28,15 +32,11 @@ Some sort of melodic rock. Means all that will be.
 
 - [COMA feat. Sunetele Pădurilor - Cel mai frumos loc de pe pământ](https://www.youtube.com/watch?v=39AwSkDQQxs)
 
-Sunetele Pădurilor simply means the sounds of the forests, it's not another band. Means the most beautiful place on Earth. Originally a love song saying that your loved one is that place, but the Greenpeace campaign takes a spin on that.
+Sunetele Pădurilor simply means the sounds of the forests, it's not another band. Means the most beautiful place on Earth.
 
 - [Via Dacă - Paparudă](https://www.youtube.com/watch?v=Bmle3H-Oi8k)
 
 Traditional motifs galore. Refers to some Balkan legend of a girl calling on rain.
-
-- [Alternosfera - Nepoata lui Gagarin](https://www.youtube.com/watch?v=EqoiEXn8dkY)
-
-Awesome Romanian/Moldavian rock band. Means Gagarin's granddaughter.
 
 - [byron - Cu capul în nori](https://www.youtube.com/watch?v=tLhjo-ahDb0)
 
