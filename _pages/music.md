@@ -34,9 +34,9 @@ Sunetele Pădurilor simply means the sounds of the forests, it's not another ban
 
 Traditional motifs galore. Refers to some Balkan legend of a girl calling on rain.
 
-- [Alternosfera - Columb](https://www.youtube.com/watch?v=Wcvr9SYNZ1M)
+- [Alternosfera - Nepoata lui Gagarin](https://www.youtube.com/watch?v=EqoiEXn8dkY)
 
-Awesome rock band with some really poetic more recent songs. Self-explanatory title.
+Awesome Romanian/Moldavian rock band. Means Gagarin's granddaughter.
 
 - [byron - Cu capul în nori](https://www.youtube.com/watch?v=tLhjo-ahDb0)
 
