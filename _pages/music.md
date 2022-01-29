@@ -14,9 +14,9 @@ Pure instrumental, beautifully blends traditional motifs with electronic. Means 
 
 Awesome Romanian/Moldavian rock band. Means Gagarin's granddaughter.
 
-- [Deliric & Silent Strike - Ambrozie](https://www.youtube.com/watch?v=SIREXhylSVY)
+- [Vlad Dobrescu - Globul De Cristal (feat. Deliric & DOC)](https://www.youtube.com/watch?v=ADS9Pgeoc3g)
 
-Silent again, this time with one of the best rappers around. Means ambrosia.
+Arguably the best three Romanian rappers in an iconic collab. Means the crystal globe.
 
 - [Subcarpați - Oamenii sunt încă frumoși](https://www.youtube.com/watch?v=E3nGRyn1-vg)
 
