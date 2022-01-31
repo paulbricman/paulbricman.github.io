@@ -31,7 +31,6 @@ In the upcoming years, I plan to bring the following ideas to life, roughly in o
 
 - an artificial sense organ for insight
 - a graph-based belief system editor
-- a sandbox for training collaborative virtual assistants
 - a data-driven memory palace
 - a version control system for ideas
 - a human language forged by machines
