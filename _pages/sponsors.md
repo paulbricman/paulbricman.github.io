@@ -4,7 +4,7 @@ layout: page
 
 ## sponsors
 
-Thanks a lot to the people and orgs who believe in the transformative potential of thoughtware and who support me in bringing this vision to life in an [open way](https://github.com/sponsors/paulbricman):
+Thanks a lot to the people and orgs who believe in the potential of thoughtware and who support me in bringing this vision to life in an [open way](https://github.com/sponsors/paulbricman):
 
 - [Andreas Stuhlmüller](https://stuhlmueller.org/)
 - [Carson Kahn](https://github.com/carsonkahn-external)
@@ -13,3 +13,4 @@ Thanks a lot to the people and orgs who believe in the transformative potential 
 - [@phkus](https://github.com/phkus)
 - [Spindle](https://spindle.app/)
 - [Todd Schiller](https://toddschiller.com/)
+- [Tom Cassidy](https://twitter.com/TomCassidy001)
