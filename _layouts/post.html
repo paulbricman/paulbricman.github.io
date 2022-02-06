@@ -1,22 +1,38 @@
 ---
 layout: default
 ---
+
 <section>
   <div>
     <p>🌿&nbsp&nbsp<a href="/reflections">back</a></p>
   </div>
-  {% assign age_split = page.age | round: 2 | split: "." %}
-  {% assign integral = age_split[0] %}
-  {% assign fractional = age_split[1] | append: "00" | truncate: 2, "" %}
+  {% assign age_split = page.age | round: 2 | split: "." %} {% assign integral =
+  age_split[0] %} {% assign fractional = age_split[1] | append: "00" | truncate:
+  2, "" %}
   <p>{{integral}}.{{fractional}} YRS</p>
   {{ content }}
 </section>
 
+<script
+  src="https://utteranc.es/client.js"
+  repo="paulbricman/paulbricman.github.io"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
 <center>
   <div>
+    <br />
     <a href="/contact"><button>send feedback</button></a>
-    <a href="https://twitter.com/intent/tweet?text={{page.title | urlencode}}%0A%0A{{site.url}}{{page.url | urlencode}}"><button>tweet this</button></a>
-    <a href="https://github.com/sponsors/paulbricman"><button>support me 🤍</button></a>
-    <br/><br/>
+    <a
+      href="https://twitter.com/intent/tweet?text={{page.title | urlencode}}%0A%0A{{site.url}}{{page.url | urlencode}}"
+      ><button>tweet this</button></a
+    >
+    <a href="https://github.com/sponsors/paulbricman"
+      ><button>support me 🤍</button></a
+    >
+    <br /><br />
   </div>
 </center>
