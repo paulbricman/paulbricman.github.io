@@ -7,7 +7,7 @@ published: True
 
 ## infinite skills
 
-Gardner's theory of multiple intelligences claims  that human skills can be neatly assigned to one of eight categories. While the scientific value of this taxonomy proved to be dubious at best, Gardner's model still does one thing right: it highlights the very breadth of human skill. In this, the original theory -- or any related taxonomy, for that matter -- can serve as a pragmatic reminder of just how diverse one's skillset can be. Being aware of such opportunities of skill acquisition is the first step in actually cultivating a broad and balanced set of skills.
+Gardner's theory of multiple intelligences claims that human skills can be neatly assigned to one of eight categories. While the scientific value of this taxonomy proved to be dubious at best, Gardner's model still does one thing right: it highlights the very breadth of human skill. In this, the original theory -- or any related taxonomy, for that matter -- can serve as a pragmatic reminder of just how diverse one's skillset can be. Being aware of such opportunities of skill acquisition is the first step in actually cultivating a broad and balanced set of skills.
 
 This awareness is particularly useful when finding oneself in an echo chamber. If most people around me happen to be focused on cultivating analytical skills (e.g. reasoning, programming, decision making), I might forget that there's a whole world of kinesthetic skills out there to explore, for instance. Not that Gardner's categories perfectly encompass and dissect the space of possible skills or anything. Rather, they merely serve as imperfect pointers, basic guardrails against complacency. Here they are:
 
@@ -23,7 +23,7 @@ This awareness is particularly useful when finding oneself in an echo chamber. I
 After reflecting a bit on how one's skillset fares against Gardner's model, it's inevitable that both strengths and weaknesses eventually pop up. The weaknesses, if viewed as opportunities for improvement, can then be seen as broad directions to investigate in more depth if one aimed for a balanced range of skills. This exercise is quite humbling, but in order for it to become useful, the observations have to be translated into real-world strategies for actually honing those skills. Strategizing towards such a goal is intimidating, because aiming to generally cultivate skills in one of these macro categories is as long-term and vague as goals can get. What now?
 
 I personally find it effective to address this challenge through what I call infinite skills, in an analogy to the infinite lists found in Haskell and other lazily-evaluated programming languages. In Haskell, the following defines an infinite list of perfect squares:
- 
+
 ```haskell
 >>> x = [d | d <- map (^2) [1, 2..]]
 ```
@@ -34,6 +34,7 @@ I can take the first 10 elements of this infinite list and print them on screen:
 >>> take 10 x
 [1,4,9,16,25,36,49,64,81,100]
 ```
+
 I can also check if a number is part of that list:
 
 ```haskell
@@ -45,10 +46,10 @@ But how's it possible to work with infinite lists? After all, the computer I'm r
 
 The way this relates to cultivating a balanced skillset is the following. For each of Gardner's macro categories, you'd have at least an infinite skill. An infinite skill is nothing more than an infinite list of specific skills, following a clear pattern, but only scheduled if necessary. Here are some concrete examples to help illustrate the concept:
 
-- an infinite visual-spatial skill could consist in picking a new material each time (e.g. paper, yarn) and [creating 100 artifacts](/materials) with each one before moving on;
+- an infinite visual-spatial skill could consist in picking a new material each time (e.g. paper, ink) and [creating 100 artifacts](/materials) with each one before moving on;
 
 ```haskell
->>> vs = [s | s <- map createUsing [Paper, Yarn..]]
+>>> vs = [s | s <- map createUsing [Paper, Ink..]]
 ```
 
 - an infinite verbal-linguistic skill could consist in picking up a new language each time (e.g. Mandarin, Hebrew) and studying it for two years before moving on;
@@ -94,4 +95,4 @@ nature of the process of consciousness.
 <footer>Greg Egan<cite> <a href="https://www.gregegan.net/">https://www.gregegan.net/</a></cite></footer>
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
-This scene is as disturbing as it is intriguing. Our intuitions pale in comparison to the long spans of time, and we often resort to artificial systems to put them in perspective. Infinite skills are a modest attempt at designing such a system, a behavioral foothold in a virtually boundless unknown. 
+This scene is as disturbing as it is intriguing. Our intuitions pale in comparison to the long spans of time, and we often resort to artificial systems to put them in perspective. Infinite skills are a modest attempt at designing such a system, a behavioral foothold in a virtually boundless unknown.

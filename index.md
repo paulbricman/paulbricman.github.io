@@ -10,7 +10,7 @@ layout: page
 
 I'm a Romanian-born Netherlands-based student exploring ways of augmenting human cognition using AI. On the surface, this happens by designing tiny new primitives, mechanics, and affordances which symbiotically bring together minds and machines. On a deeper level, this happens by putting together a cognitive infrastructure: a patchwork of [building blocks](/thoughtware) which together enable a rich combinatorial space of thought patterns, both organic and artificial, both individual and collective. My work on the thoughtware stack is made possible by a handful of generous [sponsors](/sponsors).
 
-Outside thoughtware engineering, I'm learning how to create things using analog materials (e.g. paper, yarn) and subjecting myself to a prolonged culture shock by learning Mandarin. I love the sublime feeling of peeking into awe-inspiring worlds while reading fiction, and I'm trying my best to marry the effectiveness of habits with the qualities of intention and presence. To share my reflections in a more structured format, I'm writing [one short article per week](/reflections).
+Outside thoughtware engineering, I'm learning how to create things using analog materials (e.g. paper, ink) and subjecting myself to a prolonged culture shock by learning Mandarin. I love the sublime feeling of peeking into awe-inspiring worlds while reading fiction, and I'm trying my best to marry the effectiveness of habits with the qualities of intention and presence. To share my reflections in a more structured format, I'm writing [one short article per week](/reflections).
 
 ### recent reflections [(see all)](/reflections)
 

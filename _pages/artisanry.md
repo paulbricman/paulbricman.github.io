@@ -4,11 +4,11 @@ layout: page
 
 ## artisanry
 
-I'm learning how to work with different analog materials by creating 100 artifacts using one of them, then moving on to the next. The goal is to go from absolute beginner to modest amateur, with every creation being a bite-sized lesson in tactility, patience, and fault tolerance. 
+I'm learning how to work with different analog materials by creating 100 artifacts using one of them, then moving on to the next. The goal is to go from absolute beginner to modest amateur, with every creation being a bite-sized lesson in tactility, patience, and fault tolerance.
 
-## 🧶 yarn 
+## 🖋️ ink
 
-*loading...*
+_loading..._
 
 ## 📜 paper
 

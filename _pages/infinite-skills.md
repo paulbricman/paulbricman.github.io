@@ -9,7 +9,7 @@ While my professional focus is on building tools which extend human thought, I a
 - **[artisanry](/artisanry)**: creating artifacts using analog materials
 
 ```haskell
-x = [d | d <- map (create100ArtifactsUsing) [Paper, Yarn..]]
+x = [d | d <- map (create100ArtifactsUsing) [Paper, Ink..]]
 ```
 
 - **[multilingualism](/reflections/logogram-alchemy)**: speaking foreign languages
