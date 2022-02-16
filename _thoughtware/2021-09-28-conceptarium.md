@@ -6,9 +6,9 @@ image: /assets/img/cfl.png
 published: True
 ---
 
-![](/assets/img/cfl.png)
+![](/assets/img/conceptarium_mix.png)
 
-## conceptarium ([stable release](https://github.com/paulbricman/conceptarium), [demo screencasts](https://github.com/paulbricman/conceptarium#screencasts))
+## conceptarium ([repo](https://github.com/paulbricman/conceptarium), [online instance](https://huggingface.co/spaces/paulbricman/conceptarium))
 
 | tl;dr                                                                                                                                                                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,7 +48,7 @@ The conceptarium embodies some specific principles about how knowledge is like a
 
 In a knowledge graph, each node is connected to a subset of the other notes through explicit links created by the knowledge worker. They are finite, can't overlap, and require valuable time to create. In contrast, in a conceptarium, all documents are related to each other. They live in the same space, and are just closer or farther away from each other. Additionally, the orientation of the straight line which connects any two dots is deeply informative and codes the semantic relation between the two documents. This principle is explored in much more depth in [semantica](/thoughtware/semantica). For instance, the document pairs "man" & "woman," "king" & "queen," and "actor" & "actress" have roughly the same relative placements. However, even if we haven't developed a way to visualize, let alone understand, the semantics of [high-dimensional spatial layouts](https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/), they are still present in the representation as a testament for every thought having _some_ unique relation to every other one.
 
-![](/assets/img/conceptarium_results.png)
+![](/assets/img/conceptarium_screenshot.png)
 
 - thoughts are not atomic.
 
