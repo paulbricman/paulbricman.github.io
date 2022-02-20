@@ -7,7 +7,7 @@ published: True
 
 ## infosphere megastructures
 
-_I'm excited to share that I'll give an online talk on [building customizable and collaborative AI assistants](https://hcil.umd.edu/bbl-speaker-series/) at [Joel Chan's](http://joelchan.me/) [HCI lab](https://hcil.umd.edu/), as part of their weekly speaker series. I'll touch on a few recent projects, especially [dual](/thoughtware/dual) and [oneironomicon](/thoughtware/oneironomicon), framing them as [tool AI versus agent AI](https://www.gwern.net/Tool-AI). It's going to take place next Thursday (Feb. 24th) at 12:30 ET, and you can sign up [here](https://umd.zoom.us/meeting/register/tJYsdO2pqTgrHNThvkrExxEIwi-AqVkNqqB_).\_
+<i>I'm excited to share that I'll give an online talk on [building customizable and collaborative AI assistants](https://hcil.umd.edu/bbl-speaker-series/) at [Joel Chan's](http://joelchan.me/) [HCI lab](https://hcil.umd.edu/), as part of their weekly speaker series. I'll touch on a few recent projects, especially [dual](/thoughtware/dual) and [oneironomicon](/thoughtware/oneironomicon), framing them as [tool AI versus agent AI](https://www.gwern.net/Tool-AI). It's going to take place next Thursday (Feb. 24th) at 12:30 ET, and you can sign up [here](https://umd.zoom.us/meeting/register/tJYsdO2pqTgrHNThvkrExxEIwi-AqVkNqqB_).</i>
 
 ---
 
