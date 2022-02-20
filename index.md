@@ -50,5 +50,6 @@ Outside thoughtware engineering, I'm learning how to create things using analog 
 
 - [**bookshelf**](/bookshelf): "peeking into awe-inspiring worlds"
 - [**infinite skills**](/infinite-skills): "learning how to create things", "learning Mandarin"
+- [**lifelong learning**](/lifelong-learning): planning a gap year curriculum
 - [**blogroll**](/blogroll.opml): feeds I follow
 - [**playlist**](/playlist): so you're curious what Romanian music sounds like
