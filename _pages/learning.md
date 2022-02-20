@@ -38,6 +38,10 @@ The latest version of my curriculum consists of a few tracks: engineering, align
 |               | chinese                          | Follow the [Refold](https://refold.la/) methodology for language acquisition and related Mandarin resources. Should result in a HSK 4 certificate.                                                                                                                                                                                                                                                                               |
 |               | driving                          | What it says on the tin. Should result in not running anyone over, I guess.                                                                                                                                                                                                                                                                                                                                                      |
 
+- acknowledgements
+
+Thanks to the people who spared a bit of their time to offer feedback on those plans, including [Andy Jones](https://andyljones.com/), [Luke Stebbing](https://ought.org/team), and pseudonymous folks on. I'm also extremely grateful for the people supporting my work on GitHub Sponsors.
+
 _acknowledgements_
 _study buddy?_
 _add commercial to research_
