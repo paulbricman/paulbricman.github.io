@@ -10,23 +10,23 @@ published: True
 Embodied metaphors refer to transfers of mental models from the experiential domain to the world of abstract ideas. As noted by George Lakoff and Mark Johnson's in their fascinating classic titled [Metaphors We Lived By](https://www.goodreads.com/book/show/34459.Metaphors_We_Live_By), embodied metaphors are surprisingly pervasive in our everyday thinking.
 
 - argument is war
-    - Your claims are *indefensible*.
-    - He *attacked* every *weak point* in my argument.
-    - Her criticisms were *right on target*.
-    - I've never *won* an argument with him.
-    - She *shot down* all of my arguments.
+  - Your claims are _indefensible_.
+  - He _attacked_ every _weak point_ in my argument.
+  - Her criticisms were _right on target_.
+  - I've never _won_ an argument with him.
+  - She _shot down_ all of my arguments.
 - time is money
-    - You're *wasting* my time.
-    - This app will *save* you hours.
-    - How do you *spend* your time these days?
-    - That flat tire *cost* me an hour.
-    - You're *running out* of time.
+  - You're _wasting_ my time.
+  - This app will _save_ you hours.
+  - How do you _spend_ your time these days?
+  - That flat tire _cost_ me an hour.
+  - You're _running out_ of time.
 - health is up
-    - He's at the *peak* of health.
-    - Lazarus *rose* from the dead.
-    - She's in *top* shape.
-    - He *fell* ill.
-    - He *dropped* dead.
+  - He's at the _peak_ of health.
+  - Lazarus _rose_ from the dead.
+  - She's in _top_ shape.
+  - He _fell_ ill.
+  - He _dropped_ dead.
 
 Those metaphors are so transparent that we aren't even aware of them, we see right through them. They're conceptual lenses in the way they shape our view of the world. In the extreme, Lakoff and Johnson argue that this domain of first-hand experience -- hunger, joy, fear, love, sickness, inclusion... -- is one of the main scaffolds which we use to build our conceptual frameworks. Yet the ordinary experience of being human is probably the last place where we'd go to find solutions for abstract problems, even if so much of our high-level ideas are informed by commonplace memories.
 
@@ -37,13 +37,13 @@ I'll make a detour here to describe an unlikely experiential domain which I've b
 ![](/assets/artisanry/paper/b2.jpeg)
 _Origami peacock, ([source](https://paulbricman.com/artisanry))_
 
-That said, when considering our collective consciousness, Origami is way closer to the informal and somewhat childish realm of arts and crafts, while being mostly incompatible with solving tough conceptual problems in science and engineering. I'm saying *mostly* here because there are some direct physical applications of tesselations in astronomy and medicine (e.g. folding solar panels effectively, folding implants effectively). Beyond the low-hanging fruit analogy of swapping paper for photovoltaics or what not, I'm not aware of deeper Origami-STEM connections.
+That said, when considering our collective consciousness, Origami is way closer to the informal and somewhat childish realm of arts and crafts, while being mostly incompatible with solving tough conceptual problems in science and engineering. I'm saying _mostly_ here because there are some direct physical applications of tesselations in astronomy and medicine (e.g. folding solar panels effectively, folding implants effectively). Beyond the low-hanging fruit analogy of swapping paper for photovoltaics or what not, I'm not aware of deeper Origami-STEM connections.
 
 This is the challenge I'll embrace in the second half of this article. I want to build on this context while trying to catalogue some more abstract metaphors which I stumbled upon while folding a bunch of colorful papers. I'll try slightly harder at this in order to compensate for the rather arbitrary connotations against this bridge which I inherited from our culture.
 
 - parallel processing
 
-I won't lie, folding a modular Origami model can be quite tedious, because all the individual modules take time to fold on their own, and they're usually very repetitive. This lead me to come up with ways of parallelizing some folds across multiple modules in the making. For instance, I would stack tiny papers on top of each other and fold them all at once, in unison. Alternatively, I would fold a larger paper first with broader creases before splitting it up into tinier squares, each square inheriting a part of the broader crease.
+I won't lie, folding a modular Origami model can be quite tedious, because all the individual modules take time to fold on their own, and they're usually very repetitive. This led me to come up with ways of parallelizing some folds across multiple modules in the making. For instance, I would stack tiny papers on top of each other and fold them all at once, in unison. Alternatively, I would fold a larger paper first with broader creases before splitting it up into tinier squares, each square inheriting a part of the broader crease.
 
 ![](/assets/artisanry/paper/a4.jpeg)
 _Modular Origami cube, ([source](https://paulbricman.com/artisanry))_
@@ -106,4 +106,4 @@ However, even if crazily expensive from a computational point of view, a more el
 
 This was a slightly rambling, but unexpectedly fun piece to write. I hope this article helps communicate how pervasive embodied metaphors are in our day-to-day business, and also how much unexplored potential there is in squeezing informational juice out of unlikely experiential fruit.
 
-*Thanks a lot to [Benjamin Wittorf](https://ben.wf/) for a timely reminder on how pervasive metaphors are in our thinking, [John Yang](https://twitter.com/jianangyang) for showing me around Vivid a while back, and the awesome people who publish Origami diagrams online, including [Eric Gjerde](https://www.ericgjerde.com/), [Michał Kosmulski](https://origami.kosmulski.org), and [Paper Kawaii](https://www.paperkawaii.com/).*
+_Thanks a lot to [Benjamin Wittorf](https://ben.wf/) for a timely reminder on how pervasive metaphors are in our thinking, [John Yang](https://twitter.com/jianangyang) for showing me around Vivid a while back, and the awesome people who publish Origami diagrams online, including [Eric Gjerde](https://www.ericgjerde.com/), [Michał Kosmulski](https://origami.kosmulski.org), and [Paper Kawaii](https://www.paperkawaii.com/)._
