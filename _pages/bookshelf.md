@@ -17,7 +17,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 - A Fire Upon The Deep, Vernor Vinge
-- All the Light We Cannot See, Anthony Doerr (current)
+- **All the Light We Cannot See**, Anthony Doerr
 - Augmenting Human Intellect, Douglas Engelbart
 - **Axiomatic**, Greg Egan
 - Behave, Robert Sapolsky (DNF)
@@ -37,6 +37,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - Fahrenheit 451, Ray Bradbury
 - Future of Text (essay collection)
 - Glass and Gardens: Solarpunk Summers (anthology)
+- Golem XIV, Stanisław Lem (DNF)
 - I, Robot, Isaac Asimov
 - **Leviathan Wakes**, James Corey
 - Man's Search For Meaning, Viktor Frankl
