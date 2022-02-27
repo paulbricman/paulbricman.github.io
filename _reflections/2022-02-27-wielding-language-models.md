@@ -7,7 +7,9 @@ published: True
 
 ## wielding language models
 
-_Unfortunately, there were some technical issues with the recording of [my talk at HCIL](https://hcil.umd.edu/bbl-speaker-series/) last week... Eh, it happens! On an unrelated note, I'm extremely excited to share my most detailed plans yet for upskilling in ML engineering and AI safety during my gap year. I put together a [self-guided curriculum](/lifelong-learning) organized by tracks and modules, designed to integrate structure into the learning process. At this point, I literally can't wait to wrap up my bachelor's degree so I can finally get on with it in full force. It'll be a heck of a journey, and I'll try to share both ups and downs with you through my blog._
+_I'm excited to share my most detailed plans yet for upskilling in ML engineering and AI safety during my gap year. I put together a [self-guided curriculum](/lifelong-learning) organized by tracks and modules, designed to integrate structure into the learning process. At this point, I can't wait to wrap up my bachelor's degree so I can finally get on with it in full force. It'll be a heck of a journey, and I'll try to share both ups and downs with you through the blog._
+
+---
 
 Last week, I attended a recurring session of an ML reading group which focused on [OpenAI's InstructGPT paper](https://cdn.openai.com/papers/Training_language_models_to_follow_instructions_with_human_feedback.pdf) (and accompanying [blog post](https://openai.com/blog/instruction-following/)). If I remember correctly, this custom version of GPT-3 has been available for inference via their API for quite a while now, but the paper detailing the process behind it was only published recently. InstructGPT is arguably based on three different approaches to guiding language models in their generation of text, working together in tandem. This led to quite some confusion both on my side and for other members of the reading group. In this entry, I want to synthesize the main methods for guiding language models I'm aware of, iron out some distinctions, and hint at the potential of using multiple of them at the same time.
 
