@@ -17,6 +17,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 - A Fire Upon The Deep, Vernor Vinge
+- A Mind at Play, Jimmy Soni & Rob Goodman (current)
 - **All the Light We Cannot See**, Anthony Doerr
 - Augmenting Human Intellect, Douglas Engelbart
 - **Axiomatic**, Greg Egan
