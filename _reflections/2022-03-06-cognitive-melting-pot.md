@@ -15,7 +15,7 @@ Understanding is remembering in disguise.<br>
 It's around 1990. The Hopfield network is popularized as a model of associative memory, though [Yannic](https://www.youtube.com/watch?v=fkIJwYArKpw) isn't there to distill it. It allows you to encode a set of different data points (e.g. images depicting animals), and later retrieve them using a cue. Crucially, the cue can differ dramatically from the data points to be recalled. It can be heavily corrupted with noise, or can just be a tiny snippet of the initial data. The Hopfield network resembles human memory in curious ways -- we can also recall vivid experiences from mere cues, and we also recall things gradually over the course of a few moments.
 
 ![](/assets/img/hopfield_animals.png)
-_A Hopfield network retrieves images of animals from corrupted or partial cues ([Source](https://www.ai.rug.nl/minds/uploads/LN_NN_RUG.pdf?page=122))_
+_A Hopfield network retrieves images of animals from corrupted or partial cues ([Source](https://www.ai.rug.nl/minds/uploads/LN_NN_RUG.pdf#page=122))_
 
 Fast forward to the present machine learning landscape. Being able to recover a corrupted image or hallucinate a full document from a short prompt are deemed as signs of profound understanding of the target domain, rather than only a curious feat of memory. How could you possibly know how to fill-in-the-blanks like BERT or create photorealistic outputs like ImageGPT without thorough reasoning about linguistics and physics? Surely, understanding and constructing accurate world models must be an instrumental goal in being able to produce outputs of this quality, right?
 
