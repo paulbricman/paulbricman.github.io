@@ -22,15 +22,15 @@ Fast forward to the present machine learning landscape. Being able to recover a 
 ![](/assets/img/imagegpt_dog.png)
 _ImageGPT attempting to reconstruct an image of a dog ([Source](https://openai.com/blog/image-gpt/))_
 
-This contrast strikes me as odd. How can very similar tasks -- creating complex arrangements of data given simpler cues -- be seen as guiding the implementation of "mere" artificial memory then and advanced world modeling now? Alright, early work in line with Hopfield networks did focus on retrieving encoded memories only, while current work focuses almost entirely on generalizing to new situation. However, I still feel they're related. I've often heard the following as a hand-wavy explanation of recent ML models:
+This contrast strikes me as odd. How can very similar tasks -- creating complex arrangements of data given simpler cues -- be seen as guiding the implementation of "mere" artificial memory then and advanced world modeling now? Alright, early work in line with Hopfield networks did focus on retrieving encoded memories only, while current work focuses almost entirely on generalizing to new situations. However, I still feel they're related. I've often heard the following as a hand-wavy explanation of recent ML models:
 
-- If this text prompt would have been in the dataset of web pages, what words would be likely to come next?
-- If this sequence of actions would have been in the dataset of past games, what action would be likely to come next?
-- If this image crop would have been part of a full image from the dataset, how would it be likely to look as a whole?
+- If this text prompt was in the dataset of web pages, what words would be likely to come next?
+- If this sequence of actions was in the dataset of past games, what action would be likely to come next?
+- If this image crop was part of a full image from the dataset, how would it be likely to look like as a whole?
 
 What those attempts to offer an intuitive explanation of ML outputs on test data have in common is that they frame their original tasks as the act of trying to remember something which wasn't there in the first place, and failing beautifully in the process. From this angle, machine learning becomes mainly the task of learning how to successfully analogize from past experience to the present situation, the headspace of [Hofstadter](http://worrydream.com/refs/Hofstadter%20-%20Analogy%20as%20the%20Core%20of%20Cognition.pdf) and [Chollet](https://arxiv.org/pdf/1911.01547.pdf). We teach machines how to successfully remember things they've never seen before, perhaps a bit like we do.
 
-This melting pot of cognitive functions in ML echoes recent challenges of dogma in cognitive science. For a few decades, a strong information processing lens has cast human perception mostly as input processing through a number of increasingly advanced stages (e.g. dots to lines to shapes, V1 to V2 to V3, surface features to object representations, etc.). However, mounting evidence highlights the recurrent interaction of perception with other cognitive functions, such as memory. You perceive likely things better and faster, there's the whole object permanence thing, etc.
+This melting pot of cognitive functions in ML echoes recent challenges of dogma in cognitive science. For a few decades, a strong information processing lens has cast human perception mostly as input processing through a number of increasingly advanced stages (e.g. dots to lines to shapes, V1 to V2 to V3, surface features to object representations, etc.). However, mounting evidence highlights the recurrent interaction of perception with other cognitive functions, such as memory. You perceive things which are more likely in a more accurate and faster way, there's the whole object permanence thing, etc.
 
 A light reaction to the arbitrariness of taxonomies in psychology might be to make ammends. Fine, so perception isn't only informed by the outside world in a rational attempt of recovering physical properties of reality -- there are also top-down influences involved. Those interact with the bottom-up ones and result in richer representations.
 
