@@ -45,6 +45,7 @@
             <outline type="rss" text="Jared Pereira" title="Jared Pereira" xmlUrl="https://buttondown.email/jaredpereira/rss" htmlUrl="https://awarm.space/"/>
             <outline type="rss" text="Jarrett Fuller" title="Jarrett Fuller" xmlUrl="https://www.jarrettfuller.blog/feed.xml" htmlUrl="https://www.jarrettfuller.blog/"/>
             <outline type="rss" text="Jim Nielsen" title="Jim Nielsen" xmlUrl="https://blog.jim-nielsen.com/feed.xml" htmlUrl="https://blog.jim-nielsen.com/"/>
+            <outline type="rss" text="Joel Spolsky" title="Joel Spolsky" xmlUrl="https://www.joelonsoftware.com/feed/" htmlUrl="https://www.joelonsoftware.com/"/>
             <outline type="rss" text="Jon Stokes" title="Jon Stokes" xmlUrl="https://jonstokes.com/feed/" htmlUrl="https://jonstokes.com"/>
             <outline type="rss" text="Josh Castle" title="Josh Castle" xmlUrl="https://ameyama.com/blog/rss.xml/" htmlUrl="https://ameyama.com"/>
             <outline type="rss" text="Julia Galef" title="Julia Galef" xmlUrl="https://juliagalef.com/feed/" htmlUrl="https://juliagalef.com"/>
@@ -67,8 +68,10 @@
             <outline type="rss" text="Milo Fultz" title="Milo Fultz" xmlUrl="https://milofultz.com/atom.xml" htmlUrl="https://milofultz.com/"/>
             <outline type="rss" text="Miscellaneous Stuff" title="Miscellaneous Stuff" xmlUrl="http://misc-stuff.terraaeon.com/misc-stuff-rss-feed.xml" htmlUrl="http://misc-stuff.terraaeon.com/"/>
             <outline type="rss" text="Morgan Housel" title="Morgan Housel" xmlUrl="http://feeds.feedburner.com/collabfund" htmlUrl="http://www.collaborativefund.com"/>
+            <outline type="rss" text="Nicholas Carr" title="Nicholas Carr" xmlUrl="https://www.roughtype.com/?feed=rss2" htmlUrl="https://www.roughtype.com/"/>
             <outline type="rss" text="Otto Scharmer" title="Otto Scharmer" xmlUrl="https://medium.com/feed/presencing-institute-blog" htmlUrl="https://medium.com/presencing-institute-blog"/>
             <outline type="rss" text="Packy McCormick" title="Packy McCormick" xmlUrl="https://notboring.substack.com/feed/" htmlUrl="https://www.notboring.co"/>
+            <outline type="rss" text="Patrick Mineault" title="Patrick Mineault" xmlUrl="https://xcorr.net/feed/" htmlUrl="https://xcorr.net/"/>
             <outline type="rss" text="Paul Graham" title="Paul Graham" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" htmlUrl="http://www.paulgraham.com/"/>
             <outline type="rss" text="Peter Watts" title="Peter Watts" xmlUrl="https://www.rifters.com/crawl/?feed=rss2" htmlUrl="https://www.rifters.com/crawl/"/>
             <outline type="rss" text="Phil Filippak" title="Phil Filippak" xmlUrl="https://unstableorbits.substack.com/feed/" htmlUrl="https://unstableorbits.substack.com/"/>
