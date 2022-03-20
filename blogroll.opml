@@ -2,13 +2,14 @@
 
 <opml version="1.0">
     <head>
-        <title>Benjamin subscriptions in feedly Cloud</title>
+        <title>Paul's subscriptions</title>
     </head>
     <body>
         <outline text="Tools" title="Tools">
             <outline type="rss" text="100rabbits" title="100rabbits" xmlUrl="https://100r.co/links/rss.xml" htmlUrl="https://100r.co/site/home.html"/>
             <outline type="rss" text="Adam Elkus" title="Adam Elkus" xmlUrl="http://aelkus.github.io/feed.xml" htmlUrl="https://aelkus.github.io/"/>
             <outline type="rss" text="Alexander Obenauer" title="Alexander Obenauer" xmlUrl="https://alexanderobenauer.com/assets/feed/rss.xml" htmlUrl="https://alexanderobenauer.com/"/>
+            <outline type="rss" text="Amanda Askell" title="Amanda Askell" xmlUrl="https://askellio.substack.com/feed" htmlUrl="https://askellio.substack.com/"/>
             <outline type="rss" text="Amjad Masad" title="Amjad Masad" xmlUrl="https://amasad.me/rss" htmlUrl="https://amasad.me/"/>
             <outline type="rss" text="Andy Matuschak" title="Andy Matuschak" xmlUrl="https://blog.andymatuschak.org/rss#_=_" htmlUrl="https://blog.andymatuschak.org/"/>
             <outline type="rss" text="Anne-Laure Le Cunf" title="Anne-Laure Le Cunf" xmlUrl="https://nesslabs.com/feed" htmlUrl="https://nesslabs.com"/>
@@ -22,6 +23,8 @@
             <outline type="rss" text="Chad Mazzola" title="Chad Mazzola" xmlUrl="https://chad.is/rss.xml" htmlUrl="https://chad.is"/>
             <outline type="rss" text="Charity" title="Charity" xmlUrl="https://charity.wtf/feed/" htmlUrl="https://charity.wtf/"/>
             <outline type="rss" text="Computing Education" title="Computing Education" xmlUrl="https://computinged.wordpress.com/feed/" htmlUrl="https://computinged.wordpress.com/"/>
+            <outline type="rss" text="DeepMind" title="DeepMind" xmlUrl="https://deepmind.com/blog/feed/basic/" htmlUrl="https://deepmind.com/blog"/>
+            <outline type="rss" text="DKB" title="DKB" xmlUrl="https://dkb.io/rss.xml" htmlUrl="https://dkb.io/"/>
             <outline type="rss" text="Dror Poleg" title="Dror Poleg" xmlUrl="https://www.drorpoleg.com/blog/rss/" htmlUrl="https://www.drorpoleg.com/"/>
             <outline type="rss" text="Edward Snowden" title="Edward Snowden" xmlUrl="https://edwardsnowden.substack.com/feed/" htmlUrl="https://edwardsnowden.substack.com"/>
             <outline type="rss" text="Edwin Wenink" title="Edwin Wenink" xmlUrl="https://www.edwinwenink.xyz/index.xml" htmlUrl="https://www.edwinwenink.xyz/"/>
@@ -69,6 +72,7 @@
             <outline type="rss" text="Miscellaneous Stuff" title="Miscellaneous Stuff" xmlUrl="http://misc-stuff.terraaeon.com/misc-stuff-rss-feed.xml" htmlUrl="http://misc-stuff.terraaeon.com/"/>
             <outline type="rss" text="Morgan Housel" title="Morgan Housel" xmlUrl="http://feeds.feedburner.com/collabfund" htmlUrl="http://www.collaborativefund.com"/>
             <outline type="rss" text="Nicholas Carr" title="Nicholas Carr" xmlUrl="https://www.roughtype.com/?feed=rss2" htmlUrl="https://www.roughtype.com/"/>
+            <outline type="rss" text="OpenAI" title="OpenAI" xmlUrl="https://openai.com/blog/rss/" htmlUrl="https://openai.com/blog/"/>
             <outline type="rss" text="Otto Scharmer" title="Otto Scharmer" xmlUrl="https://medium.com/feed/presencing-institute-blog" htmlUrl="https://medium.com/presencing-institute-blog"/>
             <outline type="rss" text="Packy McCormick" title="Packy McCormick" xmlUrl="https://notboring.substack.com/feed/" htmlUrl="https://www.notboring.co"/>
             <outline type="rss" text="Patrick Mineault" title="Patrick Mineault" xmlUrl="https://xcorr.net/feed/" htmlUrl="https://xcorr.net/"/>
