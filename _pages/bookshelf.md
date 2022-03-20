@@ -17,7 +17,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script></div>
 
 - A Fire Upon The Deep, Vernor Vinge
-- A Mind at Play, Jimmy Soni & Rob Goodman (current)
+- A Mind at Play, Jimmy Soni & Rob Goodman (DNF)
 - **All the Light We Cannot See**, Anthony Doerr
 - Augmenting Human Intellect, Douglas Engelbart
 - **Axiomatic**, Greg Egan
@@ -28,6 +28,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **Cloud Cuckoo Land**, Anthony Doerr
 - Communication and Cultural Domination, Herbert Schiller
 - Cosmos, Carl Sagan
+- Daemon, Daniel Suarez (current)
 - Death's End, Cixin Liu
 - Descartes' Error, Antonio Damasio
 - **Deschooling Society**, Ivan Illich
@@ -60,6 +61,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - The Dreams in the Witch-House, H. P. Lovecraft
 - The Embodied Mind, Francisco Varela & Evan Thompson & Eleanor
   Rosch
+- The Hidden Girl, Ken Liu (DNF)
 - The Hidden School, Dan Millman
 - The Man Who Mistook His Wife For a Hat, Oliver Sacks
 - The Metamorphosis, Franz Kafka
