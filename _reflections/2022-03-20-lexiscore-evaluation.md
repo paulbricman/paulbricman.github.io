@@ -32,7 +32,7 @@ What's more, the top-right quadrant of the skill-challenge plane (i.e. unpredict
 ![](/assets/img/lexiscore_evaluation_bubbles.png)
 _Scatter plot of blog posts positioned in terms of "skill" (i.e. semantic similarity to my notes) and "challenge" (i.e. unpredictability), plus scaled in terms of my ratings (i.e. the larger articles are the ones which I found more interesting)._
 
-However, the lexiscore also labelled some articles which I personally found interesting as not that valuable. In this, we can say that the system has _low recall_ -- quite a few interesting articles weren't picked up, and ended up intermingled with items which I found less interesting. We missed interesting content!
+However, the lexiscore also labelled some articles which I personally found interesting as not that valuable (see above). In this, we can say that the system has _low recall_ -- quite a few interesting articles weren't picked up, and ended up intermingled with items which I found less interesting. This can also be inferred from the very first plot, by looking at the articles placed all the way towards the left. We missed interesting content!
 
 This might be after-the-fact rationalization, but I'd argue that it's high precision and mediocre recall you'd want most in such a system, rather than the other way around. We don't have enough time to read all available content anyway, so a few false negatives are harmless given that our positives are consistently true. If I can reliably fill up all my reading time with interesting articles, I don't really care about the ones wrongly classified as not interesting, because I wouldn't have enough time to accommodate them anyway.
 
