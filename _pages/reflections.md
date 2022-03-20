@@ -4,7 +4,7 @@ layout: page
 
 ## reflections [(rss)](/reflections/feed.xml)
 
-For a long while now, my main channels for sharing ideas publicly were thoughtware write-ups and working notes. Unfortunately, thoughtware write-ups only contain ideas related to currently feasible tools for thought. "Currently feasible" is a quickly moving target and a function of our technical, social, and cultural context -- it's pretty arbitrary. Working notes, on the other hand, are highly unstructured, which makes them difficult to use as a medium for expressing complex thought. I hope these short semi-structured articles published weekly will help communicate the ideas I value most.
+Here's a somewhat representative sample of what I spend my time thinking about. While the timestamp format might come across as pretentious, I found that it constantly reminds me of two things. First, that I should use my time here wisely. Second, that we each have our own unique timeline -- comparing my work to that of seasoned PhDs and industry veterans is counterproductive, if anything. Hope you enjoy these, and feel free to share your comments.
 
 <div class="posts" id="Blog">
     <ul>
