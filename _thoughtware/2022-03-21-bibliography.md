@@ -31,7 +31,7 @@ In the past few weeks, I've been trying to build tiny bits of this automated ver
 There's a catch, though. In order to make use of those affordances, you need a record of those experiences indexed by time -- also called a calendar. I'm using the standard iCal format here, and you can connect any calendar which enables it. At the time of writing, I'm using Google Calendar (_gasp_), though I'll most likely switch to [Nextcloud](https://nextcloud.com/) once I get my [homelab Kubernetes cluster](/lifelong-learning) up and running.
 
 ![](/assets/img/bibliography_screenshot.png)
-_Conceptarium screenshot with bibliography surfaced around a new unsaved statement. It's aggregated in the bottom-left component, but individual items also show up under their respective notes._
+_Conceptarium screenshot with bibliography surfaced around a new unsaved statement. It's aggregated in the bottom-right component, but individual items also show up under their respective notes._
 
 Now, how does the bibliography component actually work? When you've selected a previous note, it surfaces the experiences which happened _just before_ you saved the idea. Additionally, you get to see the experiences which are likely to have informed _other_ notes which are related in meaning to the current one -- an ad-hoc bibliography for a whole cluster of loosely-related ideas. Note contents also contextualize the connection between the selection and surfaced experiences.
 
