@@ -8,7 +8,7 @@ published: True
 
 ![](/assets/img/conceptarium_mix.png)
 
-## conceptarium ([repo](https://github.com/paulbricman/conceptarium), [online instance](https://huggingface.co/spaces/paulbricman/conceptarium))
+## conceptarium ([repo](https://github.com/paulbricman/conceptarium), [online client](https://huggingface.co/spaces/paulbricman/conceptarium))
 
 | tl;dr                                                                                                                                                                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
