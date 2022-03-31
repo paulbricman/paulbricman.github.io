@@ -19,6 +19,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - A Fire Upon The Deep, Vernor Vinge
 - A Mind at Play, Jimmy Soni & Rob Goodman (DNF)
 - **All the Light We Cannot See**, Anthony Doerr
+- Anathem, Neal Stephenson (current)
 - Augmenting Human Intellect, Douglas Engelbart
 - **Axiomatic**, Greg Egan
 - Behave, Robert Sapolsky (DNF)
@@ -28,7 +29,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **Cloud Cuckoo Land**, Anthony Doerr
 - Communication and Cultural Domination, Herbert Schiller
 - Cosmos, Carl Sagan
-- Daemon, Daniel Suarez (current)
+- **Daemon**, Daniel Suarez
 - Death's End, Cixin Liu
 - Descartes' Error, Antonio Damasio
 - **Deschooling Society**, Ivan Illich
