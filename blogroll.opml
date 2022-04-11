@@ -15,6 +15,7 @@
             <outline type="rss" text="Andrej Karpathy" title="Andrej Karpathy" xmlUrl="https://karpathy.github.io/feed.xml" htmlUrl="https://karpathy.github.io/"/>
             <outline type="rss" text="Anne-Laure Le Cunf" title="Anne-Laure Le Cunf" xmlUrl="https://nesslabs.com/feed" htmlUrl="https://nesslabs.com"/>
             <outline type="rss" text="Applied Divinity Studies" title="Applied Divinity Studies" xmlUrl="https://applieddivinitystudies.com/atom.xml" htmlUrl="https://applieddivinitystudies.com"/>
+            <outline type="rss" text="Aran Komatsuzaki" title="Aran Komatsuzaki" xmlUrl="https://arankomatsuzaki.wordpress.com/feed/" htmlUrl="https://arankomatsuzaki.wordpress.com/"/>
             <outline type="rss" text="Barry Bainton" title="Barry Bainton" xmlUrl="http://thesuperorganic.blogspot.com/feeds/posts/default" htmlUrl="https://thesuperorganic.blogspot.com/"/>
             <outline type="rss" text="Ben Kuhn" title="Ben Kuhn" xmlUrl="https://www.benkuhn.net/index.xml" htmlUrl="https://www.benkuhn.net/"/>
             <outline type="rss" text="Boris Smus" title="Boris Smus" xmlUrl="https://feeds.feedburner.com/smuscom" htmlUrl="https://smus.com/blog/"/>
@@ -83,6 +84,7 @@
             <outline type="rss" text="Packy McCormick" title="Packy McCormick" xmlUrl="https://notboring.substack.com/feed/" htmlUrl="https://www.notboring.co"/>
             <outline type="rss" text="Patrick Mineault" title="Patrick Mineault" xmlUrl="https://xcorr.net/feed/" htmlUrl="https://xcorr.net/"/>
             <outline type="rss" text="Paul Graham" title="Paul Graham" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" htmlUrl="http://www.paulgraham.com/"/>
+            <outline type="rss" text="Peng Billy Xu" title="Peng Billy Xu" xmlUrl="https://billy-inn.github.io/atom.xml" htmlUrl="https://billy-inn.github.io/"/>
             <outline type="rss" text="Peter Watts" title="Peter Watts" xmlUrl="https://www.rifters.com/crawl/?feed=rss2" htmlUrl="https://www.rifters.com/crawl/"/>
             <outline type="rss" text="Phil Filippak" title="Phil Filippak" xmlUrl="https://unstableorbits.substack.com/feed/" htmlUrl="https://unstableorbits.substack.com/"/>
             <outline type="rss" text="Pieter Levels" title="Pieter Levels" xmlUrl="http://levels.io/feed/" htmlUrl="https://levels.io/"/>
