@@ -11,4 +11,4 @@ I have no Twitter, Reddit, Facebook, Instagram, or Linkedin accounts. Just to be
 
 On a related note, I've recently enabled [comment threads](/reflections/representational-resources) on both reflections and thoughtware write-ups, as an effort to encourage open conversation.
 
-The easiest way to get future updates on my work is through the [reflections RSS feed](/reflections/feed.xml) (for new articles) and the [thoughtware RSS feed](/thoughtware/feed.xml) (for new tools specifically). If you want a monthly executive summary on what happened on the thoughtware stack and what will happen next, consider supporting me via [GitHub Sponsors](https://github.com/sponsors/paulbricman).
+The easiest way to get future updates on my work is through the [writing RSS feed](/reflections/feed.xml) and the [projects RSS feed](/thoughtware/feed.xml). If you want a monthly executive summary on what happened on the thoughtware stack and what will happen next, consider supporting me via [GitHub Sponsors](https://github.com/sponsors/paulbricman).

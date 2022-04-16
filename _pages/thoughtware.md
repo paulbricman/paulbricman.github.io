@@ -2,9 +2,9 @@
 layout: page
 ---
 
-## thoughtware [(rss)](/thoughtware/feed.xml)
+## projects [(rss)](/thoughtware/feed.xml)
 
-My research is focused on extending human thinking with artificial ways of thinking. An important part of this venture is bringing to life actual tools which incorporate the artificial affordances I'm designing, and then taking them for a spin. I call this family of tools _thoughtware_, as a more compact version of [tools for thought](https://numinous.productions/ttft/), but with an extra hint of high-tech. Here they are, in reverse chronological order:
+My work is focused on exploring synergies between organic and artificial thought. This usually means putting together proof-of-concept tools based on off-the-shelf ML models or, more recently, tiny experimental investigations into aligning AI to human intentions. I often refer to this family of projects as _thoughtware_.
 
 <div class="posts" id="Blog">
     <ul>
@@ -21,26 +21,19 @@ My research is focused on extending human thinking with artificial ways of think
 
 ## principles
 
-I learned a lot about both thoughtware and myself through those projects, and I now have a more refined vision of how thoughtware should be like. It should be open source and self-hosted, in order to ensure better goal alignment between users and tools. It should be modular and composable, in order to support a combinatorial explosion of workflows. It should amplify and extend existing human brilliance rather than dehumanize through atrophy. It should non-judgementally extend the range of thinkable thoughts, rather than limit minds to rationalist conceptions of truth and knowledge. It should be informed by specific strengths and weaknesses of the human psyche as understood in cognitive psychology. It should be defined by its underlying culture and embodied principles, rather than opaque creators.
+I learned a lot about myself through those projects, and I now have a more refined vision of how thoughtware should be like. It should be open source and self-hosted, in order to ensure better goal alignment between users and tools. It should be modular and composable, in order to support a combinatorial explosion of workflows. It should amplify and extend existing human brilliance rather than dehumanize through atrophy. It should non-judgementally extend the range of thinkable thoughts, rather than limit minds to rationalist conceptions of truth and knowledge. It should be informed by specific strengths and weaknesses of the human psyche as understood in cognitive psychology. It should be defined by its underlying culture and embodied principles, rather than opaque creators.
 
-The conceptual framework I'm currently using as a backdrop for my thoughtware development is centered around terms like: belief, belief system, concept, idea, mental model, metaphor, paradigm, perspective, representation, thought, thought pattern, worldview. I multiplex those with technical terms like: sensor, filter, editor, bot, storage, mapping, search, or sampling.
+## themes
 
-## future work
+In the upcoming years, I plan on exploring the following questions:
 
-In the upcoming years, I plan to bring the following ideas to life, roughly in order:
+- How can we build AI which promotes human agency?
+- How can we extend human perception into the digital realm?
+- How can AI help us systematically refine our beliefs?
+- How can we take advantage of the experience internalized by ML models?
+- How can AI help us forage through high-dimensional spaces?
 
-- an artificial sense organ for insight
-- a graph-based belief system editor
-- a data-driven memory palace
-- a version control system for ideas
-- a human language forged by machines
-- a tool for mining interdisciplinary metaphors
-- a design language which adapts to written meaning
-- a growth agent for shared understanding
-- a biometric regulator of autonomic arousal
-- a groovebox for remixing cognitive processing modes
-
-My work on the thoughtware stack is made possible by a handful of generous sponsors. If you resonate with it and want to support the growth of a new tooling ecosystem for thinking, please consider supporting me via the link below.
+My work on the thoughtware stack, if you will, is made possible by a handful of generous [sponsors](/sponsors). If you resonate with it and want to support an experimental tooling ecosystem for thinking, please consider supporting me via the link below.
 
 <center>
   <div>
