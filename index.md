@@ -10,7 +10,7 @@ layout: page
 
 I'm a Romanian-born Netherlands-based student exploring synergies between organic and artificial thought. At peak idealism, this means bringing together minds and machines into a transhumanist symbiosis. Concretely, however, it currently means putting together proof-of-concept tools based on off-the-shelf ML models or, more recently, tiny experimental investigations into aligning AI to human intentions. My work is made possible by a handful of generous [sponsors](/sponsors).
 
-Outside thoughtware, I'm learning how to create things using analog materials (e.g. paper, ink) and subjecting myself to a prolonged culture shock by learning Mandarin. I love peeking into awe-inspiring fictional worlds, and I'm trying my best to marry the effectiveness of habits with the quality of agency. To share my thoughts in a more structured format, I'm writing one short article per week.
+Outside thoughtware, I'm currently learning Chinese and representational drawing, with varying degrees of success. I love visiting other worlds through fiction, and I'm trying my best to combine the effectiveness of habits with the quality of agency. To share my thoughts in a more structured format, I'm writing one short article per week.
 
 ### recent writing [(see all)](/reflections)
 
