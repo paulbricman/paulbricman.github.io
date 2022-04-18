@@ -19,7 +19,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - A Fire Upon The Deep, Vernor Vinge
 - A Mind at Play, Jimmy Soni & Rob Goodman (DNF)
 - **All the Light We Cannot See**, Anthony Doerr
-- Anathem, Neal Stephenson (current)
+- **Anathem**, Neal Stephenson
 - Augmenting Human Intellect, Douglas Engelbart
 - **Axiomatic**, Greg Egan
 - Behave, Robert Sapolsky (DNF)
@@ -59,6 +59,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - The Age of Spiritual Machines, Ray Kurzweil
 - The Call of Cthulhu, H. P. Lovecraft
 - The Dark Forest, Cixin Liu
+- The Diamond Age, Neal Stephenson (current)
 - The Dreams in the Witch-House, H. P. Lovecraft
 - The Embodied Mind, Francisco Varela & Evan Thompson & Eleanor
   Rosch
