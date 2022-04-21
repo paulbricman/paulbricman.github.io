@@ -49,6 +49,6 @@ Outside thoughtware, I'm currently learning Chinese and representational drawing
 ### miscellaneous
 
 - [**lifelong learning**](/lifelong-learning): planning a gap year curriculum
-- [**bookshelf**](/bookshelf): "peeking into awe-inspiring fictional worlds"
-- [**infinite skills**](/infinite-skills): "learning how to create things", "learning Mandarin"
+- [**bookshelf**](/bookshelf): what I've been reading
+- [**infinite skills**](/infinite-skills): what I'm pursuing outside thoughtware
 - [**blogroll**](/blogroll.opml): feeds I follow
