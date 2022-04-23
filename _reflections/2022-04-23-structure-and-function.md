@@ -6,6 +6,10 @@ title: structure and function
 
 ## structure and function
 
+_Excited to share that [Youssef](https://youssefabdelm.github.io/) and I published [velma](/thoughtware/velma), a new project investigating a few technical approaches to inferring one's beliefs from the writing they authored, complete with write-up, demo, diagrams, code, etc. Also, I slightly updated my [projects](/thoughtware) page (see themes section) and [bio](/) to reflect my latest focus._
+
+---
+
 The brain is to neural activity what an ML model is to latent activations. The brain itself and the ML model are relatively static, inert, difficult to meaningfully change in a short time. In contrast, neural activity and latent activations are much more fleeting, transient, easy to influence from one moment to the next. If we were to use terms typical of neuroscience, we might describe the brain and ML model as comprising the _structural_ layer, while neural activity and latent activations would make up the _functional_ layer.
 
 The structural layer greatly influences the state of the functional layer over time, its dynamics. Your brain is probably wired to instantly trigger a vaguely repulsive state on sight of snakes and spiders. Side note, talking of causality gets us into tricky ethical territory, so let's instead choose the framing of one's brain _heavily predisposing_ their thought pattern to unfold in a certain way -- you still have moral obligations for behaving yourself in the face of primordial impulses. Going back to structure-function interactions, the influence is mutual. Sure, your brain's wiring might influence its real-time dynamics (e.g. reactions, thought patterns, etc.), but what you're currently thinking about now also changes the brain's structure. Think Hebb's rule and the monumental feat of learning. When thinking about function-to-structure influence in terms of dynamics, a sleigh leaving a trail as it passes through snow and priming future rides to follow suit might be a useful image.
