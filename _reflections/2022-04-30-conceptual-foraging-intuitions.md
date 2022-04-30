@@ -15,7 +15,7 @@ This post is an update of sorts, covering what I think is a promising strategy i
 A disclaimer is warranted whenever we talk at this meta level. A while ago, I thought it was reasonable to work solely at [this meta-science level](/reflections/long-termist-thoughtware), making the study of ideas your object of study. I don't fully buy that anymore, as I think it's quite useful and reassuring to ground your work in something a bit more concrete. Having both the supply and demand of tools for thought collocated in the same mind accelerates both their creation and usage. For me, my more concrete interests are along the lines of:
 
 - **building AGI**: What if it's a self-organizing memetic swarm? What if it's an autoregressive model on top of multi-modal neuroimaging data trained with unsupervised learning? And so on...
-- **building aligned AGI**: I think the challenge of wielding an entity orders-of-magnitude more capable than us is a delicious intellectual puzzle.
+- **aligning AGI**: I think the challenge of wielding an entity orders-of-magnitude more capable than us is a delicious intellectual puzzle.
 - **building BCI**: Hardcore human-AI synergies on a neural level, though preferably non-invasive -- any transhumanist's dream...
 
 The fact that any single one of those could busy oneself for a few lifetimes is not the point. The point is that they're all more concrete endeavors than ideas about ideas. And again, I'm now of the opinion that both concrete and meta interests should coexist for best results.
