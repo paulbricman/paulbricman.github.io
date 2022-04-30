@@ -7,13 +7,13 @@ published: True
 
 ## sharing searches
 
-> **Update**: Microverses are now first-class citizens in the [conceptarium](/thoughtware/conceptarium)! As a dummy microverse to try to connect to using your client, I am sharing one of my own. This one's centered around the very idea of sharing knowledge. If you have no client set up, you can use [this demo one](https://huggingface.co/spaces/paulbricman/conceptarium). Connecting to this microverse of mine should give you access to all my notes losely related to this specific topic. You can also access the microverse as an [RSS feed](260c-82-73-238-201.eu.ngrok.io/rss?authorization=qlzqvd_JI-XYCiOubmkLwA) of short notes. Obviously, all endpoints are rate-limited.
+<!-- > **Update**: Microverses are now first-class citizens in the [conceptarium](/thoughtware/conceptarium)! As a dummy microverse to try to connect to using your client, I am sharing one of my own. This one's centered around the very idea of sharing knowledge. If you have no client set up, you can use [this demo one](https://huggingface.co/spaces/paulbricman/conceptarium). Connecting to this microverse of mine should give you access to all my notes losely related to this specific topic. You can also access the microverse as an [RSS feed](260c-82-73-238-201.eu.ngrok.io/rss?authorization=qlzqvd_JI-XYCiOubmkLwA) of short notes. Obviously, all endpoints are rate-limited.
 >
 > **conceptarium url**: 260c-82-73-238-201 \<dot> eu \<dot> ngrok \<dot> io
 >
 > **access token**: qlzqvd_JI-XYCiOubmkLwA
 >
-> **driving query**: "Microverses of knowledge are clusters of ideas centered around certain topics which are shared between different users. They enable new means of collaborative knowledge work by sharing ideas."
+> **driving query**: "Microverses of knowledge are clusters of ideas centered around certain topics which are shared between different users. They enable new means of collaborative knowledge work by sharing ideas." -->
 
 A few weeks ago, I wrote an article on the pros and cons of [thinking in public](/reflections/thinking-in-public) -- the opportunities it offers and the threats it poses -- and briefly described a mechanic which could help users share their thoughts selectively with ease. I'll use this article as a canvas for sketching out that mechanic in a bit more detail, as part of the upcoming rework of the conceptarium.
 
