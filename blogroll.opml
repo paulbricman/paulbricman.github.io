@@ -8,6 +8,8 @@
         <outline text="Tools" title="Tools">
             <outline type="rss" text="100rabbits" title="100rabbits" xmlUrl="https://100r.co/links/rss.xml" htmlUrl="https://100r.co/site/home.html"/>
             <outline type="rss" text="Adam Elkus" title="Adam Elkus" xmlUrl="http://aelkus.github.io/feed.xml" htmlUrl="https://aelkus.github.io/"/>
+            <outline type="rss" text="ahrm" title="ahrm" xmlUrl="https://ahrm.github.io/feed.xml" htmlUrl="https://ahrm.github.io/"/>
+            <outline type="rss" text="Alex Kirsch" title="Alex Kirsch" xmlUrl="http://www.alexkirsch.de/rss-en.xml" htmlUrl="http://www.alexkirsch.de/"/>
             <outline type="rss" text="Alexander Obenauer" title="Alexander Obenauer" xmlUrl="https://alexanderobenauer.com/assets/feed/rss.xml" htmlUrl="https://alexanderobenauer.com/"/>
             <outline type="rss" text="Amanda Askell" title="Amanda Askell" xmlUrl="https://askellio.substack.com/feed" htmlUrl="https://askellio.substack.com/"/>
             <outline type="rss" text="Amjad Masad" title="Amjad Masad" xmlUrl="https://amasad.me/rss" htmlUrl="https://amasad.me/"/>
@@ -61,8 +63,11 @@
             <outline type="rss" text="Julian Lehr" title="Julian Lehr" xmlUrl="http://www.julian.digital/feed" htmlUrl="https://julian.digital/"/>
             <outline type="rss" text="Ken Perlin" title="Ken Perlin" xmlUrl="http://blog.kenperlin.com/?feed=rss2" htmlUrl="http://blog.kenperlin.com"/>
             <outline type="rss" text="Kevin Simler" title="Kevin Simler" xmlUrl="http://feeds.feedburner.com/MeltingAsphalt" htmlUrl="https://meltingasphalt.com"/>
+            <outline type="rss" text="Kevin Kelly" title="Kevin Kelly" xmlUrl="https://feedpress.me/thetechnium" htmlUrl="https://kk.org/"/>
+            <outline type="rss" text="Krishnan Rohit" title="Krishnan Rohit" xmlUrl="https://www.strangeloopcanon.com/feed" htmlUrl="https://www.strangeloopcanon.com/"/>
             <outline type="rss" text="Leo Gao" title="Leo Gao" xmlUrl="https://bmk.sh/atom.xml" htmlUrl="https://bmk.sh/"/>
             <outline type="rss" text="LessWrong" title="LessWrong" xmlUrl="https://www.lesswrong.com/feed.xml?view=curated-rss" htmlUrl="https://www.lesswrong.com/"/>
+            <outline type="rss" text="Lilian Weng" title="Lilian Weng" xmlUrl="https://lilianweng.github.io/index.xml" htmlUrl="https://lilianweng.github.io/"/>
             <outline type="rss" text="Lorenzo Gravina" title="Lorenzo Gravina" xmlUrl="https://trms.me/feed/" htmlUrl="https://trms.me"/>
             <outline type="rss" text="Lukas Murdock" title="Lukas Murdock" xmlUrl="https://lukasmurdock.com/feed" htmlUrl="https://lukasmurdock.com/"/>
             <outline type="rss" text="Mandy Brown" title="Mandy Brown" xmlUrl="https://buttondown.email/aworkinglibrary/rss" htmlUrl="https://aworkinglibrary.com/writing/"/>
@@ -119,6 +124,7 @@
             <outline type="rss" text="Ugo Bardi" title="Ugo Bardi" xmlUrl="http://thesenecaeffect.blogspot.com/feeds/posts/default" htmlUrl="https://thesenecaeffect.blogspot.com/"/>
             <outline type="rss" text="Venkatesh Rao" title="Venkatesh Rao" xmlUrl="http://www.ribbonfarm.com/feed/" htmlUrl="https://www.ribbonfarm.com"/>
             <outline type="rss" text="Vi Hart" title="Vi Hart" xmlUrl="http://vihart.com/feed/" htmlUrl="http://vihart.com"/>
+            <outline type="rss" text="Victoria Krakovna" title="Victoria Krakovna" xmlUrl="https://vkrakovna.wordpress.com/feed/" htmlUrl="https://vkrakovna.wordpress.com/"/>
             <outline type="rss" text="Winnie Lim" title="Winnie Lim" xmlUrl="https://winnielim.org/feed/?cat=2%2C4%2C8" htmlUrl="https://winnielim.org/"/>
             <outline type="rss" text="Work In Progress" title="Work In Progress" xmlUrl="https://www.worksinprogress.co/feed/" htmlUrl="https://www.worksinprogress.co/"/>
             <outline type="rss" text="Zachary Stein" title="Zachary Stein" xmlUrl="http://www.zakstein.org/feed/" htmlUrl="http://www.zakstein.org"/>
