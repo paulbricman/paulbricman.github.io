@@ -38,7 +38,7 @@ My work on the thoughtware stack, if you will, is made possible by a handful of 
 <center>
   <div>
     <br>
-    <a href="/contact"><button>send feedback</button></a>
+    <a href="/contact"><button>reply by email</button></a>
     <a href="https://twitter.com/intent/tweet?text={{page.title | urlencode}}%0A%0A{{site.url}}{{page.url | urlencode}}"><button>tweet this</button></a>
     <a href="https://github.com/sponsors/paulbricman"><button>support me 🤍</button></a>
     <br/><br/>
