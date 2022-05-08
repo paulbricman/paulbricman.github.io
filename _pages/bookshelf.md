@@ -59,10 +59,11 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - The Age of Spiritual Machines, Ray Kurzweil
 - The Call of Cthulhu, H. P. Lovecraft
 - The Dark Forest, Cixin Liu
-- The Diamond Age, Neal Stephenson (current)
+- The Diamond Age, Neal Stephenson
 - The Dreams in the Witch-House, H. P. Lovecraft
 - The Embodied Mind, Francisco Varela & Evan Thompson & Eleanor
   Rosch
+- The Glass Bead Game, Herman Hesse (current)
 - The Hidden Girl, Ken Liu (DNF)
 - The Hidden School, Dan Millman
 - The Man Who Mistook His Wife For a Hat, Oliver Sacks
