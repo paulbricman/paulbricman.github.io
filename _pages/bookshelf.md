@@ -47,6 +47,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **Metaphors We Live By**, George Lakoff & Mark Johnson
 - Nostalgia, Mircea Cărtărescu (DNF)
 - Old Man's War, John Scalzi
+- Out of Control, Kevin Kelly (current)
 - Out of Your Mind, Alan Watts
 - Pandora's Star, Peter Hamilton
 - Permutation City, Greg Egan
@@ -63,7 +64,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - The Dreams in the Witch-House, H. P. Lovecraft
 - The Embodied Mind, Francisco Varela & Evan Thompson & Eleanor
   Rosch
-- The Glass Bead Game, Herman Hesse (current)
+- **The Glass Bead Game**, Herman Hesse
 - The Hidden Girl, Ken Liu (DNF)
 - The Hidden School, Dan Millman
 - The Man Who Mistook His Wife For a Hat, Oliver Sacks
