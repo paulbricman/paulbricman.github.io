@@ -2,7 +2,6 @@
 layout: tool
 title: deontic dipoles
 description: "Inoculating language models with arbitrary stances."
-image: /assets/img/velma_featured.png
 published: True
 ---
 
