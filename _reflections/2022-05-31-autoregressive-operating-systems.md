@@ -1,10 +1,10 @@
 ---
 layout: post
 age: 21.56
-title: autoregressive operating systems
+title: generative operating systems
 ---
 
-## autoregressive operating systems
+## generative operating systems
 
 _The ideas below were largely seeded by a chat with [David](http://ddohan.com/), [Linus](https://thesephist.com/), and [Luke](https://lunis.net/Luke+Stebbing) at [an Ought retreat](https://twitter.com/jungofthewon/status/1530979137967443969?cxt=HHwWgsCq0cPakL8qAAAA)._
 
