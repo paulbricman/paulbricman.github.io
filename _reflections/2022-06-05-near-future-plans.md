@@ -39,4 +39,4 @@ Finding this setup/framing/metaphor felt like a search for an instantiation of a
 
 It also represents a shift from the forward-chaining approach to learning by following a curriculum to a backward-chaining view based on building towards a creature-project. However, I want to implement them relatively from scratch, extending a [minitorch](https://minitorch.github.io/) replica to contain basic transformer blocks and parallelism, on top of self-hosted git, CI/CD, etc.
 
-The whole think will probably feel either really cool or really silly in the end, but if not during a gap year, then when? Seize the day!
+The whole thing will probably feel either really cool or really silly in the end, but if not during a gap year, then when? Seize the day!
