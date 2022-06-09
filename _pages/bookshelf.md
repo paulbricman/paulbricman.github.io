@@ -27,6 +27,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **Blindsight**, Peter Watts
 - Childhood's End, Arthur C. Clarke
 - **Cloud Cuckoo Land**, Anthony Doerr
+- Collected Fictions, Jorges Luis Borges (current)
 - Communication and Cultural Domination, Herbert Schiller
 - Cosmos, Carl Sagan
 - **Daemon**, Daniel Suarez
@@ -47,7 +48,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **Metaphors We Live By**, George Lakoff & Mark Johnson
 - Nostalgia, Mircea Cărtărescu (DNF)
 - Old Man's War, John Scalzi
-- Out of Control, Kevin Kelly (current)
+- Out of Control, Kevin Kelly
 - Out of Your Mind, Alan Watts
 - Pandora's Star, Peter Hamilton
 - Permutation City, Greg Egan
