@@ -2,8 +2,11 @@
 layout: tool
 title: deontic dipoles
 description: "Inoculating language models with arbitrary stances."
+image: /assets/img/dd_featured.png
 published: True
 ---
+
+![](/assets/img/dd_featured.png)
 
 ## deontic dipoles ([notebook](https://colab.research.google.com/drive/19NIacw1REmFGr7LL4E1Rf86R6_IAXsC4?usp=sharing))
 
