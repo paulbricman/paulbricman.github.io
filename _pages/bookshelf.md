@@ -27,7 +27,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **Blindsight**, Peter Watts
 - Childhood's End, Arthur C. Clarke
 - **Cloud Cuckoo Land**, Anthony Doerr
-- Collected Fictions, Jorges Luis Borges (current)
+- Collected Fictions, Jorges Luis Borges
 - Communication and Cultural Domination, Herbert Schiller
 - Cosmos, Carl Sagan
 - **Daemon**, Daniel Suarez
@@ -66,6 +66,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - The Embodied Mind, Francisco Varela & Evan Thompson & Eleanor
   Rosch
 - **The Glass Bead Game**, Herman Hesse
+- The Graphic Work of M.C. Escher, M.C. Escher (current)
 - The Hidden Girl, Ken Liu (DNF)
 - The Hidden School, Dan Millman
 - The Man Who Mistook His Wife For a Hat, Oliver Sacks
