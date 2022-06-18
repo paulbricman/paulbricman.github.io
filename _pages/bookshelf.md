@@ -18,6 +18,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 
 - A Fire Upon The Deep, Vernor Vinge
 - A Mind at Play, Jimmy Soni & Rob Goodman (DNF)
+- A Programmer's Introduction to Mathematics, Jeremy Kun (current)
 - **All the Light We Cannot See**, Anthony Doerr
 - **Anathem**, Neal Stephenson
 - Augmenting Human Intellect, Douglas Engelbart
@@ -66,7 +67,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - The Embodied Mind, Francisco Varela & Evan Thompson & Eleanor
   Rosch
 - **The Glass Bead Game**, Herman Hesse
-- The Graphic Work of M.C. Escher, M.C. Escher (current)
+- The Graphic Work of M.C. Escher, M.C. Escher
 - The Hidden Girl, Ken Liu (DNF)
 - The Hidden School, Dan Millman
 - The Man Who Mistook His Wife For a Hat, Oliver Sacks
