@@ -18,7 +18,6 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 
 - A Fire Upon The Deep, Vernor Vinge
 - A Mind at Play, Jimmy Soni & Rob Goodman (DNF)
-- A Programmer's Introduction to Mathematics, Jeremy Kun (current)
 - **All the Light We Cannot See**, Anthony Doerr
 - **Anathem**, Neal Stephenson
 - Augmenting Human Intellect, Douglas Engelbart
@@ -31,6 +30,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - Collected Fictions, Jorges Luis Borges
 - Communication and Cultural Domination, Herbert Schiller
 - Cosmos, Carl Sagan
+- Cybernetics, Norbert Wiener
 - **Daemon**, Daniel Suarez
 - Death's End, Cixin Liu
 - Descartes' Error, Antonio Damasio
@@ -41,6 +41,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **Exhalation**, Ted Chiang
 - Fahrenheit 451, Ray Bradbury
 - Future of Text (essay collection)
+- Genesis Redux, Jessica Riskin (current)
 - Glass and Gardens: Solarpunk Summers (anthology)
 - Golem XIV, Stanisław Lem (DNF)
 - I, Robot, Isaac Asimov
