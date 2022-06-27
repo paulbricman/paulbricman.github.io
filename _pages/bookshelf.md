@@ -41,7 +41,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **Exhalation**, Ted Chiang
 - Fahrenheit 451, Ray Bradbury
 - Future of Text (essay collection)
-- Genesis Redux, Jessica Riskin (current)
+- **Genesis Redux**, Jessica Riskin (anthology)
 - Glass and Gardens: Solarpunk Summers (anthology)
 - Golem XIV, Stanisław Lem (DNF)
 - I, Robot, Isaac Asimov
@@ -75,6 +75,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - The Metamorphosis, Franz Kafka
 - **The Metamorphosis of Prime Intellect**, Roger Williams
 - The Nation of Plants, Stefano Mancuso
+- The Order of Things, Michel Foucault (current)
 - The Outsider, Albert Camus
 - **The Paper Menagerie**, Ken Liu
 - The Society of Mind, Marvin Minsky
