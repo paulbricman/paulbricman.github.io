@@ -75,11 +75,12 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - The Metamorphosis, Franz Kafka
 - **The Metamorphosis of Prime Intellect**, Roger Williams
 - The Nation of Plants, Stefano Mancuso
-- The Order of Things, Michel Foucault (current)
+- The Order of Things, Michel Foucault (DNF)
 - The Outsider, Albert Camus
 - **The Paper Menagerie**, Ken Liu
 - The Society of Mind, Marvin Minsky
 - **The Three Body Problem**, Cixin Liu
+- The Zoologist's Guide to the Galaxy, Arik Kershenbaum (current)
 - There Is No Antimemetics Division, @qntm
 - Ubik, Philip K. Dick (DNF)
 - Vagabonding, Rolf Potts
