@@ -18,6 +18,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 
 - A Fire Upon The Deep, Vernor Vinge
 - A Mind at Play, Jimmy Soni & Rob Goodman (DNF)
+- A Psalm for the Wild-Built, Becky Chambers
 - **All the Light We Cannot See**, Anthony Doerr
 - **Anathem**, Neal Stephenson
 - Augmenting Human Intellect, Douglas Engelbart
@@ -59,6 +60,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - Speculative Everything, Anthony Dunne & Fiona Raby
 - Solaris, Stanisław Lem
 - Starship Troopers, Robert Heinlein (DNF)
+- Sunvault (anthology, current)
 - Superintelligence, Nick Bostrom
 - The Age of Spiritual Machines, Ray Kurzweil
 - The Call of Cthulhu, H. P. Lovecraft
@@ -80,7 +82,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **The Paper Menagerie**, Ken Liu
 - The Society of Mind, Marvin Minsky
 - **The Three Body Problem**, Cixin Liu
-- The Zoologist's Guide to the Galaxy, Arik Kershenbaum (current)
+- The Zoologist's Guide to the Galaxy, Arik Kershenbaum
 - There Is No Antimemetics Division, @qntm
 - Ubik, Philip K. Dick (DNF)
 - Vagabonding, Rolf Potts
