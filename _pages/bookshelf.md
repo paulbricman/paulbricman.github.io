@@ -38,7 +38,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - **Deschooling Society**, Ivan Illich
 - **Diaspora**, Greg Egan
 - **Dune**, Frank Herbert
-- Emotional First Aid, Guy Winch
+- Element 79, Fred Hoyle (current)
 - **Exhalation**, Ted Chiang
 - Fahrenheit 451, Ray Bradbury
 - Future of Text (essay collection)
@@ -60,7 +60,7 @@ Each of these books, child, is a door, a gateway to another place and time. You 
 - Speculative Everything, Anthony Dunne & Fiona Raby
 - Solaris, Stanisław Lem
 - Starship Troopers, Robert Heinlein (DNF)
-- Sunvault (anthology, current)
+- Sunvault (anthology, DNF)
 - Superintelligence, Nick Bostrom
 - The Age of Spiritual Machines, Ray Kurzweil
 - The Call of Cthulhu, H. P. Lovecraft
