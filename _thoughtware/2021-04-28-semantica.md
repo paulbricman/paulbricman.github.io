@@ -1,7 +1,7 @@
 ---
 layout: tool
 title: Semantica
-description: "Accelerating learning through machine-generated flashcards."
+description: "Augmenting conceptual thinking with artificial primitives."
 published: True
 ---
 
