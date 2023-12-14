@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,78 +11,105 @@
             darkMode: 'class',
             theme: {
                 extend: {
-                colors: {
-                    primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a","950":"#172554"}
-                }
+                    colors: {
+                        primary: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a", "950": "#172554" }
+                    }
                 },
                 fontFamily: {
-                'body': [
-                'Nunito Sans', 
-                'ui-sans-serif', 
-                'system-ui', 
-                '-apple-system', 
-                'system-ui', 
-                'Segoe UI', 
-                'Roboto', 
-                'Helvetica Neue', 
-                'Arial', 
-                'Noto Sans', 
-                'sans-serif', 
-                'Apple Color Emoji', 
-                'Segoe UI Emoji', 
-                'Segoe UI Symbol', 
-                'Noto Color Emoji'
-            ],
-                'sans': [
-                'Nunito Sans', 
-                'ui-sans-serif', 
-                'system-ui', 
-                '-apple-system', 
-                'system-ui', 
-                'Segoe UI', 
-                'Roboto', 
-                'Helvetica Neue', 
-                'Arial', 
-                'Noto Sans', 
-                'sans-serif', 
-                'Apple Color Emoji', 
-                'Segoe UI Emoji', 
-                'Segoe UI Symbol', 
-                'Noto Color Emoji'
-            ]
+                    'body': [
+                        'Nunito Sans',
+                        'ui-sans-serif',
+                        'system-ui',
+                        '-apple-system',
+                        'system-ui',
+                        'Segoe UI',
+                        'Roboto',
+                        'Helvetica Neue',
+                        'Arial',
+                        'Noto Sans',
+                        'sans-serif',
+                        'Apple Color Emoji',
+                        'Segoe UI Emoji',
+                        'Segoe UI Symbol',
+                        'Noto Color Emoji'
+                    ],
+                    'sans': [
+                        'Nunito Sans',
+                        'ui-sans-serif',
+                        'system-ui',
+                        '-apple-system',
+                        'system-ui',
+                        'Segoe UI',
+                        'Roboto',
+                        'Helvetica Neue',
+                        'Arial',
+                        'Noto Sans',
+                        'sans-serif',
+                        'Apple Color Emoji',
+                        'Segoe UI Emoji',
+                        'Segoe UI Symbol',
+                        'Noto Color Emoji'
+                    ]
                 }
             }
-            }
+        }
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 </head>
+
 <body>
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-12 lg:px-6 ">
             <div class="grid gap-8 lg:mt-8 md:grid-cols-1">
-                <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 max-w-md mx-auto border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div
+                    class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 max-w-md mx-auto border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <a href="/">
-                        <img class="rounded-lg sm:rounded-none sm:rounded-l-lg" style="max-width: 14rem;" src="https://paulbricman.com/defensibility/profile.png">
+                        <img class="rounded-lg sm:rounded-none sm:rounded-l-lg" style="max-width: 10rem;"
+                            src="https://paulbricman.com/defensibility/profile.png">
                     </a>
                     <div class="p-5">
                         <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                             <a href="/">Paul Bricman</a>
                         </h3>
-                        <span class="text-gray-500 dark:text-gray-400">Independent Researcher</span>
+                        <span class="text-gray-500 dark:text-gray-400">Co-Founder, CEO @ <a
+                                class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                                href="https://straumli.ai/">Straumli
+                                AI</a></span>
                         <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"></p>
                         <ul class="flex space-x-4 sm:mt-0">
                             <li>
-                                <a href="https://github.com/paulbricman/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                                <a href="mailto:paulbricman@protonmail.com"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-5 h-5">
+                                        <path
+                                            d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                        <path
+                                            d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                                    </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:paulbricman@protonmail.com" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
-                                        <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-                                        <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                                <a href="https://github.com/paulbricman/"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                            clip-rule="evenodd" />
                                     </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/paul-bricman-204992144/"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-4 h-5" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                                            clip-rule="evenodd" />
+                                        <path d="M3 5.012H0V15h3V5.012Z" />
+                                    </svg>
+
                                 </a>
                             </li>
                         </ul>
@@ -89,67 +117,175 @@
                 </div>
                 <div class="pt-8  max-w-md mx-auto text-gray-500 sm:text-lg dark:text-gray-400">
                     <p class="font-light">
-                        I'm interested in developing autonomous systems that act ethically by design. My work is organized into two complementary agendas. Defensibility maximization is a relatively mature line of work focused on bootstrapping a morally defensible alignment target, while agency regularization is a more nascent direction focused on ensuring that the target is being pursued by weeding out dissidence.
+
+                        Capturing the benefits of AI while mitigating its risks is difficult. I'm interested in ways of
+                        getting the best of both worlds, whether that means filling in the missing pieces of <a
+                            class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                            href="https://straumli.ai/">AI safety infrastructure</a>, or carrying out fundamental
+                        <a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                            href="https://compphil.github.io/"> alignment research</a>.
+
                     </p>
                     <p class="mt-4 font-light">
-                        I'm grateful for having been supported in my work, either financially or through compute, either recently or less so, by <a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" href="https://funds.effectivealtruism.org/grants?search=paul+bricman&sort=round">Long-Term Future Fund</a>, <a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" href="https://sites.research.google/trc/about/">TPU Research Cloud</a>, <a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" href="https://www.alignmentforum.org/posts/5uiQkyKdejX3aEHLM/how-to-diversify-conceptual-alignment-the-model-behind#Some_Concrete_Details">Conjecture</a>, <a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" href="https://github.com/sponsors/paulbricman">Andreas Stuhlmüller</a>, <a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" href="https://stability.ai/">Stability AI</a>, and <a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline" href="https://web.archive.org/web/20230712223102/https://aisafety.camp/#Projects">AI Safety Camp</a>. If I'm not working on alignment, chances are I'm either running or hosting a game night. 
+                        I'm grateful for having been supported in my work, either financially or through compute, either
+                        recently or less so, by <a
+                            class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                            href="https://funds.effectivealtruism.org/grants?search=paul+bricman&sort=round">Effective
+                            Ventures</a>, <a
+                            class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                            href="https://sites.research.google/trc/about/">Google Research</a>, <a
+                            class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                            href="https://www.alignmentforum.org/posts/5uiQkyKdejX3aEHLM/how-to-diversify-conceptual-alignment-the-model-behind#Some_Concrete_Details">Conjecture</a>,
+                        <a class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                            href="https://github.com/sponsors/paulbricman">Andreas Stuhlmüller</a>, <a
+                            class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                            href="https://stability.ai/">Stability AI</a>, and <a
+                            class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+                            href="https://web.archive.org/web/20230712223102/https://aisafety.camp/#Projects">AI Safety
+                            Camp</a>. If I'm not working on alignment, chances are I'm either running or hosting a game
+                        night.
                     </p>
-                </div> 
-            </div>    
+                </div>
+            </div>
         </div>
     </section>
     <section class="bg-gray-900">
         <div class="py-6 lg:pb-16 px-4 mx-auto max-w-screen-xl lg:px-6 lg:pt-6">
             <div class="grid gap-8 lg:grid-cols-1 max-w-md mx-auto">
-                <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex justify-between items-center mb-5 text-gray-500">
-                        <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                            Research
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                            Commercial
                         </span>
                     </div>
-                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="https://paulbricman.com/defensibility/">Defensibility Maximization</a></h2>
-                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">A research agenda aimed at developing AI systems that act in morally defensible ways.</p>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a
+                            href="https://straumli.ai/">AI Safety Infrastructure</a></h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Getting the right tooling in place to
+                        differentially accelerate towards positive futures.
+                    </p>
                     <div class="flex justify-between items-center">
-                        <a href="https://paulbricman.com/defensibility/" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                        <a href="https://straumli.ai/"
+                            class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
                             Read more
-                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
                         </a>
                     </div>
-                </article> 
-                <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                </article>
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex justify-between items-center mb-5 text-gray-500">
-                        <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                             Research
                         </span>
                     </div>
-                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="https://compphil.github.io/">Elements of Computational Philosophy</a></h2>
-                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">An interactive book series focused on rendering philosophy computable, quantifiable, and verifiable.</p>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a
+                            href="https://paulbricman.com/defensibility/">Defensibility Maximization</a></h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">A research agenda aimed at developing AI
+                        systems that act in morally defensible ways.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://paulbricman.com/defensibility/"
+                            class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                            Read more
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                            Research
+                        </span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a
+                            href="https://compphil.github.io/">Elements of Computational Philosophy</a></h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">An interactive book series focused on
+                        rendering philosophy computable, quantifiable, and verifiable.</p>
                     <div class="flex justify-between items-center">
 
-                        <a href="https://compphil.github.io/" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                        <a href="https://compphil.github.io/"
+                            class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
                             Read more
-                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
                         </a>
                     </div>
-                </article>        
-                <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                </article>
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex justify-between items-center mb-5 text-gray-500">
-                        <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                             Learning
                         </span>
                     </div>
-                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="https://innate-fire-eeb.notion.site/Frontiers-in-Computational-Alchemy-a7f58728a6fc45fd990558c7bf05b42b?pvs=4">Frontiers in Computational Alchemy</a></h2>
-                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">A learning project focused on recent trends in machine learning.</p>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a
+                            href="https://innate-fire-eeb.notion.site/Frontiers-in-Computational-Alchemy-a7f58728a6fc45fd990558c7bf05b42b?pvs=4">Frontiers
+                            in Computational Alchemy</a></h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">A learning project focused on recent
+                        trends in machine learning.</p>
                     <div class="flex justify-between items-center">
 
-                        <a href="https://innate-fire-eeb.notion.site/d5e1a841dfd440d4bf65d3cc25a4157f?v=713b26062ebd4b0a8b6035b9a4ddcec4&pvs=4" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                        <a href="https://innate-fire-eeb.notion.site/d5e1a841dfd440d4bf65d3cc25a4157f?v=713b26062ebd4b0a8b6035b9a4ddcec4&pvs=4"
+                            class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
                             Read more
-                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
                         </a>
                     </div>
-                </article>                  
-            </div>  
+                </article>
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                            Research
+                        </span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a
+                            href="https://web.archive.org/web/20220618193654/https://paulbricman.com/">Thoughtware</a>
+                    </h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Old portfolio and blog on "exploring
+                        synergies between the organic and the artificial."</p>
+                    <div class="flex justify-between items-center">
+
+                        <a href="https://web.archive.org/web/20220618193654/https://paulbricman.com/"
+                            class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                            Read more
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
         </div>
-      </section>
+    </section>
 </body>
+
 </html>
