@@ -14,12 +14,16 @@
             --spacing-l: 2rem;
             --spacing-xl: 3rem;
             --spacing-xxl: 4rem;
+            --color-text: #333;
+            --color-background: white;
+            --color-accent-1: #f0f0f0;
+            --color-accent-2: #e0e0e0;
         }
         body {
             font-family: 'Lato', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: white;
+            color: var(--color-text);
+            background-color: var(--color-background);
             margin: 0;
             padding: 0;
             display: grid;
@@ -48,17 +52,26 @@
         h2 {
             font-size: 0.9rem;
             margin-top: var(--spacing-xxs);
-            margin-bottom: var(--spacing-s);
-            color: #333;
+            margin-bottom: 0;
+            color: var(--color-text);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-label {
+            font-size: 0.9rem;
+            color: #bbb;
+            font-weight: normal;
         }
         p {
-            margin-bottom: var(--spacing-m);
-            color: #333;
+            color: var(--color-text);
+            margin-top: var(--spacing-xs);
+            margin-bottom: var(--spacing-s);
             font-size: 0.9rem;
         }
         p a {
             text-decoration: underline;
-            text-decoration-color: rgba(0, 0, 0, 0.3); /* Subtle black with 30% opacity */
+            text-decoration-color: rgba(0, 0, 0, 0.3);
             text-decoration-thickness: 1px;
         }
         .two-column {
@@ -70,6 +83,9 @@
             margin-bottom: var(--spacing-xxs);
             transition: transform 0.3s ease;
         }
+        .list-item:nth-child(2n) {
+            background-color: var(--color-accent-2);
+        }
         a {
             text-decoration: none;
             color: inherit;
@@ -80,12 +96,12 @@
         .list-item h4 {
             font-size: 0.9rem;
             margin: 0 0 var(--spacing-xxs) 0;
-            color: #333;
+            color: var(--color-text);
         }
         .list-item p {
             font-size: 0.9rem;
             margin: 0 0 0 0;
-            color: #333;
+            color: var(--color-text);
         }
         .meta {
             font-size: 0.9rem;
@@ -99,7 +115,7 @@
             flex-direction: column;
         }
         .links a {
-            color: #333;
+            color: var(--color-text);
             text-decoration: none;
             margin-bottom: var(--spacing-xxs);
             transition: transform 0.3s ease;
@@ -116,10 +132,9 @@
         }
         blockquote {
             font-size: 0.9rem;
-            color: #999;
-            border-left: 0px solid #ddd;
-            padding-left: 0;
-            margin-left: 0;
+            color: #bbb;
+            font-weight: normal;
+            text-align: right;
         }
 
         @media (max-width: 768px) {
@@ -165,55 +180,71 @@
     
     <main class="content">
         <section>
-            <a href="https://www.goodreads.com/quotes/4103660-to-play-a-wrong-note-is-insignificant-to-play-without">
-            <blockquote>"To play a wrong note is insignificant; to play without passion is inexcusable."</blockquote>
-            </a>
+            <h2>&nbsp;
+                <span class="section-label">"To play a wrong note is insignificant; to play without passion is inexcusable."</span>
+            </h2>
         </section>
 
         <section>
-            <h2>Conceptual</h2>
+            <h2>Hyperalignment <span class="section-label">Terminal ⋅ On Hold</span></h2>
             <p>
                 Aligning intelligent, agentic systems to human values is misguided, and we ought instead focus on incorporating the rich computational structure of metaphysical objects, based on insights from moral epistemology.
             </p>
             <div class="two-column">
-                <a href="https://compphil.github.io/truth/">
-                    <div class="list-item">
-                        <h4>Elements of Computational Philosophy</h4>
-                        <p>Rendering philosophy computable and verifiable.</p>
-                        <span class="meta">2023 - Present</span>
-                    </div>
-                </a>
                 <a href="https://docs.google.com/document/d/e/2PACX-1vTvsBLyLm8iddF6C3x159S86-MBB067RtnV8UeUMpBkTkgB21E0JccQUtbq63obWtEnduHzaSPgkjBq/pub">
                     <div class="list-item">
                         <h4>Ought Squared</h4>
                         <p>One ought to contemplate what one ought to do.</p>
-                        <span class="meta">2023 - 2024</span>
+                    </div>
+                </a>
+                <a href="https://compphil.github.io/truth/">
+                    <div class="list-item">
+                        <h4>Elements of Computational Philosophy</h4>
+                        <p>Rendering philosophy computable and verifiable.</p>
                     </div>
                 </a>
             </div>
         </section>
 
         <section>
-            <h2>Applied</h2>
+            <h2>Strategic Deceleration <span class="section-label">Instrumental ⋅ Active</span></h2>
             <p>
-                Infrastructure for coordinating safe generative deployments on a global scale is still in its infancy. I'm grateful to be part of an organization that's working to change that. We're currently addressing misuse risks arising from dual-use capabilities as a warm-up, with the real challenges being yet to come.
+                However, incremental progress towards hyperalignment would be of limited use if civilization disempowerment occurs in the meantime. This line of work is focused on buying time under a <a href="https://docs.google.com/document/d/e/2PACX-1vTjsSHYSx7qHJBooCmVuz9c9bNeJiqS7o6Jt1Vb-l2wU3D4Ka7IM-X4p_CB8Ncil2ayLOkqiD4Fdlf7/pub">first-principles threat model</a>.
             </p>
             <div class="two-column">
                 <a href="https://noemaresearch.com">
                     <div class="list-item">
-                        <h4>Noema Research</h4>
-                        <p>Securing access to generative capabilities.</p>
-                        <span class="meta">2023 - Present</span>
+                        <h4>Capability Demonstrations</h4>
+                        <p>Facilitating calibration using empirical instruments.</p>
                     </div>
                 </a>
-                <a href="https://docs.google.com/document/d/e/2PACX-1vQHsi-TpxArX7xtggZBivjHRrxbn234gsQKDnkxi2_UDEY8e1_cfvZ_dgh0cVz86ebbWw6XxMdO876c/pub">
+                <a href="https://noemaresearch.com">
                     <div class="list-item">
-                        <h4>User Manual</h4>
-                        <p>This is how we can work together effectively.</p>
-                        <span class="meta">2024</span>
+                        <h4>Coordination Technology</h4>
+                        <p>Enabling cooperation using verifiable security policies.</p>
                     </div>
                 </a>
-                
+            </div>
+        </section>
+
+        <section>
+            <h2>Strategic Acceleration <span class="section-label">Instrumental ⋅ Active</span></h2>
+            <p>
+                Besides, hyperalignment work prior to automated research will likely amount to little, given future millenia of intellectual progress in a glimpse. This line of work is focused on capturing value from capability advances.
+            </p>
+            <div class="two-column">
+                <a>
+                    <div class="list-item">
+                        <h4>Organizational Design</h4>
+                        <p>How should imminent agents inform team structure?</p>
+                    </div>
+                </a>
+                <a>
+                    <div class="list-item">
+                        <h4>Workflow Optimization</h4>
+                        <p>Radical cognitive ergonomics, systematic biohacking.</p>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -228,5 +259,6 @@
             <a href="mailto:paul@noemaresearch.com">Email</a>
             <a href="https://www.linkedin.com/in/paul-bricman-204992144">Linkedin</a>
         </nav>
+    </main>
 </body>
 </html>
