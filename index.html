@@ -1,264 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Bricman</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --spacing-xxs: 0.1rem;
-            --spacing-xs: 0.5rem;
-            --spacing-s: 1rem;
-            --spacing-m: 1.5rem;
-            --spacing-l: 2rem;
-            --spacing-xl: 3rem;
-            --spacing-xxl: 4rem;
-            --color-text: #333;
-            --color-background: white;
-            --color-accent-1: #f0f0f0;
-            --color-accent-2: #e0e0e0;
-        }
-        body {
-            font-family: 'Lato', sans-serif;
-            line-height: 1.6;
-            color: var(--color-text);
-            background-color: var(--color-background);
-            margin: 0;
-            padding: 0;
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            grid-template-rows: 1fr auto 1fr;
-            min-height: 100vh;
-        }
-        .content {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            padding: var(--spacing-xl) var(--spacing-xxl);
-            max-width: 695px;
-            margin: auto;
-        }
-        h1 {
-            font-size: 0.9rem;
-            font-weight: 700;
-            margin: 0;
-            position: fixed;
-            top: var(--spacing-m);
-            left: var(--spacing-s);
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            transform: rotate(180deg);
-        }
-        h2 {
-            font-size: 0.9rem;
-            margin-top: var(--spacing-xxs);
-            margin-bottom: 0;
-            color: var(--color-text);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .section-label {
-            font-size: 0.9rem;
-            color: #bbb;
-            font-weight: normal;
-        }
-        p {
-            color: var(--color-text);
-            margin-top: var(--spacing-xs);
-            margin-bottom: var(--spacing-s);
-            font-size: 0.9rem;
-        }
-        p a {
-            text-decoration: underline;
-            text-decoration-color: rgba(0, 0, 0, 0.3);
-            text-decoration-thickness: 1px;
-        }
-        .two-column {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-s);
-        }
-        .list-item {
-            margin-bottom: var(--spacing-xxs);
-            transition: transform 0.3s ease;
-        }
-        .list-item:nth-child(2n) {
-            background-color: var(--color-accent-2);
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        .list-item:hover {
-            transform: translateX(5px);
-        }
-        .list-item h4 {
-            font-size: 0.9rem;
-            margin: 0 0 var(--spacing-xxs) 0;
-            color: var(--color-text);
-        }
-        .list-item p {
-            font-size: 0.9rem;
-            margin: 0 0 0 0;
-            color: var(--color-text);
-        }
-        .meta {
-            font-size: 0.9rem;
-            color: #999;
-        }
-        .links {
-            position: fixed;
-            bottom: var(--spacing-s);
-            left: var(--spacing-m);
-            display: flex;
-            flex-direction: column;
-        }
-        .links a {
-            color: var(--color-text);
-            text-decoration: none;
-            margin-bottom: var(--spacing-xxs);
-            transition: transform 0.3s ease;
-            font-size: 0.9rem;
-        }
-        .links a:hover {
-            transform: translateX(5px);
-        }
-        section:first-child {
-            margin-top: 0;
-        }
-        section {
-            margin-bottom: var(--spacing-xl);
-        }
-        blockquote {
-            font-size: 0.9rem;
-            color: #bbb;
-            font-weight: normal;
-            text-align: right;
-        }
+---
+layout: default
+---
 
-        @media (max-width: 768px) {
-            blockquote {
-                margin: var(--spacing-l) 0;
-            }
-        }
-        @media (max-width: 768px) {
-            body {
-                grid-template-columns: 1fr;
-                grid-template-rows: auto auto 1fr auto;
-            }
-            .content {
-                grid-column: 1 / 2;
-                grid-row: 3 / 4;
-                padding: var(--spacing-m);
-                padding-top: 0;
-                margin-top: 0;
-            }
-            h1 {
-                position: static;
-                writing-mode: horizontal-tb;
-                transform: none;
-                font-size: 0.9rem;
-                margin-bottom: 0;
-                padding-left: var(--spacing-m);
-                visibility: hidden;
-            }
-            .links {
-                position: static;
-                flex-direction: row;
-                gap: var(--spacing-s);
-                margin-top: var(--spacing-l);
-            }
-            .two-column {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <h1>Paul Bricman</h1>
-    
-    <main class="content">
-        <section>
-            <h2>&nbsp;
-                <span class="section-label">"To play a wrong note is insignificant; to play without passion is inexcusable."</span>
-            </h2>
-        </section>
+<main class="content">
+    <section>
+        <h2>&nbsp;
+            <span class="section-label">"To play a wrong note is insignificant; to play without passion is inexcusable."</span>
+        </h2>
+    </section>
 
-        <section>
-            <h2>Hyperalignment <span class="section-label">Terminal ⋅ On Hold</span></h2>
-            <p>
-                Aligning intelligent, agentic systems to human values is misguided, and we ought instead focus on incorporating the rich computational structure of metaphysical objects, based on insights from moral epistemology.
-            </p>
-            <div class="two-column">
-                <a href="https://docs.google.com/document/d/e/2PACX-1vTvsBLyLm8iddF6C3x159S86-MBB067RtnV8UeUMpBkTkgB21E0JccQUtbq63obWtEnduHzaSPgkjBq/pub">
-                    <div class="list-item">
-                        <h4>Ought Squared</h4>
-                        <p>One ought to contemplate what one ought to do.</p>
-                    </div>
-                </a>
-                <a href="https://compphil.github.io/truth/">
-                    <div class="list-item">
-                        <h4>Elements of Computational Philosophy</h4>
-                        <p>Rendering philosophy computable and verifiable.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+    <section>
+        <h2>Hyperalignment</h2>
+        <p>
+            Aligning intelligent, agentic systems to human values is misguided, and we ought instead focus on incorporating the rich computational structure of metaphysical objects, based on insights from moral epistemology.
+        </p>
+        <div class="two-column">
+            <a href="/ought-squared">
+                <div class="list-item">
+                    <h4>Ought Squared</h4>
+                    <p>One ought to contemplate what one ought to do.</p>
+                </div>
+            </a>
+            <a href="https://compphil.github.io/truth/">
+                <div class="list-item">
+                    <h4>Elements of Computational Philosophy</h4>
+                    <p>Rendering philosophy computable and verifiable.</p>
+                </div>
+            </a>
+        </div>
+    </section>
 
-        <section>
-            <h2>Strategic Deceleration <span class="section-label">Instrumental ⋅ Active ⋅ Monday to Thursday</span></h2>
-            <p>
-                However, incremental progress towards hyperalignment would be of limited use if civilization disempowerment occurs in the meantime. This line of work is focused on buying time under a <a href="https://docs.google.com/document/d/e/2PACX-1vTjsSHYSx7qHJBooCmVuz9c9bNeJiqS7o6Jt1Vb-l2wU3D4Ka7IM-X4p_CB8Ncil2ayLOkqiD4Fdlf7/pub">first-principles threat model</a>.
-            </p>
-            <div class="two-column">
-                <a href="https://noemaresearch.com/blog/join-autohack-2024-tournament">
-                    <div class="list-item">
-                        <h4>Capability Demonstrations</h4>
-                        <p>Legibly demonstrating dual-use capabilities.</p>
-                    </div>
-                </a>
-                <a href="https://docs.google.com/document/d/e/2PACX-1vT-Flg9CJVtL780JpR3ydJYXgv1bgaX5yf3vOT8F70cYvjAwn9JrPC7ROEqyxsdlyH9LgiLzUTwLozP/pub">
-                    <div class="list-item">
-                        <h4>Coordination Technology</h4>
-                        <p>Enabling a geopolitics of computation.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+    <section>
+        <h2>Strategic Deceleration</h2>
+        <p>
+            However, incremental progress towards hyperalignment would be of limited use if civilization disempowerment occurs in the meantime. This line of work is focused on buying time under a <a href="https://docs.google.com/document/d/e/2PACX-1vTjsSHYSx7qHJBooCmVuz9c9bNeJiqS7o6Jt1Vb-l2wU3D4Ka7IM-X4p_CB8Ncil2ayLOkqiD4Fdlf7/pub">first-principles threat model</a>.
+        </p>
+        <div class="two-column">
+            <a href="https://noemaresearch.com/blog/join-autohack-2024-tournament">
+                <div class="list-item">
+                    <h4>Capability Demonstrations</h4>
+                    <p>Legibly demonstrating dual-use capabilities.</p>
+                </div>
+            </a>
+            <a href="/geopolitics-of-computation">
+                <div class="list-item">
+                    <h4>Coordination Technology</h4>
+                    <p>Enabling a geopolitics of computation.</p>
+                </div>
+            </a>
+        </div>
+    </section>
 
-        <section>
-            <h2>Strategic Acceleration <span class="section-label">Instrumental ⋅ Active ⋅ Friday to Sunday</span></h2>
-            <p>
-                Besides, hyperalignment work prior to automated research will likely amount to little, given future millenia of intellectual progress in a glimpse. This line of work is focused on capturing value from capability advances.
-            </p>
-            <div class="two-column">
-                <a>
-                    <div class="list-item">
-                        <h4>Agent Readiness</h4>
-                        <p>Productively assimilating non-human contributions.</p>
-                    </div>
-                </a>
-                <a>
-                    <div class="list-item">
-                        <h4>Workflow Optimization</h4>
-                        <p>Cognitive ergonomics, systematic biohacking, behavioral engineering.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+    <section>
+        <h2>Strategic Acceleration</h2>
+        <p>
+            Besides, hyperalignment work prior to automated research will likely amount to little, given future millenia of intellectual progress in a glimpse. This line of work is focused on capturing value from capability advances through "agent readiness" efforts.
+        </p>
+        <!-- <div class="two-column">
+            <a>
+                <div class="list-item">
+                    <h4>Agent Readiness</h4>
+                    <p>Productively assimilating non-human contributions.</p>
+                </div>
+            </a>
+            <a>
+                <div class="list-item">
+                    <h4>Workflow Optimization</h4>
+                    <p>Cognitive ergonomics, systematic biohacking, behavioral engineering.</p>
+                </div>
+            </a>
+        </div> -->
+    </section>
 
-        <section>
-            <h2>Acknowledgements</h2>
-            <p>
-                I'm grateful for having been supported in my work, either financially or through compute, either recently or less so, by <a href="https://www.openphilanthropy.org/grants/straumli-llm-cyberoffense-benchmark/">Open Philantropy</a>, <a href="https://funds.effectivealtruism.org/grants?search=paul+bricman&sort=round">Long-Term Future Fund</a>, <a href="https://sites.research.google/trc/about/">Google Research</a>, <a href="https://www.alignmentforum.org/posts/5uiQkyKdejX3aEHLM/how-to-diversify-conceptual-alignment-the-model-behind#Some_Concrete_Details">Conjecture</a>, <a href="https://stability.ai/">Stability AI</a>, <a href="https://web.archive.org/web/20230712223102/https://aisafety.camp/#Projects">AI Safety Camp</a>, and <a href="https://github.com/sponsors/paulbricman">Andreas Stuhlmüller</a>.
-            </p>
-        </section>
-
-        <nav class="links">
-            <a href="mailto:paul@noemaresearch.com">Email</a>
-            <a href="https://www.linkedin.com/in/paul-bricman-204992144">LinkedIn</a>
-        </nav>
-    </main>
-</body>
-</html>
+    <section>
+        <h2>Acknowledgements</h2>
+        <p>
+            I'm grateful for having been supported in my work, either financially or through compute, either recently or less so, by <a href="https://www.openphilanthropy.org/grants/straumli-llm-cyberoffense-benchmark/">Open Philantropy</a>, <a href="https://funds.effectivealtruism.org/grants?search=paul+bricman&sort=round">Long-Term Future Fund</a>, <a href="https://sites.research.google/trc/about/">Google Research</a>, <a href="https://www.alignmentforum.org/posts/5uiQkyKdejX3aEHLM/how-to-diversify-conceptual-alignment-the-model-behind#Some_Concrete_Details">Conjecture</a>, <a href="https://stability.ai/">Stability AI</a>, <a href="https://web.archive.org/web/20230712223102/https://aisafety.camp/#Projects">AI Safety Camp</a>, and <a href="https://github.com/sponsors/paulbricman">Andreas Stuhlmüller</a>.
+        </p>
+    </section>
+</main>

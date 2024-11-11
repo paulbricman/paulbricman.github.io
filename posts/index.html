@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+---
+
+<main class="content">
+    <section>
+        {% for post in site.posts %}
+        <a href="{{ post.url }}">
+            <div class="list-item" style="margin-bottom: var(--spacing-l);">
+                <h2 style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <span style="flex: 1; margin-right: var(--spacing-l);">{{ post.title }}</span>
+                </h2>
+                <p>{{ post.description }}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </section>
+</main> 
