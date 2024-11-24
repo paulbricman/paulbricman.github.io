@@ -11,6 +11,8 @@
         --color-background: white;
         --color-accent-1: #f0f0f0;
         --color-accent-2: #e0e0e0;
+        --color-timeline: #ddd;
+        --color-link: #666;
     }
     body {
         font-family: 'Lato', sans-serif;
@@ -20,15 +22,15 @@
         margin: 0;
         padding: 0;
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2.5fr 1fr;
         grid-template-rows: 1fr auto 1fr;
         min-height: 100vh;
     }
     .content {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        padding: var(--spacing-xxl) var(--spacing-xxl);
-        max-width: 695px;
+        padding: var(--spacing-xxl) var(--spacing-xl);
+        max-width: 600px;
         margin: auto;
     }
     h1 {
@@ -45,15 +47,13 @@
     h2 {
         font-size: 0.9rem;
         margin-top: var(--spacing-xxs);
-        margin-bottom: 0;
+        margin-bottom: var(--spacing-xs);
         color: var(--color-text);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        font-weight: bold;
     }
     .section-label {
         font-size: 0.9rem;
-        color: #bbb;
+        color: var(--color-text);
         font-weight: normal;
     }
     p {
@@ -173,6 +173,69 @@
         margin: var(--spacing-m) 0;
     }
 
+    /* Year marker styling */
+    .year-marker {
+        position: absolute;
+        left: -90px;
+        transform: translateY(0.05rem);
+        font-size: 0.8rem;
+        color: var(--color-timeline);
+        z-index: 2;
+    }
+
+    /* Update timeline wrapper to accommodate years */
+    .timeline-wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: var(--spacing-l);
+        min-height: 100%;
+    }
+
+    /* Update timeline line position */
+    .timeline-line {
+        position: absolute;
+        left: -43.5px;
+        top: 20px;
+        bottom: 20px;
+        width: 1px;
+        background: var(--color-timeline);
+        z-index: 10;
+    }
+
+    /* Add fade effects using pseudo-elements */
+    .timeline-line::before,
+    .timeline-line::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 1px;
+        height: 20px;
+    }
+
+    .timeline-line::before {
+        top: -20px;
+        background: linear-gradient(to top, var(--color-timeline), transparent);
+    }
+
+    .timeline-line::after {
+        bottom: -20px;
+        background: linear-gradient(to bottom, var(--color-timeline), transparent);
+    }
+
+    /* Update phase marker position */
+    .phase-marker {
+        position: absolute;
+        left: -18px;
+        transform: translateY(0.4rem);
+        width: 6px;
+        height: 6px;
+        background: var(--color-timeline);
+        border: 2px solid white;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
     /* Mobile responsiveness */
     @media (max-width: 768px) {
         body {
@@ -217,6 +280,28 @@
         .two-column {
             grid-template-columns: 1fr;
         }
+
+        .timeline-wrapper {
+            grid-template-columns: 60px 1fr;
+        }
+
+        .timeline-line {
+            left: -41.5px;
+        }
+
+        .timeline-line::before,
+        .timeline-line::after {
+            left: 0;
+        }
+
+        .phase-marker {
+            left: -48px;
+        }
+
+        .year-marker {
+            left: -120px;
+            opacity: 0.5;
+        }
     }
 
     /* Update list styles */
@@ -240,5 +325,257 @@
         position: absolute;
         left: var(--spacing-xs);
         color: var(--color-text);
+    }
+
+    /* Timeline-specific styles */
+    .timeline-container {
+        position: relative;
+        width: 100%;
+        margin: var(--spacing-xxl) auto;
+    }
+
+    .timeline {
+        position: relative;
+        height: 100%;
+    }
+
+    .phase {
+        position: relative;
+        margin-bottom: var(--spacing-xl);
+        display: block;
+    }
+
+    .phase-content h2 {
+        display: none;
+    }
+
+    .phase-body {
+        display: none;
+    }
+
+    .phase-content p {
+        margin-top: 0;
+        margin-bottom: var(--spacing-s);
+    }
+
+    .writing-item {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-xs);
+        color: var(--color-link);
+        text-decoration: underline;
+        text-decoration-color: rgba(0, 0, 0, 0.3);
+        text-decoration-thickness: 1px;
+    }
+
+    /* Ensure blog posts maintain original width */
+    article.content {
+        max-width: 695px;
+        margin: 0 auto;
+    }
+
+    /* Add style for writings heading */
+    .writings-heading {
+        font-size: 0.9rem;
+        margin-top: var(--spacing-xxs);
+        margin-bottom: var(--spacing-xs);
+        color: #999;
+        font-weight: normal;
+    }
+
+    /* Update phase layout */
+    .phase-block {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .phase-headings {
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .phase {
+        margin-top: var(--spacing-xs);
+    }
+
+    .phase-content p {
+        margin-top: 0;
+        margin-bottom: var(--spacing-s);
+    }
+
+    .phase-writings {
+        list-style: none;
+        padding-left: var(--spacing-m);
+        margin-top: var(--spacing-xs);
+    }
+
+    .writing-item {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-xs);
+        color: var(--color-link);
+        text-decoration: underline;
+        text-decoration-color: rgba(0, 0, 0, 0.3);
+        text-decoration-thickness: 1px;
+        position: relative;
+    }
+
+    .writing-item:before {
+        content: "•";
+        position: absolute;
+        left: calc(-1 * var(--spacing-m));
+        color: var(--color-text);
+    }
+
+    /* Timeline styles */
+    .timeline-wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: var(--spacing-l);
+        min-height: 100%;
+    }
+
+    .timeline {
+        position: relative;
+        height: 100%;
+    }
+
+    /* Continuous timeline line */
+    .timeline-line {
+        position: absolute;
+        left: 48.5px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: var(--color-timeline);
+        z-index: 10;
+    }
+
+    /* Phase block positioning */
+    .phase-block {
+        position: relative;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    /* Phase marker (dots) */
+    .phase-marker {
+        position: absolute;
+        left: -48px;
+        transform: translateY(0.4rem); /* Use transform instead of top */
+        width: 6px;
+        height: 6px;
+        background: var(--color-timeline);
+        border: 2px solid white;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    /* Clean up unused styles */
+    .timeline-segment,
+    .phase-headings,
+    .phase-body {
+        display: none;
+    }
+
+    /* Update timeline line positioning */
+    .phases-container {
+        position: relative;
+        margin: var(--spacing-xl) 0;
+    }
+
+    .timeline-line {
+        position: absolute;
+        left: -43.5px; /* Adjust this value to align with existing markers */
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: var(--color-timeline);
+        z-index: 10;
+    }
+
+    /* Update mobile styles */
+    @media (max-width: 768px) {
+        body {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        .content {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            padding: var(--spacing-m);
+            margin-top: 0;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        h1 {
+            position: static;
+            writing-mode: horizontal-tb;
+            transform: none;
+            font-size: 0.9rem;
+            margin: 0;
+            padding: var(--spacing-m) var(--spacing-m) var(--spacing-s);
+            color: #999;
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .links {
+            position: static;
+            grid-row: 3;
+            grid-column: 1;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: var(--spacing-s);
+            padding: var(--spacing-m) var(--spacing-m);
+            background-color: var(--color-background);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Hide timeline elements */
+        .timeline,
+        .timeline-line,
+        .phase-marker,
+        .year-marker {
+            display: none;
+        }
+
+        /* Adjust layout for mobile */
+        .timeline-wrapper {
+            display: block;
+            padding: 0;
+        }
+
+        .content-column {
+            margin-left: 0;
+        }
+
+        .phase-block {
+            margin-left: 0;
+            margin-bottom: var(--spacing-l);
+        }
+
+        .phase-writings {
+            padding-left: var(--spacing-s);
+        }
+
+        /* Adjust spacing */
+        .intro {
+            margin-bottom: var(--spacing-l);
+        }
+
+        .phases-container {
+            margin: var(--spacing-m) 0;
+        }
+
+        /* Remove any remaining timeline-related positioning */
+        .phase-block {
+            position: static;
+        }
+
+        .writing-item:before {
+            left: calc(-1 * var(--spacing-s));
+        }
     }
 </style> 
