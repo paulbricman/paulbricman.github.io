@@ -20,7 +20,7 @@
 
 title: Paul Bricman
 email: paul@noemaresearch.com
-description: >- 
+description: >-
   Personal website and blog of Paul Bricman
 baseurl: ""
 url: "https://paulbricman.github.io"
@@ -34,6 +34,9 @@ plugins:
 
 # Permalink structure
 permalink: /:title
+
+# Show future dated posts
+future: true
 
 # Exclude files
 exclude:

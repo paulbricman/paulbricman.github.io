@@ -1,0 +1,20 @@
+---
+layout: default
+title: All Writings
+---
+
+<main class="content">
+  <section>
+    <h2>Writing</h2>
+    <div class="writings-list archive-list">
+      {% for post in site.posts %}
+      <a href="{{ post.url }}" class="writing-item">{{ post.title }}</a>
+      {% endfor %}
+
+      <!-- Fallback items for when no posts exist yet -->
+      {% if site.posts.size == 0 %}
+      <p class="empty-archive">No writings available yet.</p>
+      {% endif %}
+    </div>
+  </section>
+</main>

@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     {% include styles.html %}
-</head>
-<body>
+  </head>
+  <body class="{{ body_class }}">
     <a href="/" class="site-title"><h1>Paul Bricman</h1></a>
     {{ content }}
     <nav class="links">
-        <a href="mailto:paul@noemaresearch.com">Email</a>
-        <a href="https://www.linkedin.com/in/paul-bricman-204992144/">LinkedIn</a>
-        <a href="https://calendar.app.google/GMkgvmm1eDTNjNy78">Calendar</a>
+      <a href="mailto:paul@noemaresearch.com">Email</a>
+      <a href="https://www.linkedin.com/in/paul-bricman-204992144/">LinkedIn</a>
+      <a href="https://calendar.app.google/GMkgvmm1eDTNjNy78">Calendar</a>
     </nav>
-</body>
-</html> 
+  </body>
+</html>

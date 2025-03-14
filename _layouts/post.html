@@ -1,8 +1,16 @@
 ---
 layout: default
 ---
-<main class="content">
-    <section>
-        {{ content }}
-    </section>
-</main> 
+
+{% assign body_class = "post-page" %}
+
+<main class="content post-content" style="max-width: 520px">
+  <section>
+    {% assign words = content | number_of_words %} {% assign reading_time =
+    words | divided_by: 200 | plus: 1 %}
+    <div class="post-meta">
+      {{ page.date | date: "%B %d, %Y" }} &middot; {{ reading_time }} min
+    </div>
+    <div class="post-body">{{ content }}</div>
+  </section>
+</main>

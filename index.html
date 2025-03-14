@@ -3,82 +3,90 @@ layout: default
 ---
 
 <main class="content">
-    <div class="timeline-wrapper">
-        <div class="timeline">
-        </div>
-        
-        <div class="content-column">
-            <section class="intro">
-                <h2>
-                    <span class="section-label">Hi, I'm a generalist focused on defusing the arms race towards misaligned superintelligence. Here's a history of the ideas I've been intrigued by.</span>
-                </h2>
-            </section>
-
-            <div class="phases-container">
-                <div class="timeline-line"></div>
-                
-                <div class="phase-block">
-                    <div class="timeline-segment"></div>
-                    <div class="phase-marker"></div>
-                    <div class="year-marker">2020</div>
-                    <h2>Transhumanist Phase</h2>
-                    <div class="phase">
-                        <div class="phase-content">
-                            <p>
-                                Could human and artificial thought work in harmony? How are cognitive functions structured, and how could machines extend them? A period characterized by an interest in cognitive psychology and machine learning. Cognitive augmentation, cognitive prostheses, cognitive ergonomics. Drawing heavily from the work of Bret Victor, Andy Matuschak, Michael Nielsen, and Christopher Olah. Representative prototypes:
-                            </p>
-                        </div>
-                        <div class="phase-writings">
-                            <a href="https://web.archive.org/web/20211022162411/paulbricman.com/thoughtware/semantica" class="writing-item">Semantica</a>
-                            <a href="https://web.archive.org/web/20211022170202/https://paulbricman.com/thoughtware/dual" class="writing-item">Dual</a>
-                            <a href="https://web.archive.org/web/20211022165157/https://paulbricman.com/thoughtware/conceptarium" class="writing-item">Conceptarium</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="phase-block">
-                    <div class="timeline-segment"></div>
-                    <div class="phase-marker"></div>
-                    <div class="year-marker">2022</div>
-                    <h2>Posthumanist Phase</h2>
-                    <div class="phase">
-                        <div class="phase-content">
-                            <p>
-                                But are truths coherent beyond our human vantage point? What ought one do independent of the reference frame of the contemporary zeitgeist? A period characterized by an interest in epistemology of metaphysics and argumentation theory. Dialectics, defensibility, operationalization. Drawing from the work of Jacques Derrida, John Stuart Mill, Nicholas Rescher, Dan Sperber, and Jaakko Hintikka. Representative writings:
-                            </p>
-                        </div>
-                        <div class="phase-writings">
-                            <a href="/ought-squared" class="writing-item">Ought Squared</a>
-                            <a href="https://compphil.github.io/truth/#building-on-long-reflection" class="writing-item">Building on Long Reflection</a>
-                            <a href="https://compphil.github.io/truth/#bounded-defensibility" class="writing-item">Bounded Defensibility</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="phase-block">
-                    <div class="timeline-segment"></div>
-                    <div class="phase-marker"></div>
-                    <div class="year-marker">2024</div>
-                    <h2>Humanist Phase</h2>
-                    <div class="phase">
-                        <div class="phase-content">
-                            <p>
-                                But how can one actually enact principled change in a world of interconnected agendas? What are the mechanics of power, and how can technology shape them? A period characterized by an interest in diplomacy, macrohistory, and game theory. Technical governance, coordination technology, cryptographic protocols. Drawing from the work of John von Neumann and Robin Hanson. Representative writings:
-                            </p>
-                        </div>
-                        <div class="phase-writings">
-                            <a href="/geopolitics-of-computation" class="writing-item">Geopolitics of Computation</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <section class="acknowledgements">
-                <h2>Acknowledgements</h2>
-                <p>
-                    I'm grateful for having been supported in my work, either financially or through compute, either recently or less so, by <a href="https://www.openphilanthropy.org/grants/straumli-llm-cyberoffense-benchmark/">Open Philanthropy</a>, <a href="https://funds.effectivealtruism.org/grants?search=paul+bricman&sort=round">Long-Term Future Fund</a>, <a href="https://sites.research.google/trc/about/">Google Research</a>, <a href="https://www.alignmentforum.org/posts/5uiQkyKdejX3aEHLM/how-to-diversify-conceptual-alignment-the-model-behind#Some_Concrete_Details">Conjecture</a>, <a href="https://stability.ai/">Stability AI</a>, <a href="https://web.archive.org/web/20230712223102/https://aisafety.camp/#Projects">AI Safety Camp</a>, and <a href="https://github.com/sponsors/paulbricman">Andreas Stuhlmüller</a>.
-                </p>
-            </section>
-        </div>
+  <div class="two-column-layout">
+    <div class="column">
+      <div class="content-block">
+        <h2>
+          <span class="section-label">
+            I'm interested in ensuring that the machines that will shape the
+            future will do what ought to be done. My two contributions here are
+            listed below. I also enjoy writing about related topics.
+          </span>
+        </h2>
+      </div>
     </div>
+  </div>
+
+  <div class="two-column-layout">
+    <div class="column">
+      <div class="content-block">
+        <h2>Virtual Diplomacy</h2>
+        <p>
+          I believe that coordinated action is the most promising approach to
+          developing AI safely, and that the most promising approach to
+          coordinated action involves verification. This line of work is focused
+          on developing infrastructure for reliably verifying AI usage, and
+          applying it to enable coordination.
+          <a
+            href="https://noemaresearch.com/blog/virtual-diplomacy"
+            class="read-more"
+            >Read more.</a
+          >
+        </p>
+      </div>
+
+      <div class="content-block">
+        <h2>Computational Philosophy</h2>
+        <p>
+          I believe that we ought to develop AI systems that reason about what
+          they ought to do, instead of what people want them to do. This line of
+          work is focused on elaborating a moral epistemology of bounded agents,
+          and applying it to sculpt AI behavior.
+          <a href="/ought-squared" class="read-more">Read more.</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content-block">
+        <h2>Writing</h2>
+        <div class="writings-list">
+          {% for post in site.posts limit:15 %}
+          <a href="{{ post.url }}" class="writing-item">{{ post.title }}</a>
+          {% endfor %}
+
+          <a href="/archive" class="writing-item">...</a>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2>Acknowledgements</h2>
+        <p>
+          I'm grateful for having been supported in my work, either financially
+          or through compute, either recently or less so, by
+          <a
+            href="https://www.openphilanthropy.org/grants/straumli-llm-cyberoffense-benchmark/"
+            >Open Philanthropy</a
+          >,
+          <a
+            href="https://funds.effectivealtruism.org/grants?search=paul+bricman&sort=round"
+            >Long-Term Future Fund</a
+          >,
+          <a href="https://sites.research.google/trc/about/">Google Research</a
+          >,
+          <a
+            href="https://www.alignmentforum.org/posts/5uiQkyKdejX3aEHLM/how-to-diversify-conceptual-alignment-the-model-behind#Some_Concrete_Details"
+            >Conjecture</a
+          >, <a href="https://stability.ai/">Stability AI</a>,
+          <a
+            href="https://web.archive.org/web/20230712223102/https://aisafety.camp/#Projects"
+            >AI Safety Camp</a
+          >, and
+          <a href="https://github.com/sponsors/paulbricman"
+            >Andreas Stuhlmüller</a
+          >.
+        </p>
+      </div>
+    </div>
+  </div>
 </main>
