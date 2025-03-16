@@ -22,7 +22,7 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr auto 1fr;
     min-height: 100vh;
   }
@@ -145,6 +145,12 @@
   .post-content h6 {
     margin-bottom: var(--spacing-xs);
     margin-top: var(--spacing-l);
+  }
+
+  /* Update post content spacing */
+  .post-content {
+    padding-top: var(--spacing-xxl);
+    padding-bottom: var(--spacing-xl);
   }
 
   /* Hide the vertical site title in post views */
@@ -623,7 +629,7 @@
       var(--spacing-xxl) * 1.5
     ); /* Increased gap between columns (6rem) */
     margin-top: var(--spacing-s);
-    margin-bottom: var(--spacing-l);
+    margin-bottom: var(--spacing-xl);
   }
 
   .column {
@@ -691,6 +697,7 @@
     .two-column-layout {
       grid-template-columns: 1fr;
       gap: var(--spacing-l);
+      margin-bottom: var(--spacing-l);
     }
 
     .bio-section {
