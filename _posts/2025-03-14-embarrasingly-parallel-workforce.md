@@ -2,7 +2,6 @@
 layout: post
 title: "Embarrassingly Parallel Workforce"
 date: 2025-03-14 19:20:28 +0200
-description: "An embarrassingly parallel workforce."
 ---
 
 ## Embarrassingly Parallel Workforce

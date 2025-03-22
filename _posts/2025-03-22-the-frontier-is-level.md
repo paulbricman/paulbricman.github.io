@@ -1,0 +1,23 @@
+---
+layout: post
+title: "The Frontier Is Level"
+date: 2025-03-22 19:20:28 +0200
+---
+
+## The Frontier Is Level
+
+Several forces are contributing to leveling the relative standings of companies developing frontier models. Consider that it's costly to pioneer. When genuinely at the edge of the technology's development, there is no guidance to follow. You need to reason your way towards promising research directions, building on heuristics distilled from previous successes. Even with your best attempt to prioritize branches of the tech tree, many if not most ideas will fail. It's a regime of exploration, with a relatively poor exchange rate from research bandwidth to genuine advancement.
+
+Conversely, being a fast-follower lab is quite convenient. Sure, you're missing out on the reputation of leading the pack, and can only get your hands on recent techniques a bit later than you could've otherwise, but yours is more a regime of exploitation. You often receive guidance on impactful projects to undertake, without having to splurge on unlikely research bets with the hope that some of them might bear fruit. The exchange rate is quite appealing.
+
+The harsh conditions faced by pioneers, together with the comfortable freeriding of fast-followers, are conspiring to level the frontier. Busy burning research bandwidth on some risky direction, you might fail to notice the fast-followers breathing down your neck. Take OpenAI's release of their first model trained on inner monologues conducive to correct conclusions in December 2024. By the end of February 2025, DeepMind, Anthropic, xAI, and DeepSeek would be serving their own reasoning models. Not to idolize pioneering here — there might be adaptive value to cultures glorifying innovation, yet this doesn't change the convergent pressures.
+
+We could model this as a multi-armed bandit problem. The labs each get a certain number of research bets to play out across a collection of slot machines. Some slot machines yield better returns, but no player knows which ones upfront, they have to experiment. You might have derived some rules of thumb from regularities in your experience. The red slot machines seem pretty solid, might be worth spending your units of research there, but you can't know for sure without actually spending some bandwidth there. Much more convenient, however, is getting stats on returns on investment from veteran players and emulating their portfolio with your own. There's also a weird twist to the classic reinforcement learning problem: your earnings in algorithmic improvements are actually extending your research bandwidth through increases in virtual labor.
+
+Of course, this leveling would not be possible without the generous support of the pioneers, who go to great lengths to make it clear that they are in fact killing it with paradigm shifts and that we are so back. Unlike historical nuclear programs, these organizations hail from the private sector. They need users to be aware they're the best, and they need investors to be aware that users are aware they're the best. Status games across both organizations and individuals might also occasionally encourage letting others in on powerful ideas, but it seems like official channels get you pretty far in discerning the general contours of a player's portfolio anyway.
+
+One might expect a climate of rampant copycatting to stifle organizational capacity to place bold research bets across labs, by atrophying the tendency to genuinely play the multi-armed bandit. Yet enabling others to catch up may actually cause more advancement in aggregate. Once caught up and coasting, labs may take the liberty to occasionally poke at the frontier when a seemingly neglected branch of the tech tree reveals itself.
+
+What does the data say? Let "being at the frontier" denote owning a model within 10% relative performance of the top model on GPQA Diamond at a given point. Let "time to comeback" denote the duration between when a lab ceased to be at the frontier and when it resumed being at the frontier. Epoch AI's [dataset](https://epoch.ai/data/ai-benchmarking-dashboard) since GPT-4 indicates ~10 comebacks at the time of writing, with an average time to comeback of just under three months.
+
+Until the information sharing incentives change substantially, these observations seem to provide a sensible base rate for how these dynamics might evolve going forward. To make it more explicit for the purpose of accountability, I'd put 80% probability mass on the average time to comeback being 2-5 months over 2025, conditional on nationalization or international coordination not happening yet.

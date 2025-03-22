@@ -2,8 +2,9 @@
 layout: post
 title: "Ought Squared"
 date: 2024-11-11 19:20:28 +0200
-description: "One ought to contemplate what one ought to do."
 ---
+
+## Ought Squared
 
 ## Responsibility
 
