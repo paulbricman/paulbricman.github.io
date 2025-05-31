@@ -193,19 +193,33 @@
   /* Code highlighting */
   pre,
   code {
-    background-color: var(--color-accent-1);
-    padding: var(--spacing-xs);
-    border-radius: 3px;
+    background-color: #f5f5f5;
+    padding: var(--spacing-xxs);
+    border-radius: 4px;
     font-size: 0.9rem;
+    border: 1px solid #eee;
   }
 
   pre code {
     padding: 0;
+    background-color: transparent;
+    border: none;
   }
 
   pre {
     padding: var(--spacing-s);
     overflow-x: auto;
+  }
+
+  /* Image styling */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: var(--spacing-l) auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   /* Add horizontal rule styling */
