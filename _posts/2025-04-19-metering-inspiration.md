@@ -6,7 +6,7 @@ date: 2025-04-19 19:20:28 +0200
 
 ## Metering Inspiration Is Possible, Actually
 
-"If you're a musician, and you spend your whole childhood listening to music, and then you get an idea, you gos compose a song that is inspired by what you've heard before, but in a new direction, it would be very hard for you to say: this much was from this song I heard when I was 11, this much was from [...]" — [Sam Altman](https://www.youtube.com/live/5MWT_doo68k?feature=shared&t=398)
+"If you're a musician, and you spend your whole childhood listening to music, and then you get an idea, you go compose a song that is inspired by what you've heard before, but in a new direction, it would be very hard for you to say: this much was from this song I heard when I was 11, this much was from [...]" — [Sam Altman](https://www.youtube.com/live/5MWT_doo68k?feature=shared&t=398)
 
 This rhetoric alleges that it is not feasible to determine how much particular works have contributed to particular behaviors of particular AI systems. This post is a layered rebuttal of this position, making the case that it is in fact feasible to determine this in a precise and efficient way. Moreover, rightsholders are in fact in a position to ensure benefit-sharing practices are designed on their own terms, but the window of opportunity is closing rapidly.
 
