@@ -38,6 +38,10 @@ permalink: /:title
 # Show future dated posts
 future: true
 
+# Include files
+include:
+  - generators
+
 # Exclude files
 exclude:
   - .sass-cache/

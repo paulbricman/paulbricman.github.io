@@ -1,16 +1,71 @@
----
-layout: default
----
-
-{% assign body_class = "post-page" %}
-
-<main class="content post-content" style="max-width: 520px">
-  <section>
-    {% assign words = content | number_of_words %} {% assign reading_time =
-    words | divided_by: 200 | plus: 1 %}
-    <div class="post-meta">
-      {{ page.date | date: "%B %d, %Y" }} &middot; {{ reading_time }} min
-    </div>
-    <div class="post-body">{{ content }}</div>
-  </section>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
+    </title>
+    <link rel="stylesheet" href="/tufte.css" />
+    <style>
+      {% if page.background_color %}
+      body {
+        background-color: {{ page.background_color }};
+        color: {{ page.text_color | default: "#111111" }};
+      }
+      {% endif %}
+      .back-home {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        {% if page.text_color %}
+        color: {{ page.text_color }};
+        {% else %}
+        color: inherit;
+        {% endif %}
+        text-decoration: none;
+        font-size: 1.5rem;
+        z-index: 1000;
+        line-height: 1;
+      }
+      h1 {
+        margin-bottom: 3rem;
+        text-align: center;
+        width: 55%;
+      }
+      .separator {
+        margin: 3rem 0;
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .separator img {
+        width: 40%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+      }
+      @media (max-width: 760px) {
+        h1 {
+          width: 100%;
+        }
+        .separator {
+          width: 100%;
+        }
+        .separator img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/" class="back-home">↖</a>
+    <article>
+      <section>
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </section>
+    </article>
+  </body>
+</html>

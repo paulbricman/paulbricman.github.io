@@ -6,18 +6,60 @@
     <title>
       {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
     </title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    {% include styles.html %}
+    <link rel="stylesheet" href="/tufte.css" />
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 3rem;
+        width: 55%;
+      }
+      .grid-item {
+        aspect-ratio: 1 / 1.414;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+      }
+      .grid-item h3 {
+        margin: 0;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 0.45em;
+        text-transform: uppercase;
+        z-index: 2;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        display: block;
+      }
+      .grid-item img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        height: 75%;
+        opacity: 1;
+        z-index: 1;
+        object-fit: contain;
+      }
+      @media (max-width: 760px) {
+        .grid-container {
+          width: 100%;
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
-  <body class="{{ body_class }}">
-    <a href="/" class="site-title"><h1>Paul Bricman</h1></a>
-    {{ content }}
-    <nav class="links">
-      <a href="mailto:paul@mechanist.city">Email</a>
-      <a href="https://www.linkedin.com/in/paul-bricman-204992144/">LinkedIn</a>
-    </nav>
+  <body>
+    <article>
+      <section>{{ content }}</section>
+    </article>
   </body>
 </html>
