@@ -1,0 +1,117 @@
+<svg width="1280" height="980" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(40, 40)">
+<circle cx="630.0" cy="30.0" r="15.0" fill="white" stroke="white" stroke-width="8"/>
+<line x1="630.0" y1="45.0" x2="630.0" y2="60" stroke="white" stroke-width="8"/>
+<line x1="630.0" y1="60" x2="630.0" y2="120" stroke="white" stroke-width="8"/>
+<line x1="630.0" y1="120" x2="630.0" y2="180" stroke="white" stroke-width="8"/>
+<path d="M 540 210.0 Q 510.0 210.0 510.0 240" fill="none" stroke="white" stroke-width="8"/>
+<line x1="540" y1="210.0" x2="600" y2="210.0" stroke="white" stroke-width="8"/>
+<path d="M 630.0 180 Q 630.0 210.0 600 210.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 630.0 180 Q 630.0 210.0 660 210.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="660" y1="210.0" x2="720" y2="210.0" stroke="white" stroke-width="8"/>
+<path d="M 720 210.0 Q 750.0 210.0 750.0 240" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 480 270.0 Q 450.0 270.0 450.0 300" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 510.0 240 Q 510.0 270.0 480 270.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 510.0 240 Q 510.0 270.0 540 270.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="540" y1="270.0" x2="600" y2="270.0" stroke="white" stroke-width="8"/>
+<line x1="600" y1="270.0" x2="615.0" y2="270.0" stroke="white" stroke-width="8"/>
+<circle cx="630.0" cy="270.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 720 270.0 Q 690.0 270.0 690.0 300" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 750.0 240 Q 750.0 270.0 720 270.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="450.0" y1="300" x2="450.0" y2="315.0" stroke="white" stroke-width="8"/>
+<circle cx="450.0" cy="330.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="600" y1="330.0" x2="585.0" y2="330.0" stroke="white" stroke-width="8"/>
+<circle cx="570.0" cy="330.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="600" y1="330.0" x2="660" y2="330.0" stroke="white" stroke-width="8"/>
+<path d="M 660 330.0 Q 630.0 330.0 630.0 360" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 690.0 300 Q 690.0 330.0 660 330.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 690.0 300 Q 690.0 330.0 720 330.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 720 330.0 Q 750.0 330.0 750.0 360" fill="none" stroke="white" stroke-width="8"/>
+<line x1="540" y1="390.0" x2="525.0" y2="390.0" stroke="white" stroke-width="8"/>
+<circle cx="510.0" cy="390.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="540" y1="390.0" x2="600" y2="390.0" stroke="white" stroke-width="8"/>
+<path d="M 630.0 360 Q 630.0 390.0 600 390.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 720 390.0 Q 690.0 390.0 690.0 420" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 750.0 360 Q 750.0 390.0 720 390.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 750.0 360 Q 750.0 390.0 780 390.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="780" y1="390.0" x2="795.0" y2="390.0" stroke="white" stroke-width="8"/>
+<circle cx="810.0" cy="390.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="540" y1="450.0" x2="525.0" y2="450.0" stroke="white" stroke-width="8"/>
+<circle cx="510.0" cy="450.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="540" y1="450.0" x2="600" y2="450.0" stroke="white" stroke-width="8"/>
+<path d="M 600 450.0 Q 570.0 450.0 570.0 480" fill="none" stroke="white" stroke-width="8"/>
+<line x1="600" y1="450.0" x2="660" y2="450.0" stroke="white" stroke-width="8"/>
+<path d="M 660 450.0 Q 630.0 450.0 630.0 480" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 690.0 420 Q 690.0 450.0 660 450.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 690.0 420 Q 690.0 450.0 720 450.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 720 450.0 Q 750.0 450.0 750.0 480" fill="none" stroke="white" stroke-width="8"/>
+<line x1="570.0" y1="480" x2="570.0" y2="495.0" stroke="white" stroke-width="8"/>
+<circle cx="570.0" cy="510.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="630.0" y1="480" x2="630.0" y2="495.0" stroke="white" stroke-width="8"/>
+<circle cx="630.0" cy="510.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 720 510.0 Q 690.0 510.0 690.0 540" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 750.0 480 Q 750.0 510.0 720 510.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 750.0 480 Q 750.0 510.0 780 510.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 780 510.0 Q 810.0 510.0 810.0 540" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 660 570.0 Q 630.0 570.0 630.0 600" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 690.0 540 Q 690.0 570.0 660 570.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 780 570.0 Q 750.0 570.0 750.0 600" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 810.0 540 Q 810.0 570.0 780 570.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 810.0 540 Q 810.0 570.0 840 570.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="840" y1="570.0" x2="900" y2="570.0" stroke="white" stroke-width="8"/>
+<path d="M 840 570.0 Q 870.0 570.0 870.0 600" fill="none" stroke="white" stroke-width="8"/>
+<line x1="900" y1="570.0" x2="960" y2="570.0" stroke="white" stroke-width="8"/>
+<path d="M 960 570.0 Q 990.0 570.0 990.0 600" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 540 630.0 Q 510.0 630.0 510.0 660" fill="none" stroke="white" stroke-width="8"/>
+<line x1="540" y1="630.0" x2="600" y2="630.0" stroke="white" stroke-width="8"/>
+<path d="M 600 630.0 Q 570.0 630.0 570.0 660" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 630.0 600 Q 630.0 630.0 600 630.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="720" y1="630.0" x2="705.0" y2="630.0" stroke="white" stroke-width="8"/>
+<circle cx="690.0" cy="630.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 750.0 600 Q 750.0 630.0 720 630.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 840 630.0 Q 810.0 630.0 810.0 660" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 870.0 600 Q 870.0 630.0 840 630.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 870.0 600 Q 870.0 630.0 900 630.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 900 630.0 Q 930.0 630.0 930.0 660" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 990.0 600 Q 990.0 630.0 1020 630.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="1020" y1="630.0" x2="1035.0" y2="630.0" stroke="white" stroke-width="8"/>
+<circle cx="1050.0" cy="630.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 480 690.0 Q 450.0 690.0 450.0 720" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 510.0 660 Q 510.0 690.0 480 690.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 570.0 660 Q 570.0 690.0 600 690.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="600" y1="690.0" x2="660" y2="690.0" stroke="white" stroke-width="8"/>
+<path d="M 600 690.0 Q 630.0 690.0 630.0 720" fill="none" stroke="white" stroke-width="8"/>
+<line x1="660" y1="690.0" x2="675.0" y2="690.0" stroke="white" stroke-width="8"/>
+<circle cx="690.0" cy="690.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 780 690.0 Q 750.0 690.0 750.0 720" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 810.0 660 Q 810.0 690.0 780 690.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 900 690.0 Q 870.0 690.0 870.0 720" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 930.0 660 Q 930.0 690.0 900 690.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 420 750.0 Q 390.0 750.0 390.0 780" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 450.0 720 Q 450.0 750.0 420 750.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 540 750.0 Q 510.0 750.0 510.0 780" fill="none" stroke="white" stroke-width="8"/>
+<line x1="540" y1="750.0" x2="600" y2="750.0" stroke="white" stroke-width="8"/>
+<path d="M 600 750.0 Q 570.0 750.0 570.0 780" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 630.0 720 Q 630.0 750.0 600 750.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 630.0 720 Q 630.0 750.0 660 750.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 660 750.0 Q 690.0 750.0 690.0 780" fill="none" stroke="white" stroke-width="8"/>
+<line x1="750.0" y1="720" x2="750.0" y2="735.0" stroke="white" stroke-width="8"/>
+<circle cx="750.0" cy="750.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="870.0" y1="720" x2="870.0" y2="735.0" stroke="white" stroke-width="8"/>
+<circle cx="870.0" cy="750.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 300 810.0 Q 270.0 810.0 270.0 840" fill="none" stroke="white" stroke-width="8"/>
+<line x1="300" y1="810.0" x2="360" y2="810.0" stroke="white" stroke-width="8"/>
+<path d="M 360 810.0 Q 330.0 810.0 330.0 840" fill="none" stroke="white" stroke-width="8"/>
+<path d="M 390.0 780 Q 390.0 810.0 360 810.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="510.0" y1="780" x2="510.0" y2="795.0" stroke="white" stroke-width="8"/>
+<circle cx="510.0" cy="810.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="570.0" y1="780" x2="570.0" y2="795.0" stroke="white" stroke-width="8"/>
+<circle cx="570.0" cy="810.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="690.0" y1="780" x2="690.0" y2="795.0" stroke="white" stroke-width="8"/>
+<circle cx="690.0" cy="810.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="270.0" y1="840" x2="270.0" y2="855.0" stroke="white" stroke-width="8"/>
+<circle cx="270.0" cy="870.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+<line x1="330.0" y1="840" x2="330.0" y2="855.0" stroke="white" stroke-width="8"/>
+<circle cx="330.0" cy="870.0" r="15.0" fill="none" stroke="white" stroke-width="8"/>
+</g>
+</svg>

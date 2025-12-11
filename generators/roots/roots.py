@@ -3,13 +3,13 @@ import random
 class RootSystemGenerator:
     def __init__(self, 
                  grid_width=20,
-                 grid_height=50,
+                 grid_height=15,
                  block_size=60,
                  max_terminals=120,
                  branch_probability=0.7,
                  termination_probability=0.08,
-                 vertical_line_penalty=0.9,    # Lower = more vertical lines (0.0-1.0)
-                 horizontal_line_penalty=0.9,  # Lower = more horizontal lines (0.0-1.0)
+                 vertical_line_penalty=0.7,    # Lower = more vertical lines (0.0-1.0)
+                 horizontal_line_penalty=0.7,  # Lower = more horizontal lines (0.0-1.0)
                  stroke_width=8,
                  stroke_color='white',
                  padding=40):
@@ -38,18 +38,19 @@ class RootSystemGenerator:
         
         self.grid[0][start_x] = {'type': 'start', 'in': None, 'out': ['S']}
         self.grid[1][start_x] = {'type': 'vertical', 'in': 'N', 'out': ['S']}
-        self.grid[2][start_x] = {'type': 'fork_top', 'in': 'N', 'out': ['W', 'E']}
-        self.grid[2][start_x - 1] = {'type': 'horizontal', 'in': 'E', 'out': ['W']}
-        self.grid[2][start_x + 1] = {'type': 'horizontal', 'in': 'W', 'out': ['E']}
+        self.grid[2][start_x] = {'type': 'vertical', 'in': 'N', 'out': ['S']}
+        self.grid[3][start_x] = {'type': 'fork_top', 'in': 'N', 'out': ['W', 'E']}
+        self.grid[3][start_x - 1] = {'type': 'horizontal', 'in': 'E', 'out': ['W']}
+        self.grid[3][start_x + 1] = {'type': 'horizontal', 'in': 'W', 'out': ['E']}
         
         # Reserve targets
-        self.grid[2][start_x - 2] = {'type': 'reserved'}
-        self.grid[2][start_x + 2] = {'type': 'reserved'}
+        self.grid[3][start_x - 2] = {'type': 'reserved'}
+        self.grid[3][start_x + 2] = {'type': 'reserved'}
         
         # Active ends queue: (x, y, flow_dir, straight_count)
         active_ends = [
-            (start_x - 2, 2, 'W', 0),
-            (start_x + 2, 2, 'E', 0)
+            (start_x - 2, 3, 'W', 0),
+            (start_x + 2, 3, 'E', 0)
         ]
         
         terminal_count = 0
@@ -399,9 +400,9 @@ class RootSystemGenerator:
             paths.append(f'<line x1="{left_x}" y1="{cy}" x2="{cx - r}" y2="{cy}" stroke="{self.stroke_color}" stroke-width="{self.stroke_width}"/>')
             paths.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{self.stroke_color}" stroke-width="{self.stroke_width}"/>')
         elif block_type == 'start':
-            # Start circle at bottom with segment going down
+            # Start circle at center, filled, with segment going down
             bottom_y = (y + 1) * self.block_size
-            paths.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{self.stroke_color}" stroke-width="{self.stroke_width}"/>')
+            paths.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{self.stroke_color}" stroke="{self.stroke_color}" stroke-width="{self.stroke_width}"/>')
             paths.append(f'<line x1="{cx}" y1="{cy + r}" x2="{cx}" y2="{bottom_y}" stroke="{self.stroke_color}" stroke-width="{self.stroke_width}"/>')
 
         elif block_type == 'vertical':
@@ -454,37 +455,14 @@ class RootSystemGenerator:
         return '\n'.join(paths)
     
     def to_svg(self, background='transparent'):
-        min_x, max_x = self.grid_width, 0
-        min_y, max_y = self.grid_height, 0
-        has_content = False
+        # Fixed canvas size
+        canvas_width = self.grid_width * self.block_size + 2 * self.padding
+        canvas_height = self.grid_height * self.block_size + 2 * self.padding
         
-        for y in range(self.grid_height):
-            for x in range(self.grid_width):
-                cell = self.grid[y][x]
-                if cell and cell.get('type') != 'reserved':
-                    min_x = min(min_x, x)
-                    max_x = max(max_x, x)
-                    min_y = min(min_y, y)
-                    max_y = max(max_y, y)
-                    has_content = True
-        
-        if not has_content:
-            if background == 'transparent':
-                return f'<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"></svg>'
-            return f'<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="{background}"/></svg>'
-
-        offset_x = min_x * self.block_size
-        offset_y = min_y * self.block_size
-        content_width = (max_x - min_x + 1) * self.block_size
-        content_height = (max_y - min_y + 1) * self.block_size
-        
-        width = content_width + 2 * self.padding
-        height = content_height + 2 * self.padding
-        
-        svg_parts = [f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">']
+        svg_parts = [f'<svg width="{canvas_width}" height="{canvas_height}" xmlns="http://www.w3.org/2000/svg">']
         if background != 'transparent':
-            svg_parts.append(f'<rect width="{width}" height="{height}" fill="{background}"/>')
-        svg_parts.append(f'<g transform="translate({self.padding - offset_x}, {self.padding - offset_y})">')
+            svg_parts.append(f'<rect width="{canvas_width}" height="{canvas_height}" fill="{background}"/>')
+        svg_parts.append(f'<g transform="translate({self.padding}, {self.padding})">')
         
         for y in range(self.grid_height):
             for x in range(self.grid_width):
@@ -551,9 +529,12 @@ if __name__ == '__main__':
     candidates.sort(key=lambda x: x[1], reverse=True)
     top_20 = candidates[:50]
     
+    import os
+    os.makedirs('outputs', exist_ok=True)
+    
     print("\nTop 20 root systems by score (median distance - imbalance + 0.25×terminals):")
     for rank, (seed, score, median_dist, imbalance, term_count, svg) in enumerate(top_20, 1):
-        filename = f'root_system_{rank-1}.svg'
+        filename = f'outputs/root_system_{rank-1}.svg'
         with open(filename, 'w') as f:
             f.write(svg)
         print(f"  #{rank}: seed={seed}, score={score:.2f} (median={median_dist:.2f}, imbalance={imbalance:.2f}), terminals={term_count}, saved as {filename}")
