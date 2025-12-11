@@ -60,99 +60,10 @@
           width: 70%;
         }
       }
-      .print-cover {
-        display: none;
-      }
-      @media print {
-        .back-home {
-          display: none;
-        }
-        {% if page.background_color %}
-        body {
-          background-color: white !important;
-          color: {{ page.background_color }} !important;
-        }
-        {% endif %}
-        section {
-          font-size: 100%;
-          line-height: 1.4;
-        }
-        p {
-          margin: 1.5rem 0;
-        }
-        .separator {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          min-height: 100vh;
-          page-break-before: always;
-          page-break-after: always;
-          padding: 0;
-          margin: 0;
-        }
-        .separator img,
-        .print-cover img {
-          {% if page.background_color contains '#008000' or page.background_color == 'green' %}
-          filter: invert(25%) sepia(100%) saturate(7492%) hue-rotate(92deg) brightness(96%) contrast(101%);
-          {% elsif page.background_color contains '#0000' or page.background_color == 'blue' %}
-          filter: invert(9%) sepia(100%) saturate(7426%) hue-rotate(247deg) brightness(99%) contrast(143%);
-          {% else %}
-          filter: brightness(0.5);
-          {% endif %}
-        }
-        .separator img {
-          max-width: 70%;
-          max-height: 70vh;
-          height: auto;
-          object-fit: contain;
-        }
-        .print-cover {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          min-height: 100vh;
-          page-break-after: always;
-          padding: 4rem;
-          margin: 0;
-          {% if page.background_color %}
-          background-color: white !important;
-          color: {{ page.background_color }} !important;
-          {% endif %}
-        }
-        .print-cover h1 {
-          font-size: 1rem;
-          letter-spacing: 0.45em;
-          text-transform: uppercase;
-          text-align: center;
-          margin: 0 0 3rem 0;
-        }
-        .print-cover img {
-          width: 75%;
-          max-height: 70vh;
-          height: auto;
-          object-fit: contain;
-        }
-        article {
-          page-break-before: avoid;
-        }
-        article h1 {
-          display: none;
-        }
-      }
     </style>
   </head>
   <body>
     <a href="/" class="back-home">↖</a>
-    {% if page.generator %}
-    <div class="print-cover">
-      <h1>{{ page.title }}</h1>
-      <img
-        src="/generators/{{ page.generator }}/curated/root_system_1.svg"
-        alt=""
-      />
-    </div>
-    {% endif %}
     <article>
       <section>
         <h1>{{ page.title }}</h1>
