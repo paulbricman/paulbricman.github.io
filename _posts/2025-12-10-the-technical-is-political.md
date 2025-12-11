@@ -8,7 +8,7 @@ text_color: white
 generator: roots
 ---
 
-When someone frames technology as apolitical, remember how the devil's finest trick was convincing the world he does not exist.
+When someone frames technology as apolitical, remember the saying of how the devil's finest trick was convincing the world he does not exist.
 
 <div class="separator">
   <img src="/generators/roots/curated/root_system_5.svg" alt="">
