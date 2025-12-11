@@ -3,7 +3,7 @@ layout: post
 title: "The Technical Is Political"
 date: 2025-12-10
 categories: blog
-background_color: "#008000"
+background_color: "#228B22"
 text_color: white
 generator: roots
 ---
