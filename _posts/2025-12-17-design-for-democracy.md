@@ -16,7 +16,7 @@ For instance, "Design for Assembly" is about making it easy to put products toge
 
 Given its origins in product design, it is no surprise that "Design for Excellence" is operating within the logic of commercial products manufactured by private companies to eventually be sold to consumers. Each methodology in the family essentially provides employees with tools for streamlining business processes, and more broadly for working through obstacles to profitability.
 
-What principles, then, could result in systems optimized instead for shared ownership, whose very structure invites community governance and resists power concentration? How can we architect systems that enable citizen participation and cooperation by design?
+What principles, then, could result in systems optimized instead for shared ownership, whose structure invites community governance and resists power concentration? How can we architect systems that enable citizen participation and cooperation by design?
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
   <img src="/generators/lattices/outputs/lattice_8.svg" alt="" style="width: 100%;">
@@ -88,6 +88,6 @@ Secret sharing is the flavor of cryptography focused on distributing keys such t
   <img src="/generators/lattices/outputs/lattice_42.svg" alt="" style="width: 100%;">
 </div>
 
-Imagine an organization that exposes the same "interface" to the outside world as your average company. You can buy things from it, you can sell things to it. But when it comes to its internal architecture, the typical hierarchy is replaced. Each member instead gets an equal say in what the organization's priorities are and how they are tackled. If they do choose to be represented by others, they get to elect these leaders democratically for a given term.
+Imagine an organization that exposes the same "interface" to the outside world as your average company. You can buy things from it, you can sell things to it. But when it comes to its internal architecture, the typical hierarchy is discarded. Each member instead gets an equal say in what the organization's priorities are and how they are tackled. If they do choose to be represented by others, they get to elect these leaders democratically for a given term.
 
 These organizations exist today, and have for ages. Almost one in eight people globally are members of such organizations, and about one in three in the European Union. They create trillions in value annually. They are called cooperatives, or "co-ops" for short, and there is something remarkable about how these companies enshrine democratic governance and shared ownership in their very statutes.
