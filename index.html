@@ -27,17 +27,18 @@ layout: default
       of human values. <a href="https://compphil.github.io">Read more</a>
     </p>
   </div>
-  {% for post in site.posts limit:1 %} {% if post.generator %}
+  {% assign sorted_posts = site.posts | reverse %} {% for post in sorted_posts
+  limit:2 %} {% if post.generator %}
   <a
     href="{{ post.url }}"
     class="grid-item"
     style="background-color: {{ post.background_color }}; color: {{ post.text_color }};"
   >
     <h3>{{ post.title }}</h3>
-    <img
-      src="/generators/{{ post.generator }}/curated/root_system_4.svg"
-      alt=""
-    />
+    <img src="/generators/{{ post.generator }}/curated/{% if post.generator ==
+    'roots' %}root_system_4.svg{% elsif post.generator == 'lattices'
+    %}lattice_10.svg{% endif %}" alt="" {% if post.generator == 'lattices'
+    %}style="transform: translate(-50%, -58%) rotate(90deg);"{% endif %} />
   </a>
   {% else %}
   <a
@@ -55,9 +56,6 @@ layout: default
     <span>···</span>
   </div>
   <div class="grid-item grid-item-tbd" style="background-color: #ff8c00">
-    <span>···</span>
-  </div>
-  <div class="grid-item grid-item-tbd" style="background-color: #9370db">
     <span>···</span>
   </div>
 </div>
