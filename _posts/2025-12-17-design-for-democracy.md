@@ -22,11 +22,11 @@ What principles, then, could result in systems optimized instead for shared owne
   <img src="/generators/lattices/outputs/lattice_8.svg" alt="" style="width: 100%;">
 </div>
 
-There is this "self-hosted" genre of software that aims to match the features of proprietary platforms, yet can run on anyone's hardware. You can run a Nextcloud server on your computer as a self-hosted alternative to Google Drive, a Plex server instead of Netflix, and the list goes on. The technical sophistication of self-hosted software is impressive.
+Say you have a side project, and I have a side project. What if our projects made up the two sides of a shared whole, each coming at it from a different angle? What happens when the side projects of even more people connect to trace the contour of something bigger, each one of us excited about a piece of the puzzle? The art, the technology, the people. What are the right conditions for nurturing "collective passion projects" that scale gracefully with the energy channeled into them?
 
-Less impressive is the social and political sophistication typically reached in self-hosting. There is often just that, a self that is hosting services for themselves to use. Occasionally, these services are extended to accommodate the host's spouse, and perhaps their close family. In most cases, however, there remains the solitary administrator whose responsibility is to steward the infrastructure. They have the keys to get in and the know-how to debug issues.
+Any genuine challenge to established practice will necessarily come from its margins rather than from its core. Today, the margin largely lies in the evenings and the weekends, in the "third places" that are neither home nor office. Genuine challenges cannot _not_ come from combined side projects, because if they could have been one's main, socially acceptable occupation, then they never were genuine challenges in the first place.
 
-But one self can only get so far, and arguably not far enough as to unseat the established platforms for their modest userbase. Self-hosting in the explicit sense falls short of the breadth of knowledge, the on-call reliability, and the sheer energy required to genuinely reclaim key technology. We need to move towards what one might call "selves-hosting," an alternative narrative that replaces the solitary basement-dweller with a welcoming community that runs its own neighborhood cluster to serve its members, young and old.
+Side projects need to compose well if they are to stack. The key principle here is tolerance. Just as circuits can be designed to be forgiving enough to accommodate components with a wide range of properties, initiatives can be designed to accommodate skills and passions of all shapes and sizes. And instead of alienating each other by wrapping everything in shiny polish, we should instead lay bare what things are made of under the hood. "Truth to materials." Show the patchwork of authentic people with different backgrounds, do not obscure it with sanitized marketing. Show the patchwork of computer parts salvaged from different sources, do not obscure it with a uniform enclosure.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
   <img src="/generators/lattices/outputs/lattice_9.svg" alt="" style="width: 100%;">
@@ -38,16 +38,6 @@ Certain systems can be said to be able to run _on_ citizens, in that they can th
   <img src="/generators/lattices/outputs/lattice_15.svg" alt="" style="width: 100%;">
 </div>
 
-Say you have a side project, and I have a side project. What if our projects made up the two sides of a shared whole, each coming at it from a different angle? What happens when the side projects of even more people connect to trace the contour of something bigger, each one of us excited about a piece of the puzzle? The art, the technology, the people. What are the right conditions for nurturing "collective passion projects" that scale gracefully with the energy channeled into them?
-
-Any genuine challenge to established practice will necessarily come from its margins rather than from its core. Today, the margin largely lies in the evenings and the weekends, in the "third places" that are neither home nor office. Genuine challenges cannot _not_ come from combined side projects, because if they could have been one's main, socially acceptable occupation, then they never were genuine challenges in the first place.
-
-Side projects need to compose well if they are to stack. The key principle here is tolerance. Just as circuits can be designed to be forgiving enough to accommodate components with a wide range of properties, initiatives can be designed to accommodate skills and passions of all shapes and sizes. And instead of alienating each other by wrapping everything in shiny polish, we should instead lay bare what things are made of under the hood. "Truth to materials." Show the patchwork of computer parts salvaged from different sources, do not obscure it with a uniform enclosure. Show the patchwork of authentic people with different backgrounds, do not obscure it with sanitized marketing.
-
-<div class="separator" style="width: 55%; margin: 3rem 0;">
-  <img src="/generators/lattices/outputs/lattice_20.svg" alt="" style="width: 100%;">
-</div>
-
 Companies turn raw ingredients into products. In go the labor, equipment, or materials, out comes the device, app, or assets. Zoom in on the transformation, however, and you find many smaller ones. This team is turning their software into a list of security issues. That team is turning that vulnerability catalogue into more secure software. This other team is turning that improved version into new marketing materials.
 
 For such a system to instead thrive on the mixed and sporadic contributions of citizens with diverse backgrounds and motivations, it needs to have modularity, granularity, and composability at its core. Workshops are the ideal atom here, short series of sessions as building blocks.
@@ -55,6 +45,16 @@ For such a system to instead thrive on the mixed and sporadic contributions of c
 For instance, the community around a neighborhood cluster may run a workshop focused on turning older computers into individual components by disassembling and cataloguing them. Another workshop may independently focus on turning such salvaged parts into larger, unified servers by building custom frames and figuring out the power schematics. Yet another workshop might turn such community practices into guerilla art to promote the initiative.
 
 These sessions should run whenever enough people want to take part, and should run at a time picked to fit everyone in the group. Besides helping people contribute to a shared effort, workshops should be designed so as to help them gain new skills, leave their mark, make new friends, and have fun together.
+
+<div class="separator" style="width: 55%; margin: 3rem 0;">
+  <img src="/generators/lattices/outputs/lattice_20.svg" alt="" style="width: 100%;">
+</div>
+
+There is this "self-hosted" genre of software that aims to match the features of proprietary platforms, yet can run on anyone's hardware. You can run a Nextcloud server on your computer as a self-hosted alternative to Google Drive, a Plex server instead of Netflix, and the list goes on. The technical sophistication of self-hosted software is impressive.
+
+Less impressive is the social and political sophistication typically reached in self-hosting. There is often just that, a self that is hosting services for themselves to use. Occasionally, these services are extended to accommodate the host's spouse, and perhaps their close family. In most cases, however, there remains the solitary administrator whose responsibility is to steward the infrastructure. They have the keys to get in and the know-how to debug issues.
+
+But one self can only get so far, and arguably not far enough as to unseat the established platforms for their modest userbase. Self-hosting in the explicit sense falls short of the breadth of knowledge, the on-call reliability, and the sheer energy required to genuinely reclaim key technology. We need to move towards what one might call "selves-hosting," an alternative narrative that replaces the solitary basement-dweller with a welcoming community that runs its own neighborhood cluster to serve its members, young and old.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
   <img src="/generators/lattices/outputs/lattice_25.svg" alt="" style="width: 100%;">
