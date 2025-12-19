@@ -70,7 +70,7 @@ Look up and take a few moments to scan the space around you for objects big and 
 
 Sit briefly with the possibility of genuinely reclaiming a few of these, of understanding what makes them tick, of being able to manufacture them yourself. We live our lives relying on objects that we are completely detached from, many of which magically appear on our doorstep as the end result of a nebulous process that probably involves some workers abroad and some factories somewhere.
 
-Now take the previous exercise and replace objects around you with pieces of software running on your devices. Really, just take a moment to browse your app gallery or installed programs.
+Now take the previous exercise and replace objects around you with software running on your device. Really, just take a moment to browse your app gallery or installed programs.
 
 What did it take for one of these to get here? What is it made of? What lies behind this interface? Even if we often uncover an intimidating amount of complexity when we draw back the curtain, we might occasionally find that things boil down to simple parts. Either way, it is healthy to interrogate our surroundings and deepen our relationships with the systems we interact with day after day. Even the furniture you currently sit on may otherwise slip through as almost virtual, an abstract notion with favorable properties.
 
