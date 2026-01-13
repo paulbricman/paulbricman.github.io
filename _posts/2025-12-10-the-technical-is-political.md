@@ -6,11 +6,12 @@ categories: blog
 background_color: "#228B22"
 text_color: white
 generator: roots
+separator_class: compact-separator
 ---
 
 When someone frames technology as apolitical, remember the saying of how the devil's finest trick was convincing the world he does not exist.
 
-<div class="separator">
+<div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_5.svg" alt="">
 </div>
 
@@ -26,7 +27,7 @@ But cost-effectiveness depends on how you define cost and who gets to bear it. L
 
 There is this project called [OpenKnit](https://openknit.org/), and its poetic significance is obscured by the myth of apolitical technology. It is a knitting machine whose design can be freely accessed and forked into new versions, a machine that can be assembled for cheap from off-the-shelf parts and disassembled back into them, and one that allows users to "print" exactly the clothing they need, locally.
 
-<div class="separator">
+<div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_6.svg" alt="">
 </div>
 
@@ -34,7 +35,7 @@ The false dichotomy between centralized technology and no technology has been we
 
 The conclusion here does not follow. Yes, we might want to have technology at our disposal, but that does not mean that it should effectively be governed by a select cadre of corporate leaders, irrespective of their nationality. Even more so if the technology is truly important.
 
-<div class="separator">
+<div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_9.svg" alt="">
 </div>
 
@@ -46,13 +47,13 @@ To start with a heap of sand and try to speedrun your way to ChatGPT is unrealis
 
 Start somewhere familiar and you will have a usable alternative at any given point along the arduous journey of reclaiming the stack. An alternative whose authenticity only grows over time, as the roots extend deeper and deeper.
 
-<div class="separator">
+<div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_10.svg" alt="">
 </div>
 
 When someone argues that they should make decisions on behalf of everyone instead of everyone making decisions themselves, then they are either naïve or lying. It is sometimes hard to tell.
 
-<div class="separator">
+<div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_12.svg" alt="">
 </div>
 
@@ -62,7 +63,7 @@ When a technology is being leveraged to gain dominance by estranging people from
 
 Roots do not crudely transform whole volumes of soil into wood. They are sparse threads that weave through the soil to efficiently interface with its resources and anchor themselves securely. Reclaiming technology calls for a similarly rational approach to growth into the depths of the technical ecosystem. Dependency trees should be constantly pruned in order to remain lean, but they should be adapted to resources that are available from many sources in order to remain resilient. The chosen ingredients should be a handful, but they should each be plentiful.
 
-<div class="separator">
+<div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_15.svg" alt="">
 </div>
 
@@ -74,7 +75,7 @@ Now take the previous exercise and replace objects around you with software runn
 
 What did it take for one of these to get here? What is it made of? What lies behind this interface? Even if we often uncover an intimidating amount of complexity when we draw back the curtain, we might occasionally find that things boil down to simple parts. Either way, it is healthy to interrogate our surroundings and deepen our relationships with the systems we interact with day after day. Even the furniture you currently sit on may otherwise slip through as almost virtual, an abstract notion with favorable properties.
 
-<div class="separator">
+<div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_22.svg" alt="">
 </div>
 
