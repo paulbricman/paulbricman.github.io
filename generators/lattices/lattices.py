@@ -512,8 +512,8 @@ if __name__ == '__main__':
         num_chains = random.randint(0, 2)
         
         gen = LatticeGenerator(
-            grid_rows=12,
-            grid_cols=15,
+            grid_rows=6,
+            grid_cols=8,
             hex_size=50,
             stroke_width=16,
             show_debug=False,

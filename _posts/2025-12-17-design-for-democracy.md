@@ -19,7 +19,7 @@ Given its origins in product design, it is no surprise that "Design for Excellen
 What principles, then, could result in systems optimized instead for shared ownership, whose structure invites community governance and resists power concentration? How can we architect systems that enable citizen participation and cooperation by design?
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
-  <img src="/generators/lattices/outputs/lattice_8.svg" alt="" style="width: 100%;">
+  <img src="/generators/lattices/outputs/lattice_0.svg" alt="" style="width: 100%;">
 </div>
 
 Say you have a side project, and I have a side project. What if our projects made up the two sides of a shared whole, each coming at it from a different angle? What happens when the side projects of even more people connect to trace the contour of something bigger, each one of us excited about a piece of the puzzle? The art, the technology, the people. What are the right conditions for nurturing "collective passion projects" that scale gracefully with the energy channeled into them?
@@ -29,13 +29,13 @@ Any genuine challenge to established practice will necessarily come from its mar
 Side projects need to compose well if they are to stack. The key principle here is tolerance. Just as circuits can be designed to be forgiving enough to accommodate components with a wide range of properties, initiatives can be designed to accommodate skills and passions of all shapes and sizes. And instead of wrapping everything in shiny polish, we should instead lay bare what things are made of under the hood. "Truth to materials." Show the patchwork of computer parts salvaged from different sources, do not obscure it with a uniform enclosure. Show the patchwork of authentic people with different backgrounds, do not obscure it with sanitized marketing.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
-  <img src="/generators/lattices/outputs/lattice_9.svg" alt="" style="width: 100%;">
+  <img src="/generators/lattices/outputs/lattice_1.svg" alt="" style="width: 100%;">
 </div>
 
 Certain systems can be said to be able to run _on_ citizens, in that they can thrive on their combined contributions, and their contributions alone if need be. Only systems that can run _on_ citizens can genuinely be run _by_ citizens.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
-  <img src="/generators/lattices/outputs/lattice_15.svg" alt="" style="width: 100%;">
+  <img src="/generators/lattices/outputs/lattice_3.svg" alt="" style="width: 100%;">
 </div>
 
 Companies turn raw ingredients into products. In go the labor, equipment, or materials, out comes the device, app, or asset. Zoom in on the transformation, however, and you find many smaller ones. This team is turning their software into a list of security issues. That team is turning that vulnerability catalogue into more secure software. This other team is turning that improved version into new marketing materials.
@@ -47,7 +47,7 @@ For instance, the community around a neighborhood cluster may run a workshop foc
 These sessions should run whenever enough people want to take part in them, and should run at a time picked to fit everyone in the group. Besides helping people contribute to a shared effort, workshops should be designed so as to help them gain new skills, leave their mark, make new friends, and have fun together.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
-  <img src="/generators/lattices/outputs/lattice_20.svg" alt="" style="width: 100%;">
+  <img src="/generators/lattices/outputs/lattice_4.svg" alt="" style="width: 100%;">
 </div>
 
 There is this "self-hosted" genre of software that aims to match the features of proprietary platforms, yet can run on anyone's hardware. You can run a Nextcloud server on your computer as a self-hosted alternative to Google Drive, a Plex server instead of Netflix, the list goes on. The technical sophistication of self-hosted software is impressive.
@@ -57,13 +57,13 @@ Less impressive is the social and political sophistication typically reached in 
 But one self can only get so far, and arguably not far enough as to unseat the established platforms for their modest userbase. Self-hosting in the explicit sense falls short of the breadth of knowledge, the on-call reliability, and the sheer energy required to genuinely reclaim key technology. We need to move towards what one might call "selves-hosting," an alternative narrative that replaces the solitary basement-dweller with a welcoming community that runs its own neighborhood cluster to serve its members, young and old.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
-  <img src="/generators/lattices/outputs/lattice_25.svg" alt="" style="width: 100%;">
+  <img src="/generators/lattices/outputs/lattice_5.svg" alt="" style="width: 100%;">
 </div>
 
 Education should not be about isolating people in an institutional daycare for over a decade. It should be about creating contexts for them to become part of living initiatives in ways that accommodate their growing skills and allow them to learn from mistakes.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
-  <img src="/generators/lattices/outputs/lattice_29.svg" alt="" style="width: 100%;">
+  <img src="/generators/lattices/outputs/lattice_8.svg" alt="" style="width: 100%;">
 </div>
 
 In systems optimized for community ownership, manufacturing and assembly become one and the same process of building what is needed. There is no sanitized handover from production plant to consumer home, as self-sufficient communities are those that can satiate their own needs.
@@ -75,7 +75,7 @@ It is a good thing to have multiple ways of obtaining the same object. You can b
 Objects should also invite disassembly. This reduces the effective cost of building things, as they can later be reassembled into new things. Disassembly also makes it easier to undo mistakes, and so lowers the bar for trying things. Skipping power tools tends to help with this, as chances are that if you needed one for assembly, you will also need one for disassembly.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
-  <img src="/generators/lattices/outputs/lattice_34.svg" alt="" style="width: 100%;">
+  <img src="/generators/lattices/outputs/lattice_9.svg" alt="" style="width: 100%;">
 </div>
 
 Like many familiar building blocks of computing, passwords are soaked in our culture of individualism and estrangement. The key grants you access to a private space, the personal account. From this place, you may further be authorized to take certain actions by a higher-up, or someone who otherwise has the authority to grant you permission to do so.
@@ -85,7 +85,7 @@ How different would computing feel if important actions were authorized not down
 Secret sharing is the flavor of cryptography focused on distributing keys in such a way that any group can reveal the secret as long as they reach the quorum. Say there are three people and the intended quorum is two. First, pick four points on a line. Second, share the two coordinates of a different point with each person. Finally, give everyone the first coordinate of the remaining point. The remaining coordinate is the secret. Any two people can reconstruct the line using their own two points and read off the second coordinate of the remaining point. The password is effectively placed "in superposition" across people, enabling new social modes.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
-  <img src="/generators/lattices/outputs/lattice_42.svg" alt="" style="width: 100%;">
+  <img src="/generators/lattices/outputs/lattice_10.svg" alt="" style="width: 100%;">
 </div>
 
 Imagine an organization that exposes the same "interface" to the outside world as your average company. You can buy things from it, you can sell things to it. But when it comes to its internal architecture, the typical hierarchy is discarded. Each member instead gets an equal say in what the organization's priorities are and how they are tackled. If they do choose to be represented by others, they get to elect these leaders democratically for a given term.

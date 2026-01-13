@@ -4,7 +4,7 @@ import os
 import subprocess
 from pathlib import Path
 
-TARGET_COLOR = "#228B22"
+TARGET_COLOR = "#0D47A1"
 
 curated_dir = Path("curated")
 output_dir = Path("rasterized")

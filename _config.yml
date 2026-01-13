@@ -27,10 +27,8 @@ url: "https://paulbricman.github.io"
 github_username: paulbricman
 
 # Build settings
-remote_theme: pages-themes/minimal
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 # Permalink structure
 permalink: /:title
@@ -51,3 +49,4 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor/
+  - assets/css/style.scss

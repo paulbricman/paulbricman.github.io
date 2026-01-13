@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 3.10.0"
 gem "jekyll-feed", "~> 0.12"
+gem "kramdown-parser-gfm"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

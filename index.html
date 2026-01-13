@@ -28,18 +28,34 @@ layout: default
     </p>
   </div>
   {% assign sorted_posts = site.posts | reverse %} {% for post in sorted_posts
-  limit:2 %} {% if post.generator %}
+  limit:3 %} {% if post.generator %}
   <a
     href="{{ post.url }}"
     class="grid-item"
     style="background-color: {{ post.background_color }}; color: {{ post.text_color }};"
   >
-    <h3>{{ post.title }}</h3>
-    <img src="/generators/{{ post.generator }}/curated/{% if post.generator ==
-    'roots' %}root_system_4.svg{% elsif post.generator == 'lattices'
-    %}lattice_10.svg{% endif %}" alt="" {% if post.generator == 'lattices'
-    %}style="transform: translate(-50%, -59%) rotate(90deg) scale(1.2);"{% endif
-    %} />
+    <h3 {% if post.generator == 'field' %}style="letter-spacing: 0.35em;"{% endif %}>{{ post.title }}</h3>
+    {% if post.generator == 'field' %}
+    <img
+      src="/generators/{{ post.generator }}/curated/field_0.svg"
+      alt=""
+      style="position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%); width: 75%; z-index: 1;"
+    />
+    <img
+      src="/generators/{{ post.generator }}/curated/field_5.svg"
+      alt=""
+      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 75%; z-index: 1;"
+    />
+    <img
+      src="/generators/{{ post.generator }}/curated/field_10.svg"
+      alt=""
+      style="position: absolute; top: 75%; left: 50%; transform: translate(-50%, -50%); width: 75%; z-index: 1;"
+    />
+    {% else %} <img src="/generators/{{ post.generator }}/curated/{% if
+    post.generator == 'roots' %}root_system_4.svg{% elsif post.generator ==
+    'lattices' %}lattice_0.svg{% endif %}" alt="" {% if post.generator ==
+    'lattices' %}style="transform: translate(-50%, -59%) rotate(90deg)
+    scale(1.2);"{% endif %} /> {% endif %}
   </a>
   {% else %}
   <a
@@ -54,9 +70,6 @@ layout: default
     <span>···</span>
   </div>
   <div class="grid-item grid-item-tbd" style="background-color: #dc143c">
-    <span>···</span>
-  </div>
-  <div class="grid-item grid-item-tbd" style="background-color: #ff8c00">
     <span>···</span>
   </div>
 </div>
