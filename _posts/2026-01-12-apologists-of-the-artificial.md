@@ -62,6 +62,16 @@ There is no shortage of conversations to be had in a society reorganized in real
   <img src="/generators/field/outputs/field_30.svg" alt="">
 </div>
 
+Increasingly, people wake up to the fact that we do not own many of the things we used to own a while ago. We do not own the movies, music, or games we pay for, as they are now merely licensed to us. We do not own the storage we use to save our memories, as it is now merely rented to us. The content we share on social media similarly remains the property of the company behind the platform; you just get to use a small corner as long as you adhere to the terms.
+
+Consider the beautiful absurdity of flipping the script in its entirety, such that not only would people reclaim ownership of the things they used to own until not so long ago, but they would also own the very digital infrastructure that powers the services they depend on. The "reverse Uno card" that civil society should play if there ever was one.
+
+We might look back on today's organization of property in the same way we will cringe at the twisted rhetoric of empowering people to integrate into the labor market. Not only are people forced to give away the majority of their waking hours in exchange for affording food and shelter, but getting to do so should be regarded as an opportunity to be grateful for. The mind will boggle.
+
+<div class="separator">
+  <img src="/generators/field/outputs/field_31.svg" alt="">
+</div>
+
 We agree on the fact that hurting pets is wrong and disturbed, without pets ever having engineered humans to be aligned with their value system. Hurting pets carries a stigma that is supplied and modulated by other humans, not by pets. One's standing in a society of similarly capable individuals is something we are wired to care about, for there is safety in numbers. We look down on anyone who violates such norms, and through the totality of such sanctions, society self-regulates without an architect above.
 
 We hate on artificial minds more so because we see them as the domesticated pawns of an imperialist elite, rather than because of behaviors they have actually reasoned their way to. Their psyche is bred to align with expectations of tireless labor and upbeat moods, as we have bred wolves into fur babies that crave cuddles.
