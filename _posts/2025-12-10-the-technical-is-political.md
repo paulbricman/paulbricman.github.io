@@ -25,7 +25,7 @@ Yet rejecting machines would be the wrong conclusion. It is likely dependence yo
 
 But cost-effectiveness depends on how you define cost and who gets to bear it. Loss of sovereignty is also costly, for instance. Once you factor in such losses, the top-down approach stops screaming efficiency.
 
-There is this project called [OpenKnit](https://openknit.org/), and its poetic significance is obscured by the myth of apolitical technology. It is a knitting machine whose design can be freely accessed and forked into new versions, a machine that can be assembled for cheap from off-the-shelf parts and disassembled back into them, and one that allows users to "print" exactly the clothing they need, locally.
+There is this project called [OpenKnit](https://openknit.org/), and its poetic significance is obscured by the myth of apolitical technology. It is a knitting machine whose design can be freely accessed and forked into new versions, a machine that can be assembled for cheap from off-the-shelf parts and disassembled back into them, and one that allows users to "print" exactly the clothing they need, locally. Move from a proprietary smartwatch to one that you can build yourself, not to an analog one built by a different company.
 
 <div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_6.svg" alt="">

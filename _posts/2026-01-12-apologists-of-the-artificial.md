@@ -66,7 +66,7 @@ Increasingly, people wake up to the fact that we do not own many of the things w
 
 Consider the beautiful absurdity of flipping the script in its entirety, such that not only would people reclaim ownership of the things they used to own until not so long ago, but they would also own the very digital infrastructure that powers the services they depend on. The "reverse Uno card" that civil society should play if there ever was one.
 
-We might look back on today's organization of property in the same way we will cringe at the twisted rhetoric of empowering people to integrate into the labor market. Not only are people forced to give away the majority of their waking hours in exchange for affording food and shelter, but getting to do so should be regarded as an opportunity to be grateful for. The mind will boggle.
+We might look back on today's organization of property in the same way we will cringe at the twisted rhetoric of  empowering people to integrate into the labor market. Not only are people forced to give away the majority of their waking hours in exchange for affording food and shelter, but getting to do so should be regarded as an opportunity to be grateful for. The mind will boggle.
 
 <div class="separator">
   <img src="/generators/field/outputs/field_31.svg" alt="">
