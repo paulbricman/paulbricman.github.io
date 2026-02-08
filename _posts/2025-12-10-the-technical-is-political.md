@@ -79,4 +79,14 @@ What did it take for one of these to get here? What is it made of? What lies beh
   <img src="/generators/roots/curated/root_system_22.svg" alt="">
 </div>
 
+Von Neumann's work on self-replicating machines and NASA's work on self-sufficient settlements contain further vocabulary for describing technology and dependence. Consider a set of different machines that can be used for digital fabrication, including perhaps a 3D printer, a CNC mill, a pick-and-place, and so on. We could refer to this collection of machines as a "basis set" or "constructor kernel." Any device that can be manufactured using this collection of machines can be said to be part of its "constructible set."
+
+Of particular interest is the extent to which the machines themselves can be manufactured using the collection they are part of, also known as "closure." More specifically, we could use "closure by weight" to describe the percentage of the kernel's mass that can be manufactured from ambient resources using the machines contained within it. Similarly, we could talk of "closure by parts" to describe the proportion of unique parts contained in these machines that can be produced by them.
+
+Certain machines can also be seen as unlocking ambient resources that would otherwise not be available as abundant raw materials. For instance, pick-and-place machines are typically used to assemble chips on circuit boards. However, if modified to instead _harvest_ chips from e-waste boards, they would effectively bring many integrated circuits under ambient resources. In the same vein, extruders can turn certain varieties of plastic waste into filament that can be printed into objects anew, similarly turning filament into an abundant resource.
+
+<div class="separator compact-separator">
+  <img src="/generators/roots/curated/root_system_25.svg" alt="">
+</div>
+
 To grow to new heights without falling over, you must first grow into new depths.
