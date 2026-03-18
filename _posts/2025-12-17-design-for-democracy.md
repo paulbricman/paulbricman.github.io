@@ -85,6 +85,18 @@ How different would computing feel if important actions were authorized not down
 Secret sharing is the flavor of cryptography focused on distributing keys in such a way that any group can reveal the secret as long as they reach the quorum. Say there are three people and the intended quorum is two. First, pick four points on a line. Second, share the two coordinates of a different point with each person. Finally, give everyone the first coordinate of the remaining point. The remaining coordinate is the secret. Any two people can reconstruct the line using their own two points and read off the second coordinate of the remaining point. The password is effectively placed "in superposition" across people, enabling new social modes.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
+  <img src="/generators/lattices/outputs/lattice_11.svg" alt="" style="width: 100%;">
+</div>
+
+There is a natural tension between a digital ecosystem that is decentralized to the point of being disjointed and one that is integrated to the point of being a walled garden. The former is radically organic and vernacular, while the latter is radically coherent and elegant.
+
+There is a way to strike a balance between the two. Consider neither the image of a walled estate nor that of a wild west, but the hospitality of a welcoming town. Its membrane is porous enough to encourage citizens to travel far and wide, but at the same time retain the coherent contour of its facilities and culture.
+
+We can apply the metaphor to digital services more concretely. A local search engine can plug into a local index, but it can also include results from external indices. A messaging platform can allow locals to chat, but also help them chat with users elsewhere. A streaming platform can serve users from local archives, but can also draw from external mirrors. This is essentially the same push towards a genuinely federated and interoperable internet based on open standards, only extrapolated beyond the social media focus of the "fediverse."
+
+The porous model also has fascinating implications in terms of security when applied at the datacenter level. If any user can touch the actual physical servers, then any service running there seems compromised from the get-go. However, if these apps were configured to only handle personal data using end-to-end encryption, then a breach would leave attackers with little more than unintelligible blobs. If user data never touches the servers in plaintext, then there is nothing to leak. The town roads are open to all, yet secure transporters carry user data around when needed.
+
+<div class="separator" style="width: 55%; margin: 3rem 0;">
   <img src="/generators/lattices/outputs/lattice_10.svg" alt="" style="width: 100%;">
 </div>
 
