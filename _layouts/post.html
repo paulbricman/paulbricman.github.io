@@ -49,6 +49,45 @@
         display: block;
         object-fit: contain;
       }
+      .separator.stream-circle {
+        width: 55%;
+        max-width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4.5rem 0;
+        padding: 1.5rem 0;
+        box-sizing: border-box;
+      }
+      .separator.stream-circle img {
+        width: calc(100% / 3);
+        max-width: calc(100% / 3);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        border: 2px solid white;
+        box-sizing: border-box;
+        display: block;
+      }
+      {% if page.generator == 'formulas' %}
+      hr {
+        display: none;
+      }
+      section .separator {
+        width: 55% !important;
+        max-width: 55% !important;
+        box-sizing: border-box;
+      }
+      section .separator img {
+        width: 84% !important;
+        max-width: 84% !important;
+        height: auto !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      {% endif %}
       .compact-separator {
         margin: 5rem 0 0 0;
       }
@@ -61,10 +100,47 @@
         }
         .separator {
           width: 100% !important;
+          max-width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          box-sizing: border-box;
         }
         .separator img {
           width: 100% !important;
+          max-width: 100% !important;
         }
+        .separator.stream-circle {
+          width: 100% !important;
+          max-width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        .separator.stream-circle img {
+          width: min(20rem, 86%) !important;
+          max-width: min(20rem, 86%) !important;
+          height: auto !important;
+          margin-left: auto;
+          margin-right: auto;
+          flex-shrink: 0;
+        }
+        {% if page.generator == 'formulas' %}
+        section .separator {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+          justify-content: center;
+          align-items: center;
+        }
+        section .separator img {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        {% endif %}
       }
     </style>
   </head>

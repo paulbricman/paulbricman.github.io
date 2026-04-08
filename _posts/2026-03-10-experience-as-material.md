@@ -16,7 +16,7 @@ At the other end of the spectrum, we find the works of the [Odyssey art collecti
 
 "You can't go back to being a passive observer of your life after that. You realize your life is a series of choices that actually affect the people around you." "The piece had successfully trained me to look at every human being with the intensity usually reserved for a protagonist. It turns the volume up on the world until the world itself becomes the art." "For the first time in my adult life, the world felt like it was speaking directly to me. I realized then: The world is not indifferent."
 
-<div class="separator" style="border: 2px solid white; padding: 0;">
+<div class="separator stream-circle">
   <img src="/generators/streams/outputs/stream_0.svg" alt="">
 </div>
 
@@ -24,13 +24,13 @@ One could be forgiven for not expecting the handful of interface components avai
 
 The canvas of designed experience beyond the screen is similarly generative. Think of how a handful of shared patterns across tabletop games can lead to an endless stream of qualitatively different experiences. The social deduction of not knowing who was picked. The interpersonal communication forced through artificial constraints. The strategic trading of scarce resources. And we might barely be scratching the surface because of how easy it is to conflate the canvas of screens or tabletops with the canvas of mind.
 
-<div class="separator" style="border: 2px solid white; padding: 0;">
-  <img src="/generators/streams/outputs/stream_1.svg" alt="">
+<div class="separator stream-circle">
+  <img src="/generators/streams/outputs/stream_8.svg" alt="">
 </div>
 
 If a group of people take part in a workshop focused on contributing a new server to a cooperative datacenter, the output of that workshop is more than the terabytes of storage or the teraflops of compute that have been pooled in. The output also involves the fact that a handful of people have each gained a bit of the know-how and confidence necessary to reclaim technology. Just like raw hardware can scale to petabytes of storage and petaflops of compute, this qualitative output could perhaps scale to resilient communities that can genuinely look after themselves technologically.
 
-<div class="separator" style="border: 2px solid white; padding: 0;">
+<div class="separator stream-circle">
   <img src="/generators/streams/outputs/stream_3.svg" alt="">
 </div>
 
@@ -42,7 +42,7 @@ A solution to scaling experience comes from the genre of "bring your own device"
 
 Addressing the facilitator's traditional responsibilities requires some creativity. Keeping track of schedule can happen by moving to new segments automatically when participants are done. The media system can also keep track of whose turn it is and randomize the order, as well as narrate bits of content directly. And when it comes to tracking materials and answering questions, integrations with an inventory and knowledge base can provide the needed grounding.
 
-<div class="separator" style="border: 2px solid white; padding: 0;">
+<div class="separator stream-circle">
   <img src="/generators/streams/outputs/stream_4.svg" alt="">
 </div>
 
@@ -50,7 +50,7 @@ In the same way as product designers focus on making products ergonomic such tha
 
 And just as physical products benefit from rapid prototyping methods that enable designers to quickly move from one revision to the next, so can experiences benefit from methods of efficiently "playtesting" better ways in which activities could unfold. In particular, taking an interactive media system and making it easily configurable and parametric can drastically lower the bar to trying out variations to previous formats.
 
-<div class="separator" style="border: 2px solid white; padding: 0;">
+<div class="separator stream-circle">
   <img src="/generators/streams/outputs/stream_5.svg" alt="">
 </div>
 
@@ -60,7 +60,7 @@ In this frame, facilitating the diffusion of knowledge across participants becom
 
 The second script is concerned with contacting a disinterested customer support agent when lacking the knowledge to address an issue with a product. At its best, seeking help from someone more knowledgeable when things go sideways can be an opportunity for genuine interaction inside a community, an opportunity to bring members closer through shared experience. It also represents a chance to diffuse that knowledge ever so slightly in a way that can later benefit others.
 
-<div class="separator" style="border: 2px solid white; padding: 0;">
+<div class="separator stream-circle">
   <img src="/generators/streams/outputs/stream_6.svg" alt="">
 </div>
 

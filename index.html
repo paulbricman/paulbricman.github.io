@@ -28,10 +28,10 @@ layout: default
     </p>
   </div>
   {% assign sorted_posts = site.posts | reverse %} {% for post in sorted_posts
-  limit:4 %} {% if post.generator %}
+  limit:5 %} {% if post.generator %}
   <a
     href="{{ post.url }}"
-    class="grid-item"
+    class="grid-item{% if post.generator == 'formulas' %} grid-item-formulas{% endif %}"
     style="background-color: {{ post.background_color }}; color: {{ post.text_color }};"
   >
     <h3 {% if post.generator == 'field' %}style="letter-spacing: 0.35em;"{% endif %}>{{ post.title }}</h3>
@@ -52,11 +52,15 @@ layout: default
       style="position: absolute; top: 76%; left: 50%; transform: translate(-50%, -50%); width: 75%; z-index: 1;"
     />
     {% elsif post.generator == 'streams' %}
-    <img
-      src="/generators/streams/curated/stream_cover.svg"
-      alt=""
-      style="position: absolute; top: 51%; left: 50%; transform: translate(-50%, -50%); width: 78%; height: auto; z-index: 1; border: 2px solid white;"
-    />
+    <div class="stream-tile-frame">
+      <img src="/generators/streams/curated/stream_cover.svg" alt="" />
+    </div>
+    {% elsif post.generator == 'formulas' %}
+    <img src="/generators/formulas/curated/cover_00.svg" alt="" />
+    <img src="/generators/formulas/curated/cover_01.svg" alt="" />
+    <img src="/generators/formulas/curated/cover_02.svg" alt="" />
+    <img src="/generators/formulas/curated/cover_03.svg" alt="" />
+    <img src="/generators/formulas/curated/cover_04.svg" alt="" />
     {% else %} <img src="/generators/{{ post.generator }}/curated/{% if
     post.generator == 'roots' %}root_system_4.svg{% elsif post.generator ==
     'lattices' %}lattice_0.svg{% endif %}" alt="" {% if post.generator ==
@@ -72,7 +76,4 @@ layout: default
     <h3>{{ post.title }}</h3>
   </a>
   {% endif %} {% endfor %}
-  <div class="grid-item grid-item-tbd" style="background-color: #4169e1">
-    <span>···</span>
-  </div>
 </div>
