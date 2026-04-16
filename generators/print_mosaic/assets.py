@@ -74,6 +74,18 @@ def formula_cover_paths() -> list[Path]:
     return [base / f"cover_{i:02d}.svg" for i in range(5)]
 
 
+def formulas_strip_pool() -> list[Path]:
+    """Curated covers + inline strips (white art); each mosaic strip picks independently."""
+    base = GENERATORS / "formulas" / "curated"
+    out: list[Path] = []
+    for p in formula_cover_paths():
+        if p.is_file():
+            out.append(p)
+    inlines = sorted(base.glob("inline_*.svg"), key=_stem_num)
+    _dedupe_extend(out, inlines)
+    return out or [base / "cover_00.svg"]
+
+
 def lattices_pool() -> list[Path]:
     base = GENERATORS / "lattices"
     out: list[Path] = []

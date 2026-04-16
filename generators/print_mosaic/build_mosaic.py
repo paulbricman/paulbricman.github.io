@@ -7,12 +7,12 @@ square. Zine order matches index.html (site.posts | reverse): roots → lattices
 field → streams → formulas. Tiles use curated / article-referenced SVGs.
 
   python3 generators/print_mosaic/build_mosaic.py --face front --out /tmp/front.svg
-  python3 generators/print_mosaic/build_mosaic.py --grid 12 --both --out /tmp/mosaic --png
+  python3 generators/print_mosaic/build_mosaic.py --grid 12 --out /tmp/mosaic.svg --png
 
-Committed sample:
+Committed sample (one file for print front/back):
 
-  python3 generators/print_mosaic/build_mosaic.py --both --master-seed 0 \\
-    --out generators/print_mosaic/samples/mosaic_sample
+  python3 generators/print_mosaic/build_mosaic.py --master-seed 0 \\
+    --out generators/print_mosaic/samples/mosaic_sample.svg
 """
 
 from __future__ import annotations

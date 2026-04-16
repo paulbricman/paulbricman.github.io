@@ -9,7 +9,7 @@ from pathlib import Path
 
 from assets import (
     field_pool,
-    formula_cover_paths,
+    formulas_strip_pool,
     lattices_pool,
     pick_cell,
     roots_pool,
@@ -165,7 +165,7 @@ def render_tile(
     if generator_id == "streams":
         return _cover_streams(spec, seed, grid_row, grid_col)
     if generator_id == "formulas":
-        return _cover_formulas(spec, seed)
+        return _cover_formulas(spec, seed, grid_row, grid_col)
     if generator_id == "lattices":
         return _cover_lattices(spec, seed, grid_row, grid_col)
     if generator_id == "roots":
@@ -240,26 +240,28 @@ def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     return _to_doc(root)
 
 
-def _cover_formulas(spec: ZineSpec, seed: int) -> str:
+def _cover_formulas(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     root = _svg_open(spec)
-    paths = formula_cover_paths()
-    strip_h = COVER_H * 0.148
-    gap = COVER_H * 0.01
+    pool = formulas_strip_pool()
+    strip_h = COVER_H * 0.1365
+    gap = COVER_H * 0.011
     stack_h = 5 * strip_h + 4 * gap
     y0 = (COVER_H - stack_h) / 2
-    for i, path in enumerate(paths):
+    zoom = 1.26
+    for i in range(5):
+        path = pick_cell(pool, seed, row, col, i)
         if not path.is_file():
             continue
-        kids, vb = _clone_file(path, f"_m{seed}_{i}_{path.stem}")
+        kids, vb = _clone_file(path, f"_m{seed}_{row}_{col}_{i}_{path.stem}")
         y = y0 + i * (strip_h + gap)
-        zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.52)
+        zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], zoom)
         inner = ET.SubElement(root, f"{{{NS}}}svg")
         inner.set("x", "0")
         inner.set("y", f"{y:.2f}")
         inner.set("width", str(COVER_W))
         inner.set("height", f"{strip_h:.2f}")
         inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
-        inner.set("preserveAspectRatio", "xMidYMid slice")
+        inner.set("preserveAspectRatio", "xMidYMid meet")
         for ch in kids:
             inner.append(ch)
     return _to_doc(root)
@@ -270,20 +272,20 @@ def _cover_lattices(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     pool = lattices_pool()
     path = pick_cell(pool, seed, row, col, 0)
     kids, vb = _clone_file(path, f"_l{seed}_{row}_{col}_{path.stem}")
-    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.06)
-    art_w = COVER_W * 0.90
-    art_h = COVER_H * 0.66
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.14)
+    art_w = COVER_W * 0.94
+    art_h = COVER_H * 0.72
     cx = COVER_W / 2
     cy = COVER_H / 2
     g = ET.SubElement(root, f"{{{NS}}}g")
-    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.12)")
+    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.2)")
     inner = ET.SubElement(g, f"{{{NS}}}svg")
     inner.set("x", f"{-art_w / 2:.2f}")
     inner.set("y", f"{-art_h / 2:.2f}")
     inner.set("width", f"{art_w:.2f}")
     inner.set("height", f"{art_h:.2f}")
     inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
-    inner.set("preserveAspectRatio", "xMidYMid meet")
+    inner.set("preserveAspectRatio", "xMidYMid slice")
     for ch in kids:
         inner.append(ch)
     return _to_doc(root)
@@ -294,9 +296,8 @@ def _cover_roots(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     pool = roots_pool()
     path = pick_cell(pool, seed, row, col, 0)
     kids, vb = _clone_file(path, f"_r{seed}_{row}_{col}_{path.stem}")
-    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.1)
-    art_w = COVER_W * 1.06
-    art_h = COVER_H * 0.90
+    art_w = COVER_W * 1.0
+    art_h = COVER_H * 0.82
     x0 = (COVER_W - art_w) / 2
     y0 = (COVER_H - art_h) / 2
     inner = ET.SubElement(root, f"{{{NS}}}svg")
@@ -304,7 +305,7 @@ def _cover_roots(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     inner.set("y", f"{y0:.2f}")
     inner.set("width", f"{art_w:.2f}")
     inner.set("height", f"{art_h:.2f}")
-    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
+    inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
     inner.set("preserveAspectRatio", "xMidYMid slice")
     for ch in kids:
         inner.append(ch)
