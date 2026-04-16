@@ -193,7 +193,7 @@ def _cover_field(spec: ZineSpec, seed: int, row: int, col: int) -> str:
         inner.set("width", f"{strip_w:.2f}")
         inner.set("height", f"{strip_h:.2f}")
         inner.set("viewBox", f"{nx:.4f} {ny:.4f} {nw:.4f} {nh:.4f}")
-        inner.set("preserveAspectRatio", "xMidYMid meet")
+        inner.set("preserveAspectRatio", "xMidYMid slice")
         for ch in kids:
             inner.append(ch)
     return _to_doc(root)
@@ -220,13 +220,12 @@ def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
 
     g = ET.SubElement(root, f"{{{NS}}}g")
     g.set("clip-path", f"url(#{clip_id})")
-    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.22)
     inner = ET.SubElement(g, f"{{{NS}}}svg")
     inner.set("x", f"{cx - r:.3f}")
     inner.set("y", f"{cy - r:.3f}")
     inner.set("width", f"{frame:.3f}")
     inner.set("height", f"{frame:.3f}")
-    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
+    inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
     inner.set("preserveAspectRatio", "xMidYMid slice")
     for ch in kids:
         inner.append(ch)
@@ -244,8 +243,8 @@ def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
 def _cover_formulas(spec: ZineSpec, seed: int) -> str:
     root = _svg_open(spec)
     paths = formula_cover_paths()
-    strip_h = COVER_H * 0.125
-    gap = COVER_H * 0.012
+    strip_h = COVER_H * 0.148
+    gap = COVER_H * 0.01
     stack_h = 5 * strip_h + 4 * gap
     y0 = (COVER_H - stack_h) / 2
     for i, path in enumerate(paths):
@@ -253,13 +252,14 @@ def _cover_formulas(spec: ZineSpec, seed: int) -> str:
             continue
         kids, vb = _clone_file(path, f"_m{seed}_{i}_{path.stem}")
         y = y0 + i * (strip_h + gap)
+        zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.52)
         inner = ET.SubElement(root, f"{{{NS}}}svg")
         inner.set("x", "0")
         inner.set("y", f"{y:.2f}")
         inner.set("width", str(COVER_W))
         inner.set("height", f"{strip_h:.2f}")
-        inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
-        inner.set("preserveAspectRatio", "xMidYMid meet")
+        inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
+        inner.set("preserveAspectRatio", "xMidYMid slice")
         for ch in kids:
             inner.append(ch)
     return _to_doc(root)
@@ -270,20 +270,20 @@ def _cover_lattices(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     pool = lattices_pool()
     path = pick_cell(pool, seed, row, col, 0)
     kids, vb = _clone_file(path, f"_l{seed}_{row}_{col}_{path.stem}")
-    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.36)
-    art_w = COVER_W * 1.02
-    art_h = COVER_H * 0.82
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.06)
+    art_w = COVER_W * 0.90
+    art_h = COVER_H * 0.66
     cx = COVER_W / 2
     cy = COVER_H / 2
     g = ET.SubElement(root, f"{{{NS}}}g")
-    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.28)")
+    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.12)")
     inner = ET.SubElement(g, f"{{{NS}}}svg")
     inner.set("x", f"{-art_w / 2:.2f}")
     inner.set("y", f"{-art_h / 2:.2f}")
     inner.set("width", f"{art_w:.2f}")
     inner.set("height", f"{art_h:.2f}")
     inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
-    inner.set("preserveAspectRatio", "xMidYMid slice")
+    inner.set("preserveAspectRatio", "xMidYMid meet")
     for ch in kids:
         inner.append(ch)
     return _to_doc(root)
@@ -294,9 +294,9 @@ def _cover_roots(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     pool = roots_pool()
     path = pick_cell(pool, seed, row, col, 0)
     kids, vb = _clone_file(path, f"_r{seed}_{row}_{col}_{path.stem}")
-    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.42)
-    art_w = COVER_W * 1.24
-    art_h = COVER_H * 1.02
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.1)
+    art_w = COVER_W * 1.06
+    art_h = COVER_H * 0.90
     x0 = (COVER_W - art_w) / 2
     y0 = (COVER_H - art_h) / 2
     inner = ET.SubElement(root, f"{{{NS}}}svg")
