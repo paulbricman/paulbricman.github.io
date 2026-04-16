@@ -1,20 +1,17 @@
 #!/usr/bin/env python3
 """
-A5 portrait mosaic: rectangular grid of homepage-style zine covers, cycling 1..5.
+A5 portrait mosaic: N×N grid of A5-aspect cover tiles on an A5 page (rows = cols).
 
-Zine order matches index.html (site.posts | reverse): roots → lattices → field →
-streams → formulas. Tiles use curated / article-referenced SVGs under generators/.
+Each tile uses the same portrait aspect as the page (148:210), so the grid must be
+square. Zine order matches index.html (site.posts | reverse): roots → lattices →
+field → streams → formulas. Tiles use curated / article-referenced SVGs.
 
   python3 generators/print_mosaic/build_mosaic.py --face front --out /tmp/front.svg
-  python3 generators/print_mosaic/build_mosaic.py --cols 44 --rows 16 --both --out /tmp/mosaic --png
-
-Square grid:
-
-  python3 generators/print_mosaic/build_mosaic.py --grid 24 --out /tmp/square.svg
+  python3 generators/print_mosaic/build_mosaic.py --grid 26 --both --out /tmp/mosaic --png
 
 Committed sample:
 
-  python3 generators/print_mosaic/build_mosaic.py --cols 10 --rows 4 --both --master-seed 0 \\
+  python3 generators/print_mosaic/build_mosaic.py --grid 10 --both --master-seed 0 \\
     --out generators/print_mosaic/samples/mosaic_sample
 """
 
@@ -83,26 +80,25 @@ def _intrinsic_viewbox(root: ET.Element) -> tuple[float, float, float, float]:
 
 
 def build_mosaic_svg(
-    grid_cols: int,
-    grid_rows: int,
+    grid_n: int,
     face: Face,
     master_seed: int,
 ) -> str:
-    if grid_cols < 1 or grid_rows < 1:
-        raise ValueError("grid_cols and grid_rows must be >= 1")
+    if grid_n < 1:
+        raise ValueError("grid must be >= 1")
 
     page_w, page_h = 148.0, 210.0
-    cell_w = page_w / grid_cols
-    cell_h = page_h / grid_rows
+    cell_w = page_w / grid_n
+    cell_h = page_h / grid_n
 
     root = ET.Element(f"{{{NS}}}svg")
     root.set("width", f"{page_w}mm")
     root.set("height", f"{page_h}mm")
     root.set("viewBox", f"0 0 {page_w} {page_h}")
 
-    for row in range(grid_rows):
-        for col in range(grid_cols):
-            gen = generator_for_cell(row, col, grid_cols)
+    for row in range(grid_n):
+        for col in range(grid_n):
+            gen = generator_for_cell(row, col, grid_n)
             bg = ZINE_BACKGROUND[gen]
             seed = cell_seed(master_seed, face, row, col)
             doc = render_tile(
@@ -166,22 +162,10 @@ def _write_png(svg_path: Path, png_path: Path) -> None:
 def main() -> None:
     p = argparse.ArgumentParser(description="A5 zine cover mosaic from curated/article SVGs (optional PNG).")
     p.add_argument(
-        "--cols",
-        type=int,
-        default=42,
-        help="Number of columns (horizontal tiles). Default 42 for a dense sheet.",
-    )
-    p.add_argument(
-        "--rows",
-        type=int,
-        default=16,
-        help="Number of rows (vertical tiles). Default 16.",
-    )
-    p.add_argument(
         "--grid",
         type=int,
-        default=None,
-        help="If set, square N×N grid (overrides --cols and --rows).",
+        default=24,
+        help="N×N square grid (default 24). Rows must equal cols so each tile matches A5 aspect.",
     )
     p.add_argument(
         "--face",
@@ -199,13 +183,9 @@ def main() -> None:
     )
     p.add_argument("--png", action="store_true", help="Also rasterize at 300 DPI via rsvg-convert.")
     args = p.parse_args()
-    if args.grid is not None:
-        cols = rows = args.grid
-    else:
-        cols, rows = args.cols, args.rows
 
     def run_face(face: Face, out_svg: Path) -> None:
-        svg = build_mosaic_svg(cols, rows, face, args.master_seed)
+        svg = build_mosaic_svg(args.grid, face, args.master_seed)
         out_svg.parent.mkdir(parents=True, exist_ok=True)
         out_svg.write_text(svg, encoding="utf-8")
         print(f"Wrote {out_svg}")

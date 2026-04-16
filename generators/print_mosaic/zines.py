@@ -28,13 +28,13 @@ ZINE_BACKGROUND: dict[str, str] = {z.key: z.background for z in ZINES}
 Face = Literal["front", "back"]
 
 
-def zine_spec_for_cell(row: int, col: int, grid_cols: int) -> ZineSpec:
-    i = row * grid_cols + col
+def zine_spec_for_cell(row: int, col: int, grid_n: int) -> ZineSpec:
+    i = row * grid_n + col
     return ZINES[i % len(ZINES)]
 
 
-def generator_for_cell(row: int, col: int, grid_cols: int) -> str:
-    return zine_spec_for_cell(row, col, grid_cols).key
+def generator_for_cell(row: int, col: int, grid_n: int) -> str:
+    return zine_spec_for_cell(row, col, grid_n).key
 
 
 def cell_seed(master_seed: int, face: Face, row: int, col: int) -> int:
