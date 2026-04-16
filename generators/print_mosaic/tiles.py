@@ -88,6 +88,47 @@ def _clone_file(path: Path, id_suffix: str) -> tuple[list[ET.Element], tuple[flo
     return _clone_children_of_svg(path.read_text(encoding="utf-8"), id_suffix)
 
 
+def _viewbox_center_crop_to_aspect(
+    vx: float,
+    vy: float,
+    vw: float,
+    vh: float,
+    aspect_w: float,
+    aspect_h: float,
+) -> tuple[float, float, float, float]:
+    """Center-crop intrinsic (vx,vy,vw,vh) to match aspect_w:aspect_h (same for every strip)."""
+    want = aspect_w / aspect_h
+    have = vw / vh
+    if have > want:
+        nw = vh * want
+        nh = vh
+        nx = vx + (vw - nw) / 2.0
+        ny = vy
+    else:
+        nw = vw
+        nh = vw / want
+        nx = vx
+        ny = vy + (vh - nh) / 2.0
+    return nx, ny, nw, nh
+
+
+def _viewbox_zoom_center(
+    vx: float,
+    vy: float,
+    vw: float,
+    vh: float,
+    zoom: float,
+) -> tuple[float, float, float, float]:
+    """zoom > 1 crops to a smaller centered window (magnified when scaled to same output)."""
+    if zoom <= 1.0:
+        return vx, vy, vw, vh
+    nw = vw / zoom
+    nh = vh / zoom
+    nx = vx + (vw - nw) / 2.0
+    ny = vy + (vh - nh) / 2.0
+    return nx, ny, nw, nh
+
+
 def _svg_open(spec: ZineSpec) -> ET.Element:
     root = ET.Element(f"{{{NS}}}svg")
     root.set("width", str(COVER_W))
@@ -145,13 +186,14 @@ def _cover_field(spec: ZineSpec, seed: int, row: int, col: int) -> str:
         path = pick_cell(pool, seed, row, col, i)
         kids, vb = _clone_file(path, f"_f{seed}_{row}_{col}_{i}_{path.stem}")
         y = y0 + i * (strip_h + gap)
+        nx, ny, nw, nh = _viewbox_center_crop_to_aspect(vb[0], vb[1], vb[2], vb[3], strip_w, strip_h)
         inner = ET.SubElement(root, f"{{{NS}}}svg")
         inner.set("x", f"{x0:.2f}")
         inner.set("y", f"{y:.2f}")
         inner.set("width", f"{strip_w:.2f}")
         inner.set("height", f"{strip_h:.2f}")
-        inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
-        inner.set("preserveAspectRatio", "xMidYMid slice")
+        inner.set("viewBox", f"{nx:.4f} {ny:.4f} {nw:.4f} {nh:.4f}")
+        inner.set("preserveAspectRatio", "xMidYMid meet")
         for ch in kids:
             inner.append(ch)
     return _to_doc(root)
@@ -178,12 +220,13 @@ def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
 
     g = ET.SubElement(root, f"{{{NS}}}g")
     g.set("clip-path", f"url(#{clip_id})")
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.22)
     inner = ET.SubElement(g, f"{{{NS}}}svg")
     inner.set("x", f"{cx - r:.3f}")
     inner.set("y", f"{cy - r:.3f}")
     inner.set("width", f"{frame:.3f}")
     inner.set("height", f"{frame:.3f}")
-    inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
+    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
     inner.set("preserveAspectRatio", "xMidYMid slice")
     for ch in kids:
         inner.append(ch)
@@ -227,19 +270,20 @@ def _cover_lattices(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     pool = lattices_pool()
     path = pick_cell(pool, seed, row, col, 0)
     kids, vb = _clone_file(path, f"_l{seed}_{row}_{col}_{path.stem}")
-    art_w = COVER_W * 0.92
-    art_h = COVER_H * 0.68
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.36)
+    art_w = COVER_W * 1.02
+    art_h = COVER_H * 0.82
     cx = COVER_W / 2
     cy = COVER_H / 2
     g = ET.SubElement(root, f"{{{NS}}}g")
-    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.16)")
+    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.28)")
     inner = ET.SubElement(g, f"{{{NS}}}svg")
     inner.set("x", f"{-art_w / 2:.2f}")
     inner.set("y", f"{-art_h / 2:.2f}")
     inner.set("width", f"{art_w:.2f}")
     inner.set("height", f"{art_h:.2f}")
-    inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
-    inner.set("preserveAspectRatio", "xMidYMid meet")
+    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
+    inner.set("preserveAspectRatio", "xMidYMid slice")
     for ch in kids:
         inner.append(ch)
     return _to_doc(root)
@@ -250,9 +294,9 @@ def _cover_roots(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     pool = roots_pool()
     path = pick_cell(pool, seed, row, col, 0)
     kids, vb = _clone_file(path, f"_r{seed}_{row}_{col}_{path.stem}")
-    # Zoom: oversized art + slice crops to fill tile (larger apparent diagram)
-    art_w = COVER_W * 1.12
-    art_h = COVER_H * 0.92
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.42)
+    art_w = COVER_W * 1.24
+    art_h = COVER_H * 1.02
     x0 = (COVER_W - art_w) / 2
     y0 = (COVER_H - art_h) / 2
     inner = ET.SubElement(root, f"{{{NS}}}svg")
@@ -260,7 +304,7 @@ def _cover_roots(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     inner.set("y", f"{y0:.2f}")
     inner.set("width", f"{art_w:.2f}")
     inner.set("height", f"{art_h:.2f}")
-    inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
+    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
     inner.set("preserveAspectRatio", "xMidYMid slice")
     for ch in kids:
         inner.append(ch)

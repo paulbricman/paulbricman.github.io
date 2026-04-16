@@ -7,11 +7,11 @@ square. Zine order matches index.html (site.posts | reverse): roots → lattices
 field → streams → formulas. Tiles use curated / article-referenced SVGs.
 
   python3 generators/print_mosaic/build_mosaic.py --face front --out /tmp/front.svg
-  python3 generators/print_mosaic/build_mosaic.py --grid 26 --both --out /tmp/mosaic --png
+  python3 generators/print_mosaic/build_mosaic.py --grid 12 --both --out /tmp/mosaic --png
 
 Committed sample:
 
-  python3 generators/print_mosaic/build_mosaic.py --grid 10 --both --master-seed 0 \\
+  python3 generators/print_mosaic/build_mosaic.py --both --master-seed 0 \\
     --out generators/print_mosaic/samples/mosaic_sample
 """
 
@@ -164,8 +164,8 @@ def main() -> None:
     p.add_argument(
         "--grid",
         type=int,
-        default=24,
-        help="N×N square grid (default 24). Rows must equal cols so each tile matches A5 aspect.",
+        default=7,
+        help="N×N square grid (default 7). Rows must equal cols so each tile matches A5 aspect.",
     )
     p.add_argument(
         "--face",
