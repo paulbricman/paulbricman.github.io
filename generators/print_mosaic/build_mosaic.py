@@ -1,26 +1,22 @@
 #!/usr/bin/env python3
 """
-A5 portrait mosaic: N×N grid of procedural zine covers, cycling generators 1..5.
+A5 portrait mosaic: N×N grid of homepage-style zine covers, cycling 1..5.
 
-Fonts: formula tiles use STIX via @import; rsvg-convert may not load remote fonts.
-Use a browser or Inkscape for final print proof, or install STIX locally.
+Tiles embed curated / article-referenced SVGs from generators/ (no live formula
+generation). Formula strips use generators/formulas/curated/cover_00..04.
 
   python3 generators/print_mosaic/build_mosaic.py --face front --out /tmp/front.svg
-  python3 generators/print_mosaic/build_mosaic.py --grid 14 --both --out /tmp/mosaic --png
-
-Icons for formulas: set PIXELARTICONS_SVG_DIR or pass --icons-root.
+  python3 generators/print_mosaic/build_mosaic.py --grid 22 --both --out /tmp/mosaic --png
 
 Committed sample (regenerate after changing tile logic):
 
   python3 generators/print_mosaic/build_mosaic.py --grid 4 --both --master-seed 0 \\
-    --icons-root "$PIXELARTICONS_SVG_DIR" \\
     --out generators/print_mosaic/samples/mosaic_sample
 """
 
 from __future__ import annotations
 
 import argparse
-import os
 import re
 import subprocess
 import sys
@@ -86,8 +82,6 @@ def build_mosaic_svg(
     grid_n: int,
     face: Face,
     master_seed: int,
-    *,
-    icons_root: Path | None,
 ) -> str:
     if grid_n < 1:
         raise ValueError("grid must be >= 1")
@@ -106,7 +100,7 @@ def build_mosaic_svg(
             gen = generator_for_cell(row, col, grid_n)
             bg = ZINE_BACKGROUND[gen]
             seed = cell_seed(master_seed, face, row, col)
-            doc = render_tile(gen, seed, tile_background=bg, icons_root=icons_root)
+            doc = render_tile(gen, seed, tile_background=bg)
             tile_root = _parse_svg_fragment(doc)
             suffix = f"_{row}_{col}"
             _uniquify_ids(tile_root, suffix)
@@ -130,15 +124,6 @@ def build_mosaic_svg(
 
     body = ET.tostring(root, encoding="unicode")
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + body
-
-
-def _default_icons_root() -> Path | None:
-    env = os.environ.get("PIXELARTICONS_SVG_DIR")
-    if env:
-        p = Path(env).expanduser().resolve()
-        if p.is_dir():
-            return p
-    return None
 
 
 def _write_png(svg_path: Path, png_path: Path) -> None:
@@ -168,12 +153,12 @@ def _write_png(svg_path: Path, png_path: Path) -> None:
 
 
 def main() -> None:
-    p = argparse.ArgumentParser(description="A5 procedural zine cover mosaic (SVG, optional PNG).")
+    p = argparse.ArgumentParser(description="A5 zine cover mosaic from curated/article SVGs (optional PNG).")
     p.add_argument(
         "--grid",
         type=int,
-        default=12,
-        help="N for N×N square grid (default 12). Use 8–16+ for a dense print sheet.",
+        default=20,
+        help="N for N×N square grid (default 20). Use 16–28+ for a very dense A5 sheet.",
     )
     p.add_argument(
         "--face",
@@ -190,18 +175,10 @@ def main() -> None:
         help="Output .svg path, or directory/base when using --both (front.svg / back.svg).",
     )
     p.add_argument("--png", action="store_true", help="Also rasterize at 300 DPI via rsvg-convert.")
-    p.add_argument(
-        "--icons-root",
-        type=Path,
-        default=None,
-        help="Pixelarticons SVG directory (formulas). Defaults to PIXELARTICONS_SVG_DIR.",
-    )
     args = p.parse_args()
 
-    icons = args.icons_root.expanduser().resolve() if args.icons_root else _default_icons_root()
-
     def run_face(face: Face, out_svg: Path) -> None:
-        svg = build_mosaic_svg(args.grid, face, args.master_seed, icons_root=icons)
+        svg = build_mosaic_svg(args.grid, face, args.master_seed)
         out_svg.parent.mkdir(parents=True, exist_ok=True)
         out_svg.write_text(svg, encoding="utf-8")
         print(f"Wrote {out_svg}")
