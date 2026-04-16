@@ -32,6 +32,18 @@ Show me the personal lifestyle and I will show you the belief system that happen
   <img src="/generators/formulas/curated/inline_02.svg" alt="">
 </div>
 
+The world is far too complex for any one human or machine to navigate it entirely from first principles. The vast majority of the thoughts we think, they are lifted from the shared cache of ideas that we call culture or common sense. If you were to rederive an appropriate approach to every situation you encounter from set theory onwards, you would die of hunger before inferring the right method to cross the street to the supermarket.
+
+To reproach someone for holding onto dogma on a particular topic is then hypocritical, as we all do so on approximately every subject. We should be kind to fellow beings who only have so much time to make sense of a complex world, and who dedicate it to those areas they care about most.
+
+The vast cache of partial results to the problems of modernity is also a shared resource. In it, some ideas prove fragile on further consideration, while some stand the test of time. Regardless, the gradual elaboration often happens through dialogue, as it is through dialogue that ideas get to be sculpted from different perspectives until every last debatable edge is chiseled away.
+
+The depth of public dialogue on any given topic depends then on how much shared material there is to work with going forward. Too few ideas sedimented as common knowledge and conversations keep going around in circles. But there can also be too much shared experience. What monumental challenge to wrap one's head around happenings as dense as wars or pandemics. The metric tons of qualia involved defy compression and remain unwieldy, making it hard to even weigh one against the other. Which was worse? Which more just?
+
+<div class="separator">
+  <img src="/generators/formulas/curated/inline_06.svg" alt="">
+</div>
+
 The saying goes that all progress depends on those who are unreasonable, because they persist in trying to adapt the world to their vision instead of more reasonably trying to adapt themselves to the way things are.
 
 In other words, all initiatives conducive to progress first come across as unreasonable. Of course, that does not entail that the converse holds. It is not the case that any unreasonable practice is inherently conducive to progress. It could as well be a mere stunt intended as contrarian just for the sake of standing out.

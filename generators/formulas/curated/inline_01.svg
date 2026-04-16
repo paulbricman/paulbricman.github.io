@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720.0" height="280.0" viewBox="0 0 720.0 280.0" overflow="visible"><defs><style type="text/css">@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&amp;display=swap');text.math { font-family: 'STIX Two Math', 'STIX Two Text', 'Times New Roman', serif; text-rendering: geometricPrecision; shape-rendering: geometricPrecision; } text.mop { font-style: normal; font-weight: 400; } text.mit { font-style: italic; font-weight: 400; } text.mbin { font-style: normal; font-weight: 400; letter-spacing: 0.02em; } </style></defs><g fill="#ffffff" color="#ffffff"><g transform="translate(109.53,61.83)"><g transform="scale(1.675718)"><g transform="translate(0.00,19.35)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="10" y="2" width="4" height="2" fill="currentColor"/>
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720.0" height="280.0" viewBox="0 0 720.0 280.0" overflow="visible"><defs><style type="text/css">@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&amp;display=swap');text.math { font-family: 'STIX Two Math', 'STIX Two Text', 'Times New Roman', serif; text-rendering: geometricPrecision; shape-rendering: geometricPrecision; } text.mop { font-style: normal; font-weight: 400; } text.mit { font-style: italic; font-weight: 400; } text.mbin { font-style: normal; font-weight: 400; letter-spacing: 0.02em; } </style></defs><g fill="#ffffff" color="#ffffff"><g transform="translate(83.95,42.91)"><g transform="scale(1.506400)"><g><g transform="translate(9.00,0.00)"><g><g transform="translate(9.00,0.00)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="11" y="8" width="3" height="2" fill="currentColor"/>
+<rect x="14" y="6" width="4" height="2" fill="currentColor"/>
+<rect x="18" y="8" width="2" height="3" fill="currentColor"/>
+<rect x="16" y="11" width="2" height="4" fill="currentColor"/>
+<rect x="18" y="15" width="2" height="5" fill="currentColor"/>
+<rect x="14" y="20" width="4" height="2" fill="currentColor"/>
+<rect x="11" y="18" width="3" height="2" fill="currentColor"/>
+<rect x="7" y="20" width="4" height="2" fill="currentColor"/>
+<rect x="5" y="18" width="2" height="2" fill="currentColor"/>
+<rect x="3" y="10" width="2" height="8" fill="currentColor"/>
+<rect x="5" y="8" width="2" height="2" fill="currentColor"/>
+<rect x="7" y="6" width="4" height="2" fill="currentColor"/>
+<rect x="12" y="3" width="2" height="2" fill="currentColor"/>
+<rect x="14" y="1" width="2" height="2" fill="currentColor"/></g></g></g><g transform="translate(23.61,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">+</text></g><g transform="translate(40.45,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="5" y="5" width="2" height="6" fill="currentColor"/>
+<rect x="5" y="15" width="2" height="5" fill="currentColor"/>
+<rect x="13" y="5" width="2" height="6" fill="currentColor"/>
+<rect x="13" y="15" width="2" height="5" fill="currentColor"/>
+<rect x="5" y="19" width="6" height="2" fill="currentColor"/>
+<rect x="13" y="19" width="6" height="2" fill="currentColor"/>
+<rect x="9" y="5" width="2" height="6" fill="currentColor"/>
+<rect x="9" y="15" width="2" height="5" fill="currentColor"/>
+<rect x="17" y="5" width="2" height="6" fill="currentColor"/>
+<rect x="17" y="15" width="2" height="5" fill="currentColor"/>
+<rect x="7" y="3" width="2" height="2" fill="currentColor"/>
+<rect x="15" y="3" width="2" height="2" fill="currentColor"/>
+<rect x="3" y="11" width="18" height="2" fill="currentColor"/>
+<rect x="3" y="15" width="18" height="2" fill="currentColor"/>
+<rect x="1" y="13" width="2" height="2" fill="currentColor"/>
+<rect x="21" y="13" width="2" height="2" fill="currentColor"/></g></g></g><g transform="translate(64.06,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">+</text></g><g transform="translate(80.90,0.00)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="8" y="20" width="8" height="2" fill="currentColor"/>
+<rect x="11" y="16" width="2" height="4" fill="currentColor"/>
+<rect x="13" y="14" width="2" height="2" fill="currentColor"/>
+<rect x="9" y="14" width="2" height="2" fill="currentColor"/>
+<rect x="7" y="12" width="2" height="2" fill="currentColor"/>
+<rect x="15" y="12" width="2" height="2" fill="currentColor"/>
+<rect x="17" y="4" width="2" height="8" fill="currentColor"/>
+<rect x="5" y="4" width="2" height="8" fill="currentColor"/>
+<rect x="7" y="2" width="10" height="2" fill="currentColor"/></g></g></g><g transform="translate(24.98,0.00)"><g transform="translate(2.00,0)"><text class="math mbin" x="4.42" y="11.05" text-anchor="middle" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">·</text></g></g><g transform="translate(43.49,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><path d="M13 22H11V20H13V22ZM11 20H9V18H11V20ZM15 20H13V18H15V20ZM9 18H7V16H9V18ZM17 18H15V16H17V18ZM7 16H5V14H7V16ZM19 16H17V14H19V16ZM5 14H3V12H5V14ZM21 14H19V12H21V14ZM3 12H1V6H3V12ZM23 12H21V6H23V12ZM13 8H11V6H13V8ZM5 6H3V4H5V6ZM11 6H9V4H11V6ZM15 6H13V4H15V6ZM21 6H19V4H21V6ZM9 4H5V2H9V4ZM19 4H15V2H19V4Z" fill="currentColor"/></g></g></g></g></g><line x1="0" y1="28.10" x2="159.89" y2="28.10" stroke="#ffffff" stroke-width="1.50"/><g transform="translate(29.23,35.60)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="9" y="5" width="6" height="2" fill="currentColor"/>
+<rect x="7" y="7" width="2" height="2" fill="currentColor"/>
+<rect x="5" y="9" width="2" height="6" fill="currentColor"/>
+<rect x="7" y="15" width="2" height="2" fill="currentColor"/>
+<rect x="9" y="17" width="6" height="2" fill="currentColor"/>
+<rect x="15" y="15" width="2" height="2" fill="currentColor"/>
+<rect x="17" y="9" width="2" height="6" fill="currentColor"/>
+<rect x="15" y="7" width="2" height="2" fill="currentColor"/>
+<rect x="9" y="1" width="2" height="4" fill="currentColor"/>
+<rect x="9" y="19" width="2" height="4" fill="currentColor"/>
+<rect x="13" y="1" width="2" height="4" fill="currentColor"/>
+<rect x="13" y="19" width="2" height="4" fill="currentColor"/>
+<rect x="11" y="9" width="2" height="4" fill="currentColor"/>
+<rect x="13" y="11" width="2" height="2" fill="currentColor"/></g></g></g><g transform="translate(24.98,0.00)"><g transform="translate(2.00,0)"><text class="math mbin" x="4.42" y="11.05" text-anchor="middle" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">·</text></g></g><g transform="translate(43.49,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="6" y="2" width="12" height="2" fill="currentColor"/>
+<rect x="6" y="20" width="12" height="2" fill="currentColor"/>
+<rect x="4" y="4" width="2" height="16" fill="currentColor"/>
+<rect x="18" y="4" width="2" height="16" fill="currentColor"/>
+<rect x="8" y="2" width="2" height="10" fill="currentColor"/>
+<rect x="12" y="2" width="2" height="10" fill="currentColor"/>
+<rect x="10" y="2" width="2" height="8" fill="currentColor"/></g></g></g><g transform="translate(67.10,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">−</text></g><g transform="translate(83.94,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="11" y="2" width="2" height="2" fill="currentColor"/>
+<rect x="9" y="4" width="2" height="4" fill="currentColor"/>
+<rect x="13" y="4" width="2" height="4" fill="currentColor"/>
+<rect x="3" y="8" width="6" height="2" fill="currentColor"/>
+<rect x="1" y="10" width="2" height="2" fill="currentColor"/>
+<rect x="3" y="12" width="2" height="2" fill="currentColor"/>
+<rect x="19" y="12" width="2" height="2" fill="currentColor"/>
+<rect x="21" y="10" width="2" height="2" fill="currentColor"/>
+<rect x="15" y="8" width="6" height="2" fill="currentColor"/>
+<rect x="5" y="14" width="2" height="6" fill="currentColor"/>
+<rect x="7" y="20" width="2" height="2" fill="currentColor"/>
+<rect x="9" y="18" width="2" height="2" fill="currentColor"/>
+<rect x="11" y="16" width="2" height="2" fill="currentColor"/>
+<rect x="13" y="18" width="2" height="2" fill="currentColor"/>
+<rect x="15" y="20" width="2" height="2" fill="currentColor"/>
+<rect x="17" y="14" width="2" height="6" fill="currentColor"/></g></g></g></g></g></g><line x1="0" y1="63.70" x2="177.89" y2="63.70" stroke="#ffffff" stroke-width="1.50"/><g transform="translate(29.23,71.20)"><g><g transform="translate(10.52,0.00)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><path d="M13 22H11V20H13V22ZM11 20H9V18H11V20ZM15 20H13V18H15V20ZM9 18H7V16H9V18ZM17 18H15V16H17V18ZM7 16H5V14H7V16ZM19 16H17V14H19V16ZM5 14H3V12H5V14ZM21 14H19V12H21V14ZM3 12H1V6H3V12ZM23 12H21V6H23V12ZM13 8H11V6H13V8ZM5 6H3V4H5V6ZM11 6H9V4H11V6ZM15 6H13V4H15V6ZM21 6H19V4H21V6ZM9 4H5V2H9V4ZM19 4H15V2H19V4Z" fill="currentColor"/></g></g></g><g transform="translate(23.61,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">−</text></g><g transform="translate(40.45,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect width="2" height="2" transform="matrix(1 0 0 -1 4 18)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 2 20)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 20 20)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 4 12)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 2 14)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 20 14)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 4 6)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 2 8)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 20 8)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 9 18)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 13 12)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 11 6)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 18 18)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 18 12)" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 18 6)" fill="currentColor"/>
+<rect width="3" height="2" transform="matrix(1 0 0 -1 6 20)" fill="currentColor"/>
+<rect width="7" height="2" transform="matrix(1 0 0 -1 6 14)" fill="currentColor"/>
+<rect width="5" height="2" transform="matrix(1 0 0 -1 6 8)" fill="currentColor"/>
+<rect width="7" height="2" transform="matrix(1 0 0 -1 11 20)" fill="currentColor"/>
+<rect width="3" height="2" transform="matrix(1 0 0 -1 15 14)" fill="currentColor"/>
+<rect width="5" height="2" transform="matrix(1 0 0 -1 13 8)" fill="currentColor"/></g></g></g></g><line x1="0" y1="28.10" x2="78.99" y2="28.10" stroke="#ffffff" stroke-width="1.50"/><g transform="translate(9.00,35.60)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="2" y="6" width="20" height="2" fill="currentColor"/>
+<rect x="2" y="8" width="2" height="6" fill="currentColor"/>
+<rect x="7" y="8" width="2" height="6" fill="currentColor"/>
+<rect x="4" y="14" width="2" height="6" fill="currentColor"/>
+<rect x="9" y="14" width="2" height="6" fill="currentColor"/>
+<rect x="20" y="8" width="2" height="6" fill="currentColor"/>
+<rect x="15" y="8" width="2" height="6" fill="currentColor"/>
+<rect x="18" y="14" width="2" height="6" fill="currentColor"/>
+<rect x="13" y="14" width="2" height="6" fill="currentColor"/>
+<rect x="6" y="20" width="12" height="2" fill="currentColor"/>
+<rect x="4" y="4" width="2" height="2" fill="currentColor"/>
+<rect x="9" y="4" width="2" height="2" fill="currentColor"/>
+<rect x="13" y="4" width="2" height="2" fill="currentColor"/>
+<rect x="18" y="4" width="2" height="2" fill="currentColor"/>
+<rect x="6" y="2" width="3" height="2" fill="currentColor"/>
+<rect x="11" y="2" width="2" height="2" fill="currentColor"/>
+<rect x="15" y="2" width="3" height="2" fill="currentColor"/></g></g></g><g transform="translate(24.98,0.00)"><g transform="translate(2.00,0)"><text class="math mbin" x="4.42" y="11.05" text-anchor="middle" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">·</text></g></g><g transform="translate(43.49,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="3" y="19" width="18" height="2" fill="currentColor"/>
+<rect x="5" y="5" width="2" height="14" fill="currentColor"/>
+<rect x="7" y="3" width="10" height="2" fill="currentColor"/>
+<rect x="17" y="5" width="2" height="14" fill="currentColor"/>
+<rect x="9" y="11" width="2" height="2" fill="currentColor"/></g></g></g></g></g><g transform="translate(85.10,17.05)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">+</text></g><g transform="translate(101.94,19.35)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="4" y="4" width="16" height="2" fill="currentColor"/>
+<rect x="4" y="6" width="2" height="8" fill="currentColor"/>
+<rect x="6" y="14" width="10" height="2" fill="currentColor"/>
+<rect x="20" y="6" width="2" height="4" fill="currentColor"/>
+<rect x="18" y="10" width="2" height="2" fill="currentColor"/>
+<rect x="16" y="6" width="2" height="8" fill="currentColor"/>
+<rect x="2" y="18" width="18" height="2" fill="currentColor"/></g></g></g></g></g><g transform="translate(187.16,52.65)"><text class="math mbin" x="3.57" y="11.05" text-anchor="middle" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">=</text></g><g transform="translate(203.58,35.60)"><g transform="translate(0.00,19.35)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="10" y="2" width="4" height="2" fill="currentColor"/>
 <rect x="10" y="8" width="4" height="2" fill="currentColor"/>
 <rect x="8" y="4" width="2" height="4" fill="currentColor"/>
 <rect x="14" y="4" width="2" height="4" fill="currentColor"/>
@@ -7,66 +123,54 @@
 <rect x="3" y="12" width="2" height="8" fill="currentColor"/>
 <rect x="19" y="12" width="2" height="8" fill="currentColor"/>
 <rect x="5" y="12" width="2" height="2" fill="currentColor"/>
-<rect x="17" y="12" width="2" height="2" fill="currentColor"/></g></g></g><g transform="translate(23.61,17.05)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">+</text></g><g transform="translate(40.45,0.00)"><g><g transform="translate(9.00,0.00)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="14" y="8" width="2" height="2" fill="currentColor"/>
-<rect x="18" y="16" width="2" height="2" fill="currentColor"/>
-<rect x="8" y="4" width="2" height="4" fill="currentColor"/>
-<rect x="6" y="6" width="8" height="2" fill="currentColor"/>
-<rect x="2" y="10" width="20" height="2" fill="currentColor"/>
-<rect x="20" y="12" width="2" height="4" fill="currentColor"/>
-<rect x="2" y="12" width="2" height="6" fill="currentColor"/>
-<rect x="6" y="8" width="2" height="2" fill="currentColor"/>
-<rect y="16" width="4" height="2" fill="currentColor"/>
-<rect x="4" y="18" width="4" height="2" fill="currentColor"/>
-<rect x="8" y="16" width="4" height="2" fill="currentColor"/>
-<rect x="12" y="18" width="4" height="2" fill="currentColor"/>
-<rect x="16" y="16" width="4" height="2" fill="currentColor"/>
-<rect x="20" y="18" width="4" height="2" fill="currentColor"/></g></g></g><g transform="translate(23.61,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">−</text></g><g transform="translate(40.45,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="2" y="12" width="20" height="2" fill="currentColor"/>
-<rect x="2" y="10" width="2" height="2" fill="currentColor"/>
-<rect x="2" y="8" width="2" height="2" fill="currentColor"/>
-<rect x="4" y="6" width="2" height="2" fill="currentColor"/>
-<rect x="20" y="10" width="2" height="2" fill="currentColor"/>
-<rect x="20" y="8" width="2" height="2" fill="currentColor"/>
-<rect x="18" y="6" width="2" height="2" fill="currentColor"/>
-<rect x="16" y="4" width="2" height="2" fill="currentColor"/>
-<rect x="6" y="4" width="2" height="2" fill="currentColor"/>
-<rect x="8" y="2" width="8" height="2" fill="currentColor"/>
-<rect x="7" y="20" width="10" height="2" fill="currentColor"/>
-<rect x="7" y="18" width="2" height="2" fill="currentColor"/>
-<rect x="9" y="16" width="6" height="2" fill="currentColor"/>
-<rect x="15" y="18" width="2" height="2" fill="currentColor"/>
-<rect x="11" y="12" width="2" height="4" fill="currentColor"/></g></g></g></g><line x1="0" y1="28.10" x2="75.95" y2="28.10" stroke="#ffffff" stroke-width="1.50"/><g transform="translate(9.00,35.60)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="4" y="2" width="2" height="20" fill="currentColor"/>
-<rect x="4" y="4" width="16" height="2" fill="currentColor"/>
-<rect x="16" y="6" width="2" height="2" fill="currentColor"/>
-<rect x="14" y="8" width="2" height="2" fill="currentColor"/>
-<rect x="16" y="10" width="2" height="2" fill="currentColor"/>
-<rect x="4" y="12" width="16" height="2" fill="currentColor"/></g></g></g><g transform="translate(23.61,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">−</text></g><g transform="translate(40.45,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="9" y="1" width="6" height="2" fill="currentColor"/>
-<rect x="9" y="3" width="2" height="4" fill="currentColor"/>
-<rect x="13" y="3" width="2" height="4" fill="currentColor"/>
-<rect x="7" y="7" width="2" height="2" fill="currentColor"/>
+<rect x="17" y="12" width="2" height="2" fill="currentColor"/></g></g></g><g transform="translate(24.98,17.05)"><g transform="translate(2.00,0)"><text class="math mbin" x="4.42" y="11.05" text-anchor="middle" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">·</text></g></g><g transform="translate(43.49,0.00)"><g><g transform="translate(9.00,0.00)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="9" y="3" width="2" height="2" fill="currentColor"/>
+<rect x="13" y="3" width="2" height="2" fill="currentColor"/>
+<rect x="11" y="5" width="2" height="14" fill="currentColor"/>
+<rect x="13" y="9" width="2" height="2" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 11 9)" fill="currentColor"/>
 <rect x="15" y="7" width="2" height="2" fill="currentColor"/>
-<rect x="17" y="9" width="2" height="12" fill="currentColor"/>
-<rect x="5" y="9" width="2" height="12" fill="currentColor"/>
-<rect x="7" y="21" width="10" height="2" fill="currentColor"/>
-<rect x="8" y="12" width="8" height="2" fill="currentColor"/>
-<rect x="8" y="16" width="8" height="2" fill="currentColor"/>
-<rect x="8" y="12" width="2" height="6" fill="currentColor"/>
-<rect x="14" y="12" width="2" height="6" fill="currentColor"/></g></g></g></g></g></g><g transform="translate(125.68,17.05)"><text class="math mbin" x="3.57" y="11.05" text-anchor="middle" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">=</text></g><g transform="translate(142.09,0.00)"><g><g transform="translate(9.00,0.00)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="14" y="4" width="4" height="2" fill="currentColor"/>
-<rect x="10" y="2" width="4" height="2" fill="currentColor"/>
-<rect x="6" y="8" width="4" height="2" fill="currentColor"/>
-<rect x="6" y="18" width="4" height="2" fill="currentColor"/>
-<rect x="10" y="10" width="4" height="2" fill="currentColor"/>
-<rect x="10" y="20" width="4" height="2" fill="currentColor"/>
-<rect x="14" y="8" width="4" height="2" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 9 7)" fill="currentColor"/>
+<rect x="17" y="5" width="5" height="2" fill="currentColor"/>
+<rect width="5" height="2" transform="matrix(-1 0 0 1 7 5)" fill="currentColor"/>
+<rect x="22" y="7" width="2" height="4" fill="currentColor"/>
+<rect width="2" height="4" transform="matrix(-1 0 0 1 2 7)" fill="currentColor"/>
+<rect x="20" y="11" width="2" height="2" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 4 11)" fill="currentColor"/>
+<rect x="14" y="13" width="6" height="2" fill="currentColor"/>
+<rect width="6" height="2" transform="matrix(-1 0 0 1 10 13)" fill="currentColor"/>
+<rect x="16" y="13" width="2" height="6" fill="currentColor"/>
+<rect width="2" height="6" transform="matrix(-1 0 0 1 8 13)" fill="currentColor"/>
+<rect x="13" y="19" width="3" height="2" fill="currentColor"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 11 19)" fill="currentColor"/></g></g></g><g transform="translate(23.61,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">+</text></g><g transform="translate(40.45,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="10" y="2" width="2" height="2" fill="currentColor"/>
+<rect x="8" y="4" width="2" height="2" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 14 4)" fill="currentColor"/>
+<rect x="4" y="8" width="2" height="4" fill="currentColor"/>
+<rect width="2" height="4" transform="matrix(-1 0 0 1 18 8)" fill="currentColor"/>
+<rect x="2" y="12" width="2" height="6" fill="currentColor"/>
+<rect width="2" height="6" transform="matrix(-1 0 0 1 20 12)" fill="currentColor"/>
+<rect x="6" y="20" width="10" height="2" fill="currentColor"/>
+<rect x="6" y="6" width="2" height="2" fill="currentColor"/>
+<rect x="14" y="6" width="2" height="2" fill="currentColor"/>
+<rect x="4" y="18" width="2" height="2" fill="currentColor"/>
+<rect x="16" y="18" width="2" height="2" fill="currentColor"/>
+<rect x="6" y="16" width="2" height="2" fill="currentColor"/>
+<rect x="8" y="14" width="2" height="2" fill="currentColor"/>
+<rect x="10" y="12" width="2" height="2" fill="currentColor"/>
+<rect x="12" y="14" width="2" height="2" fill="currentColor"/>
+<rect x="14" y="16" width="2" height="2" fill="currentColor"/></g></g></g></g><line x1="0" y1="28.10" x2="75.95" y2="28.10" stroke="#ffffff" stroke-width="1.50"/><g transform="translate(9.00,35.60)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="4" y="12" width="4" height="2" fill="currentColor"/>
+<rect x="2" y="14" width="2" height="4" fill="currentColor"/>
+<rect x="4" y="18" width="4" height="2" fill="currentColor"/>
+<rect x="8" y="6" width="2" height="12" fill="currentColor"/>
+<rect x="18" y="6" width="2" height="12" fill="currentColor"/>
+<rect x="12" y="14" width="2" height="4" fill="currentColor"/>
+<rect x="14" y="12" width="4" height="2" fill="currentColor"/>
 <rect x="14" y="18" width="4" height="2" fill="currentColor"/>
-<rect x="6" y="4" width="4" height="2" fill="currentColor"/>
-<rect x="2" y="6" width="4" height="2" fill="currentColor"/>
-<rect x="2" y="16" width="4" height="2" fill="currentColor"/>
-<rect x="18" y="6" width="4" height="2" fill="currentColor"/>
-<rect x="18" y="16" width="4" height="2" fill="currentColor"/>
-<rect x="2" y="6" width="2" height="12" fill="currentColor"/>
-<rect x="20" y="6" width="2" height="12" fill="currentColor"/>
-<rect x="12" y="12" width="2" height="8" fill="currentColor"/></g></g></g><g transform="translate(23.61,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">−</text></g><g transform="translate(40.45,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="20" y="9" width="2" height="6" fill="currentColor"/>
+<rect x="10" y="4" width="8" height="2" fill="currentColor"/></g></g></g><g transform="translate(23.61,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">+</text></g><g transform="translate(40.45,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="20" y="9" width="2" height="6" fill="currentColor"/>
 <rect x="18" y="7" width="2" height="2" fill="currentColor"/>
+<rect x="14" y="3" width="2" height="2" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 14 21)" fill="currentColor"/>
+<rect x="12" y="1" width="2" height="2" fill="currentColor"/>
+<rect width="2" height="2" transform="matrix(1 0 0 -1 12 23)" fill="currentColor"/>
 <rect x="18" y="15" width="2" height="2" fill="currentColor"/>
 <rect x="12" y="17" width="6" height="2" fill="currentColor"/>
 <rect x="12" y="5" width="6" height="2" fill="currentColor"/>
@@ -78,54 +182,7 @@
 <rect x="8" y="13" width="2" height="2" fill="currentColor"/>
 <rect x="10" y="15" width="2" height="2" fill="currentColor"/>
 <rect x="10" y="7" width="2" height="2" fill="currentColor"/>
-<rect x="15" y="10" width="2" height="2" fill="currentColor"/></g></g></g><g transform="translate(64.06,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">−</text></g><g transform="translate(80.90,0.00)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="4" y="2" width="4" height="2" fill="currentColor"/>
-<rect width="4" height="2" transform="matrix(-1 0 0 1 20 2)" fill="currentColor"/>
-<rect x="2" y="2" width="2" height="6" fill="currentColor"/>
-<rect width="2" height="6" transform="matrix(-1 0 0 1 22 2)" fill="currentColor"/>
-<rect x="4" y="8" width="2" height="2" fill="currentColor"/>
-<rect width="2" height="2" transform="matrix(-1 0 0 1 20 8)" fill="currentColor"/>
-<rect x="2" y="10" width="2" height="8" fill="currentColor"/>
-<rect width="2" height="8" transform="matrix(-1 0 0 1 22 10)" fill="currentColor"/>
-<rect x="4" y="18" width="2" height="2" fill="currentColor"/>
-<rect width="2" height="2" transform="matrix(-1 0 0 1 20 18)" fill="currentColor"/>
-<rect x="6" y="20" width="12" height="2" fill="currentColor"/>
-<rect x="8" y="4" width="8" height="2" fill="currentColor"/>
-<rect x="6" y="12" width="2" height="2" fill="currentColor"/>
-<rect x="16" y="12" width="2" height="2" fill="currentColor"/>
-<rect x="9" y="14" width="6" height="2" fill="currentColor"/>
-<rect x="11" y="16" width="2" height="2" fill="currentColor"/></g></g></g><g transform="translate(23.61,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">+</text></g><g transform="translate(40.45,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="1" y="19" width="22" height="2" fill="currentColor"/>
-<rect x="3" y="17" width="2" height="3" fill="currentColor"/>
-<rect x="5" y="14" width="2" height="3" fill="currentColor"/>
-<rect x="7" y="11" width="2" height="3" fill="currentColor"/>
-<rect x="9" y="8" width="2" height="3" fill="currentColor"/>
-<rect x="11" y="5" width="2" height="3" fill="currentColor"/>
-<rect x="9" y="3" width="2" height="2" fill="currentColor"/>
-<rect x="13" y="8" width="2" height="3" fill="currentColor"/>
-<rect x="15" y="11" width="2" height="3" fill="currentColor"/>
-<rect x="17" y="14" width="2" height="3" fill="currentColor"/>
-<rect x="19" y="17" width="2" height="3" fill="currentColor"/>
-<rect x="9" y="17" width="2" height="2" fill="currentColor"/>
-<rect x="13" y="17" width="2" height="2" fill="currentColor"/>
-<rect x="11" y="15" width="2" height="2" fill="currentColor"/>
-<rect x="13" y="3" width="2" height="2" fill="currentColor"/></g></g></g></g></g><line x1="0" y1="28.10" x2="156.85" y2="28.10" stroke="#ffffff" stroke-width="1.50"/><g transform="translate(38.93,35.60)"><g><g transform="translate(9.00,0.00)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="11" y="1" width="2" height="4" fill="currentColor"/>
-<rect width="2" height="4" transform="matrix(1 0 0 -1 11 23)" fill="currentColor"/>
-<rect x="9" y="5" width="2" height="4" fill="currentColor"/>
-<rect width="2" height="4" transform="matrix(1 0 0 -1 9 19)" fill="currentColor"/>
-<rect x="13" y="5" width="2" height="4" fill="currentColor"/>
-<rect width="2" height="4" transform="matrix(1 0 0 -1 13 19)" fill="currentColor"/>
-<rect x="5" y="9" width="4" height="2" fill="currentColor"/>
-<rect width="4" height="2" transform="matrix(-1 0 0 1 19 9)" fill="currentColor"/>
-<rect x="1" y="11" width="4" height="2" fill="currentColor"/>
-<rect width="4" height="2" transform="matrix(-1 0 0 1 23 11)" fill="currentColor"/>
-<rect x="5" y="13" width="4" height="2" fill="currentColor"/>
-<rect width="4" height="2" transform="matrix(-1 0 0 1 19 13)" fill="currentColor"/></g></g></g><g transform="translate(24.98,0.00)"><g transform="translate(2.00,0)"><text class="math mbin" x="4.42" y="11.05" text-anchor="middle" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">·</text></g></g><g transform="translate(43.49,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="9" y="2" width="6" height="2" fill="currentColor"/>
-<rect x="11" y="20" width="2" height="2" fill="currentColor"/>
-<rect width="2" height="18" transform="matrix(-1 0 0 1 11 4)" fill="currentColor"/>
-<rect width="2" height="18" transform="matrix(-1 0 0 1 15 4)" fill="currentColor"/>
-<rect x="7" y="9" width="8" height="2" fill="currentColor"/>
-<rect x="3" y="5" width="4" height="4" fill="currentColor"/>
-<rect x="17" y="9" width="4" height="4" fill="currentColor"/>
-<rect x="15" y="13" width="2" height="2" fill="currentColor"/></g></g></g></g><line x1="0" y1="28.10" x2="78.99" y2="28.10" stroke="#ffffff" stroke-width="1.50"/><g transform="translate(10.52,35.60)"><g transform="translate(0.00,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="17" y="5" width="2" height="2" fill="currentColor"/>
+<rect x="15" y="10" width="2" height="2" fill="currentColor"/></g></g></g></g></g><g transform="translate(83.43,17.05)"><g transform="translate(2.00,0)"><text class="math mbin" x="4.42" y="11.05" text-anchor="middle" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">·</text></g></g><g transform="translate(101.94,19.35)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="17" y="5" width="2" height="2" fill="currentColor"/>
 <rect x="19" y="7" width="2" height="2" fill="currentColor"/>
 <rect x="9" y="5" width="2" height="2" fill="currentColor"/>
 <rect x="7" y="7" width="2" height="2" fill="currentColor"/>
@@ -136,14 +193,4 @@
 <rect x="3" y="13" width="4" height="2" fill="currentColor"/>
 <rect x="3" y="19" width="4" height="2" fill="currentColor"/>
 <rect x="7" y="15" width="2" height="4" fill="currentColor"/>
-<rect x="3" y="15" width="2" height="4" fill="currentColor"/></g></g></g><g transform="translate(23.61,0.00)"><text class="math mbin" x="0.00" y="11.05" text-anchor="start" font-size="17.0" fill="#ffffff" stroke="none" dominant-baseline="middle">+</text></g><g transform="translate(40.45,2.30)"><g fill="#ffffff" color="#ffffff"><g transform="translate(0.000,0.000) scale(0.729167)"><rect x="9" y="1" width="6" height="2" fill="currentColor"/>
-<rect x="9" y="3" width="2" height="4" fill="currentColor"/>
-<rect x="13" y="3" width="2" height="4" fill="currentColor"/>
-<rect x="7" y="7" width="2" height="2" fill="currentColor"/>
-<rect x="15" y="7" width="2" height="2" fill="currentColor"/>
-<rect x="17" y="9" width="2" height="12" fill="currentColor"/>
-<rect x="5" y="9" width="2" height="12" fill="currentColor"/>
-<rect x="7" y="21" width="10" height="2" fill="currentColor"/>
-<rect x="13" y="12" width="4" height="2" fill="currentColor"/>
-<rect x="11" y="12" width="2" height="6" fill="currentColor"/>
-<rect x="13" y="16" width="4" height="2" fill="currentColor"/></g></g></g></g></g></g></g></g></g></g></g></svg>
+<rect x="3" y="15" width="2" height="4" fill="currentColor"/></g></g></g></g></g></g></g></g></svg>
