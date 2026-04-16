@@ -5,14 +5,14 @@ A5 portrait mosaic: N×N grid of procedural zine covers, cycling generators 1..5
 Fonts: formula tiles use STIX via @import; rsvg-convert may not load remote fonts.
 Use a browser or Inkscape for final print proof, or install STIX locally.
 
-  python3 generators/print_mosaic/build_mosaic.py --grid 5 --face front --out /tmp/front.svg
-  python3 generators/print_mosaic/build_mosaic.py --grid 5 --both --out /tmp/mosaic --png
+  python3 generators/print_mosaic/build_mosaic.py --face front --out /tmp/front.svg
+  python3 generators/print_mosaic/build_mosaic.py --grid 14 --both --out /tmp/mosaic --png
 
 Icons for formulas: set PIXELARTICONS_SVG_DIR or pass --icons-root.
 
-Committed 3×3 examples (regenerate after changing tile logic):
+Committed sample (regenerate after changing tile logic):
 
-  python3 generators/print_mosaic/build_mosaic.py --grid 3 --both --master-seed 0 \\
+  python3 generators/print_mosaic/build_mosaic.py --grid 4 --both --master-seed 0 \\
     --icons-root "$PIXELARTICONS_SVG_DIR" \\
     --out generators/print_mosaic/samples/mosaic_sample
 """
@@ -118,11 +118,6 @@ def build_mosaic_svg(
             g = ET.SubElement(root, f"{{{NS}}}g")
             g.set("transform", f"translate({ox:.6f},{oy:.6f})")
 
-            backdrop = ET.SubElement(g, f"{{{NS}}}rect")
-            backdrop.set("width", f"{cell_w:.6f}")
-            backdrop.set("height", f"{cell_h:.6f}")
-            backdrop.set("fill", bg)
-
             inner = ET.SubElement(g, f"{{{NS}}}svg")
             inner.set("width", f"{cell_w:.6f}")
             inner.set("height", f"{cell_h:.6f}")
@@ -174,7 +169,12 @@ def _write_png(svg_path: Path, png_path: Path) -> None:
 
 def main() -> None:
     p = argparse.ArgumentParser(description="A5 procedural zine cover mosaic (SVG, optional PNG).")
-    p.add_argument("--grid", type=int, default=5, help="N for N×N square grid (default 5).")
+    p.add_argument(
+        "--grid",
+        type=int,
+        default=12,
+        help="N for N×N square grid (default 12). Use 8–16+ for a dense print sheet.",
+    )
     p.add_argument(
         "--face",
         choices=("front", "back"),
