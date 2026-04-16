@@ -107,3 +107,16 @@ def pick(pool: list[Path], salt: int, slot: int) -> Path:
         raise ValueError("empty asset pool")
     i = (salt * 1103515245 + slot * 7919) % len(pool)
     return pool[i]
+
+
+def pick_cell(pool: list[Path], seed: int, row: int, col: int, slot: int = 0) -> Path:
+    """Stable pick that varies with grid position (avoids repeated art across tiles)."""
+    if not pool:
+        raise ValueError("empty asset pool")
+    mixed = (
+        int(seed)
+        ^ ((row + 1) * 0x9E3779B9)
+        ^ ((col + 1) * 0x85EBCA6B)
+        ^ (slot * 0xC2B2AE35)
+    ) & 0xFFFFFFFFFFFFFFFF
+    return pool[mixed % len(pool)]

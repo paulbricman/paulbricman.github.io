@@ -11,7 +11,7 @@ from assets import (
     field_pool,
     formula_cover_paths,
     lattices_pool,
-    pick,
+    pick_cell,
     roots_pool,
     streams_pool,
 )
@@ -93,6 +93,7 @@ def _svg_open(spec: ZineSpec) -> ET.Element:
     root.set("width", str(COVER_W))
     root.set("height", str(COVER_H))
     root.set("viewBox", f"0 0 {COVER_W:.0f} {COVER_H:.0f}")
+    root.set("overflow", "hidden")
     root.set("xmlns:xlink", "http://www.w3.org/1999/xlink")
     bg = ET.SubElement(root, f"{{{NS}}}rect")
     bg.set("width", "100%")
@@ -110,6 +111,8 @@ def render_tile(
     seed: int,
     *,
     tile_background: str,
+    grid_row: int = 0,
+    grid_col: int = 0,
     icons_root: Path | None = None,
 ) -> str:
     _ = icons_root  # retained for API compatibility; tiles use on-disk SVGs only
@@ -117,19 +120,19 @@ def render_tile(
     if spec.background.lower() != tile_background.lower():
         raise ValueError(f"background mismatch for {generator_id}")
     if generator_id == "field":
-        return _cover_field(spec, seed)
+        return _cover_field(spec, seed, grid_row, grid_col)
     if generator_id == "streams":
-        return _cover_streams(spec, seed)
+        return _cover_streams(spec, seed, grid_row, grid_col)
     if generator_id == "formulas":
         return _cover_formulas(spec, seed)
     if generator_id == "lattices":
-        return _cover_lattices(spec, seed)
+        return _cover_lattices(spec, seed, grid_row, grid_col)
     if generator_id == "roots":
-        return _cover_roots(spec, seed)
+        return _cover_roots(spec, seed, grid_row, grid_col)
     raise ValueError(f"unknown generator: {generator_id}")
 
 
-def _cover_field(spec: ZineSpec, seed: int) -> str:
+def _cover_field(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     root = _svg_open(spec)
     pool = field_pool()
     strip_w = COVER_W * 0.75
@@ -139,8 +142,8 @@ def _cover_field(spec: ZineSpec, seed: int) -> str:
     stack_h = 3 * strip_h + 2 * gap
     y0 = (COVER_H - stack_h) / 2
     for i in range(3):
-        path = pick(pool, seed, i + 2)
-        kids, vb = _clone_file(path, f"_f{seed}_{i}_{path.stem}")
+        path = pick_cell(pool, seed, row, col, i)
+        kids, vb = _clone_file(path, f"_f{seed}_{row}_{col}_{i}_{path.stem}")
         y = y0 + i * (strip_h + gap)
         inner = ET.SubElement(root, f"{{{NS}}}svg")
         inner.set("x", f"{x0:.2f}")
@@ -154,11 +157,11 @@ def _cover_field(spec: ZineSpec, seed: int) -> str:
     return _to_doc(root)
 
 
-def _cover_streams(spec: ZineSpec, seed: int) -> str:
+def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     root = _svg_open(spec)
     pool = streams_pool()
-    path = pick(pool, seed, 0)
-    kids, vb = _clone_file(path, f"_s{seed}_{path.stem}")
+    path = pick_cell(pool, seed, row, col, 0)
+    kids, vb = _clone_file(path, f"_s{seed}_{row}_{col}_{path.stem}")
 
     defs = ET.SubElement(root, f"{{{NS}}}defs")
     clip_id = f"sc_{seed}"
@@ -219,11 +222,11 @@ def _cover_formulas(spec: ZineSpec, seed: int) -> str:
     return _to_doc(root)
 
 
-def _cover_lattices(spec: ZineSpec, seed: int) -> str:
+def _cover_lattices(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     root = _svg_open(spec)
     pool = lattices_pool()
-    path = pick(pool, seed, 0)
-    kids, vb = _clone_file(path, f"_l{seed}_{path.stem}")
+    path = pick_cell(pool, seed, row, col, 0)
+    kids, vb = _clone_file(path, f"_l{seed}_{row}_{col}_{path.stem}")
     art_w = COVER_W * 0.92
     art_h = COVER_H * 0.68
     cx = COVER_W / 2
@@ -242,13 +245,14 @@ def _cover_lattices(spec: ZineSpec, seed: int) -> str:
     return _to_doc(root)
 
 
-def _cover_roots(spec: ZineSpec, seed: int) -> str:
+def _cover_roots(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     root = _svg_open(spec)
     pool = roots_pool()
-    path = pick(pool, seed, 0)
-    kids, vb = _clone_file(path, f"_r{seed}_{path.stem}")
-    art_w = COVER_W * 0.90
-    art_h = COVER_H * 0.66
+    path = pick_cell(pool, seed, row, col, 0)
+    kids, vb = _clone_file(path, f"_r{seed}_{row}_{col}_{path.stem}")
+    # Zoom: oversized art + slice crops to fill tile (larger apparent diagram)
+    art_w = COVER_W * 1.12
+    art_h = COVER_H * 0.92
     x0 = (COVER_W - art_w) / 2
     y0 = (COVER_H - art_h) / 2
     inner = ET.SubElement(root, f"{{{NS}}}svg")
@@ -257,7 +261,7 @@ def _cover_roots(spec: ZineSpec, seed: int) -> str:
     inner.set("width", f"{art_w:.2f}")
     inner.set("height", f"{art_h:.2f}")
     inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
-    inner.set("preserveAspectRatio", "xMidYMid meet")
+    inner.set("preserveAspectRatio", "xMidYMid slice")
     for ch in kids:
         inner.append(ch)
     return _to_doc(root)
