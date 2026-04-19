@@ -25,7 +25,7 @@ Yet rejecting machines would be the wrong conclusion. It is likely dependence yo
 
 But cost-effectiveness depends on how you define cost and who gets to bear it. Loss of sovereignty is also costly, for instance. Once you factor in such losses, the top-down approach stops screaming efficiency.
 
-There is this project called [OpenKnit](https://openknit.org/), and its poetic significance is obscured by the myth of apolitical technology. It is a knitting machine whose design can be freely accessed and forked into new versions, a machine that can be assembled for cheap from off-the-shelf parts and disassembled back into them, and one that allows users to "print" exactly the clothing they need, locally. Similarly, move from a proprietary smartwatch to one that you can build yourself, not to an analog one built by a different company.
+There is this project called [OpenKnit](https://openknit.org/), and its poetic significance is obscured by the myth of apolitical technology. It is a knitting machine whose design can be freely accessed and forked into new versions, a machine that can be assembled for cheap from off-the-shelf parts and disassembled back into them, and one that allows users to "print" exactly the clothing they need, locally.
 
 <div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_6.svg" alt="">
@@ -33,7 +33,7 @@ There is this project called [OpenKnit](https://openknit.org/), and its poetic s
 
 The false dichotomy between centralized technology and no technology has been weaponized at length. "This is an important technology, whose benefits far outweigh the costs, so our company should put it at your disposal, because missing out would be backwards."
 
-The conclusion here does not follow. Yes, we might want to have technology at our disposal, but that does not mean that it should effectively be governed by a select cadre of corporate leaders, irrespective of their nationality. Even more so if the technology is truly important.
+The conclusion here does not follow. Yes, we might want to have technology at our disposal, but that does not mean that it should effectively be governed by a select cadre of corporate leaders, irrespective of their nationality. Doubly so if the technology is truly important.
 
 <div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_9.svg" alt="">
@@ -59,9 +59,9 @@ When someone argues that they should make decisions on behalf of everyone instea
 
 Language and aesthetics can help make explicit the relationship between technology and sovereignty. Technology whose many underlying ingredients have been reclaimed could be described as being deeply rooted and grounded, as having roots that run deep. The cloud is the complete opposite of that, being ungrounded, nebulous, adrift. Somewhere in between are technologies that have taken root, in the sense of having started being reclaimed, yet their roots still run quite shallow. Bare metal servers do bring a partial sense of grounding, yet their parts remain closed until our roots pierce them open.
 
-When a technology is being leveraged to gain dominance by estranging people from it, we could describe that as technology being uprooted. Managed services, proprietary extensions, and regulatory capture are popular ways of gaining moats. "Embrace, extend, extinguish." Lacking the vitality of open participation, uprooted technology eventually starts to decay and wither away, a process often called enshittification.
+When a technology is being leveraged to gain dominance by estranging people from it, we could describe that as technology being uprooted. Managed services, proprietary extensions, and regulatory capture are popular ways of gaining moats. Lacking the vitality of open participation, uprooted technology eventually starts to decay and wither away, a process often called enshittification.
 
-Roots do not crudely transform whole volumes of soil into wood. They are sparse threads that weave through the soil to efficiently interface with its resources and anchor themselves securely. Reclaiming technology calls for a similarly rational approach to growth into the depths of the technical ecosystem. Dependency trees should be constantly pruned in order to remain lean, but they should be adapted to resources that are available from many sources in order to remain resilient. The chosen ingredients should be a handful, but they should each be plentiful.
+Roots do not blindly transform whole volumes of soil into wood. They are sparse threads that weave through the soil to efficiently interface with its resources and anchor themselves securely. Reclaiming technology calls for a similarly rational approach to growth into the depths of the technical ecosystem. Dependency trees should be pruned to remain lean, but should also be adapted to resources that are available from many sources to remain resilient. The chosen ingredients should be a handful, but they should each be plentiful.
 
 <div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_15.svg" alt="">
@@ -79,11 +79,11 @@ What did it take for one of these to get here? What is it made of? What lies beh
   <img src="/generators/roots/curated/root_system_22.svg" alt="">
 </div>
 
-Von Neumann's work on self-replicating machines and NASA's work on self-sufficient settlements contain further vocabulary for describing technology and dependence. Consider a set of different machines that can be used for digital fabrication, including perhaps a 3D printer, a CNC mill, a pick-and-place, and so on. We could refer to this collection of machines as a "basis set" or "constructor kernel." Any device that can be manufactured using this collection of machines can be said to be part of its "constructible set."
+Von Neumann's work on self-replicating machines contains useful vocabulary for describing technology and dependence. Consider a set of different machines that can be used for digital fabrication, including perhaps a printer, a mill, a pick-and-place, and so on. We could refer to this collection of machines as a "constructor kernel." Any device that can be manufactured using this collection of machines can be said to be part of its "constructible set."
 
 Of particular interest is the extent to which the machines themselves can be manufactured using the collection they are part of, also known as "closure." More specifically, we could use "closure by weight" to describe the percentage of the kernel's mass that can be manufactured from ambient resources using the machines contained within it. Similarly, we could talk of "closure by parts" to describe the proportion of unique parts contained in these machines that can be produced by them.
 
-Certain machines can also be seen as unlocking ambient resources that would otherwise not be available as abundant raw materials. For instance, pick-and-place machines are typically used to assemble chips on circuit boards. However, if modified to instead _harvest_ chips from e-waste boards, they would effectively bring many integrated circuits under ambient resources. In the same vein, extruders can turn certain varieties of plastic waste into filament that can be printed into objects anew, similarly turning filament into an abundant resource.
+Certain machines can also be seen as unlocking ambient resources that would otherwise not be available as abundant raw materials. For instance, pick-and-place machines are typically used to assemble chips on circuit boards. However, if modified to instead _harvest_ chips from e-waste boards, they would effectively extend ambient resources with countless integrated circuits. In the same vein, extruders can turn certain plastic waste into filament that can be printed anew, further extending the reach of ambient resources.
 
 <div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_25.svg" alt="">

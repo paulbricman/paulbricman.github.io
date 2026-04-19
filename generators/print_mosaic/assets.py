@@ -8,9 +8,23 @@ We prefer explicit homepage + in-article references first, then fill from curate
 from __future__ import annotations
 
 import re
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 GENERATORS = Path(__file__).resolve().parent.parent
+
+
+def _field_landscape_strip(path: Path) -> bool:
+    """Keep only wide strip-style field SVGs (homepage rows); skip tall portrait pages."""
+    try:
+        r = ET.parse(path).getroot()
+        w = float(str(r.get("width", "0")).replace("px", ""))
+        h = float(str(r.get("height", "0")).replace("px", ""))
+    except (ET.ParseError, OSError, ValueError, TypeError):
+        return False
+    if h <= 0 or w <= 0:
+        return False
+    return (w / h) >= 1.5
 
 
 def _stem_num(p: Path) -> int:
@@ -36,31 +50,35 @@ def field_pool() -> list[Path]:
     out: list[Path] = []
     for n in (0, 5, 10):
         p = base / "curated" / f"field_{n}.svg"
-        if p.is_file():
+        if p.is_file() and _field_landscape_strip(p):
             out.append(p)
     for n in (5, 10, 15, 20, 25, 30, 31):
         p = base / "outputs" / f"field_{n}.svg"
-        if p.is_file():
+        if p.is_file() and _field_landscape_strip(p):
             _dedupe_extend(out, [p])
     curated = sorted((base / "curated").glob("field_*.svg"), key=_stem_num)
     outputs = sorted((base / "outputs").glob("field_*.svg"), key=_stem_num)
-    _dedupe_extend(out, curated)
-    _dedupe_extend(out, outputs)
+    for p in curated + outputs:
+        if _field_landscape_strip(p):
+            _dedupe_extend(out, [p])
     return out or [base / "curated" / "field_0.svg"]
 
 
 def streams_pool() -> list[Path]:
-    """stream_cover + article streams + curated picks + ranked outputs."""
+    """Article figures first, then homepage tile, then remaining curated/outputs.
+
+    Order matches _posts/2026-03-10-experience-as-material.md (stream_0, 8, 3, 4, 5, 6),
+    then index.html stream_cover.svg, then other files for variety.
+    """
     base = GENERATORS / "streams"
     out: list[Path] = []
-    for rel in ("curated/stream_cover.svg",):
-        p = base / rel
-        if p.is_file():
-            out.append(p)
     for n in (0, 8, 3, 4, 5, 6):
         p = base / "outputs" / f"stream_{n}.svg"
         if p.is_file():
-            _dedupe_extend(out, [p])
+            out.append(p)
+    cover = base / "curated" / "stream_cover.svg"
+    if cover.is_file():
+        _dedupe_extend(out, [cover])
     curated_streams = sorted((base / "curated").glob("stream_*.svg"), key=_stem_num)
     _dedupe_extend(out, curated_streams)
     outputs = sorted((base / "outputs").glob("stream_*.svg"), key=_stem_num)

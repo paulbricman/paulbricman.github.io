@@ -17,7 +17,7 @@ class ZineSpec:
 ZINES: tuple[ZineSpec, ...] = (
     ZineSpec("roots", "#228B22"),
     ZineSpec("lattices", "#0D47A1"),
-    ZineSpec("field", "#FF8C00"),
+    ZineSpec("field", "#FA8900"),
     ZineSpec("streams", "#B71C1C"),
     ZineSpec("formulas", "#0D7377"),
 )

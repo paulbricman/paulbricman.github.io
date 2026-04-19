@@ -16,7 +16,7 @@ Prizes and awards are not for those who have won them, as they could have simply
 
 The race to gain status in the reference frame of our cultural climate is at the same time experienced as highly individualistic from within and seen as highly homogeneous from without.
 
-Individually, one aims to make it by trying their best to emulate the heroes of today's stories, perhaps that of the wealthy business owner who navigated turbulent markets to bootstrap their venture, or that of the public figure who garnered a large following by consistently creating engaging content. We sense these as feats of personal achievement.
+Individually, one aims to make it by trying their best to emulate the heroes of today's stories, perhaps that of the wealthy business owner who navigated turbulent markets to bootstrap their venture, or that of the public figure who gained a large following by consistently creating engaging content. We sense these as feats of personal achievement.
 
 At the same time, the competitive pressure to perform can turn a community of individuals into something as featureless as the theoretical model of an ideal gas. Apply pressure to a volume of gas particles and you predictably get them to individually move around by themselves, some of them moving faster by sheer chance. Some predictable percentage of entrepreneurs will reach an acquisition deal as a result of the competitive pressure applied to the whole sector, but the math would have worked out just as well with a slightly different selection. The macro results are so predictable that countless accelerator programs invest in large cohorts knowing that, statistically, a few of them will make it.
 

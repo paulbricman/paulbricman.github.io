@@ -9,18 +9,22 @@ field → streams → formulas. Tiles use curated / article-referenced SVGs.
   python3 generators/print_mosaic/build_mosaic.py --face front --out /tmp/front.svg
   python3 generators/print_mosaic/build_mosaic.py --grid 12 --out /tmp/mosaic.svg --png
 
-Committed sample (one file for print front/back):
+Default grid is 7×7. Checked-in sample uses the default (PNG):
 
   python3 generators/print_mosaic/build_mosaic.py --master-seed 0 \\
-    --out generators/print_mosaic/samples/mosaic_sample.svg
+    --out generators/print_mosaic/samples/mosaic_sample.png
+
+Use ``--out path.png`` to rasterize only (no SVG kept). ``--png-dpi`` applies to that and to ``--png`` (default 300).
 """
 
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import subprocess
 import sys
+import tempfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -133,7 +137,7 @@ def build_mosaic_svg(
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + body
 
 
-def _write_png(svg_path: Path, png_path: Path) -> None:
+def _write_png(svg_path: Path, png_path: Path, dpi: int) -> None:
     try:
         subprocess.run(
             ["rsvg-convert", "--version"],
@@ -146,9 +150,9 @@ def _write_png(svg_path: Path, png_path: Path) -> None:
         [
             "rsvg-convert",
             "-d",
-            "300",
+            str(dpi),
             "-p",
-            "300",
+            str(dpi),
             "-o",
             str(png_path),
             str(svg_path),
@@ -181,17 +185,38 @@ def main() -> None:
         default=Path("mosaic_front.svg"),
         help="Output .svg path, or directory/base when using --both (front.svg / back.svg).",
     )
-    p.add_argument("--png", action="store_true", help="Also rasterize at 300 DPI via rsvg-convert.")
+    p.add_argument(
+        "--png",
+        action="store_true",
+        help="When --out is .svg, also write a sibling .png via rsvg-convert.",
+    )
+    p.add_argument(
+        "--png-dpi",
+        type=int,
+        default=300,
+        help="PNG raster density (default 300). Use e.g. 150 for smaller files.",
+    )
     args = p.parse_args()
 
-    def run_face(face: Face, out_svg: Path) -> None:
+    def run_face(face: Face, out_path: Path) -> None:
         svg = build_mosaic_svg(args.grid, face, args.master_seed)
-        out_svg.parent.mkdir(parents=True, exist_ok=True)
-        out_svg.write_text(svg, encoding="utf-8")
-        print(f"Wrote {out_svg}")
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        if out_path.suffix.lower() == ".png":
+            fd, tmp_name = tempfile.mkstemp(suffix=".svg", prefix="print_mosaic_")
+            os.close(fd)
+            tmp_svg = Path(tmp_name)
+            try:
+                tmp_svg.write_text(svg, encoding="utf-8")
+                _write_png(tmp_svg, out_path, args.png_dpi)
+            finally:
+                tmp_svg.unlink(missing_ok=True)
+            print(f"Wrote {out_path}")
+            return
+        out_path.write_text(svg, encoding="utf-8")
+        print(f"Wrote {out_path}")
         if args.png:
-            png = out_svg.with_suffix(".png")
-            _write_png(out_svg, png)
+            png = out_path.with_suffix(".png")
+            _write_png(out_path, png, args.png_dpi)
             print(f"Wrote {png}")
 
     if args.both:

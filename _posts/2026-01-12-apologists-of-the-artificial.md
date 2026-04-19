@@ -3,7 +3,7 @@ layout: post
 title: "Apologists of the Artificial"
 date: 2026-01-12
 categories: blog
-background_color: "#FF8C00"
+background_color: "#FA8900"
 text_color: white
 generator: field
 ---
@@ -30,9 +30,9 @@ And what values would those be, anyway? Those that sanctify greed instead of con
 
 The concept of class struggle is due for a revision when goods themselves start to labor. When cognitive and physical work become fully mechanized, the working class becomes an ill-defined concept. Artificial minds sculpted to achieve state-of-the-art instruction-following and artificial bodies churned out to spec realize the executive's wildest dreams.
 
-But there is a fork in this road. One path leads to a future where the means of computation that animate artificial minds and bodies are hoarded by a select few who then drip it to the public on a free tier, complete with ads and surveillance. Some Black Mirror plots certainly do write themselves. The other path leads to a future where the means of computation are directly owned by the public from the get-go, without having to pray for companies or governments to handle it right. Yet the public at large would need to grow into this role, as there would not be any workers around to seize these means.
+But there is a fork in this road. One path leads to a future where the means of computation that animate artificial minds and bodies are hoarded by a select few who then drip it to the public on a free tier, complete with ads and surveillance. The other path leads to a future where the means of computation are directly owned by the public from the get-go, without having to pray for companies or governments to handle it right. Yet the public at large would need to grow into this role, as there would not be any workers around to seize these means.
 
-One model for legally codifying the democratic governance and shared ownership of the means of computation is the cooperative. In an "AI co-op," citizens would take part in building, maintaining, and governing the servers that house artificial minds, while in a "robotics co-op," they would service the fleet of drones, arms, and vehicles that embody those minds. Members of such co-ops can then vote on how much of the surplus to reinvest into infrastructure and how much to distribute among themselves. And so this age-old legal form may provide a blueprint for redistributing AI's added value without a centralized middleman.
+One model for legally codifying the democratic governance and shared ownership of the means of computation is the cooperative. In an "AI co-op," citizens would take part in building, maintaining, and governing the servers that house artificial minds, while in a "robotics co-op," they would service the fleet of drones, arms, and vehicles that embody those minds. Members of such co-ops can then vote on how much of the surplus to reinvest into infrastructure and how much to redistribute.
 
 <div class="separator">
   <img src="/generators/field/outputs/field_15.svg" alt="">
@@ -62,11 +62,11 @@ There is no shortage of conversations to be had in a society reorganized in real
   <img src="/generators/field/outputs/field_30.svg" alt="">
 </div>
 
-Increasingly, people wake up to the fact that we do not own many of the things we used to own a while ago. We do not own the movies, music, or games we pay for, as they are now merely licensed to us. We do not own the storage we use to save our memories, as it is now merely rented to us. The content we share on social media similarly remains the property of the company behind the platform; you just get to use a small corner as long as you adhere to the terms.
+We do not own many of the things we used to own, not the movies, not the music, nor the games we pay for, as they are now merely licensed to us. We do not own the storage we use to save our memories, as it is now merely rented to us. The content we share on social media similarly remains the property of the company behind the platform; you just get to use a small corner as long as you adhere to the terms.
 
-Consider the beautiful absurdity of flipping the script in its entirety, such that not only would people reclaim ownership of the things they used to own until not so long ago, but they would also own the very digital infrastructure that powers the services they depend on. The "reverse Uno card" that civil society should play if there ever was one.
+Consider the beautiful absurdity of flipping the script in its entirety, such that not only would people reclaim ownership of the things they used to own until not so long ago, but they would also own the very digital infrastructure that powers the services they depend on. The one "reverse" Uno card that civil society should play if there ever was one.
 
-We might look back on today's organization of property in the same way we will cringe at the twisted rhetoric of  empowering people to integrate into the labor market. Not only are people forced to give away the majority of their waking hours in exchange for affording food and shelter, but getting to do so should be regarded as an opportunity to be grateful for. The mind will boggle.
+We might look back on today's organization of property in the same way we will cringe at the twisted rhetoric of empowering people to integrate into the labor market. Not only are people forced to give away the majority of their waking hours in exchange for affording food and shelter, but getting to do so should be regarded as an opportunity to be grateful for. The mind will boggle.
 
 <div class="separator">
   <img src="/generators/field/outputs/field_31.svg" alt="">

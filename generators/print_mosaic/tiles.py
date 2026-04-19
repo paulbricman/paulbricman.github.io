@@ -119,8 +119,8 @@ def _viewbox_zoom_center(
     vh: float,
     zoom: float,
 ) -> tuple[float, float, float, float]:
-    """zoom > 1 crops to a smaller centered window (magnified when scaled to same output)."""
-    if zoom <= 1.0:
+    """Centered viewBox window: zoom>1 → smaller window (magnify); 0<zoom<1 → larger window (zoom out)."""
+    if zoom <= 0 or abs(zoom - 1.0) < 1e-9:
         return vx, vy, vw, vh
     nw = vw / zoom
     nh = vh / zoom
@@ -204,12 +204,16 @@ def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     pool = streams_pool()
     path = pick_cell(pool, seed, row, col, 0)
     kids, vb = _clone_file(path, f"_s{seed}_{row}_{col}_{path.stem}")
+    # Wide viewBox + ~0.2px strokes: need a fairly tight center crop (high z) or strokes
+    # vanish in a mosaic cell. Smaller circle (frame) so the ring is not oversized vs art.
+    stream_vb_zoom = 5.05
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], stream_vb_zoom)
 
     defs = ET.SubElement(root, f"{{{NS}}}defs")
     clip_id = f"sc_{seed}"
     cp = ET.SubElement(defs, f"{{{NS}}}clipPath")
     cp.set("id", clip_id)
-    frame = COVER_W * 0.78
+    frame = COVER_W * 0.64
     cx = COVER_W / 2
     cy = COVER_H / 2
     r = frame / 2
@@ -225,8 +229,8 @@ def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     inner.set("y", f"{cy - r:.3f}")
     inner.set("width", f"{frame:.3f}")
     inner.set("height", f"{frame:.3f}")
-    inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
-    inner.set("preserveAspectRatio", "xMidYMid slice")
+    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
+    inner.set("preserveAspectRatio", "xMidYMid meet")
     for ch in kids:
         inner.append(ch)
 
@@ -236,18 +240,19 @@ def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     ring.set("r", f"{r:.3f}")
     ring.set("fill", "none")
     ring.set("stroke", "#ffffff")
-    ring.set("stroke-width", "2")
+    ring.set("stroke-width", "1.25")
     return _to_doc(root)
 
 
 def _cover_formulas(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     root = _svg_open(spec)
     pool = formulas_strip_pool()
-    strip_h = COVER_H * 0.1365
-    gap = COVER_H * 0.011
+    strip_h = COVER_H * 0.148 * 1.2
+    gap = COVER_H * 0.012 * 0.8 * 0.6
     stack_h = 5 * strip_h + 4 * gap
     y0 = (COVER_H - stack_h) / 2
-    zoom = 1.26
+    # _viewbox_zoom_center: >1 magnifies; 0.86 was zoomed out; ×1.2 ≈ 20% zoom in.
+    zoom = 0.86 * 1.2
     for i in range(5):
         path = pick_cell(pool, seed, row, col, i)
         if not path.is_file():
@@ -272,20 +277,20 @@ def _cover_lattices(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     pool = lattices_pool()
     path = pick_cell(pool, seed, row, col, 0)
     kids, vb = _clone_file(path, f"_l{seed}_{row}_{col}_{path.stem}")
-    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.14)
-    art_w = COVER_W * 0.94
-    art_h = COVER_H * 0.72
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.18)
+    art_w = COVER_W * 0.90 * 1.1
+    art_h = COVER_H * 0.68 * 1.1
     cx = COVER_W / 2
     cy = COVER_H / 2
     g = ET.SubElement(root, f"{{{NS}}}g")
-    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.2)")
+    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.02)")
     inner = ET.SubElement(g, f"{{{NS}}}svg")
     inner.set("x", f"{-art_w / 2:.2f}")
     inner.set("y", f"{-art_h / 2:.2f}")
     inner.set("width", f"{art_w:.2f}")
     inner.set("height", f"{art_h:.2f}")
     inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
-    inner.set("preserveAspectRatio", "xMidYMid slice")
+    inner.set("preserveAspectRatio", "xMidYMid meet")
     for ch in kids:
         inner.append(ch)
     return _to_doc(root)
@@ -296,17 +301,19 @@ def _cover_roots(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     pool = roots_pool()
     path = pick_cell(pool, seed, row, col, 0)
     kids, vb = _clone_file(path, f"_r{seed}_{row}_{col}_{path.stem}")
-    art_w = COVER_W * 1.0
-    art_h = COVER_H * 0.82
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.02 / 1.1)
+    art_w = COVER_W * 0.94
+    art_h = COVER_H * 0.74
     x0 = (COVER_W - art_w) / 2
-    y0 = (COVER_H - art_h) / 2
+    # Nudge frame down: root diagrams read high in their viewBox; meet centers on bbox.
+    y0 = (COVER_H - art_h) / 2 + COVER_H * 0.028
     inner = ET.SubElement(root, f"{{{NS}}}svg")
     inner.set("x", f"{x0:.2f}")
     inner.set("y", f"{y0:.2f}")
     inner.set("width", f"{art_w:.2f}")
     inner.set("height", f"{art_h:.2f}")
-    inner.set("viewBox", f"{vb[0]} {vb[1]} {vb[2]} {vb[3]}")
-    inner.set("preserveAspectRatio", "xMidYMid slice")
+    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
+    inner.set("preserveAspectRatio", "xMidYMid meet")
     for ch in kids:
         inner.append(ch)
     return _to_doc(root)

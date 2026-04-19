@@ -28,17 +28,17 @@ The canvas of designed experience beyond the screen is similarly generative. Thi
   <img src="/generators/streams/outputs/stream_8.svg" alt="">
 </div>
 
-If a group of people take part in a workshop focused on contributing a new server to a cooperative datacenter, the output of that workshop is more than the terabytes of storage or the teraflops of compute that have been pooled in. The output also involves the fact that a handful of people have each gained a bit of the know-how and confidence necessary to reclaim technology. Just like raw hardware can scale to petabytes of storage and petaflops of compute, this qualitative output could perhaps scale to resilient communities that can genuinely look after themselves technologically.
+If a group of people take part in a workshop focused on contributing a new server to a community datacenter, the output of that workshop is more than the terabytes of storage or the teraflops of compute that have been pooled in. The output also involves the fact that a handful of people have each gained a bit of the know-how and confidence necessary to reclaim technology. Just like raw hardware can scale to petabytes of storage and petaflops of compute, this qualitative output could perhaps scale to resilient communities that can genuinely look after themselves technologically.
 
 <div class="separator stream-circle">
   <img src="/generators/streams/outputs/stream_3.svg" alt="">
 </div>
 
-Facilitators traditionally take on a lot of subtle responsibilities to ensure that the activities they moderate unfold smoothly. These often include keeping track of schedule, keeping discussions on track, keeping track of turns, keeping stock of available materials, presenting part of the content, answering miscellaneous questions, and so on.
+Facilitators traditionally take on a lot of subtle responsibilities to ensure that the activities they moderate unfold smoothly. These often include keeping track of schedule, keeping discussions on track, keeping track of turns, keeping stock of available materials, presenting part of the content, or answering miscellaneous questions.
 
 It seems unthinkable to organize in-person events that designate no facilitator to keep a handle on things, as everything could devolve into chaos. This is a pity, as it turns facilitators into a major bottleneck to scaling any non-trivial group activity. After all, who trains the trainers?
 
-A solution to scaling experience comes from the genre of "bring your own device" games, such as the [Jackbox series](https://jackboxgames.com). These video games can only be played in small groups that can talk to each other live. What is especially relevant is the fact that they solve the facilitation problem by essentially automating the facilitator. Through clever use of audio playback, visual cues, and randomness, game designers can drastically scale in-person experiences by equipping them with the ability to autonomously run themselves.
+A solution to scaling experience comes from the genre of "bring your own device" games, such as the [Jackbox](https://jackboxgames.com) series. These video games can only be played in small groups that can talk to each other live. What is especially relevant is the fact that they solve the facilitation problem by essentially automating the facilitator. Through clever use of audio playback, visual cues, and randomness, game designers can drastically scale in-person experiences by equipping them with the ability to autonomously run themselves.
 
 Addressing the facilitator's traditional responsibilities requires some creativity. Keeping track of schedule can happen by moving to new segments automatically when participants are done. The media system can also keep track of whose turn it is and randomize the order, as well as narrate bits of content directly. And when it comes to tracking materials and answering questions, integrations with an inventory and knowledge base can provide the needed grounding.
 
@@ -48,7 +48,7 @@ Addressing the facilitator's traditional responsibilities requires some creativi
 
 In the same way as product designers focus on making products ergonomic such that they fit the user's physiognomy like a glove, so do experiences need to be designed so as to fit the participant's broader lifestyle and story. This starts with considerations of basic logistics, such as when and where things are happening in relation to their ongoing commitments. Yet it can go all the way to considering how experiences can interact constructively with their audience's self-image to kindle their hope and courage.
 
-And just as physical products benefit from rapid prototyping methods that enable designers to quickly move from one revision to the next, so can experiences benefit from methods of efficiently "playtesting" better ways in which activities could unfold. In particular, taking an interactive media system and making it easily configurable and parametric can drastically lower the bar to trying out variations to previous formats.
+And just as physical products benefit from rapid prototyping methods that enable designers to quickly move from one revision to the next, so can experiences benefit from methods of efficiently "playtesting" better ways in which activities could unfold. In particular, taking an interactive media system and making it easily configurable and parametric can drastically lower the bar to trying out variations.
 
 <div class="separator stream-circle">
   <img src="/generators/streams/outputs/stream_5.svg" alt="">
