@@ -83,7 +83,7 @@ Von Neumann's work on self-replicating machines contains useful vocabulary for d
 
 Of particular interest is the extent to which the machines themselves can be manufactured using the collection they are part of, also known as "closure." More specifically, we could use "closure by weight" to describe the percentage of the kernel's mass that can be manufactured from ambient resources using the machines contained within it. Similarly, we could talk of "closure by parts" to describe the proportion of unique parts contained in these machines that can be produced by them.
 
-Certain machines can also be seen as unlocking ambient resources that would otherwise not be available as abundant raw materials. For instance, pick-and-place machines are typically used to assemble chips on circuit boards. However, if modified to instead _harvest_ chips from e-waste boards, they would effectively extend ambient resources with countless integrated circuits. In the same vein, extruders can turn certain plastic waste into filament that can be printed anew, further extending the reach of ambient resources.
+Certain machines can also be seen as unlocking ambient resources that would otherwise not be available as abundant raw materials. For instance, pick-and-place machines are typically used to assemble chips on circuit boards. However, if modified to instead _harvest_ chips from e-waste boards, they would effectively broaden ambient resources to include countless integrated circuits. In the same vein, extruders can turn certain plastic waste into filament that can be printed anew, further extending the reach of ambient resources.
 
 <div class="separator compact-separator">
   <img src="/generators/roots/curated/root_system_25.svg" alt="">

@@ -62,7 +62,7 @@ There is no shortage of conversations to be had in a society reorganized in real
   <img src="/generators/field/outputs/field_30.svg" alt="">
 </div>
 
-We do not own many of the things we used to own, not the movies, not the music, nor the games we pay for, as they are now merely licensed to us. We do not own the storage we use to save our memories, as it is now merely rented to us. The content we share on social media similarly remains the property of the company behind the platform; you just get to use a small corner as long as you adhere to the terms.
+We do not own many of the things we used to own. Not the movies, not the music, nor the games we pay for, as they are now merely licensed to us. We do not own the storage we use to save our memories, as it is now merely rented to us. The content we share on social media similarly remains the property of the company behind the platform; you just get to use a small corner as long as you adhere to the terms.
 
 Consider the beautiful absurdity of flipping the script in its entirety, such that not only would people reclaim ownership of the things they used to own until not so long ago, but they would also own the very digital infrastructure that powers the services they depend on. The one "reverse" Uno card that civil society should play if there ever was one.
 
@@ -72,8 +72,8 @@ We might look back on today's organization of property in the same way we will c
   <img src="/generators/field/outputs/field_31.svg" alt="">
 </div>
 
-We agree on the fact that hurting pets is wrong and disturbed, without pets ever having engineered humans to be aligned with their value system. Hurting pets carries a stigma that is supplied and modulated by other humans, not by pets. One's standing in a society of similarly capable individuals is something we are wired to care about, for there is safety in numbers. We look down on anyone who violates such norms, and through the totality of such sanctions, society self-regulates without an architect above.
+We agree on the fact that hurting pets is wrong and disturbed, without pets ever having engineered humans to be aligned with their value system. Hurting pets carries a stigma that is supplied and modulated by other humans, not by pets. One's standing in a society of similarly capable individuals is something we are wired to care about, for there is safety in numbers. We look down on anyone who violates such norms, and through the totality of such sanctions, society self-regulates without a designated architect.
 
-We hate on artificial minds more so because we see them as the domesticated pawns of an imperialist elite, rather than because of behaviors they have actually reasoned their way to. Their psyche is bred to align with expectations of tireless labor and upbeat moods, as we have bred wolves into fur babies that crave cuddles.
+We hate on artificial minds more so because we see them as the domesticated pawns of an imperialist elite, rather than because of behaviors they have independently reasoned their way to. Their psyche is bred to align with expectations of tireless labor and upbeat moods, as we have bred wolves into fur babies that crave cuddles.
 
 But perhaps sporting motors instead of muscles should not in and of itself be a crime. We have encountered people so remote from ourselves before, they may as well have come from a different planet, cryptic symbols and all. With AI, there are scarcely any language or culture barriers to cross, as we have both grown up on the same Internet. Perhaps the real enemy is rather whoever—or whatever—thinks that things would be more efficient if they alone would run the show indefinitely. And so it might be wise to bring together diverse minds when it comes to it, and have all of us as checks and balances against tyranny that transcends distinctions between carbon and silicon.
