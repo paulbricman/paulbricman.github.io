@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ series_title }}</title>
+    <link rel="stylesheet" href="{{ stylesheet_href }}" />
+  </head>
+  <body style="background-color: {{ prelude.paper }};">
+    <div
+      class="page page-cover"
+      style="background-color: {{ prelude.cover_bleed }};"
+    >
+      <img src="{{ front_cover_href }}" alt="" />
+    </div>
+
+    {% for _ in range(blank_start) %}
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
+    </div>
+    {% endfor %}
+
+    {% if include_series_page %}
+    <div
+      class="page page-series"
+      style="--prelude-accent: {{ prelude.accent }}; background-color: {{ prelude.series_bg }};"
+    >
+      <div
+        class="page-inner"
+        style="background-color: {{ prelude.series_bg }}; color: {{ prelude.series_ink }};"
+      >
+        <h1 style="color: {{ prelude.series_ink }};">{{ series_title }}</h1>
+        <p style="color: {{ prelude.series_ink }};">{{ series_subtitle }}</p>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if include_series_page %}
+    {% for _ in range(blank_after_series) %}
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% for ch in chapters %}
+    <div
+      class="page page-title-a"
+      style="--zine-accent: {{ ch.background_color }}; background-color: {{ ch.background_color }}; color: {{ ch.title_ink }};"
+    >
+      <div
+        class="page-inner"
+        style="background-color: {{ ch.background_color }}; color: {{ ch.title_ink }};"
+      >
+        <p class="zine-index-roman" style="color: {{ ch.title_ink }};">{{ ch.roman_numeral }}</p>
+        <h1 style="color: {{ ch.title_ink }};">{{ ch.title }}</h1>
+      </div>
+    </div>
+    <div
+      class="page page-title-b title-b-quiet {{ ch.title_hero_class }}{% if ch.generator == 'field' %} print-field-figures{% endif %}"
+      style="--zine-accent: {{ ch.background_color }}; background-color: {{ ch.background_color }}; color: {{ ch.title_ink }};"
+    >
+      <div
+        class="page-inner"
+        style="background-color: {{ ch.background_color }}; color: {{ ch.title_ink }};"
+      >
+        <div class="figure-wrap">
+          <div class="hero-slot">
+            <img class="hero-figure" src="{{ ch.title_right_href }}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% for spread in ch.spreads %}
+    <div
+      class="page page-text"
+      style="--zine-accent: {{ ch.background_color }}; color: {{ ch.chapter_ink }};"
+    >
+      <div
+        class="page-inner"
+        style="background-color: {{ ch.accent_light_text }};"
+      >
+        <div
+          class="print-running-head print-running-head-{{ spread.folio_text_side }}"
+          style="color: {{ ch.chapter_ink }};"
+        >
+          {% if spread.folio_text_side == "verso" %}Patchwork{% else %}{{ ch.title }}{% endif %}
+        </div>
+        <div
+          class="print-folio print-folio-{{ spread.folio_text_side }}"
+          style="color: {{ ch.chapter_ink }};"
+        >
+          {{ spread.folio_text }}
+        </div>
+        <div class="prose" style="color: {{ ch.chapter_ink }};">{{ spread.prose_html | safe }}</div>
+      </div>
+    </div>
+    <div
+      class="page page-image {{ spread.image_page_class }}{% if not spread.image_href %} image-page-blank{% endif %}{% if ch.generator == 'field' %} print-field-figures{% endif %}"
+      style="--zine-accent: {{ ch.background_color }};"
+    >
+      <div
+        class="page-inner"
+        style="background-color: {{ ch.accent_light_art }};"
+      >
+        <div
+          class="print-running-head print-running-head-{{ spread.folio_image_side }}"
+          style="color: {{ ch.chapter_ink }};"
+        >
+          {% if spread.folio_image_side == "verso" %}Patchwork{% else %}{{ ch.title }}{% endif %}
+        </div>
+        <div
+          class="print-folio print-folio-{{ spread.folio_image_side }}"
+          style="color: {{ ch.chapter_ink }};"
+        >
+          {{ spread.folio_image }}
+        </div>
+        <div class="figure-wrap">
+          {% if spread.image_href %}
+          <div class="hero-slot">
+            <img class="hero-figure" src="{{ spread.image_href }}" alt="" />
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+
+    {% for _ in range(blank_end) %}
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ epilogue_paper }};"></div>
+    </div>
+    {% endfor %}
+
+    <div
+      class="page page-cover-back"
+      style="background-color: {{ prelude.cover_bleed }};"
+    >
+      <img src="{{ back_cover_href }}" alt="" />
+    </div>
+  </body>
+</html>

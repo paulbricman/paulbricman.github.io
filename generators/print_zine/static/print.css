@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+/* ET Book — TTF only for reliable WeasyPrint embedding */
+@font-face {
+  font-family: "et-book";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../../assets/et-book/et-book-roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "et-book";
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  src: url("../../../assets/et-book/et-book-display-italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "et-book";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../../assets/et-book/et-book-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "et-book";
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+  src: url("../../../assets/et-book/et-book-italic.ttf") format("truetype");
+}
+
+/* No sheet-edge margin band; no margin-box typography */
+@page {
+  size: A5 portrait;
+  margin: 0;
+}
+
+@page cover {
+  margin: 0;
+}
+
+@page blank {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13.25px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: et-book, Palatino, "Palatino Linotype", Georgia, serif;
+  color: #1a1a1a;
+}
+
+.page {
+  page-break-before: always;
+  break-before: page;
+  position: relative;
+  width: 100%;
+  min-height: 210mm;
+  overflow: visible;
+}
+
+.page.page-image,
+.page.page-title-b {
+  overflow: visible;
+}
+
+.page:first-child {
+  page-break-before: auto;
+  break-before: auto;
+}
+
+.page-blank {
+  page: blank;
+}
+
+.page-inner {
+  min-height: 210mm;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.page-cover,
+.page-cover-back {
+  page: cover;
+  min-height: 210mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-cover img,
+.page-cover-back img {
+  width: 148mm;
+  height: 210mm;
+  max-width: 148mm;
+  max-height: 210mm;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+}
+
+.page-blank .page-inner {
+  min-height: 210mm;
+}
+
+/* Folios + running heads (positioned inside .page-inner) */
+.page-title-a .page-inner,
+.page-title-b .page-inner,
+.page-text .page-inner,
+.page-image .page-inner {
+  position: relative;
+}
+
+.print-running-head {
+  position: absolute;
+  top: 14mm;
+  font-size: 7.5pt;
+  line-height: 1.2;
+  z-index: 2;
+}
+
+/* Verso: Patchwork, outer margin. Recto: chapter title, outer margin (swapped from default L/R). */
+.print-running-head-verso {
+  right: 14mm;
+  text-align: right;
+}
+
+.print-running-head-recto {
+  left: 14mm;
+  text-align: left;
+}
+
+.print-folio {
+  position: absolute;
+  bottom: 14mm;
+  font-size: 7.5pt;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  z-index: 2;
+}
+
+/* Folio outer margin matches running head on the same verso/recto class. */
+.print-folio-verso {
+  right: 14mm;
+  text-align: right;
+}
+
+.print-folio-recto {
+  left: 14mm;
+  text-align: left;
+}
+
+/* Series page: light paper + dark ink from Jinja (prelude.series_bg / series_ink) */
+.page-series .page-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 210mm;
+}
+
+.page-series h1 {
+  font-weight: 400;
+  font-size: 3.1rem;
+  line-height: 1.1;
+  margin: 0 0 1.35rem 0;
+  text-transform: none;
+}
+
+.page-series p {
+  margin: 0;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/* Section title: accent fill + title ink (colors from Jinja) */
+.page-title-a .page-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 210mm;
+}
+
+.page-title-a .zine-index-roman {
+  position: relative;
+  top: -5mm;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  margin: 0 0 0.55rem 0;
+  padding: 0 8mm;
+  text-align: center;
+  text-transform: none;
+}
+
+.page-title-a h1 {
+  font-weight: 400;
+  font-size: 2.35rem;
+  line-height: 1.15;
+  margin: 0;
+  max-width: 95%;
+  padding: 0 8mm;
+}
+
+/* Section opener art: full-bleed accent from CSS; transparent SVG centers in flex hero. */
+.page-title-b .page-inner {
+  min-height: 210mm;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--zine-accent, #333);
+}
+
+/* Match .page-image .figure-wrap so section cover and body figures share the same box + img size. */
+.page-title-b .page-inner .figure-wrap {
+  width: 100%;
+  margin: 0;
+  padding: 5mm 10mm 5mm 10mm;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-title-b .figure-wrap .hero-slot {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title-b .figure-wrap .hero-slot > .hero-figure {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin: 0;
+  align-self: center;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* Same content inset as .page-text .prose; figure fills that box (aligns with running marks). */
+.hero-slot {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-shrink: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.hero-slot > .hero-figure {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* Text: background from Jinja only */
+.page-text .page-inner {
+  min-height: 210mm;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.page-text .prose {
+  max-width: 100%;
+  margin: 0;
+  padding: 10mm 14mm 8mm 14mm;
+  font-size: 1.12rem;
+  line-height: 1.48;
+  color: inherit;
+}
+
+.page-text .prose p {
+  margin: 0 0 0.62em 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.page-text .prose a,
+.page-text .prose a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-text .prose em {
+  font-style: italic;
+}
+
+.page-text .prose strong {
+  font-weight: bold;
+}
+
+/* Field zine (III): noticeably inset slabs (default image wrap is 10mm; prose is 14mm). */
+.page-image.print-field-figures .page-inner .figure-wrap,
+.page-title-b.print-field-figures .page-inner .figure-wrap {
+  padding: 10mm 17mm 8mm 17mm;
+}
+
+/* Body figures: mirror text page flex + same inset as .prose */
+.page-image .page-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 210mm;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page-image .figure-wrap {
+  width: 100%;
+  margin: 0;
+  padding: 5mm 10mm 5mm 10mm;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-image .hero-slot > .hero-figure {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.page-image.sep-compact .hero-slot > .hero-figure,
+.page-title-b.sep-compact .figure-wrap .hero-slot > .hero-figure {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.page-image.sep-formulas .hero-slot > .hero-figure,
+.page-title-b.sep-formulas .figure-wrap .hero-slot > .hero-figure {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.page-image.image-page-blank .figure-wrap {
+  min-height: 0;
+}

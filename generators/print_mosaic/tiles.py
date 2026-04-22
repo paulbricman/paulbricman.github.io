@@ -95,8 +95,14 @@ def _viewbox_center_crop_to_aspect(
     vh: float,
     aspect_w: float,
     aspect_h: float,
+    vertical_anchor: float = 0.5,
 ) -> tuple[float, float, float, float]:
-    """Center-crop intrinsic (vx,vy,vw,vh) to match aspect_w:aspect_h (same for every strip)."""
+    """Crop intrinsic (vx,vy,vw,vh) to aspect_w:aspect_h.
+
+    vertical_anchor: when the crop window is shorter than the art (tall source), 0 aligns the
+    window to the top of the content, 1 to the bottom, 0.5 centered (default mosaic).
+    """
+    va = max(0.0, min(1.0, vertical_anchor))
     want = aspect_w / aspect_h
     have = vw / vh
     if have > want:
@@ -108,7 +114,7 @@ def _viewbox_center_crop_to_aspect(
         nw = vw
         nh = vw / want
         nx = vx
-        ny = vy + (vh - nh) / 2.0
+        ny = vy + (vh - nh) * va
     return nx, ny, nw, nh
 
 
@@ -129,18 +135,164 @@ def _viewbox_zoom_center(
     return nx, ny, nw, nh
 
 
-def _svg_open(spec: ZineSpec) -> ET.Element:
+def _svg_open_background(background: str, *, opaque_background: bool = True) -> ET.Element:
     root = ET.Element(f"{{{NS}}}svg")
     root.set("width", str(COVER_W))
     root.set("height", str(COVER_H))
     root.set("viewBox", f"0 0 {COVER_W:.0f} {COVER_H:.0f}")
     root.set("overflow", "hidden")
     root.set("xmlns:xlink", "http://www.w3.org/1999/xlink")
-    bg = ET.SubElement(root, f"{{{NS}}}rect")
-    bg.set("width", "100%")
-    bg.set("height", "100%")
-    bg.set("fill", spec.background)
+    if opaque_background:
+        bg = ET.SubElement(root, f"{{{NS}}}rect")
+        bg.set("width", "100%")
+        bg.set("height", "100%")
+        bg.set("fill", background)
     return root
+
+
+def _svg_open(spec: ZineSpec) -> ET.Element:
+    return _svg_open_background(spec.background)
+
+
+def build_field_stack_svg(
+    background: str,
+    seed: int,
+    row: int,
+    col: int,
+    *,
+    opaque_background: bool = True,
+    strip_width_frac: float = 0.75,
+    strip_height_frac: float = 0.21,
+    strip_gap_frac: float = 0.03,
+    inner_preserve_aspect: str = "xMidYMid slice",
+    inner_vertical_anchor: float = 0.5,
+    crop_inner_view_to_strip: bool = True,
+) -> str:
+    """Three stacked field strips (same layout as mosaic tile) on an arbitrary fill.
+
+    When crop_inner_view_to_strip is False, each strip keeps its full intrinsic viewBox and
+    preserveAspectRatio fits it into the slot (no center-crop into the artwork — for print).
+
+    ``strip_height_frac`` / ``strip_gap_frac`` are fractions of ``COVER_H``; the stack is
+    vertically centered. Use larger fractions for print so slabs scale up without changing
+    aspect handling (still ``inner_preserve_aspect`` per strip).
+    """
+    root = _svg_open_background(background, opaque_background=opaque_background)
+    pool = field_pool()
+    strip_w = COVER_W * strip_width_frac
+    x0 = (COVER_W - strip_w) / 2
+    strip_h = COVER_H * strip_height_frac
+    gap = COVER_H * strip_gap_frac
+    stack_h = 3 * strip_h + 2 * gap
+    y0 = (COVER_H - stack_h) / 2
+    for i in range(3):
+        path = pick_cell(pool, seed, row, col, i)
+        kids, vb = _clone_file(path, f"_f{seed}_{row}_{col}_{i}_{path.stem}")
+        y = y0 + i * (strip_h + gap)
+        if crop_inner_view_to_strip:
+            nx, ny, nw, nh = _viewbox_center_crop_to_aspect(
+                vb[0], vb[1], vb[2], vb[3], strip_w, strip_h, vertical_anchor=inner_vertical_anchor
+            )
+        else:
+            nx, ny, nw, nh = vb[0], vb[1], vb[2], vb[3]
+        inner = ET.SubElement(root, f"{{{NS}}}svg")
+        inner.set("x", f"{x0:.2f}")
+        inner.set("y", f"{y:.2f}")
+        inner.set("width", f"{strip_w:.2f}")
+        inner.set("height", f"{strip_h:.2f}")
+        inner.set("viewBox", f"{nx:.4f} {ny:.4f} {nw:.4f} {nh:.4f}")
+        inner.set("preserveAspectRatio", inner_preserve_aspect)
+        for ch in kids:
+            inner.append(ch)
+    return _to_doc(root)
+
+
+def build_roots_tile_svg(
+    background: str, seed: int, row: int, col: int, *, opaque_background: bool = True
+) -> str:
+    """Single roots diagram (same layout as mosaic tile) on an arbitrary fill."""
+    root = _svg_open_background(background, opaque_background=opaque_background)
+    pool = roots_pool()
+    path = pick_cell(pool, seed, row, col, 0)
+    kids, vb = _clone_file(path, f"_r{seed}_{row}_{col}_{path.stem}")
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.02 / 1.1)
+    art_w = COVER_W * 0.94
+    art_h = COVER_H * 0.74
+    x0 = (COVER_W - art_w) / 2
+    y0 = (COVER_H - art_h) / 2 + COVER_H * 0.028
+    inner = ET.SubElement(root, f"{{{NS}}}svg")
+    inner.set("x", f"{x0:.2f}")
+    inner.set("y", f"{y0:.2f}")
+    inner.set("width", f"{art_w:.2f}")
+    inner.set("height", f"{art_h:.2f}")
+    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
+    inner.set("preserveAspectRatio", "xMidYMid meet")
+    for ch in kids:
+        inner.append(ch)
+    return _to_doc(root)
+
+
+def build_lattices_tile_svg(
+    background: str,
+    seed: int,
+    row: int,
+    col: int,
+    *,
+    viewbox_zoom: float = 1.18,
+    opaque_background: bool = True,
+) -> str:
+    """Lattice art (same layout as mosaic tile, rotation baked in SVG) on an arbitrary fill."""
+    root = _svg_open_background(background, opaque_background=opaque_background)
+    pool = lattices_pool()
+    path = pick_cell(pool, seed, row, col, 0)
+    kids, vb = _clone_file(path, f"_l{seed}_{row}_{col}_{path.stem}")
+    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], viewbox_zoom)
+    art_w = COVER_W * 0.90 * 1.1
+    art_h = COVER_H * 0.68 * 1.1
+    cx = COVER_W / 2
+    cy = COVER_H / 2
+    g = ET.SubElement(root, f"{{{NS}}}g")
+    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.02)")
+    inner = ET.SubElement(g, f"{{{NS}}}svg")
+    inner.set("x", f"{-art_w / 2:.2f}")
+    inner.set("y", f"{-art_h / 2:.2f}")
+    inner.set("width", f"{art_w:.2f}")
+    inner.set("height", f"{art_h:.2f}")
+    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
+    inner.set("preserveAspectRatio", "xMidYMid meet")
+    for ch in kids:
+        inner.append(ch)
+    return _to_doc(root)
+
+
+def build_formulas_stack_svg(
+    background: str, seed: int, row: int, col: int, *, opaque_background: bool = True
+) -> str:
+    """Five stacked formula strips (same layout as mosaic tile) on an arbitrary fill."""
+    root = _svg_open_background(background, opaque_background=opaque_background)
+    pool = formulas_strip_pool()
+    strip_h = COVER_H * 0.148 * 1.2
+    gap = COVER_H * 0.012 * 0.8 * 0.38
+    stack_h = 5 * strip_h + 4 * gap
+    y0 = (COVER_H - stack_h) / 2
+    zoom = 0.86 * 1.2
+    for i in range(5):
+        path = pick_cell(pool, seed, row, col, i)
+        if not path.is_file():
+            continue
+        kids, vb = _clone_file(path, f"_m{seed}_{row}_{col}_{i}_{path.stem}")
+        y = y0 + i * (strip_h + gap)
+        zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], zoom)
+        inner = ET.SubElement(root, f"{{{NS}}}svg")
+        inner.set("x", "0")
+        inner.set("y", f"{y:.2f}")
+        inner.set("width", str(COVER_W))
+        inner.set("height", f"{strip_h:.2f}")
+        inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
+        inner.set("preserveAspectRatio", "xMidYMid meet")
+        for ch in kids:
+            inner.append(ch)
+    return _to_doc(root)
 
 
 def _to_doc(root: ET.Element) -> str:
@@ -155,57 +307,87 @@ def render_tile(
     grid_row: int = 0,
     grid_col: int = 0,
     icons_root: Path | None = None,
+    opaque_background: bool = True,
 ) -> str:
     _ = icons_root  # retained for API compatibility; tiles use on-disk SVGs only
     spec = next(z for z in ZINES if z.key == generator_id)
     if spec.background.lower() != tile_background.lower():
         raise ValueError(f"background mismatch for {generator_id}")
     if generator_id == "field":
-        return _cover_field(spec, seed, grid_row, grid_col)
+        return _cover_field(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
     if generator_id == "streams":
-        return _cover_streams(spec, seed, grid_row, grid_col)
+        return _cover_streams(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
     if generator_id == "formulas":
-        return _cover_formulas(spec, seed, grid_row, grid_col)
+        return _cover_formulas(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
     if generator_id == "lattices":
-        return _cover_lattices(spec, seed, grid_row, grid_col)
+        return _cover_lattices(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
     if generator_id == "roots":
-        return _cover_roots(spec, seed, grid_row, grid_col)
+        return _cover_roots(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
     raise ValueError(f"unknown generator: {generator_id}")
 
 
-def _cover_field(spec: ZineSpec, seed: int, row: int, col: int) -> str:
-    root = _svg_open(spec)
-    pool = field_pool()
-    strip_w = COVER_W * 0.75
-    x0 = (COVER_W - strip_w) / 2
-    strip_h = COVER_H * 0.21
-    gap = COVER_H * 0.03
-    stack_h = 3 * strip_h + 2 * gap
-    y0 = (COVER_H - stack_h) / 2
-    for i in range(3):
-        path = pick_cell(pool, seed, row, col, i)
-        kids, vb = _clone_file(path, f"_f{seed}_{row}_{col}_{i}_{path.stem}")
-        y = y0 + i * (strip_h + gap)
-        nx, ny, nw, nh = _viewbox_center_crop_to_aspect(vb[0], vb[1], vb[2], vb[3], strip_w, strip_h)
-        inner = ET.SubElement(root, f"{{{NS}}}svg")
-        inner.set("x", f"{x0:.2f}")
-        inner.set("y", f"{y:.2f}")
-        inner.set("width", f"{strip_w:.2f}")
-        inner.set("height", f"{strip_h:.2f}")
-        inner.set("viewBox", f"{nx:.4f} {ny:.4f} {nw:.4f} {nh:.4f}")
-        inner.set("preserveAspectRatio", "xMidYMid slice")
-        for ch in kids:
-            inner.append(ch)
-    return _to_doc(root)
+def _cover_field(
+    spec: ZineSpec, seed: int, row: int, col: int, *, opaque_background: bool = True
+) -> str:
+    return build_field_stack_svg(spec.background, seed, row, col, opaque_background=opaque_background)
 
 
-def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
-    root = _svg_open(spec)
-    pool = streams_pool()
-    path = pick_cell(pool, seed, row, col, 0)
-    kids, vb = _clone_file(path, f"_s{seed}_{row}_{col}_{path.stem}")
-    # Wide viewBox + ~0.2px strokes: need a fairly tight center crop (high z) or strokes
-    # vanish in a mosaic cell. Smaller circle (frame) so the ring is not oversized vs art.
+# XOR into cell seed so stream pool indices reroll without changing other zines’ picks.
+_STREAMS_PICK_SALT = 0x53A3FC51
+
+
+def _clone_streams_procedural(seed: int, id_suffix: str) -> tuple[list[ET.Element], tuple[float, float, float, float]]:
+    """Procedural stream field for print zine IV: smaller SVG than dense sampling, still smooth (Q + round caps)."""
+    from streams import StreamsGenerator  # type: ignore[import-not-found]
+
+    gen = StreamsGenerator(
+        width=720,
+        height=300,
+        num_lines=64,
+        steps=150,
+        step_size=2.55,
+        noise_scale=0.00255,
+        stroke_width=0.66,
+        stroke_color="#ffffff",
+        background="transparent",
+        padding=0,
+        seed_cols=30,
+        seed_rows=20,
+        path_sample_stride=2,
+        path_coord_decimals=2,
+    )
+    gen.generate(seed=seed % (2**31 - 1) or 1)
+    raw = gen.to_svg()
+    r = _parse_root(raw)
+    _uniquify_ids(r, id_suffix)
+    vx, vy, vw, vh = _intrinsic_viewbox(r)
+    kids: list[ET.Element] = []
+    for c in list(r):
+        kids.append(ET.fromstring(ET.tostring(c, encoding="unicode")))
+    return kids, (vx, vy, vw, vh)
+
+
+def build_streams_tile_svg(
+    background: str,
+    seed: int,
+    row: int,
+    col: int,
+    *,
+    opaque_background: bool = True,
+    use_procedural_stream: bool = False,
+) -> str:
+    """Stream circle tile (same layout as mosaic) on an arbitrary fill.
+
+    When ``use_procedural_stream`` is True (print zine IV), art is generated in-process with
+    :class:`streams.StreamsGenerator` instead of raster-like pool SVGs.
+    """
+    root = _svg_open_background(background, opaque_background=opaque_background)
+    if use_procedural_stream:
+        kids, vb = _clone_streams_procedural(seed, f"_sproc{seed}_{row}_{col}")
+    else:
+        pool = streams_pool()
+        path = pick_cell(pool, seed ^ _STREAMS_PICK_SALT, row, col, 0)
+        kids, vb = _clone_file(path, f"_s{seed}_{row}_{col}_{path.stem}")
     stream_vb_zoom = 5.05
     zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], stream_vb_zoom)
 
@@ -244,76 +426,25 @@ def _cover_streams(spec: ZineSpec, seed: int, row: int, col: int) -> str:
     return _to_doc(root)
 
 
-def _cover_formulas(spec: ZineSpec, seed: int, row: int, col: int) -> str:
-    root = _svg_open(spec)
-    pool = formulas_strip_pool()
-    strip_h = COVER_H * 0.148 * 1.2
-    gap = COVER_H * 0.012 * 0.8 * 0.6
-    stack_h = 5 * strip_h + 4 * gap
-    y0 = (COVER_H - stack_h) / 2
-    # _viewbox_zoom_center: >1 magnifies; 0.86 was zoomed out; ×1.2 ≈ 20% zoom in.
-    zoom = 0.86 * 1.2
-    for i in range(5):
-        path = pick_cell(pool, seed, row, col, i)
-        if not path.is_file():
-            continue
-        kids, vb = _clone_file(path, f"_m{seed}_{row}_{col}_{i}_{path.stem}")
-        y = y0 + i * (strip_h + gap)
-        zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], zoom)
-        inner = ET.SubElement(root, f"{{{NS}}}svg")
-        inner.set("x", "0")
-        inner.set("y", f"{y:.2f}")
-        inner.set("width", str(COVER_W))
-        inner.set("height", f"{strip_h:.2f}")
-        inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
-        inner.set("preserveAspectRatio", "xMidYMid meet")
-        for ch in kids:
-            inner.append(ch)
-    return _to_doc(root)
+def _cover_streams(
+    spec: ZineSpec, seed: int, row: int, col: int, *, opaque_background: bool = True
+) -> str:
+    return build_streams_tile_svg(spec.background, seed, row, col, opaque_background=opaque_background)
 
 
-def _cover_lattices(spec: ZineSpec, seed: int, row: int, col: int) -> str:
-    root = _svg_open(spec)
-    pool = lattices_pool()
-    path = pick_cell(pool, seed, row, col, 0)
-    kids, vb = _clone_file(path, f"_l{seed}_{row}_{col}_{path.stem}")
-    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.18)
-    art_w = COVER_W * 0.90 * 1.1
-    art_h = COVER_H * 0.68 * 1.1
-    cx = COVER_W / 2
-    cy = COVER_H / 2
-    g = ET.SubElement(root, f"{{{NS}}}g")
-    g.set("transform", f"translate({cx:.2f},{cy:.2f}) rotate(90) scale(1.02)")
-    inner = ET.SubElement(g, f"{{{NS}}}svg")
-    inner.set("x", f"{-art_w / 2:.2f}")
-    inner.set("y", f"{-art_h / 2:.2f}")
-    inner.set("width", f"{art_w:.2f}")
-    inner.set("height", f"{art_h:.2f}")
-    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
-    inner.set("preserveAspectRatio", "xMidYMid meet")
-    for ch in kids:
-        inner.append(ch)
-    return _to_doc(root)
+def _cover_formulas(
+    spec: ZineSpec, seed: int, row: int, col: int, *, opaque_background: bool = True
+) -> str:
+    return build_formulas_stack_svg(spec.background, seed, row, col, opaque_background=opaque_background)
 
 
-def _cover_roots(spec: ZineSpec, seed: int, row: int, col: int) -> str:
-    root = _svg_open(spec)
-    pool = roots_pool()
-    path = pick_cell(pool, seed, row, col, 0)
-    kids, vb = _clone_file(path, f"_r{seed}_{row}_{col}_{path.stem}")
-    zx, zy, zw, zh = _viewbox_zoom_center(vb[0], vb[1], vb[2], vb[3], 1.02 / 1.1)
-    art_w = COVER_W * 0.94
-    art_h = COVER_H * 0.74
-    x0 = (COVER_W - art_w) / 2
-    # Nudge frame down: root diagrams read high in their viewBox; meet centers on bbox.
-    y0 = (COVER_H - art_h) / 2 + COVER_H * 0.028
-    inner = ET.SubElement(root, f"{{{NS}}}svg")
-    inner.set("x", f"{x0:.2f}")
-    inner.set("y", f"{y0:.2f}")
-    inner.set("width", f"{art_w:.2f}")
-    inner.set("height", f"{art_h:.2f}")
-    inner.set("viewBox", f"{zx:.4f} {zy:.4f} {zw:.4f} {zh:.4f}")
-    inner.set("preserveAspectRatio", "xMidYMid meet")
-    for ch in kids:
-        inner.append(ch)
-    return _to_doc(root)
+def _cover_lattices(
+    spec: ZineSpec, seed: int, row: int, col: int, *, opaque_background: bool = True
+) -> str:
+    return build_lattices_tile_svg(spec.background, seed, row, col, opaque_background=opaque_background)
+
+
+def _cover_roots(
+    spec: ZineSpec, seed: int, row: int, col: int, *, opaque_background: bool = True
+) -> str:
+    return build_roots_tile_svg(spec.background, seed, row, col, opaque_background=opaque_background)

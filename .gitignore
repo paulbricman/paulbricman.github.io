@@ -5,3 +5,5 @@ _site
 vendor
 .DS_Store
 __pycache__
+generators/print_zine/.venv
+generators/print_zine/samples/*.pdf

@@ -13,7 +13,12 @@ class StreamsGenerator:
                  stroke_width=1.2,
                  stroke_color='white',
                  background='transparent',
-                 padding=0):
+                 padding=0,
+                 *,
+                 seed_cols=40,
+                 seed_rows=28,
+                 path_sample_stride=1,
+                 path_coord_decimals=3):
         self.width = width
         self.height = height
         self.num_lines = num_lines
@@ -24,6 +29,10 @@ class StreamsGenerator:
         self.stroke_color = stroke_color
         self.background = background
         self.padding = padding
+        self.seed_cols = seed_cols
+        self.seed_rows = seed_rows
+        self.path_sample_stride = max(1, int(path_sample_stride))
+        self.path_coord_decimals = max(1, min(6, int(path_coord_decimals)))
         self.streamlines = []
         self.permutation = []
 
@@ -95,12 +104,12 @@ class StreamsGenerator:
         self._init_permutation(seed if seed is not None else 0)
         self.streamlines = []
 
-        cols = 32
-        rows = 22
+        cols = self.seed_cols
+        rows = self.seed_rows
         for row in range(rows):
             for col in range(cols):
-                jx = random.uniform(-0.2, 0.2) * (self.width / cols)
-                jy = random.uniform(-0.2, 0.2) * (self.height / rows)
+                jx = random.uniform(-0.15, 0.15) * (self.width / cols)
+                jy = random.uniform(-0.15, 0.15) * (self.height / rows)
                 sx = (col + 0.5) / cols * self.width + jx
                 sy = (row + 0.5) / rows * self.height + jy
                 pts = self._trace(sx, sy)
@@ -115,19 +124,46 @@ class StreamsGenerator:
             if len(pts) > 4:
                 self.streamlines.append(pts)
 
+    def _fmt_xy(self, x: float, y: float) -> str:
+        d = self.path_coord_decimals
+        return f"{x:.{d}f},{y:.{d}f}"
+
     def _points_to_smooth_path(self, points):
+        """Quadratic segments through samples; optional stride shrinks SVG while staying smooth."""
         if len(points) < 2:
-            return ''
-        d = f'M {round(points[0][0])},{round(points[0][1])}'
-        for pt in points[1:]:
-            d += f' L {round(pt[0])},{round(pt[1])}'
+            return ""
+        stride = self.path_sample_stride
+        if stride > 1 and len(points) > 2:
+            sampled = list(points[::stride])
+            pe = points[-1]
+            ls = sampled[-1]
+            if ls[0] != pe[0] or ls[1] != pe[1]:
+                sampled.append(pe)
+            points = sampled
+        if len(points) < 2:
+            return ""
+        if len(points) == 2:
+            p0, p1 = points[0], points[1]
+            return f"M {self._fmt_xy(p0[0], p0[1])} L {self._fmt_xy(p1[0], p1[1])}"
+        d = f"M {self._fmt_xy(points[0][0], points[0][1])}"
+        for i in range(1, len(points) - 1):
+            p1 = points[i]
+            p2 = points[i + 1]
+            mx = (p1[0] + p2[0]) * 0.5
+            my = (p1[1] + p2[1]) * 0.5
+            d += f" Q {self._fmt_xy(p1[0], p1[1])} {self._fmt_xy(mx, my)}"
+        pe = points[-1]
+        d += f" L {self._fmt_xy(pe[0], pe[1])}"
         return d
 
     def to_svg(self):
         canvas_w = self.width + 2 * self.padding
         canvas_h = self.height + 2 * self.padding
 
-        parts = [f'<svg width="{canvas_w}" height="{canvas_h}" xmlns="http://www.w3.org/2000/svg">']
+        parts = [
+            f'<svg width="{canvas_w}" height="{canvas_h}" xmlns="http://www.w3.org/2000/svg" '
+            f'shape-rendering="geometricPrecision">'
+        ]
         if self.background != 'transparent':
             parts.append(f'<rect width="{canvas_w}" height="{canvas_h}" fill="{self.background}"/>')
 
@@ -138,7 +174,11 @@ class StreamsGenerator:
         for pts in self.streamlines:
             d = self._points_to_smooth_path(pts)
             if d:
-                parts.append(f'<path d="{d}" fill="none" stroke="{self.stroke_color}" stroke-width="{self.stroke_width}" opacity="0.55"/>')
+                parts.append(
+                    f'<path d="{d}" fill="none" stroke="{self.stroke_color}" '
+                    f'stroke-width="{self.stroke_width}" stroke-linecap="round" stroke-linejoin="round" '
+                    f'opacity="0.62"/>'
+                )
 
         parts.append('</g>')
         parts.append('</svg>')
