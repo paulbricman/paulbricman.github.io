@@ -132,12 +132,8 @@ body {
   z-index: 2;
 }
 
-/* Verso: Patchwork, outer margin. Recto: chapter title, outer margin (swapped from default L/R). */
-.print-running-head-verso {
-  right: 14mm;
-  text-align: right;
-}
-
+/* Chapter title on body text pages: outer (fore-edge) margin, left-aligned. */
+.print-running-head-verso,
 .print-running-head-recto {
   left: 14mm;
   text-align: left;
@@ -163,28 +159,60 @@ body {
   text-align: left;
 }
 
-/* Series page: light paper + dark ink from Jinja (prelude.series_bg / series_ink) */
+/* Series title page: sole subtitle, vertically centered (slight optical lift). */
 .page-series .page-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
   min-height: 210mm;
+  height: 210mm;
+  width: 100%;
 }
 
-.page-series h1 {
-  font-weight: 400;
-  font-size: 3.1rem;
-  line-height: 1.1;
-  margin: 0 0 1.35rem 0;
-  text-transform: none;
-}
-
-.page-series p {
+.page-series .series-subtitle {
   margin: 0;
-  font-size: 1.4rem;
+  max-width: 95%;
+  padding: 0 8mm;
+  font-weight: 400;
+  font-size: 2.35rem;
+  line-height: 1.15;
   font-style: italic;
+  white-space: pre-line;
+  color: inherit;
+  transform: translateY(-6mm);
+}
+
+/* Closing spread (zine V light paper): CTA copy; same horizontal inset as .page-text .prose. */
+.page-series-epilogue .page-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  box-sizing: border-box;
+  min-height: 210mm;
+  height: 210mm;
+  width: 100%;
+}
+
+.page-series-epilogue .series-epilogue-body {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10mm 14mm 8mm 14mm;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.48;
+  font-style: normal;
+  text-align: left;
+}
+
+.page-series-epilogue .series-epilogue-body a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 /* Section title: accent fill + title ink (colors from Jinja) */
@@ -334,10 +362,10 @@ body {
   font-weight: bold;
 }
 
-/* Field zine (III): noticeably inset slabs (default image wrap is 10mm; prose is 14mm). */
+/* Field zine (III): three-strip stack; inset between the two prior tuning steps. */
 .page-image.print-field-figures .page-inner .figure-wrap,
 .page-title-b.print-field-figures .page-inner .figure-wrap {
-  padding: 10mm 17mm 8mm 17mm;
+  padding: 17mm 28mm 15mm 28mm;
 }
 
 /* Body figures: mirror text page flex + same inset as .prose */

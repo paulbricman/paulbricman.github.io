@@ -12,12 +12,15 @@ Mosaic covers need rsvg-convert (brew install librsvg).
 from __future__ import annotations
 
 import argparse
+import shutil
 import sys
 import tempfile
 from pathlib import Path
 
 _PKG = Path(__file__).resolve().parent
 _REPO = _PKG.parent.parent
+# Jekyll static asset (no page links); served as /assets/patchwork.pdf on the live site.
+_SITE_PDF = _REPO / "assets" / "patchwork.pdf"
 if str(_PKG) not in sys.path:
     sys.path.insert(0, str(_PKG))
 
@@ -37,6 +40,11 @@ from assets import (  # noqa: E402
 )
 from jinja2 import Environment, FileSystemLoader  # noqa: E402
 from tiles import (  # noqa: E402
+    BOOKLET_FIELD_STRIP_GAP_FRAC,
+    BOOKLET_FIELD_STRIP_HEIGHT_FRAC,
+    BOOKLET_FIELD_STRIP_WIDTH_FRAC,
+    BOOKLET_FIELD_VERTICAL_ANCHOR,
+    BOOKLET_LATTICES_VIEWBOX_ZOOM,
     build_field_stack_svg,
     build_formulas_stack_svg,
     build_lattices_tile_svg,
@@ -44,34 +52,16 @@ from tiles import (  # noqa: E402
     build_streams_tile_svg,
     render_tile,
 )
+from zines import generator_for_cell  # noqa: E402
 from weasyprint import HTML  # noqa: E402
 
 from parse_posts import image_repo_path, parse_chapter_body, prose_html, validate_image_paths  # noqa: E402
 from series_spec import SeparatorKind, ZINE_CHAPTERS, ZineChapterSpec  # noqa: E402
-from svg_utils import flip_svg_horizontal, recolor_svg_for_print  # noqa: E402
-
-
-def _hex_norm(h: str) -> str:
-    s = h.strip()
-    if s.startswith("#"):
-        s = s[1:]
-    if len(s) == 3:
-        s = "".join(c * 2 for c in s)
-    if len(s) != 6:
-        raise ValueError(f"bad hex color: {h!r}")
-    return s.lower()
-
-
-def _blend_hex(fg: str, bg: str = "#fffff8", t: float = 0.07) -> str:
-    """Linear blend toward fg: t=0 → bg, t=1 → fg (WeasyPrint has no reliable color-mix)."""
-    fg = _hex_norm(fg)
-    bg = _hex_norm(bg)
-    rf, gf, bf = (int(fg[i : i + 2], 16) for i in (0, 2, 4))
-    rb, gb, bb = (int(bg[i : i + 2], 16) for i in (0, 2, 4))
-    r = max(0, min(255, round(rb + t * (rf - rb))))
-    g = max(0, min(255, round(gb + t * (gf - gb))))
-    b = max(0, min(255, round(bb + t * (bf - bb))))
-    return f"#{r:02x}{g:02x}{b:02x}"
+from svg_utils import (  # noqa: E402
+    flip_svg_horizontal,
+    print_chapter_light_ink,
+    recolor_svg_for_print,
+)
 
 
 def _separator_css_class(kind: SeparatorKind) -> str:
@@ -111,22 +101,16 @@ def _assign_running_marks(chapters: list[dict]) -> None:
             n += 1
 
 
-# Must match tiles.build_streams_tile_svg (seed XOR before pick_cell).
+# Must match tiles._STREAMS_PICK_SALT (seed XOR before pick_cell for non-procedural streams).
 _STREAMS_TILE_PICK_SALT = 0x53A3FC51
 
-# Field zine (III): slightly smaller strip column + stack than full canvas (cover + body share these).
-_PRINT_FIELD_MAX_STRIP_WIDTH_FRAC = 0.9
-_PRINT_FIELD_MAX_STRIP_HEIGHT_FRAC = 0.28
-_PRINT_FIELD_MAX_STRIP_GAP_FRAC = 0.01
 _ZINE_ROMAN_NUMERALS: tuple[str, ...] = ("I", "II", "III", "IV", "V")
-# Strong top bias in strip viewBox crop so digit rows are not clipped (cover + body use the same).
-_PRINT_FIELD_VERTICAL_ANCHOR = 0.07
 
 
 def prelude_series_tokens() -> dict[str, str]:
     """First zine (roots): two-token palette — light paper + dark accent ink; cover bleed stays mosaic accent."""
     accent = ZINE_CHAPTERS[0].background_color
-    paper = _blend_hex(accent, "#ffffff", 0.10)
+    paper = print_chapter_light_ink(accent)
     ink = accent
     series_bg = paper
     series_ink = ink
@@ -145,7 +129,7 @@ def prelude_series_tokens() -> dict[str, str]:
 def epilogue_blank_paper() -> str:
     """Last zine accent: trailing filler blanks before back cover (same light token weight as chapter interior)."""
     accent = ZINE_CHAPTERS[-1].background_color
-    return _blend_hex(accent, "#ffffff", 0.10)
+    return print_chapter_light_ink(accent)
 
 
 def _spread_tile_args(master_seed: int, chapter_index: int, spread_index: int) -> tuple[int, int, int]:
@@ -258,6 +242,91 @@ def _title_tile_pick_seed_from_forbidden(
     )
 
 
+def _series_spread_seed_plans(
+    master_seed: int,
+) -> tuple[list[list[tuple[int, int, int]]], list[tuple[int, int, int]]]:
+    """Body spread picks per chapter + title-hero (seed, chapter_index, 0) each; matches ``_build_chapters``."""
+    global_figure_keys: set[str] = set()
+    plans: list[list[tuple[int, int, int]]] = []
+    title_picks: list[tuple[int, int, int]] = []
+    tile_composed = frozenset({"roots", "lattices", "field", "formulas", "streams"})
+
+    for chapter_index, spec in enumerate(ZINE_CHAPTERS):
+        pairs = parse_chapter_body(spec)
+        errs = validate_image_paths(pairs)
+        if errs:
+            raise SystemExit(f"{spec.post_filename}: " + "; ".join(errs))
+
+        streams_procedural = spec.generator == "streams"
+        spread_seeds: list[tuple[int, int, int]] = []
+        chapter_body_keys: set[str] = set()
+        if spec.generator in tile_composed:
+            spread_seeds, chapter_body_keys = _plan_composed_spread_seeds(
+                spec.generator,
+                master_seed,
+                chapter_index,
+                len(pairs),
+                global_figure_keys,
+                streams_procedural=streams_procedural,
+            )
+        plans.append(spread_seeds)
+
+        forbidden_title = global_figure_keys | chapter_body_keys
+        seed_t = _title_tile_pick_seed_from_forbidden(
+            spec.generator,
+            master_seed,
+            chapter_index,
+            forbidden_title,
+            streams_procedural=streams_procedural,
+        )
+        title_picks.append((seed_t, chapter_index, 0))
+        if spec.generator in tile_composed:
+            global_figure_keys.add(
+                _composed_figure_key(
+                    spec.generator,
+                    seed_t,
+                    chapter_index,
+                    0,
+                    streams_procedural=streams_procedural,
+                )
+            )
+            global_figure_keys.update(chapter_body_keys)
+
+    return plans, title_picks
+
+
+def _mosaic_cell_pick_series(
+    master_seed: int,
+    grid_n: int,
+    spread_plans: list[list[tuple[int, int, int]]],
+    title_picks: list[tuple[int, int, int]],
+) -> build_mosaic.SeriesCellPick:
+    """Map each mosaic cell to title hero or body spread picks (same seeds/coords as the PDF)."""
+
+    chapter_by_generator = {spec.generator: i for i, spec in enumerate(ZINE_CHAPTERS)}
+    n_per_ch = [len(sp) for sp in spread_plans]
+
+    def cell_pick(_face: build_mosaic.Face, row: int, col: int) -> tuple[int, int, int]:
+        gen = generator_for_cell(row, col, grid_n)
+        ch = chapter_by_generator[gen]
+        idx = row * grid_n + col
+        occ = 0
+        for i in range(idx):
+            r, c = divmod(i, grid_n)
+            if generator_for_cell(r, c, grid_n) == gen:
+                occ += 1
+        n = n_per_ch[ch]
+        if n <= 0:
+            return title_picks[ch]
+        cycle_len = n + 1
+        k = occ % cycle_len
+        if k == 0:
+            return title_picks[ch]
+        return spread_plans[ch][(k - 1) % n]
+
+    return cell_pick
+
+
 def _write_mosaic_face_png(
     out_png: Path,
     *,
@@ -265,16 +334,31 @@ def _write_mosaic_face_png(
     grid_n: int,
     master_seed: int,
     dpi: int,
+    cell_pick: build_mosaic.SeriesCellPick | None = None,
 ) -> None:
-    svg = build_mosaic.build_mosaic_svg(grid_n, face, master_seed)
+    svg = build_mosaic.build_mosaic_svg(
+        grid_n, face, master_seed, cell_pick=cell_pick
+    )
     with tempfile.TemporaryDirectory(prefix="print_zine_mosaic_") as td:
         svg_path = Path(td) / f"mosaic_{face}.svg"
         svg_path.write_text(svg, encoding="utf-8")
         build_mosaic._write_png(svg_path, out_png, dpi)
 
 
-def _write_mosaic_face_svg(out_svg: Path, *, face: build_mosaic.Face, grid_n: int, master_seed: int) -> None:
-    out_svg.write_text(build_mosaic.build_mosaic_svg(grid_n, face, master_seed), encoding="utf-8")
+def _write_mosaic_face_svg(
+    out_svg: Path,
+    *,
+    face: build_mosaic.Face,
+    grid_n: int,
+    master_seed: int,
+    cell_pick: build_mosaic.SeriesCellPick | None = None,
+) -> None:
+    out_svg.write_text(
+        build_mosaic.build_mosaic_svg(
+            grid_n, face, master_seed, cell_pick=cell_pick
+        ),
+        encoding="utf-8",
+    )
 
 
 def _write_tile_svg(
@@ -366,7 +450,7 @@ def _build_chapters(tmp: Path, master_seed: int) -> list[dict]:
 
         accent = spec.background_color
         # Exactly two colors per zine interval: dark = accent, light = blend toward white (no black/white inks).
-        chapter_light = _blend_hex(accent, "#ffffff", 0.10)
+        chapter_light = print_chapter_light_ink(accent)
         chapter_ink = accent
         accent_light_text = chapter_light
         accent_light_art = chapter_light
@@ -408,11 +492,11 @@ def _build_chapters(tmp: Path, master_seed: int) -> list[dict]:
                 chapter_index,
                 0,
                 opaque_background=False,
-                strip_width_frac=_PRINT_FIELD_MAX_STRIP_WIDTH_FRAC,
-                strip_height_frac=_PRINT_FIELD_MAX_STRIP_HEIGHT_FRAC,
-                strip_gap_frac=_PRINT_FIELD_MAX_STRIP_GAP_FRAC,
+                strip_width_frac=BOOKLET_FIELD_STRIP_WIDTH_FRAC,
+                strip_height_frac=BOOKLET_FIELD_STRIP_HEIGHT_FRAC,
+                strip_gap_frac=BOOKLET_FIELD_STRIP_GAP_FRAC,
                 inner_preserve_aspect="xMidYMid meet",
-                inner_vertical_anchor=_PRINT_FIELD_VERTICAL_ANCHOR,
+                inner_vertical_anchor=BOOKLET_FIELD_VERTICAL_ANCHOR,
                 crop_inner_view_to_strip=False,
             )
             title_path.write_text(
@@ -442,7 +526,7 @@ def _build_chapters(tmp: Path, master_seed: int) -> list[dict]:
                 seed_t,
                 chapter_index,
                 0,
-                viewbox_zoom=1.02,
+                viewbox_zoom=BOOKLET_LATTICES_VIEWBOX_ZOOM,
                 opaque_background=False,
             )
             # Transparent tile: HTML owns accent fill; strokes map to light token.
@@ -551,11 +635,11 @@ def _build_chapters(tmp: Path, master_seed: int) -> list[dict]:
                         row,
                         col,
                         opaque_background=False,
-                        strip_width_frac=_PRINT_FIELD_MAX_STRIP_WIDTH_FRAC,
-                        strip_height_frac=_PRINT_FIELD_MAX_STRIP_HEIGHT_FRAC,
-                        strip_gap_frac=_PRINT_FIELD_MAX_STRIP_GAP_FRAC,
+                        strip_width_frac=BOOKLET_FIELD_STRIP_WIDTH_FRAC,
+                        strip_height_frac=BOOKLET_FIELD_STRIP_HEIGHT_FRAC,
+                        strip_gap_frac=BOOKLET_FIELD_STRIP_GAP_FRAC,
                         inner_preserve_aspect="xMidYMid meet",
-                        inner_vertical_anchor=_PRINT_FIELD_VERTICAL_ANCHOR,
+                        inner_vertical_anchor=BOOKLET_FIELD_VERTICAL_ANCHOR,
                         crop_inner_view_to_strip=False,
                     )
                 elif spec.generator == "formulas":
@@ -572,7 +656,7 @@ def _build_chapters(tmp: Path, master_seed: int) -> list[dict]:
                         seed,
                         row,
                         col,
-                        viewbox_zoom=1.02,
+                        viewbox_zoom=BOOKLET_LATTICES_VIEWBOX_ZOOM,
                         opaque_background=False,
                     )
                 else:
@@ -645,11 +729,11 @@ def _build_chapters(tmp: Path, master_seed: int) -> list[dict]:
                         row,
                         col,
                         opaque_background=False,
-                        strip_width_frac=_PRINT_FIELD_MAX_STRIP_WIDTH_FRAC,
-                        strip_height_frac=_PRINT_FIELD_MAX_STRIP_HEIGHT_FRAC,
-                        strip_gap_frac=_PRINT_FIELD_MAX_STRIP_GAP_FRAC,
+                        strip_width_frac=BOOKLET_FIELD_STRIP_WIDTH_FRAC,
+                        strip_height_frac=BOOKLET_FIELD_STRIP_HEIGHT_FRAC,
+                        strip_gap_frac=BOOKLET_FIELD_STRIP_GAP_FRAC,
                         inner_preserve_aspect="xMidYMid meet",
-                        inner_vertical_anchor=_PRINT_FIELD_VERTICAL_ANCHOR,
+                        inner_vertical_anchor=BOOKLET_FIELD_VERTICAL_ANCHOR,
                         crop_inner_view_to_strip=False,
                     )
                 elif spec.generator == "formulas":
@@ -666,7 +750,7 @@ def _build_chapters(tmp: Path, master_seed: int) -> list[dict]:
                         seed,
                         row,
                         col,
-                        viewbox_zoom=1.02,
+                        viewbox_zoom=BOOKLET_LATTICES_VIEWBOX_ZOOM,
                         opaque_background=False,
                     )
                 else:
@@ -776,11 +860,15 @@ def main() -> None:
         help="Blank pages after the series title page (default 0).",
     )
     p.add_argument("--no-series-page", action="store_true", help="Omit the series title page.")
-    p.add_argument("--series-title", default="Patchwork", help="Series page main line.")
+    p.add_argument(
+        "--series-title",
+        default="Patchwork",
+        help="HTML document title only (not shown on the series page).",
+    )
     p.add_argument(
         "--series-subtitle",
-        default="a manifesto on the politics of computing",
-        help="Series page second line.",
+        default="a manifesto on\nthe politics of computing",
+        help="Series page text; use embedded newline for a forced line break.",
     )
     p.add_argument("--grid", type=int, default=7, help="Mosaic grid N×N (print_mosaic).")
     p.add_argument("--master-seed", type=int, default=0, help="Mosaic master seed.")
@@ -801,6 +889,10 @@ def main() -> None:
 
     with tempfile.TemporaryDirectory(prefix="print_zine_build_") as tmp:
         tmp_path = Path(tmp)
+        spread_plans, title_picks = _series_spread_seed_plans(args.master_seed)
+        cell_pick = _mosaic_cell_pick_series(
+            args.master_seed, args.grid, spread_plans, title_picks
+        )
         if args.cover_svg:
             front_cover = tmp_path / "mosaic_front.svg"
             back_cover = tmp_path / "mosaic_back.svg"
@@ -809,12 +901,14 @@ def main() -> None:
                 face="front",
                 grid_n=args.grid,
                 master_seed=args.master_seed,
+                cell_pick=cell_pick,
             )
             _write_mosaic_face_svg(
                 back_cover,
                 face="back",
                 grid_n=args.grid,
                 master_seed=args.master_seed,
+                cell_pick=cell_pick,
             )
             front_href = front_cover.resolve().as_uri()
             back_href = back_cover.resolve().as_uri()
@@ -827,6 +921,7 @@ def main() -> None:
                 grid_n=args.grid,
                 master_seed=args.master_seed,
                 dpi=args.png_dpi,
+                cell_pick=cell_pick,
             )
             _write_mosaic_face_png(
                 back_png,
@@ -834,6 +929,7 @@ def main() -> None:
                 grid_n=args.grid,
                 master_seed=args.master_seed,
                 dpi=args.png_dpi,
+                cell_pick=cell_pick,
             )
             front_href = front_png.resolve().as_uri()
             back_href = back_png.resolve().as_uri()
@@ -842,6 +938,7 @@ def main() -> None:
         _assign_running_marks(chapters)
         prelude = prelude_series_tokens()
         epilogue_paper = epilogue_blank_paper()
+        epilogue_accent = ZINE_CHAPTERS[-1].background_color
 
         env = Environment(
             loader=FileSystemLoader(_PKG / "templates"),
@@ -860,6 +957,7 @@ def main() -> None:
             series_subtitle=args.series_subtitle,
             prelude=prelude,
             epilogue_paper=epilogue_paper,
+            epilogue_accent=epilogue_accent,
             chapters=chapters,
         )
 
@@ -869,7 +967,11 @@ def main() -> None:
             presentational_hints=True,
         )
 
+    _SITE_PDF.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(args.out, _SITE_PDF)
+
     print(f"Wrote {args.out.resolve()}")
+    print(f"Published static copy at {_SITE_PDF.resolve()}")
 
 
 if __name__ == "__main__":

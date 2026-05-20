@@ -29,6 +29,16 @@ ET.register_namespace("", NS)
 COVER_W = 350.0
 COVER_H = 495.0
 
+# Must stay aligned with generators/print_zine/build_print.py (field strips + lattices zoom).
+BOOKLET_FIELD_STRIP_WIDTH_FRAC = 0.9
+BOOKLET_FIELD_STRIP_HEIGHT_FRAC = 0.28
+BOOKLET_FIELD_STRIP_GAP_FRAC = 0.01
+BOOKLET_FIELD_VERTICAL_ANCHOR = 0.07
+BOOKLET_LATTICES_VIEWBOX_ZOOM = 1.02
+
+# Series PDF front/back mosaic only: shrink field strips vs booklet while keeping full orange plate.
+MOSAIC_FIELD_FIGURE_SCALE = 0.74
+
 
 def _strip_xml_decl(s: str) -> str:
     s = s.strip()
@@ -167,6 +177,7 @@ def build_field_stack_svg(
     inner_preserve_aspect: str = "xMidYMid slice",
     inner_vertical_anchor: float = 0.5,
     crop_inner_view_to_strip: bool = True,
+    figure_scale: float = 1.0,
 ) -> str:
     """Three stacked field strips (same layout as mosaic tile) on an arbitrary fill.
 
@@ -176,6 +187,8 @@ def build_field_stack_svg(
     ``strip_height_frac`` / ``strip_gap_frac`` are fractions of ``COVER_H``; the stack is
     vertically centered. Use larger fractions for print so slabs scale up without changing
     aspect handling (still ``inner_preserve_aspect`` per strip).
+
+    ``figure_scale`` scales only the strip stack about the tile center (background rect unchanged).
     """
     root = _svg_open_background(background, opaque_background=opaque_background)
     pool = field_pool()
@@ -185,6 +198,16 @@ def build_field_stack_svg(
     gap = COVER_H * strip_gap_frac
     stack_h = 3 * strip_h + 2 * gap
     y0 = (COVER_H - stack_h) / 2
+    parent: ET.Element = root
+    if abs(figure_scale - 1.0) > 1e-6:
+        g_art = ET.SubElement(root, f"{{{NS}}}g")
+        cx = COVER_W / 2.0
+        cy = COVER_H / 2.0
+        g_art.set(
+            "transform",
+            f"translate({cx:.4f},{cy:.4f}) scale({figure_scale:.5f}) translate({-cx:.4f},{-cy:.4f})",
+        )
+        parent = g_art
     for i in range(3):
         path = pick_cell(pool, seed, row, col, i)
         kids, vb = _clone_file(path, f"_f{seed}_{row}_{col}_{i}_{path.stem}")
@@ -195,7 +218,7 @@ def build_field_stack_svg(
             )
         else:
             nx, ny, nw, nh = vb[0], vb[1], vb[2], vb[3]
-        inner = ET.SubElement(root, f"{{{NS}}}svg")
+        inner = ET.SubElement(parent, f"{{{NS}}}svg")
         inner.set("x", f"{x0:.2f}")
         inner.set("y", f"{y:.2f}")
         inner.set("width", f"{strip_w:.2f}")
@@ -308,27 +331,78 @@ def render_tile(
     grid_col: int = 0,
     icons_root: Path | None = None,
     opaque_background: bool = True,
+    match_print_zine: bool = False,
+    mosaic_field_tile: bool = False,
 ) -> str:
+    """When ``match_print_zine`` is True, use the same streams/field/lattices layout as the PDF booklet.
+
+    ``mosaic_field_tile`` (field only) shrinks strip art on the series mosaic cover vs interior pages.
+    """
     _ = icons_root  # retained for API compatibility; tiles use on-disk SVGs only
     spec = next(z for z in ZINES if z.key == generator_id)
     if spec.background.lower() != tile_background.lower():
         raise ValueError(f"background mismatch for {generator_id}")
     if generator_id == "field":
-        return _cover_field(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
+        return _cover_field(
+            spec,
+            seed,
+            grid_row,
+            grid_col,
+            opaque_background=opaque_background,
+            match_print_zine=match_print_zine,
+            mosaic_field_tile=mosaic_field_tile,
+        )
     if generator_id == "streams":
-        return _cover_streams(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
+        return _cover_streams(
+            spec,
+            seed,
+            grid_row,
+            grid_col,
+            opaque_background=opaque_background,
+            match_print_zine=match_print_zine,
+        )
     if generator_id == "formulas":
         return _cover_formulas(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
     if generator_id == "lattices":
-        return _cover_lattices(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
+        return _cover_lattices(
+            spec,
+            seed,
+            grid_row,
+            grid_col,
+            opaque_background=opaque_background,
+            match_print_zine=match_print_zine,
+        )
     if generator_id == "roots":
         return _cover_roots(spec, seed, grid_row, grid_col, opaque_background=opaque_background)
     raise ValueError(f"unknown generator: {generator_id}")
 
 
 def _cover_field(
-    spec: ZineSpec, seed: int, row: int, col: int, *, opaque_background: bool = True
+    spec: ZineSpec,
+    seed: int,
+    row: int,
+    col: int,
+    *,
+    opaque_background: bool = True,
+    match_print_zine: bool = False,
+    mosaic_field_tile: bool = False,
 ) -> str:
+    if match_print_zine:
+        fig_scale = MOSAIC_FIELD_FIGURE_SCALE if mosaic_field_tile else 1.0
+        return build_field_stack_svg(
+            spec.background,
+            seed,
+            row,
+            col,
+            opaque_background=opaque_background,
+            strip_width_frac=BOOKLET_FIELD_STRIP_WIDTH_FRAC,
+            strip_height_frac=BOOKLET_FIELD_STRIP_HEIGHT_FRAC,
+            strip_gap_frac=BOOKLET_FIELD_STRIP_GAP_FRAC,
+            inner_preserve_aspect="xMidYMid meet",
+            inner_vertical_anchor=BOOKLET_FIELD_VERTICAL_ANCHOR,
+            crop_inner_view_to_strip=False,
+            figure_scale=fig_scale,
+        )
     return build_field_stack_svg(spec.background, seed, row, col, opaque_background=opaque_background)
 
 
@@ -427,9 +501,22 @@ def build_streams_tile_svg(
 
 
 def _cover_streams(
-    spec: ZineSpec, seed: int, row: int, col: int, *, opaque_background: bool = True
+    spec: ZineSpec,
+    seed: int,
+    row: int,
+    col: int,
+    *,
+    opaque_background: bool = True,
+    match_print_zine: bool = False,
 ) -> str:
-    return build_streams_tile_svg(spec.background, seed, row, col, opaque_background=opaque_background)
+    return build_streams_tile_svg(
+        spec.background,
+        seed,
+        row,
+        col,
+        opaque_background=opaque_background,
+        use_procedural_stream=match_print_zine,
+    )
 
 
 def _cover_formulas(
@@ -439,9 +526,23 @@ def _cover_formulas(
 
 
 def _cover_lattices(
-    spec: ZineSpec, seed: int, row: int, col: int, *, opaque_background: bool = True
+    spec: ZineSpec,
+    seed: int,
+    row: int,
+    col: int,
+    *,
+    opaque_background: bool = True,
+    match_print_zine: bool = False,
 ) -> str:
-    return build_lattices_tile_svg(spec.background, seed, row, col, opaque_background=opaque_background)
+    zoom = BOOKLET_LATTICES_VIEWBOX_ZOOM if match_print_zine else 1.18
+    return build_lattices_tile_svg(
+        spec.background,
+        seed,
+        row,
+        col,
+        viewbox_zoom=zoom,
+        opaque_background=opaque_background,
+    )
 
 
 def _cover_roots(

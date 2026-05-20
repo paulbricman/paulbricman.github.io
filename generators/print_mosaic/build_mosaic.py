@@ -4,7 +4,9 @@ A5 portrait mosaic: N×N grid of A5-aspect cover tiles on an A5 page (rows = col
 
 Each tile uses the same portrait aspect as the page (148:210), so the grid must be
 square. Zine order matches index.html (site.posts | reverse): roots → lattices →
-field → streams → formulas. Tiles use curated / article-referenced SVGs.
+field → streams → formulas. Tiles use curated / article-referenced SVGs. The series PDF builder passes ``cell_pick`` so each
+tile reuses the same ``(seed, row, col)`` as the booklet title hero and body spreads; the CLI
+defaults to independent ``cell_seed`` picks per cell.
 
   python3 generators/print_mosaic/build_mosaic.py --face front --out /tmp/front.svg
   python3 generators/print_mosaic/build_mosaic.py --grid 12 --out /tmp/mosaic.svg --png
@@ -22,6 +24,7 @@ from __future__ import annotations
 import argparse
 import os
 import re
+from collections.abc import Callable
 import subprocess
 import sys
 import tempfile
@@ -29,14 +32,25 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 _pkg = Path(__file__).resolve().parent
+_print_zine = _pkg.parent / "print_zine"
 if str(_pkg) not in sys.path:
     sys.path.insert(0, str(_pkg))
+if str(_print_zine) not in sys.path:
+    sys.path.append(str(_print_zine))
 
 from tiles import render_tile
 from zines import ZINE_BACKGROUND, Face, cell_seed, generator_for_cell
+from svg_utils import (
+    print_chapter_light_ink,
+    recolor_svg_for_print,
+    scrub_svg_embedded_style_whites_to_light_ink,
+)
 
 NS = "http://www.w3.org/2000/svg"
 ET.register_namespace("", NS)
+
+# (face, mosaic_row, mosaic_col) -> (seed, pick_row, pick_col) for render_tile pick_cell coords
+SeriesCellPick = Callable[[Face, int, int], tuple[int, int, int]]
 
 
 def _strip_xml_decl(s: str) -> str:
@@ -87,6 +101,8 @@ def build_mosaic_svg(
     grid_n: int,
     face: Face,
     master_seed: int,
+    *,
+    cell_pick: SeriesCellPick | None = None,
 ) -> str:
     if grid_n < 1:
         raise ValueError("grid must be >= 1")
@@ -104,14 +120,33 @@ def build_mosaic_svg(
         for col in range(grid_n):
             gen = generator_for_cell(row, col, grid_n)
             bg = ZINE_BACKGROUND[gen]
-            seed = cell_seed(master_seed, face, row, col)
+            if cell_pick is not None:
+                seed, pick_row, pick_col = cell_pick(face, row, col)
+            else:
+                seed = cell_seed(master_seed, face, row, col)
+                pick_row, pick_col = row, col
             doc = render_tile(
                 gen,
                 seed,
                 tile_background=bg,
-                grid_row=row,
-                grid_col=col,
+                grid_row=pick_row,
+                grid_col=pick_col,
+                match_print_zine=cell_pick is not None,
+                mosaic_field_tile=cell_pick is not None and gen == "field",
             )
+            light = print_chapter_light_ink(bg)
+            doc = recolor_svg_for_print(
+                doc,
+                bg,
+                generator=gen,
+                ink_on_light=light,
+                ink_dark=bg,
+                accent_soft=light,
+                canonical_two_ink=False,
+                treat_white_as_transparent=False,
+                grey_fills_transparent=False,
+            )
+            doc = scrub_svg_embedded_style_whites_to_light_ink(doc, light)
             tile_root = _parse_svg_fragment(doc)
             suffix = f"_{row}_{col}"
             _uniquify_ids(tile_root, suffix)
@@ -199,7 +234,7 @@ def main() -> None:
     args = p.parse_args()
 
     def run_face(face: Face, out_path: Path) -> None:
-        svg = build_mosaic_svg(args.grid, face, args.master_seed)
+        svg = build_mosaic_svg(args.grid, face, args.master_seed, cell_pick=None)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         if out_path.suffix.lower() == ".png":
             fd, tmp_name = tempfile.mkstemp(suffix=".svg", prefix="print_mosaic_")

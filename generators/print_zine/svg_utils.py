@@ -630,6 +630,11 @@ def _blend_hex(fg: str, bg: str, t: float) -> str:
     return f"#{r:02x}{g:02x}{b:02x}"
 
 
+def print_chapter_light_ink(accent_hex: str) -> str:
+    """Light chapter token: 10% blend of accent toward white (matches booklet chapter_light / prelude paper)."""
+    return _blend_hex(_accent_css_hex(accent_hex), "#ffffff", 0.10)
+
+
 def _parse_rgb_channels(val: str) -> tuple[int, int, int] | None:
     v = val.strip()
     vl = v.lower()
@@ -939,6 +944,27 @@ def recolor_svg_for_print(
         _field_opener_lift_dark_marker_paint(root, ink_dark, accent)
         _append_field_opener_light_ink_cascade(root, ink_dark)
 
+    body = ET.tostring(root, encoding="unicode")
+    return '<?xml version="1.0" encoding="UTF-8"?>\n' + body
+
+
+_EMBEDDED_STYLE_WHITE_PAINT = re.compile(
+    r"(?i)\b(fill|stroke|color|stop-color)\s*:\s*"
+    r"(?:white\b|#fff\b|#ffffff\b|#ffffffff\b|rgba?\(\s*255\s*,\s*255\s*,\s*255(?:\s*,\s*[\d.]+\s*)?\))"
+)
+
+
+def scrub_svg_embedded_style_whites_to_light_ink(svg: str, ink_on_light: str) -> str:
+    """Map literal white paints inside ``<style>`` text (recolor's tree walk skips those rules)."""
+
+    def repl(m: re.Match[str]) -> str:
+        return f"{m.group(1)}: {ink_on_light}"
+
+    root = ET.fromstring(_strip_xml_decl(svg).encode("utf-8"))
+    for el in root.iter():
+        if _local_tag(el.tag) != "style" or not (el.text or "").strip():
+            continue
+        el.text = _EMBEDDED_STYLE_WHITE_PAINT.sub(repl, el.text)
     body = ET.tostring(root, encoding="unicode")
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + body
 

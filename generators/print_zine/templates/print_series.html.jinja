@@ -20,6 +20,12 @@
     {% endfor %}
 
     {% if include_series_page %}
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
+    </div>
+    {% endif %}
+
+    {% if include_series_page %}
     <div
       class="page page-series"
       style="--prelude-accent: {{ prelude.accent }}; background-color: {{ prelude.series_bg }};"
@@ -28,9 +34,14 @@
         class="page-inner"
         style="background-color: {{ prelude.series_bg }}; color: {{ prelude.series_ink }};"
       >
-        <h1 style="color: {{ prelude.series_ink }};">{{ series_title }}</h1>
-        <p style="color: {{ prelude.series_ink }};">{{ series_subtitle }}</p>
+        <p class="series-subtitle">{{ series_subtitle }}</p>
       </div>
+    </div>
+    {% endif %}
+
+    {% if include_series_page %}
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
     </div>
     {% endif %}
 
@@ -43,6 +54,11 @@
     {% endif %}
 
     {% for ch in chapters %}
+    {% if not include_series_page and loop.first %}
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
+    </div>
+    {% endif %}
     <div
       class="page page-title-a"
       style="--zine-accent: {{ ch.background_color }}; background-color: {{ ch.background_color }}; color: {{ ch.title_ink }};"
@@ -70,6 +86,11 @@
         </div>
       </div>
     </div>
+    {% if not include_series_page and loop.first %}
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
+    </div>
+    {% endif %}
 
     {% for spread in ch.spreads %}
     <div
@@ -84,7 +105,8 @@
           class="print-running-head print-running-head-{{ spread.folio_text_side }}"
           style="color: {{ ch.chapter_ink }};"
         >
-          {% if spread.folio_text_side == "verso" %}Patchwork{% else %}{{ ch.title }}{% endif %}
+          {# Odd folios 1,3,5… on body text pages — chapter title, outer margin left (print.css). #}
+          {{ ch.title }}
         </div>
         <div
           class="print-folio print-folio-{{ spread.folio_text_side }}"
@@ -107,7 +129,7 @@
           class="print-running-head print-running-head-{{ spread.folio_image_side }}"
           style="color: {{ ch.chapter_ink }};"
         >
-          {% if spread.folio_image_side == "verso" %}Patchwork{% else %}{{ ch.title }}{% endif %}
+          {# Even folios 2,4,6… on figure pages — no chapter title in the running head. #}
         </div>
         <div
           class="print-folio print-folio-{{ spread.folio_image_side }}"
@@ -132,6 +154,36 @@
       <div class="page-inner" style="background-color: {{ epilogue_paper }};"></div>
     </div>
     {% endfor %}
+
+    {% if include_series_page %}
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ epilogue_paper }};"></div>
+    </div>
+    <div
+      class="page page-series page-series-epilogue"
+      style="--epilogue-accent: {{ epilogue_accent }}; background-color: {{ epilogue_paper }};"
+    >
+      <div
+        class="page-inner"
+        style="background-color: {{ epilogue_paper }}; color: {{ epilogue_accent }};"
+      >
+        <p class="series-epilogue-body">
+          Join us in reclaiming technology today, and help make technology work for people. Get involved at
+          <a href="https://patchwork.ngo/">patchwork.ngo</a>.
+        </p>
+      </div>
+    </div>
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ epilogue_paper }};"></div>
+    </div>
+    {% else %}
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
+    </div>
+    <div class="page page-blank paper">
+      <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
+    </div>
+    {% endif %}
 
     <div
       class="page page-cover-back"
