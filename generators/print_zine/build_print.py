@@ -22,6 +22,8 @@ _PKG = Path(__file__).resolve().parent
 _REPO = _PKG.parent.parent
 # Jekyll static asset (no page links); served as /assets/patchwork.pdf on the live site.
 _SITE_PDF = _REPO / "assets" / "patchwork.pdf"
+# White margin around the 7×7 cover mosaic (same tile matrix, scaled down and centered).
+_COVER_MOSAIC_GRID_INSET_FRAC = 0.14
 if str(_PKG) not in sys.path:
     sys.path.insert(0, str(_PKG))
 
@@ -338,7 +340,11 @@ def _write_mosaic_face_png(
     cell_pick: build_mosaic.SeriesCellPick | None = None,
 ) -> None:
     svg = build_mosaic.build_mosaic_svg(
-        grid_n, face, master_seed, cell_pick=cell_pick
+        grid_n,
+        face,
+        master_seed,
+        cell_pick=cell_pick,
+        grid_inset_frac=_COVER_MOSAIC_GRID_INSET_FRAC,
     )
     with tempfile.TemporaryDirectory(prefix="print_zine_mosaic_") as td:
         svg_path = Path(td) / f"mosaic_{face}.svg"
@@ -356,7 +362,11 @@ def _write_mosaic_face_svg(
 ) -> None:
     out_svg.write_text(
         build_mosaic.build_mosaic_svg(
-            grid_n, face, master_seed, cell_pick=cell_pick
+            grid_n,
+            face,
+            master_seed,
+            cell_pick=cell_pick,
+            grid_inset_frac=_COVER_MOSAIC_GRID_INSET_FRAC,
         ),
         encoding="utf-8",
     )
