@@ -5,8 +5,9 @@ Build a single A5 PDF of the five zine posts (reading order).
 System libraries on macOS: WeasyPrint needs Pango and cairo (e.g. brew install pango cairo gdk-pixbuf libffi).
 Mosaic covers need rsvg-convert (brew install librsvg).
 
-  generators/print_zine/.venv/bin/python generators/print_zine/build_print.py --out /tmp/patchwork.pdf
-  generators/print_zine/.venv/bin/python generators/print_zine/build_print.py --cover-svg --out /tmp/patchwork.pdf
+  generators/print_zine/.venv/bin/python generators/print_zine/build_print.py
+  # Site copy (~10MB): raster mosaic covers at 300 DPI; also writes assets/patchwork.pdf.
+  # --cover-svg embeds vector covers and roughly triples PDF size; avoid for the public asset.
 """
 
 from __future__ import annotations
