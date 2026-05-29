@@ -5,15 +5,20 @@ layout: default
 <div class="grid-container">
   <div class="grid-item-text">
     <p>
-      Hi, I'm interested in ensuring that the machines that will shape the
-      future will do what ought to be done.
+      Hi, here are some things I've been excited about at different points in
+      time:
+      <a href="https://arxiv.org/abs/2407.14981">governance</a>,
+      <a href="https://jack-clark.net/2023/12/11/import-ai-352-asteroids-and-ai-policy-privacy-preserving-ai-benchmarks-and-distributed-inference/">cryptography</a>,
+      <a href="https://compphil.github.io/">philosophy</a>,
+      <a href="https://web.archive.org/web/20220823132523/https://paulbricman.com/thoughtware/conceptarium">psychology</a>.
     </p>
+    <p>And here's some writing that draws from these experiences:</p>
   </div>
   {% assign sorted_posts = site.posts | reverse %} {% for post in sorted_posts
   limit:5 %} {% if post.generator %}
   <a
     href="{{ post.url }}"
-    class="grid-item{% if post.generator == 'formulas' %} grid-item-formulas{% endif %}"
+    class="grid-item{% if post.generator == 'formulas' %} grid-item-formulas{% elsif post.generator == 'lattices' %} grid-item-lattices{% endif %}"
     style="background-color: {{ post.background_color }}; color: {{ post.text_color }};"
   >
     <h3 {% if post.generator == 'field' %}style="letter-spacing: 0.35em;"{% endif %}>{{ post.title }}</h3>
@@ -45,9 +50,7 @@ layout: default
     <img src="/generators/formulas/curated/cover_04.svg" alt="" />
     {% else %} <img src="/generators/{{ post.generator }}/curated/{% if
     post.generator == 'roots' %}root_system_4.svg{% elsif post.generator ==
-    'lattices' %}lattice_0.svg{% endif %}" alt="" {% if post.generator ==
-    'lattices' %}style="transform: translate(-50%, -59%) rotate(90deg)
-    scale(1.2);"{% endif %} /> {% endif %}
+    'lattices' %}lattice_0.svg{% endif %}" alt="" /> {% endif %}
   </a>
   {% else %}
   <a

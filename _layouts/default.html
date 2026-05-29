@@ -8,12 +8,15 @@
     </title>
     <link rel="stylesheet" href="/tufte.css" />
     <style>
+      html {
+        overflow-x: clip;
+      }
       body {
         padding-left: 0 !important;
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
-        overflow-x: hidden;
+        overflow-x: clip;
         background-color: white;
         color: black;
       }
@@ -22,6 +25,7 @@
         max-width: 100%;
         padding: 0;
         margin: 0;
+        overflow-x: clip;
       }
       .home-text {
         width: 48%;
@@ -35,16 +39,18 @@
         padding-left: 0;
       }
       .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2.5rem;
         width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
+        max-width: min(40rem, 100%);
+        margin: 0 auto;
+        padding: 4.5rem 1.5rem 3rem;
+        box-sizing: border-box;
       }
       .grid-item-text {
-        padding: 0 2rem;
+        padding: 0;
       }
       .grid-item-text p,
       .grid-item-text h2 {
@@ -52,10 +58,18 @@
         padding-left: 0;
       }
       .grid-item {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
         aspect-ratio: 1 / 1.414;
         text-decoration: none;
         position: relative;
         overflow: hidden;
+        contain: paint;
+        box-sizing: border-box;
+        box-shadow:
+          0 10px 28px rgba(0, 0, 0, 0.14),
+          0 4px 10px rgba(0, 0, 0, 0.08);
       }
       .grid-item-tbd {
         display: flex;
@@ -71,7 +85,7 @@
       }
       .grid-item h3 {
         margin: 0;
-        font-size: 1.2rem;
+        font-size: clamp(0.85rem, 2.8vw, 1.2rem);
         line-height: 1.3;
         font-style: normal;
         font-weight: normal;
@@ -83,8 +97,10 @@
         top: 0;
         left: 0;
         right: 0;
-        padding: 1rem;
+        padding: 1.75rem 1rem 1rem;
         display: block;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
       }
       .grid-item img {
         position: absolute;
@@ -92,6 +108,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 90%;
+        max-width: 100%;
         height: 90%;
         opacity: 1;
         z-index: 1;
@@ -144,6 +161,12 @@
       .grid-item.grid-item-formulas > img:nth-child(6) {
         top: 74%;
       }
+      .grid-item.grid-item-lattices > img {
+        top: 58%;
+        width: 58%;
+        height: auto;
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
       @media (max-width: 760px) {
         body {
           padding-left: 0 !important;
@@ -151,11 +174,14 @@
         .home-text {
           width: 100%;
         }
-        .grid-item-text {
-          grid-column: span 1;
-        }
         .grid-container {
-          grid-template-columns: 1fr;
+          max-width: 100%;
+          padding: 3.5rem 1.25rem 2.5rem;
+          gap: 2rem;
+        }
+        .grid-item h3 {
+          letter-spacing: 0.3em;
+          padding: 1.5rem 0.75rem 1rem;
         }
       }
     </style>
