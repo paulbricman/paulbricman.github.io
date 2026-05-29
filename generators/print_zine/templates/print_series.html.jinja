@@ -6,31 +6,37 @@
     <link rel="stylesheet" href="{{ stylesheet_href }}" />
   </head>
   <body style="background-color: {{ prelude.paper }};">
+    {% set page_idx = namespace(n=0) %}
+    {% macro page_side() -%}
+    {%- set page_idx.n = page_idx.n + 1 -%}
+    page-side-{%- if page_idx.n % 2 == 1 -%}left{%- else -%}right{%- endif -%}
+    {%- endmacro %}
+
     <div
-      class="page page-cover"
+      class="page page-cover {{ page_side() }}"
       style="background-color: {{ prelude.cover_bleed }};"
     >
       <img src="{{ front_cover_href }}" alt="" />
     </div>
 
     {% for _ in range(blank_start) %}
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
     </div>
     {% endfor %}
 
     {% if include_series_page %}
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
     </div>
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
     </div>
     {% endif %}
 
     {% if include_series_page %}
     <div
-      class="page page-series"
+      class="page page-series {{ page_side() }}"
       style="--prelude-accent: {{ prelude.accent }}; background-color: {{ prelude.series_bg }};"
     >
       <div
@@ -44,7 +50,7 @@
 
     {% if include_series_page %}
     {% for _ in range(blank_after_series) %}
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
     </div>
     {% endfor %}
@@ -52,12 +58,12 @@
 
     {% for ch in chapters %}
     {% if not include_series_page and loop.first %}
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
     </div>
     {% endif %}
     <div
-      class="page page-title-a"
+      class="page page-title-a {{ page_side() }}"
       style="--zine-accent: {{ ch.background_color }}; background-color: {{ ch.background_color }}; color: {{ ch.title_ink }};"
     >
       <div
@@ -69,7 +75,7 @@
       </div>
     </div>
     <div
-      class="page page-title-b title-b-quiet {{ ch.title_hero_class }}{% if ch.generator == 'field' %} print-field-figures{% endif %}"
+      class="page page-title-b title-b-quiet {{ ch.title_hero_class }}{% if ch.generator == 'field' %} print-field-figures{% endif %} {{ page_side() }}"
       style="--zine-accent: {{ ch.background_color }}; background-color: {{ ch.background_color }}; color: {{ ch.title_ink }};"
     >
       <div
@@ -84,14 +90,14 @@
       </div>
     </div>
     {% if not include_series_page and loop.first %}
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
     </div>
     {% endif %}
 
     {% for spread in ch.spreads %}
     <div
-      class="page page-text"
+      class="page page-text {{ page_side() }}"
       style="--zine-accent: {{ ch.background_color }}; color: {{ ch.chapter_ink }};"
     >
       <div
@@ -99,14 +105,13 @@
         style="background-color: {{ ch.accent_light_text }};"
       >
         <div
-          class="print-running-head print-running-head-{{ spread.folio_text_side }}"
+          class="print-running-head"
           style="color: {{ ch.chapter_ink }};"
         >
-          {# Odd folios 1,3,5… on body text pages — chapter title, outer margin left (print.css). #}
           {{ ch.title }}
         </div>
         <div
-          class="print-folio print-folio-{{ spread.folio_text_side }}"
+          class="print-folio"
           style="color: {{ ch.chapter_ink }};"
         >
           {{ spread.folio_text }}
@@ -115,7 +120,7 @@
       </div>
     </div>
     <div
-      class="page page-image {{ spread.image_page_class }}{% if not spread.image_href %} image-page-blank{% endif %}{% if ch.generator == 'field' %} print-field-figures{% endif %}"
+      class="page page-image {{ spread.image_page_class }}{% if not spread.image_href %} image-page-blank{% endif %}{% if ch.generator == 'field' %} print-field-figures{% endif %} {{ page_side() }}"
       style="--zine-accent: {{ ch.background_color }};"
     >
       <div
@@ -123,13 +128,12 @@
         style="background-color: {{ ch.accent_light_art }};"
       >
         <div
-          class="print-running-head print-running-head-{{ spread.folio_image_side }}"
+          class="print-running-head"
           style="color: {{ ch.chapter_ink }};"
         >
-          {# Even folios 2,4,6… on figure pages — no chapter title in the running head. #}
         </div>
         <div
-          class="print-folio print-folio-{{ spread.folio_image_side }}"
+          class="print-folio"
           style="color: {{ ch.chapter_ink }};"
         >
           {{ spread.folio_image }}
@@ -147,17 +151,17 @@
     {% endfor %}
 
     {% for _ in range(blank_end) %}
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ epilogue_paper }};"></div>
     </div>
     {% endfor %}
 
     {% if include_series_page %}
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ epilogue_paper }};"></div>
     </div>
     <div
-      class="page page-series page-series-epilogue"
+      class="page page-series page-series-epilogue {{ page_side() }}"
       style="--epilogue-accent: {{ epilogue_accent }}; background-color: {{ epilogue_paper }};"
     >
       <div
@@ -170,20 +174,20 @@
         </p>
       </div>
     </div>
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ epilogue_paper }};"></div>
     </div>
     {% else %}
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
     </div>
-    <div class="page page-blank paper">
+    <div class="page page-blank paper {{ page_side() }}">
       <div class="page-inner" style="background-color: {{ prelude.paper }};"></div>
     </div>
     {% endif %}
 
     <div
-      class="page page-cover-back"
+      class="page page-cover-back {{ page_side() }}"
       style="background-color: {{ prelude.cover_bleed }};"
     >
       <img src="{{ back_cover_href }}" alt="" />

@@ -104,26 +104,33 @@ def build_mosaic_svg(
     *,
     cell_pick: SeriesCellPick | None = None,
     grid_inset_frac: float = 0.0,
+    cell_gap_frac: float = 0.0,
 ) -> str:
     if grid_n < 1:
         raise ValueError("grid must be >= 1")
     if not 0.0 <= grid_inset_frac < 0.5:
         raise ValueError("grid_inset_frac must be in [0, 0.5)")
+    if not 0.0 <= cell_gap_frac < 1.0:
+        raise ValueError("cell_gap_frac must be in [0, 1)")
 
     page_w, page_h = 148.0, 210.0
     grid_w = page_w * (1.0 - 2.0 * grid_inset_frac)
     grid_h = page_h * (1.0 - 2.0 * grid_inset_frac)
     offset_x = page_w * grid_inset_frac
     offset_y = page_h * grid_inset_frac
-    cell_w = grid_w / grid_n
-    cell_h = grid_h / grid_n
+    pitch_w = grid_w / grid_n
+    pitch_h = grid_h / grid_n
+    gap_w = pitch_w * cell_gap_frac
+    gap_h = pitch_h * cell_gap_frac
+    tile_w = pitch_w - gap_w
+    tile_h = pitch_h - gap_h
 
     root = ET.Element(f"{{{NS}}}svg")
     root.set("width", f"{page_w}mm")
     root.set("height", f"{page_h}mm")
     root.set("viewBox", f"0 0 {page_w} {page_h}")
 
-    if grid_inset_frac > 0.0:
+    if grid_inset_frac > 0.0 or cell_gap_frac > 0.0:
         bg = ET.SubElement(root, f"{{{NS}}}rect")
         bg.set("x", "0")
         bg.set("y", "0")
@@ -167,15 +174,15 @@ def build_mosaic_svg(
             _uniquify_ids(tile_root, suffix)
 
             vx, vy, vw, vh = _intrinsic_viewbox(tile_root)
-            ox = offset_x + col * cell_w
-            oy = offset_y + row * cell_h
+            ox = offset_x + col * pitch_w + gap_w * 0.5
+            oy = offset_y + row * pitch_h + gap_h * 0.5
 
             g = ET.SubElement(root, f"{{{NS}}}g")
             g.set("transform", f"translate({ox:.6f},{oy:.6f})")
 
             inner = ET.SubElement(g, f"{{{NS}}}svg")
-            inner.set("width", f"{cell_w:.6f}")
-            inner.set("height", f"{cell_h:.6f}")
+            inner.set("width", f"{tile_w:.6f}")
+            inner.set("height", f"{tile_h:.6f}")
             inner.set("viewBox", f"{vx} {vy} {vw} {vh}")
             inner.set("preserveAspectRatio", "xMidYMid slice")
             inner.set("xmlns:xlink", "http://www.w3.org/1999/xlink")

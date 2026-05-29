@@ -126,37 +126,44 @@ body {
 
 .print-running-head {
   position: absolute;
-  top: 14mm;
+  top: calc(14mm + 12px);
   font-size: 7.5pt;
   line-height: 1.2;
   z-index: 2;
 }
 
-/* Chapter title on body text pages: outer (fore-edge) margin, left-aligned. */
-.print-running-head-verso,
-.print-running-head-recto {
-  left: 14mm;
-  text-align: left;
-}
-
 .print-folio {
   position: absolute;
-  bottom: 14mm;
+  bottom: calc(14mm + 12px);
   font-size: 7.5pt;
   font-variant-numeric: tabular-nums;
   line-height: 1.2;
   z-index: 2;
 }
 
-/* Folio outer margin matches running head on the same verso/recto class. */
-.print-folio-verso {
-  right: 14mm;
-  text-align: right;
+/* Gutter shift: outer margin 11mm, binding-side margin 17mm (3mm moved from outer). */
+.page-side-left.page-text .prose,
+.page-side-left.page-series-epilogue .series-epilogue-body {
+  padding: 10mm 17mm 8mm 11mm;
 }
 
-.print-folio-recto {
-  left: 14mm;
+.page-side-right.page-text .prose,
+.page-side-right.page-series-epilogue .series-epilogue-body {
+  padding: 10mm 11mm 8mm 17mm;
+}
+
+.page-side-left .print-running-head,
+.page-side-left .print-folio {
+  left: 11mm;
+  right: auto;
   text-align: left;
+}
+
+.page-side-right .print-running-head,
+.page-side-right .print-folio {
+  left: auto;
+  right: 11mm;
+  text-align: right;
 }
 
 /* Series title page: sole subtitle, vertically centered (slight optical lift). */
@@ -204,11 +211,13 @@ body {
   box-sizing: border-box;
   padding: 10mm 14mm 8mm 14mm;
   font-weight: 400;
-  font-size: 1.12rem;
-  line-height: 1.48;
+  font-size: calc(1.12rem - 1px);
+  line-height: calc(1.48em - 1px);
   font-style: normal;
   text-align: left;
 }
+
+/* page-side-left/right epilogue padding set above with prose */
 
 .page-series-epilogue .series-epilogue-body a {
   color: inherit;
@@ -337,9 +346,19 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 10mm 14mm 8mm 14mm;
-  font-size: 1.12rem;
-  line-height: 1.48;
+  font-size: calc(1.12rem - 1px);
+  line-height: calc(1.48em - 1px);
   color: inherit;
+}
+
+.page-side-left.page-image .figure-wrap,
+.page-side-left.page-title-b .figure-wrap {
+  padding: 5mm 13mm 5mm 7mm;
+}
+
+.page-side-right.page-image .figure-wrap,
+.page-side-right.page-title-b .figure-wrap {
+  padding: 5mm 7mm 5mm 13mm;
 }
 
 .page-text .prose p {
@@ -362,10 +381,15 @@ body {
   font-weight: bold;
 }
 
-/* Field zine (III): three-strip stack; inset between the two prior tuning steps. */
-.page-image.print-field-figures .page-inner .figure-wrap,
-.page-title-b.print-field-figures .page-inner .figure-wrap {
-  padding: 17mm 28mm 15mm 28mm;
+/* Field zine (III): three-strip stack; gutter-aware horizontal inset. */
+.page-image.print-field-figures.page-side-left .page-inner .figure-wrap,
+.page-title-b.print-field-figures.page-side-left .page-inner .figure-wrap {
+  padding: 17mm 31mm 15mm 25mm;
+}
+
+.page-image.print-field-figures.page-side-right .page-inner .figure-wrap,
+.page-title-b.print-field-figures.page-side-right .page-inner .figure-wrap {
+  padding: 17mm 25mm 15mm 31mm;
 }
 
 /* Body figures: mirror text page flex + same inset as .prose */
