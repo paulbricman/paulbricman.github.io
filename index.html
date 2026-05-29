@@ -21,7 +21,7 @@ layout: default
     class="grid-item{% if post.generator == 'formulas' %} grid-item-formulas{% elsif post.generator == 'lattices' %} grid-item-lattices{% endif %}"
     style="background-color: {{ post.background_color }}; color: {{ post.text_color }};"
   >
-    <h3 {% if post.generator == 'field' %}style="letter-spacing: 0.35em;"{% endif %}>{{ post.title }}</h3>
+    <h3 {% if post.generator == 'field' %}style="letter-spacing: 0.28em;"{% endif %}>{{ post.title }}</h3>
     {% if post.generator == 'field' %}
     <img
       src="/generators/{{ post.generator }}/curated/field_0.svg"
