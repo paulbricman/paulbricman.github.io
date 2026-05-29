@@ -14,9 +14,11 @@
       }
       body {
         padding-left: 0 !important;
+        padding-right: 0 !important;
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
+        box-sizing: border-box !important;
         overflow-x: hidden;
         background-color: white;
         color: black;
@@ -24,9 +26,10 @@
       article {
         width: 100%;
         max-width: 100%;
-        padding: 0;
+        padding: 0 !important;
         margin: 0;
         overflow-x: hidden;
+        box-sizing: border-box;
       }
       .home-text {
         width: 48%;
@@ -52,6 +55,8 @@
       }
       .grid-item-text {
         padding: 0;
+        min-width: 0;
+        overflow-wrap: anywhere;
       }
       .grid-item-text p,
       .grid-item-text h2 {
@@ -69,8 +74,8 @@
         contain: paint;
         box-sizing: border-box;
         box-shadow:
-          0 8px 20px rgba(0, 0, 0, 0.12),
-          0 3px 8px rgba(0, 0, 0, 0.06);
+          0 14px 36px rgba(0, 0, 0, 0.18),
+          0 6px 14px rgba(0, 0, 0, 0.1);
       }
       .grid-item-tbd {
         display: flex;
@@ -172,6 +177,8 @@
       @media (max-width: 760px) {
         body {
           padding-left: 0 !important;
+          padding-right: 0 !important;
+          width: 100% !important;
         }
         .home-text {
           width: 100%;
