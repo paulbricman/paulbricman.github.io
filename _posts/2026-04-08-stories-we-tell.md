@@ -32,7 +32,7 @@ Show me the personal lifestyle and I will show you the belief system that happen
   <img src="/generators/formulas/curated/inline_02.svg" alt="">
 </div>
 
-The world is far too complex for any one human or machine to navigate it entirely from first principles. The vast majority of the thoughts we think, they are lifted from the shared cache of ideas that we call culture or common sense. If you were to rederive an appropriate approach to every situation you encounter from set theory onwards, you would die of hunger before inferring the right method to cross the street to the supermarket.
+The world is far too complex for any one human or machine to navigate it entirely from first principles. The vast majority of the thoughts we think, they are lifted from the shared cache of ideas that we call culture or common sense. If you were to rederive an appropriate approach to every situation you encounter from set theory onwards, you would starve to death before inferring the right method to cross the street to the supermarket.
 
 To reproach someone for holding onto dogma on a particular topic is then hypocritical, as we all do so on approximately every subject. We should be kind to fellow beings who only have so much time to make sense of a complex world, and who dedicate it to those areas they care about most.
 

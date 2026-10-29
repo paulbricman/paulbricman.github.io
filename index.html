@@ -5,38 +5,64 @@ layout: default
 <div class="grid-container">
   <div class="grid-item-text">
     <p>
-      Hi, here are some things I've been excited about at different points in
-      time:
-      <a href="https://arxiv.org/abs/2407.14981">governance</a>,
-      <a href="https://jack-clark.net/2023/12/11/import-ai-352-asteroids-and-ai-policy-privacy-preserving-ai-benchmarks-and-distributed-inference/">cryptography</a>,
-      <a href="https://compphil.github.io/">philosophy</a>,
-      <a href="https://web.archive.org/web/20220823132523/https://paulbricman.com/thoughtware/conceptarium">psychology</a>.
+      Hi, I'm exploring ways of pushing against the growing concentration of
+      computing power.
     </p>
-    <p>And here's some writing that draws from these experiences:</p>
+    <p>
+      For instance, I'm building a <a href="/assets/board_render.png">hardware product</a> that helps you easily turn all of
+      your houshold's unused electronics into your own
+      little cloud.
+    </p>
+    <p>
+      Here's more about my <a href="/background">background</a>, and here's some of my writing:
+    </p>
   </div>
   {% assign sorted_posts = site.posts | reverse %} {% for post in sorted_posts
   limit:5 %} {% if post.generator %}
   <a
     href="{{ post.url }}"
-    class="grid-item{% if post.generator == 'formulas' %} grid-item-formulas{% elsif post.generator == 'lattices' %} grid-item-lattices{% endif %}"
+    class="grid-item {% if post.generator == 'formulas' %} grid-item-formulas {% elsif post.generator == 'lattices' %} grid-item-lattices {% endif %}"
     style="background-color: {{ post.background_color }}; color: {{ post.text_color }};"
   >
-    <h3 {% if post.generator == 'field' %}style="letter-spacing: 0.28em;"{% endif %}>{{ post.title }}</h3>
+    <h3 {% if post.generator == 'field' %}style="letter-spacing: 0.28em;"{% endif %}>
+      {{ post.title }}
+    </h3>
     {% if post.generator == 'field' %}
     <img
       src="/generators/{{ post.generator }}/curated/field_0.svg"
       alt=""
-      style="position: absolute; top: 26%; left: 50%; transform: translate(-50%, -50%); width: 75%; z-index: 1;"
+      style="
+        position: absolute;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        z-index: 1;
+      "
     />
     <img
       src="/generators/{{ post.generator }}/curated/field_5.svg"
       alt=""
-      style="position: absolute; top: 51%; left: 50%; transform: translate(-50%, -50%); width: 75%; z-index: 1;"
+      style="
+        position: absolute;
+        top: 51%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        z-index: 1;
+      "
     />
     <img
       src="/generators/{{ post.generator }}/curated/field_10.svg"
       alt=""
-      style="position: absolute; top: 76%; left: 50%; transform: translate(-50%, -50%); width: 75%; z-index: 1;"
+      style="
+        position: absolute;
+        top: 76%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        z-index: 1;
+      "
     />
     {% elsif post.generator == 'streams' %}
     <div class="stream-tile-frame">
@@ -48,9 +74,14 @@ layout: default
     <img src="/generators/formulas/curated/cover_02.svg" alt="" />
     <img src="/generators/formulas/curated/cover_03.svg" alt="" />
     <img src="/generators/formulas/curated/cover_04.svg" alt="" />
-    {% else %} <img src="/generators/{{ post.generator }}/curated/{% if
+    {% else %}
+    <img
+      src="/generators/{{ post.generator }}/curated/{% if
     post.generator == 'roots' %}root_system_4.svg{% elsif post.generator ==
-    'lattices' %}lattice_0.svg{% endif %}" alt="" /> {% endif %}
+    'lattices' %}lattice_0.svg{% endif %}"
+      alt=""
+    />
+    {% endif %}
   </a>
   {% else %}
   <a

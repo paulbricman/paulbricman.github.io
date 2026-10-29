@@ -28,7 +28,7 @@ The canvas of designed experience beyond the screen is similarly generative. Thi
   <img src="/generators/streams/outputs/stream_8.svg" alt="">
 </div>
 
-If a group of people take part in a workshop focused on contributing a new server to a community datacenter, the output of that workshop is more than the terabytes of storage or the teraflops of compute that have been pooled in. The output also involves the fact that a handful of people have each gained a bit of the know-how and confidence necessary to reclaim technology. Just like raw hardware can scale to petabytes of storage and petaflops of compute, this qualitative output could perhaps scale to resilient communities that can genuinely look after themselves technologically.
+If a group of people take part in a workshop focused on contributing new hardware to a community datacenter, the output of that workshop is more than the terabytes of storage or the teraflops of compute that have been pooled in. The output also involves the fact that a handful of people have each gained a bit of the know-how and confidence necessary to reclaim technology. Just like raw hardware can scale to petabytes of storage and petaflops of compute, this qualitative output could perhaps scale to resilient communities that can genuinely look after themselves technologically.
 
 <div class="separator stream-circle">
   <img src="/generators/streams/outputs/stream_3.svg" alt="">

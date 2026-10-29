@@ -40,11 +40,11 @@ Certain systems can be said to be able to run _on_ citizens, in that they can th
 
 Companies turn raw ingredients into products. In go the labor, equipment, or materials, out comes the device, app, or asset. Zoom in on the transformation, however, and you find many smaller ones. This team is turning their software into a list of security issues. That team is turning that vulnerability catalogue into more secure software. This other team is turning that improved version into new marketing materials.
 
-For such a system to instead thrive on the mixed and sporadic contributions of citizens with diverse backgrounds and motivations, it needs to have modularity, granularity, and composability at its core. Workshops are a powerful building block here.
+For such a system to instead thrive on the mixed and sporadic contributions of citizens with diverse backgrounds and motivations, it needs to have modularity, granularity, and composability at its core. Workshops are an interesting building block here.
 
-For instance, the community around a community datacenter may run a workshop focused on turning older computers into individual components by disassembling and cataloguing them. At a different time, a workshop may independently focus on turning such salvaged parts into larger, unified servers by building frames and figuring out the power schematics. Yet another workshop might separately turn such community practices into art to promote the initiative across the neighborhood.
+For instance, the community around a community datacenter may run a workshop focused on turning older computers into individual components by disassembling and cataloguing them. At a different time, a workshop may independently focus on turning such salvaged parts into larger, unified servers by building frames and figuring out the power schematics. Yet another workshop might separately turn such community practices into art to promote the initiative.
 
-These sessions should run whenever enough people want to take part in them, and should run at a time picked to fit everyone in the group. And besides helping people contribute to a shared effort, workshops should be designed so as to help them gain new skills, leave their mark, make new friends, and have fun together.
+Such activities could run whenever enough people want to take part in them, and at a time picked to fit everyone in the group. And besides helping people contribute to a shared effort, they should be designed so as to help them gain new skills, leave their mark, make new friends, and have fun together.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
   <img src="/generators/lattices/outputs/lattice_4.svg" alt="" style="width: 100%;">
@@ -72,7 +72,7 @@ Objects should have a baseline way of being built. This method should preferably
 
 And it is a good thing to have multiple ways of obtaining the same object. You can build a corner bracket layer-by-layer by stacking filament, or by milling it out of a block, or by casting it into a mold. Maybe you already have it lying around, bought or salvaged. Case in which, do use it. The point is to get what you need, and building is just a means of doing it. Though always preserve the option to build, as efficiency without resilience is myopia.
 
-Objects should also invite disassembly. This reduces the effective cost of building things, as they can later be reassembled into new arrangements. Disassembly also makes it easier to undo mistakes, and so lowers the bar for trying different approaches. Skipping power tools tends to help with this, as chances are that if you needed one for assembly, you will also need one for disassembly.
+Objects should also invite disassembly. This reduces the effective cost of building things, as they can later be reassembled into new arrangements. Disassembly also makes it easier to undo mistakes, and so lowers the bar for trying different approaches. Skipping advanced tools tends to help with this, as chances are that if you needed one for assembly, you will also need one for disassembly.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
   <img src="/generators/lattices/outputs/lattice_9.svg" alt="" style="width: 100%;">
@@ -82,7 +82,7 @@ Like many familiar building blocks of computing, passwords are soaked in our cul
 
 How different would computing feel if important actions were authorized not down the chain of command, but rather through the presence of a quorum of equals? Say any five members of the group running a community datacenter have to connect their secure tokens in order to gain elevated privileges on the system. If the number falls below the required quota, the privileged session terminates. These physical tokens may even be embedded in a bracelet or necklace, as tangible artifacts that signify community.
 
-Secret sharing is the flavor of cryptography focused on distributing keys in such a way that any group can reveal the secret as long as they reach the quorum. Say there are three people and the intended quorum is two. First, pick four points on a line. Second, share the two coordinates of a different point with each person. Finally, give everyone the first coordinate of the one remaining point. The remaining coordinate is the secret. Any two people can reconstruct the line using their own two points and read off the second coordinate of the remaining point. The password is effectively placed "in superposition" across people, enabling new social modes.
+Secret sharing is the flavor of cryptography focused on distributing keys in such a way that any group can reveal the secret as long as they reach the quorum. Say there are three people and the intended quorum is two. First, pick four points on a line. Second, share the two coordinates of one different point with each person. Finally, give everyone the first coordinate of the one remaining point. The remaining coordinate is the secret. Any two people can reconstruct the line using their own two points and read off the second coordinate of the remaining point. The password is effectively placed "in superposition" across people, enabling new social modes.
 
 <div class="separator" style="width: 55%; margin: 3rem 0;">
   <img src="/generators/lattices/outputs/lattice_11.svg" alt="" style="width: 100%;">
@@ -94,12 +94,10 @@ There is a way to strike a balance between the two. Consider neither the image o
 
 The metaphor can be applied to many digital services. A local search engine can plug into a local index, but it can also include results from external indices. A messaging platform can allow locals to chat, but also help them chat with users elsewhere. A streaming platform can serve users from local archives, but can also draw from external mirrors. This is essentially the same push towards a genuinely federated and interoperable internet based on open standards, only extrapolated beyond the social media focus of the "fediverse."
 
-When applied at the datacenter level, the porous model also has fascinating security implications. If any user can touch the actual physical servers, then any service running there seems compromised from the get-go. However, if these apps were configured to only handle personal data using end-to-end encryption, then a breach would leave attackers with little more than unintelligible blobs. If user data never touches the servers in plaintext, then there is nothing to leak. It is as if the town roads are open to all, yet secure transporters carry user data around when needed.
-
 <div class="separator" style="width: 55%; margin: 3rem 0;">
   <img src="/generators/lattices/outputs/lattice_10.svg" alt="" style="width: 100%;">
 </div>
 
-Imagine an organization that exposes the same "interface" to the outside world as your average company. You can buy things from it, it can buy things from other companies. But when it comes to its internal architecture, the typical hierarchy is discarded. Each member instead gets an equal say in what the organization's priorities are and how they are tackled. If they do choose to be represented by others, they get to elect these leaders democratically for a given term.
+Imagine an organization that exposes the same "interface" to the outside world as your average company. You can buy things from it, it can buy things from other companies. But when it comes to its internal architecture, the typical hierarchy is discarded. Each member instead gets an equal say in what the organization's priorities are and how they are tackled. If they do choose to be represented by others, they get to elect these representatives democratically for a given term.
 
 These organizations exist today, and have for ages. At the time of writing, almost one in eight people globally are members of such organizations, and about one in three in the European Union. They create trillions in value annually. They are called cooperatives, or "co-ops" for short, and there is something remarkable about how these companies enshrine democratic governance and shared ownership in their very statutes.
